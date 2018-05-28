@@ -1,0 +1,181 @@
+/**base classes**/
+
+.clear {
+	clear: both;
+}
+.float-left {
+	float: left;
+}.float-right {
+	float: right;
+}
+.flex {
+	display: flex;
+}
+.color-white {
+	color: white;
+}
+.color-black {
+	color: black;
+}
+.color-white1 {
+	color: white;
+}
+.bq-color-white {
+	background-color: white;
+}
+.bq-color1{
+	background-color: #BDCCD4;
+}
+          /**base classes**/
+
+
+          /**header**/
+.header {
+	width: 100%;
+    position: fixed;
+    z-index: 100;
+	background: white;
+}
+.center {
+	display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1170px;
+}
+.logo  {
+	width: 200px;
+}
+.left1 {
+		margin: auto;
+}
+.list {
+	font-size: 24px;
+	margin-right: 40px;
+	text-decoration: none;
+}
+.list a:hover {
+	color: blue;
+}
+.right-block {
+	justify-content: space-between;
+	width: 100%;
+	align-items: center;          
+}
+.img1 {
+	width: 50px;
+	height: 30px;
+	margin-right: 15px;
+}
+.img1:hover {
+	background-color: #b1b1ec;
+}
+.danamati {
+	display: inline-block;
+	width: 1px;
+	height: 30px;
+	background-color: blue;
+	margin-right: 15px;
+}
+.list {
+	font-size: 24px;
+	margin-right: 40px;
+	text-decoration: none;
+}
+.left1 ul a {
+	text-decoration: none;
+}
+          /**header**/
+
+
+          /**banner**/
+.banner-img {
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+	display: block;
+}
+.banner {
+   background-color: #E6E6E6;
+   display: block;
+   padding-top: 55px;
+}
+.banner2 {
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+	display: block;
+	position: relative;
+}
+.white-logo {
+	width: 100px;
+	position: absolute;
+	right: 30px;
+	bottom: 30px;
+}
+.banner-text {
+	position: absolute;
+	left: 30px;
+	bottom: 30px;
+	font-size: 30px;
+}
+          /**banner**/
+
+
+
+          /**videos**/
+
+.video-block {
+	background-color: #363E97;
+	width: 100%;
+}
+.mp4s video {
+	justify-content: space-between;
+	width: 400px;
+	height: 320px;
+}
+.mp4s {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1170px;
+	justify-content: space-between;
+}
+          /**videos**/
+
+
+
+
+          /**news**/
+
+.news-block img{
+   width: 270px;
+   height: 210px;
+   display: block;
+}
+.main-block {
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.text-block {
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 24px;
+	padding-top: 40px;
+	padding-bottom: 30px;
+	margin-left: 96px;
+}
+.text-block a {
+	text-transform: lowercase;
+
+}
+.under {
+	width: 270px;
+	line-height: 60px;
+	background-color: #E6E6E6;
+}
+.under h3 {
+	margin-left: 30px;
+}
+          /**news**/
