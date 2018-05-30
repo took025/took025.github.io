@@ -42,6 +42,8 @@
     margin: 0 auto;
     width: 100%;
     max-width: 1170px;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 .logo  {
 	width: 200px;
@@ -94,6 +96,8 @@
 	max-width: 1170px;
 	margin: 0 auto;
 	display: block;
+	padding-top: 68px;
+	padding-bottom: 30px;
 }
 .banner {
    background-color: #E6E6E6;
@@ -111,12 +115,12 @@
 	width: 100px;
 	position: absolute;
 	right: 30px;
-	bottom: 30px;
+	bottom: 60px;
 }
 .banner-text {
 	position: absolute;
 	left: 30px;
-	bottom: 30px;
+	bottom: 60px;
 	font-size: 30px;
 }
           /**banner**/
@@ -139,6 +143,8 @@
 	width: 100%;
 	max-width: 1170px;
 	justify-content: space-between;
+	padding-bottom: 90px;
+	padding-top: 90px;
 }
           /**videos**/
 
@@ -180,3 +186,7 @@
 	margin-left: 30px;
 }
           /**news**/
+
+          /**featured**/
+
+    
