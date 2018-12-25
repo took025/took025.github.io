@@ -86,6 +86,7 @@ body {
 	color: black;
 	transition: 0.3s;
 	font-family: "BPG Nino Mtavruli", sans-serif;
+	transition: 0.3s;
 }
 .list a:hover {
 	color: #B8EDF8;
