@@ -458,7 +458,7 @@ body {
 }
 .sent button:hover {
 	transition: 0.5s;
-	background-color: gray;
+	background-color: #313332;
 }
    /*sent*/
 
