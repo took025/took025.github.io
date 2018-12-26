@@ -450,15 +450,11 @@ body {
 .sent button {
 	color: #7EC4CE;
     border: 1px solid #7EC4CE;
-    background-color: white;
+    background-color: #313332;
     width: 80px;
     height: 30px;
     font-family: "BPG Glaho WEB Caps", sans-serif;
     transition: 0.5s;
-}
-.sent button:hover {
-	transition: 0.5s;
-	background-color: #313332;
 }
    /*sent*/
 
