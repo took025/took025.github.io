@@ -1,1 +1,0 @@
-# took.github.org.ge
