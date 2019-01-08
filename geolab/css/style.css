@@ -676,8 +676,6 @@
 }
 .send-child {
     color: white;
-    transform: translateY(35%);
-    margin-left: 20%;
     font-size: 20px;
     font-family: 'RobotoCondensed-Bold';
     letter-spacing: 2px;
@@ -694,6 +692,7 @@
     justify-content: space-between;
     margin-top: 20px;
     margin-bottom: 100px;
+    margin-top: -360px;
 }
 .footer-texts {
   font-family: 'Roboto-Thin';
@@ -849,7 +848,7 @@
   }
   .send {
     left: 20px;
-    bottom: 40px;
+    bottom: 50px;
   }
   .last-texts {
     margin-top: 20px;
