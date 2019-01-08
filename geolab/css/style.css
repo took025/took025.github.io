@@ -693,6 +693,7 @@
     margin-top: 20px;
     margin-bottom: 100px;
     margin-top: -360px;
+    max-height: 1800px;
 }
 .footer-texts {
   font-family: 'Roboto-Thin';
