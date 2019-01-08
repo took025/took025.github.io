@@ -31,15 +31,7 @@
 .bq-color-white {
 	background-color: white;
 }
-.header-bq-color {
-	background-color: #F0F2ED;
-	widows: 100%;
-}
-.header-footer-center{
-	width: 100%;
-	max-width: 1300px;
-	margin: 0 auto;
-}
+
 .bq-color-red {
     background-color: #FF0000;
 }
@@ -692,7 +684,6 @@
     justify-content: space-between;
     margin-top: 20px;
     margin-bottom: 100px;
-    margin-top: -360px;
     max-height: 1800px;
 }
 .footer-texts {
