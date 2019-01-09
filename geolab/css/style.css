@@ -400,7 +400,17 @@
     transform: translateX(-50%);
     position: absolute;
     bottom: 26px;
+    animation: anim 5s linear infinite;
 }
+ @keyframes anim{
+    0% {
+        transform: translateX(90%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+
+ }
 
 
    /*above-map*/
