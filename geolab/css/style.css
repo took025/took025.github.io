@@ -58,7 +58,7 @@
 }
 
 
-
+    /*header*/
 .burger {
     position: absolute;
     z-index: 300;
@@ -152,6 +152,9 @@
     width: 60%;
     left: 18%;
 }
+    /*header*/
+
+    /*banner*/
 .circle {
     border-radius: 50%;
     position: absolute;
@@ -312,6 +315,9 @@
     margin-top: 20px;
     font-family: 'Roboto-Light';
 }
+      /*banner*/
+
+    /*colector*/
 .colection-box {
     width: 99%;
 }
@@ -349,7 +355,8 @@
     font-family: 'RobotoCondensed-Bold';
     letter-spacing: 4px;
 }
-
+   /*colector*/
+    
 .under-colector {
     overflow: hidden;
     width: 100%;
@@ -396,7 +403,7 @@
 }
 
 
-
+   /*above-map*/
 .contact {
     width: 458px;
     height: 584px;
@@ -697,6 +704,7 @@
     background: black;
     cursor: pointer;
 }
+   /*above-map */
 
 .footer {
     width: 95%;
