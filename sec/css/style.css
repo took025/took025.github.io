@@ -101,12 +101,14 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
+
 }
 .inside-burger {
 	width: 40px;
 	height: 40px;
 	flex-wrap: wrap;
 	overflow: hidden;
+	cursor: pointer;
 }
 .inside-burger.active .burger1{
     position: absolute;
