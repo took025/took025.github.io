@@ -733,8 +733,9 @@
   font-family: 'Roboto-Thin';
   margin-top: 10px;
 }
-
-
+html {
+    scroll-behavior: smooth;
+}
 @media only screen and (max-width: 1200px) {
   .center {
     width: 95%;
