@@ -407,7 +407,7 @@
         transform: translateX(90%);
     }
     100%{
-        transform: translateX(-300%);
+        transform: translateX(-320%);
     }
 
  }
