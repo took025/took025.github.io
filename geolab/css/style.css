@@ -479,11 +479,11 @@
 }
 .social-imgs {
     width: 50px;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 .social-imgs:hover {
   background-color: gray;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 .social-lists {
     /*margin-top: 35px;*/
