@@ -56,9 +56,8 @@
 .justify-center {
     justify-content: center;
 }
-
-
     /*header*/
+}
 .burger {
     position: absolute;
     z-index: 300;
@@ -885,7 +884,7 @@ html {
   }
   .send {
     left: 20px;
-    bottom: 50px;
+    bottom: 45px;
   }
   .last-texts {
     margin-top: 20px;
