@@ -56,8 +56,9 @@
 .justify-center {
     justify-content: center;
 }
-    /*header*/
-}
+
+
+
 .burger {
     position: absolute;
     z-index: 300;
@@ -151,9 +152,6 @@
     width: 60%;
     left: 18%;
 }
-    /*header*/
-
-    /*banner*/
 .circle {
     border-radius: 50%;
     position: absolute;
@@ -229,6 +227,7 @@
     top: 30px;
     left: 30px;
     background-image: url(../img/logo.svg);
+    transform: 0.3s;
 }
 .burger-logo-img {
     width: 100%;
@@ -236,7 +235,7 @@
     top: 15px;
     left: 15px;
 }
-.burger-menu {
+.burger-menu{
     transition: 0.5s;
 }
 .burger-menu.active {
@@ -314,9 +313,6 @@
     margin-top: 20px;
     font-family: 'Roboto-Light';
 }
-      /*banner*/
-
-    /*colector*/
 .colection-box {
     width: 99%;
 }
@@ -354,8 +350,7 @@
     font-family: 'RobotoCondensed-Bold';
     letter-spacing: 4px;
 }
-   /*colector*/
-    
+
 .under-colector {
     overflow: hidden;
     width: 100%;
@@ -393,26 +388,26 @@
     position: absolute;
     bottom: 1px;
 }
+ @keyframes anim{
+    0% {
+        transform: translateX(90%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+
+ } 
 .car {
     width: 400px;
     margin-left: 65%;
     transform: translateX(-50%);
     position: absolute;
     bottom: 26px;
-    animation: anim 8s linear infinite;
+    animation: anim 5s linear infinite;
 }
- @keyframes anim{
-    0% {
-        transform: translateX(90%);
-    }
-    100%{
-        transform: translateX(-320%);
-    }
-
- }
 
 
-   /*above-map*/
+
 .contact {
     width: 458px;
     height: 584px;
@@ -478,11 +473,6 @@
 }
 .social-imgs {
     width: 50px;
-    transition: 0.5s;
-}
-.social-imgs:hover {
-  background-color: gray;
-  transition: 0.5s;
 }
 .social-lists {
     /*margin-top: 35px;*/
@@ -718,7 +708,6 @@
     background: black;
     cursor: pointer;
 }
-   /*above-map */
 
 .footer {
     width: 95%;
@@ -732,9 +721,8 @@
   font-family: 'Roboto-Thin';
   margin-top: 10px;
 }
-html {
-    scroll-behavior: smooth;
-}
+
+
 @media only screen and (max-width: 1200px) {
   .center {
     width: 95%;
@@ -884,7 +872,7 @@ html {
   }
   .send {
     left: 20px;
-    bottom: 45px;
+    bottom: 50px;
   }
   .last-texts {
     margin-top: 20px;
