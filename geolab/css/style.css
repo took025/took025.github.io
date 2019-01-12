@@ -403,7 +403,7 @@
     transform: translateX(-50%);
     position: absolute;
     bottom: 26px;
-    animation: anim 5s linear infinite;
+    animation: anim 8s linear infinite;
 }
 
 
