@@ -511,7 +511,7 @@
 .form-signup textarea{
   border: none;
   height: 125px;
-  width: 237px;
+  width: 240px;
   background-color: #F2F2F2;
   font-size: 16px;
   margin-top: 20px;
@@ -957,6 +957,7 @@
     100%{
         transform: translateX(-450%);
     }
+ } 
 }
 @media only screen and (max-width: 470px) {
     .burger-lists {
