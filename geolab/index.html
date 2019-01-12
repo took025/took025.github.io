@@ -27,17 +27,17 @@
             </div>
             <ul class="burger-list">
                <li >
-                  <a class="burger-lists"  href="#banner">
+                  <a class="burger-lists" id="burger-lists" href="#banner">
                   HOME
                   </a>
                </li>
                <li >
-                  <a class="burger-lists" href="#collection">
+                  <a class="burger-lists" id="burger-lists" href="#collection">
                   SERVICES
                   </a>
                </li>
                <li >
-                  <a class="burger-lists" href="#contact">
+                  <a class="burger-lists" id="burger-lists" href="#contact">
                   CONTACT
                   </a>
                </li>
@@ -154,37 +154,24 @@
                </div>
             </div>
             <div class="touch flex js-section" id="contact">
-               <div class="form">
-                  <h1 class="touch-title">
+                <div class="form-signup" id="singup">
+   <h1 class="touch-title">
                      GET IN TOUCH
-                  </h1>
-                  <form class="form-class flex" action="#" >
-                     <div class="form-group flex">
-                        <input class="input" type="text" placeholder=" name">
-                     </div>
-                     <h3 class="error-text">
-                        please write your name
-                     </h3>
-                     <div class="form-group flex">
-                        <input class="input"  type="text" placeholder=" E-mail">
-                     </div>
-                     <h3 class="error-text">
-                        please write your email
-                     </h3>
-                     <div class="form-group flex">
-                        <input class="input"  type="text" placeholder=" subject">
-                     </div>
-                     <h3 class="error-text">
-                        please write subject
-                     </h3>
-                     <div class="form-group flex">
-                        <textarea class=" textarea"  placeholder=" text"></textarea>
-                     </div>
-                     <h3 class="error-text">
-                        please write text
-                     </h3>
-                  </form>
+    </h1>
+            <form  method="get" onsubmit="return singup()">
+               <div class="form-group">
+                 <input type="text" class="fname" name="firstname" placeholder=" >
+
+                 <input type="text" class="subject" name="lastname" placeholdsubject">
+
+                 <input type="email" class="email" name="email" placeholder=" E-mail">
+
+                 <textarea name="query" class="query" rows="5" cols="15" placeholdtext"></textarea>
+                          <p class="emsgb"></p>
+                <input type="submit" name="submit" value="send">
                </div>
+           </form>
+             </div>
                <div class="chekboxes">
                   <div class="redio-chechbox flex">
                      <label class="container">
@@ -198,9 +185,6 @@
                         <span class="checkmark-radio"></span>
                      </label>
                   </div>
-                  <h3 class="error-text">
-                     please choose your gender
-                  </h3>
                   <h2 class="sec-chekbox-title">
                      Sign up for newsletter:
                   </h2>
@@ -225,18 +209,14 @@
                      <input type="checkbox">
                      <span class="checkmark"></span>
                      </label>
-                     <div class="send">
-                        <button class="send-child">send</button>
-                     </div>
-                  </div>
-                  <div class="succes">
-                     <h4>
-                        Thank you for your intereset for us, your message has been sent!
-                     </h4>
+                     
                   </div>
                </div>
+               </div>
             </div>
-            <div class="under-contact  ">
+         </div>
+      </section>
+      <div class="under-contact  ">
                <h2 class="view-text2">
                   click to 
                   view
@@ -261,8 +241,7 @@
                   </ul>
                </div>
             </div>
-         </div>
-      </section>
+
       <div class="footer center">
          <span class="footer-texts">
          © copyright 2017

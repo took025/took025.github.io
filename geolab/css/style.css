@@ -471,8 +471,13 @@
     display: flex;
     margin-top: 30px;
 }
+.social-imgs:hover {
+    background-color: gray;
+    transition: 0.5s;
+}
 .social-imgs {
     width: 50px;
+    transition: 0.5s;
 }
 .social-lists {
     /*margin-top: 35px;*/
@@ -483,55 +488,76 @@
     background-color: white;
     padding-bottom: 20px;
     position: relative;
-    padding-bottom: 90px;
+}
+
+
+
+  /*sinup form*/
+.form-signup{
+  margin-left: 75px;
+  margin-top:30px;
+}
+.form-signup input{
+  border: 2px solid black;
+  background: none;
+  margin-top: 20px;
+  background-color: #F2F2F2;
+  font-size: 16px;
+  height: 40px;
+  width: 240px;
+  font-family: 'Roboto-Light';
+  padding-left: 5px;
+}
+.form-signup textarea{
+  border: none;
+  height: 125px;
+  width: 237px;
+  background-color: #F2F2F2;
+  font-size: 16px;
+  margin-top: 20px;
+  padding-top: 10px;
+  border: 2px solid black;
+  margin-bottom: 70px;
+  font-family: 'Roboto-Light';
+  padding-left: 5px;
+}
+.form-signup input[type=submit]{
+    border: none;
+    background: black;
+    color: #fff;
+    cursor: pointer;
+    padding: 5px 12px;
+    margin-top: 10px;
+    margin-right: 13px;
+    width: 80px;
+    height: 40px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-family: 'RobotoCondensed-Bold';
+    font-size: 20px;
+}
+.form-signup p{
+  display: block;
+  margin-top: 90px;
+  text-align: center;
+  color: red;
+  transition: .300ms ease-in-out all;
+  font-size: 14px;
+  position: absolute;
+  bottom: 30px;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
 }
 .touch-title {
     font-size: 50px;
-    margin-left: 75px;
-    margin-top: 50px;
-    margin-bottom: 40px;
     font-family: 'RobotoCondensed-Bold';
     letter-spacing: 5px;
+    margin-bottom: 40px;
 }
 
-
-
-
-.form-group {
-    margin-top: 10px;
-    flex-direction: column;
-    background-color: #F2F2F2;
-    width: 240px;
-}
-.form-class {
-    flex-direction: column;
-    margin-left: 75px;
-}
-.error-text {
-    color: red;
-    font-size: 11px;
-    margin-top: 5px;
-    margin-left: 5px;
-    letter-spacing: 1px;
-    font-family: 'Roboto-Thin';
-}
-.input {
-    background-color: transparent;
-    font-size: 16px;
-    padding-left: 40px;
-    height: 40px;
-    font-family: 'Roboto-Light';
-}
-.textarea {
-    height: 125px;
-    width: 200px;
-    background-color: #F2F2F2;
-    padding-left: 40px;
-    font-size: 16px;
-    padding-top: 10px;
-    border: none;
-    font-family: 'Roboto-Light';
-}
 
 
 
@@ -616,7 +642,7 @@
 }
 .sec-chekbox-title {
     font-size: 16px;
-    margin-top: 115px;
+    margin-top: 95px;
     margin-bottom: 30px;
     font-family: 'RobotoCondensed-Light';
     font-weight: lighter;
@@ -741,14 +767,17 @@
   .send {
     right: 0px;
   }
+  .chekboxes {
+    margin-left: -70px;
+    }
+    .form-signup {
+        margin-left: 40px;
+    }
 }
 @media only screen and (max-width: 1025px) {
     .touch {
         margin: 0 auto;
         background-color: #EBE8DE;
-    }
-    .send {
-        right: 50px;
     }
     .contact {
         display: none;
@@ -763,15 +792,13 @@
     .social-imgs {
         margin-top: 0px;
     }
-    .footer{
-        margin-top: -330px;
-    }
     .under-contact {
      justify-content: space-between;
-     display: flex;
-     margin-top: 20px;
-     width: 100%;
-     flex-wrap: wrap;
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: -330px;
     }
     .center {
         width: 90%;
@@ -818,8 +845,14 @@
     .send {
         right: 10px;
     }
+    .form-signup {
+        margin-left: 20px;
+    }
 }
 @media only screen and (max-width: 670px) {
+    .touch {
+    padding-bottom: 60px;
+  }
     .colection-item {
         flex-wrap: wrap;
         justify-content: center;
@@ -870,11 +903,7 @@
     .burger-lists {
    font-size: 30px;
   }
-  .send {
-    left: 20px;
-    bottom: 50px;
-  }
-  .last-texts {
+  .footer-texts {
     margin-top: 20px;
   }
   .succes {
@@ -886,6 +915,9 @@
  .center {
     flex-wrap: wrap;
     width: 89%;
+ }
+ .touch {
+   padding-bottom: 90px;
  }
  .logo-img {
      width: 110px;
@@ -911,6 +943,12 @@
   .road {
         width: 100%;
     top: 20px;
+  }
+  .form-signup input[type=submit]{
+    left: 20px;
+  }
+  .form-signup p{
+    bottom: 70px;
   }
 }
 @media only screen and (max-width: 470px) {
