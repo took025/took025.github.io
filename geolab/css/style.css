@@ -891,8 +891,9 @@
     .form-group {
         width: 90%;
     }
-    .textarea {
-        width: 80%;
+    .form-signup textarea,
+    .form-signup input {
+        width: 100%
     }
     .vintage-up-text {
      font-size: 50px;
