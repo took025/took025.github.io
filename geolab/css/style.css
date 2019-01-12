@@ -926,7 +926,6 @@
     height: 50px;
  }
  .burger-lists {
-   font-size: 20px;
    margin-top: 20px;
   }
   .social {
@@ -962,9 +961,6 @@
  } 
 }
 @media only screen and (max-width: 470px) {
-    .burger-lists {
-   font-size: 15px;
-  }
     .colection-item {
         width: 90%;
     }
