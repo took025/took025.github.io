@@ -892,7 +892,8 @@
         width: 90%;
     }
     .form-signup textarea,
-    .form-signup input {
+    .form-signup input,
+    .form-signup{
         width: 100%
     }
     .vintage-up-text {
