@@ -904,14 +904,14 @@
     }
     .burger-lists {
    font-size: 30px;
-  }
-  .footer-texts {
-    margin-top: 20px;
-  }
-  .succes {
-    bottom: 5px;
-    left: 20px;
-  }
+    }
+    .footer-texts {
+      margin-top: 20px;
+    }
+    .succes {
+      bottom: 5px;
+      left: 20px;
+    }
 }
 @media only screen and (max-width: 570px) {
  .center {
