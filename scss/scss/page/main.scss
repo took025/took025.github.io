@@ -1,0 +1,154 @@
+body {
+    padding-top: 125px;
+}
+.header {
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+	background: $default-white;
+	top: 35px;
+	height: 85px;
+	align-items: center;
+    overflow: hidden; 
+
+    .head-child {
+         width: 100%;
+	     justify-content: space-between;
+	     align-items: center;
+         margin: 33px auto;
+         .logo-a {
+             display: flex ;
+             align-items: center; 
+             .logo-img {
+                width:35px; 
+            }
+            .text {
+                width: 160px;
+                color: black;
+                margin-left: 10px; 
+                      span {
+                          text-transform: bold; 
+                      }
+                }
+         }
+         .finder {
+            width: 170px;
+            height: 35px;
+            background-color: #bf9707;
+            border-radius: 40%;
+            margin: 15px 15px;
+            align-items: center;
+            display: flex; 
+            input{
+                border: none;
+                background-color: transparent;
+                padding-left: 20px;
+                width: 150px;
+            }
+            ::placeholder {
+                color: $default-black;
+                font-size: 12px;
+            }
+         }
+    }
+    .list {
+        margin-left: 20px;
+        .home-icon {
+            width: 20px;
+    vertical-align: middle;
+        }
+        a {
+            color: #abd2c5;
+            transition: 0.3s;
+            font-size: 14px;
+            transition: 0.3s; 
+            margin-left: 15px;
+            &:hover {
+                color: $default-blue;
+                transition: 0.3s;
+            }
+        }
+    }
+}
+
+
+
+
+.burger{
+    display: none;
+	width: 130px;
+    height: 110px;
+    border-left: 3px solid $default-blue;
+    align-items: center;
+    justify-content: center;
+    position: relative; 
+    .inside-burger {
+       width: 40px;
+	   height: 40px;
+	   flex-wrap: wrap;
+	   overflow: hidden;
+       cursor: pointer; 
+       margin-top: 40px;
+       margin-left: 40px; 
+       .rows{
+            width: 35px;
+            height: 4px;
+            background-color: $default-blue;
+            display: inline-block;
+            transition: transform .3s linear;
+            opacity: 1;
+            visibility: visible;
+        }
+        &.active {
+            .burger1 {
+                position: absolute;
+                top: 50%;
+                transform: rotate(-45deg);
+            }
+            .burger2 {
+                opacity: 0;
+                visibility: hidden;
+            }
+            .burger3 {
+                position: absolute;
+                top: 50%;
+                transform: rotate(45deg);
+            }
+        } 
+       }
+}
+.burger-menu {
+    transition: .3s;
+    position: absolute;
+    margin-left: -100%;
+    &.active{
+        transition: .3s;
+        visibility: visible;
+        position: fixed;
+        z-index: 90;
+        width: 100%;
+        margin-left: 0px;
+        background-color: rgba($color: $default-blue, $alpha: 0.7);
+        height:100%;
+        top: 100px;
+        justify-content: center;
+    }
+    .burger-menu-ul {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+        margin-top: 40px;
+        .list{
+            margin-top: 20px;
+            a {
+                color: $default-black;
+                transition: 0.3s;
+                &:hover {
+                    color: $default-red;
+                    transition: 0.3s;
+                }
+            }
+           }
+    }
+}

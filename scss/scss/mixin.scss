@@ -1,0 +1,11 @@
+@mixin transition($property:all, $time:.3s, $type:linear, $diley:0s){
+    transition: $property $time $tipe $diley;
+    -webkit-transition: $property $time $tipe $diley;
+    -o-transition: $property $time $tipe $diley;
+    -moz-transition: $property $time $tipe $diley;
+}
+
+@mixin verticalAndHorizontal($vertical, $horizontal) {
+    align-items: $vertical;
+    justify-content: $horizontal;
+}
