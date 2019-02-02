@@ -68,3 +68,9 @@
 .align-center {
  align-items: center;
 }
+.border-radius {
+	border-bottom-left-radius: 50px 50px;
+	border-bottom-right-radius: 50px 50px;
+	border-top-right-radius: 50px 50px;
+	border-top-left-radius: 50px 50px;
+}

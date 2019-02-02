@@ -1,0 +1,22 @@
+.agents{
+    .portal{
+        top: -4px;
+        .left-agents{
+            position: absolute;
+            top: 0;
+            width: 70%;
+            height: 100%;
+            background-color: white;
+            z-index: 20;
+        }
+        .right-agents {
+            position: absolute;
+            top: 0;
+            width: 30%;
+            height: 100%;
+            background-color: #a6c836;
+            right: 15px;
+            opacity: 0.8;
+        }
+    }
+}

@@ -20,7 +20,7 @@ body {
              display: flex ;
              align-items: center; 
              .logo-img {
-                width:35px; 
+              width:35px; 
             }
             .text {
                 width: 160px;
@@ -34,16 +34,18 @@ body {
          .finder {
             width: 170px;
             height: 35px;
-            background-color: #bf9707;
-            border-radius: 40%;
+            background-color: $default-yellowx2;
+            @extend .border-radius;
             margin: 15px 15px;
             align-items: center;
             display: flex; 
+            position: relative;
             input{
                 border: none;
                 background-color: transparent;
-                padding-left: 20px;
-                width: 150px;
+                top: 3px;
+                width: 140px;
+                position: absolute;
             }
             ::placeholder {
                 color: $default-black;
@@ -121,34 +123,34 @@ body {
     transition: .3s;
     position: absolute;
     margin-left: -100%;
+    background-color: rgba($color: $default-blue, $alpha: 0.7);
+    height:100%;
+    top: 100px;
     &.active{
         transition: .3s;
         visibility: visible;
         position: fixed;
-        z-index: 90;
+        z-index: 110;
         width: 100%;
         margin-left: 0px;
-        background-color: rgba($color: $default-blue, $alpha: 0.7);
-        height:100%;
-        top: 100px;
-        justify-content: center;
+        justify-content: center; 
     }
-    .burger-menu-ul {
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-        align-items: center;
-        margin-top: 40px;
-        .list{
-            margin-top: 20px;
-            a {
-                color: $default-black;
-                transition: 0.3s;
-                &:hover {
-                    color: $default-red;
+        .ul {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            align-items: center;
+            margin-top: 40px;
+            .list{
+                margin-top: 20px;
+                a {
+                    color: $default-black;
                     transition: 0.3s;
+                    &:hover {
+                        color: $default-red;
+                        transition: 0.3s;
+                    }
                 }
-            }
-           }
-    }
+               }
+        }
 }

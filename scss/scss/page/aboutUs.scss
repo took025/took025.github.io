@@ -1,0 +1,69 @@
+.about-us{
+    .about-things {
+        position: relative; 
+        // overflow: hidden;
+        img {
+            width: 100%;
+        }
+        .over-view-img {
+            position: absolute;
+            width: 50%;
+            height: 99.5%;
+            background-color: rgba(34, 132, 112, 0.9);
+            z-index: 5;
+            top: 0;
+            display: block; 
+            .cube {
+                width: 55%;
+                height: 30%;
+                border: 5px solid $default-green-bold-x2;
+                margin-top: 20%;
+                margin-left: 25%;
+                opacity: 0.2;
+            }
+            .text {
+                position: absolute;
+                top: 27%;
+                left: 20%;
+                max-width: 410px;
+                h1 {
+                    color: $default-yellowx2; 
+                    display: flex;
+                    flex-direction: column;
+                    span {
+                        color: $default-white;
+                        .row-up{
+                            width: 45px;
+                            height: 2px;
+                            background-color: $default-yellowx2;
+                            display: inline-block;
+                            margin-bottom: 10px;
+                        }
+                        .row-down {
+                            width: 25px;
+                            height: 2px;
+                            background-color: $default-yellowx2;
+                            display: inline-block;
+                            margin-left: -52px;
+                            margin-bottom: 1px;
+                            
+                        }
+                    }
+                }
+                .long-text{
+                    font-size: 14px;
+                    color: $default-white;
+                    max-width: 380px;
+                    margin-top: 30px;
+                }
+                .bottom-row{
+                    width: 90px;
+                    height: 2px;
+                    background-color: $default-yellowx2;
+                    display: block;
+                    margin-top: 60px;
+                }
+            }
+        }
+    }
+}
