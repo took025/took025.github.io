@@ -1,4 +1,54 @@
-.footer {
+.web-map { 
+    width: 100%;
+    background-color: $default-green-bold; 
+    .map-child {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        .title {
+            font-size: 28px;
+            color: $default-white;
+            padding-top: 60px;
+            position: absolute;
+            cursor: pointer;
+            transition: 0.3s;
+            &:hover {
+                color: $default-red;
+                transition: 0.3s;
+            }
+        }
+        .list {
+            margin-top: 120px;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 50px; 
+            &:nth-child(3){
+                margin-top: 170px;
+            }
+            }
+             
+            h2 {
+                color: $default-white;
+                opacity: 0.5;
+                margin-bottom: 30px;
+            }
+            a {
+                color: $default-white;
+                margin-bottom: 15px;
+                transition: 0.3s;
+                &:hover{
+                    transition: 0.3s;
+                    color: $default-yellowx2;
+                    
+                  }
+                  .icon {
+                      width: 15px;
+                      margin-right: 5px;
+                  }
+        }
+    }
+}
+.lasst {
     width: 100%;
     background-color: $default-green-bold-x2; 
     height: 30px;
@@ -7,6 +57,8 @@
     justify-content: center;
     .text {
         color: $default-white;
+        font-family: 'BPG Excelsior DejaVu 2010';
+        font-size: 12px;
         .yellow {
             color: $default-yellowx2;
         }

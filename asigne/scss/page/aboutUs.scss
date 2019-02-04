@@ -24,6 +24,8 @@
                 justify-content: center;
                 margin: 0 auto;
                 h1 {
+                    font-family: 'BPG Excelsior Caps DejaVu 2010';
+                    font-size: 28px;
                     color: $default-yellowx2; 
                     display: flex;
                     flex-direction: column;
@@ -53,6 +55,7 @@
                     max-width: 420px;
                     width: 100%;
                     margin-top: 30px;
+                    font-family: 'BPG Excelsior DejaVu 2010';
                 }
                 .bottom-row{
                     width: 90px;

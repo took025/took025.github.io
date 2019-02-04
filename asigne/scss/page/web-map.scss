@@ -6,6 +6,7 @@
         justify-content: space-between;
         position: relative;
         .title {
+            font-family: 'BPG Excelsior Caps DejaVu 2010';
             font-size: 28px;
             color: $default-white;
             padding-top: 60px;
@@ -28,6 +29,8 @@
             }
              
             h2 {
+                font-size: 18px;
+                font-family: 'BPG Excelsior Caps DejaVu 2010';
                 color: $default-white;
                 opacity: 0.5;
                 margin-bottom: 30px;
@@ -36,6 +39,7 @@
                 color: $default-white;
                 margin-bottom: 15px;
                 transition: 0.3s;
+                font-family: 'BPG Excelsior DejaVu 2010';
                 &:hover{
                     transition: 0.3s;
                     color: $default-yellowx2;

@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>work</title>
     <link rel="stylesheet" href="style/style.css" />
 </head>
@@ -13,28 +14,38 @@
     <header class="header flex ">
         <div class="head">
             <div class="header-footer-center flex space-betwen align-center">
-                <div class="left-block">
-                    <article class="lists">
+                <ul class="left-block">
+                    <li class="lists">
 
-                        <a href="#"><img src="img/call-icon.svg"> <span>599112233</span></a>
-                    </article>
-                    <article class="lists">
+                        <a href="#"><i class="fa fa-phone" aria-hidden="true"></i>
+                            <span>599112233</span></a>
+                    </li>
+                    <li class="lists">
 
-                        <a href="#"><img src="img/sms-icon.svg"><span>TPL@INSURANCE.GE</span></a>
-                    </article>
-                    <article class="lists">
+                        <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>
+                            <span>TPL@INSURANCE.GE</span></a>
+                    </li>
+                    <li class="lists">
 
-                        <a href="#"><img src="img/agent-icon.svg"><span>აგენტებისთვის</span></a>
-                    </article>
-                </div>
+                        <a href="#"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+                            <span>აგენტებისთვის</span></a>
+                    </li>
+                </ul>
                 <div class="right-block">
                     <div class="dropdown">
                         <div class="dropbtn">ENGLISH</div>
-                        <div class="dropdown-content">
-                            <a href="#">ENGLISH</a>
-                            <a href="#">ქართული</a>
-                            <a href="#">RUSSIAN</a>
-                        </div>
+                        <ul class="dropdown-content">
+                            <li>
+                                    <a href="#">ENGLISH</a>
+                            </li>
+                            <li>
+                                    <a href="#">ქართული</a>
+                            </li>
+                            <li>
+                                    <a href="#">RUSSIAN</a>
+                            </li>
+                            <a href="#">ENGLISH</a>  
+                        </ul>
                         <img class="drop-icon" src="img/language-icon.svg">
                     </div>
                 </div>
@@ -51,7 +62,8 @@
             <nav class="middle-block width-100 flex align-center  ">
                 <ul class="flex  margin-auto">
                     <li class="list">
-                        <img class="home-icon" src="img/home-icon.svg">
+                            <i class="fa fa-home" aria-hidden="true"></i>
+
                         <a href="#">
                             წესები და პირობები
                         </a>
@@ -176,7 +188,8 @@
                 <span class="dot" onclick="currentSlide(4)"></span>
             </div>
             <div class="chating" onclick="myFunction()">
-                <img class="chat-icon" src="img/chat-icon.svg">
+                    <i class="fa chat-icon fa-comments" aria-hidden="true"></i>
+
                 <h2 class="chat-title">
                     ონლაინ ჩატი
                 </h2>
@@ -199,8 +212,7 @@
                         </div>
                         <div class="middle">
                             <div class="voldemort">
-                                <div class="incoming">""
-                                </div>
+                                <div class="incoming">""</div>
                                 <div class="outgoing">
                                     <div class="bubble">"you should.ve gone for the head" </div>
                                 </div>
@@ -261,19 +273,20 @@
                         </li>
                     </ul>
                     <div class="down">
-                        <ul class="row" id="uli">
-                            <li class="btns">15 დღე</li>
-                            <li class="btns active">30 დღე</li>
-                            <li class="btns">90 დღე</li>
-                            <li class="btns">1 წელი</li>
-                        </ul>
+                        <div class="row" id="uli">
+                            <span class="btns">15 დღე</span>
+                            <span class="btns ">30 დღე</span>
+                            <span class="btns">90 დღე</span>
+                            <span class="btns">1 წელი</span>
+                        </div>
                     </div>
                 </div>
                 <div class="right">
                     <span class="f75">75.00</span>
                     <span class="c-satvirto">სატვირთო</span>
                     <span class="kategory">კატეგორია</span>
-                    <span class="day-30">30დღე</span>
+                    <span class="day-30"><i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                        30დღე</span>
                     <a href="#" class="last">ყიდვა</a>
 
                 </div>
@@ -355,34 +368,37 @@
     </section>
 
 
-    <section class="web-map ">
-        <div class="map-child center">
+    <footer class="web-map ">
+        <ul class="map-child center">
             <h1 class="title">საიტის რუქა</h1>
-            <div class="list">
+            <li class="list">
                 <h2>გვერდები</h2>
-                <a href="">მთავარი</a>
-                <a href="">წესები და პირობები</a>
-                <a href="">ჩვენს შესახებ</a>
-            </div>
-            <div class="list">
-                <a href="">გაყიდვების წერდილები</a>
-                <a href=""><img class="icon" src="img/agent-icon.svg">აგენტები</a>
-                <a href="">კონტაქტი</a>
-            </div>
-            <div class="list">
+                <a href="javascript:void(0)">მთავარი</a>
+                <a href="javascript:void(0)">წესები და პირობები</a>
+                <a href="javascript:void(0)">ჩვენს შესახებ</a>
+            </li>
+            <li class="list">
+                <a href="javascript:void(0)">გაყიდვების წერდილები</a>
+                <a href="javascript:void(0)"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+                    აგენტები</a>
+                <a href="javascript:void(0)">კონტაქტი</a>
+            </li>
+            <li class="list">
                 <h2>დაგვიკავშირდით</h2>
-                <a href=""><img class="icon" src="img/location-icon.svg">მისამართი:<span>ფალიაშვილის ქ.65</span></a>
-                <a href=""><img class="icon" src="img/sms-icon.svg">ელ.ფოსტა:<span>info@tplinsurance.ge</span></a>
-            </div>
-            <div class="list">
+                <a href="javascript:void(0)"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                    მისამართი:<span>ფალიაშვილის ქ.65</span></a>
+                <a href="javascript:void(0)"><i class="fa fa-envelope" aria-hidden="true"></i>
+                    ელ.ფოსტა:<span>info@tplinsurance.ge</span></a>
+            </li>
+            <li class="list">
                 <h2>ცხელი ხაზი</h2>
-                <a href="">(032) 2 411 411</a>
-            </div>
-        </div>
-    </section>
-    <section class="footer">
+                <a href="javascript:void(0)">(032) 2 411 411</a>
+            </li>
+        </ul>
+    <div class="lasst">
         <p class="text">Copyright © 2017 <span class="yellow">TPL</span> Insurance</p>
-    </section>
+    </div>
+</footer>
     <script type="text/javascript" src="js/script.js"></script>
 </body>
 

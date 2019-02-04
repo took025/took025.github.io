@@ -34,6 +34,10 @@
     .map-child {
         flex-wrap: wrap; 
     }
+    .map-child .list:nth-child(4),
+    .map-child .list:nth-child(5){
+       margin-top: 40px!important;
+    }
     .map-child .list {
         flex: 0 1 45%;
     }
@@ -50,12 +54,13 @@
     }
     .banner-bottom{
         transform: translateY(-30%)!important;
+        width: 98%!important;
     }
     .seilings {
         margin-top: 80px!important;
     }
     .banner-section .right {
-        padding: 0 29px!important;
+        padding: 0 25px!important;
     }
 }
 // @media only screen and (max-width : 800px){

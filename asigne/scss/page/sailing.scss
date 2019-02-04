@@ -17,6 +17,7 @@
         @extend .border-radius;
         cursor: pointer;
         a {
+            font-family: 'BPG Excelsior Caps DejaVu 2010';
             color: $default-green-bold-x2;
             font-size: 20px;
             transition: 0.3s;
@@ -35,12 +36,14 @@
         }
         .title {
             margin-top: 25px;
+            font-family: 'Myriad Pro';
         }
         .text {
             font-size: 14px;
             margin-top: 25px;
             margin-bottom: 25px;
             max-width: 300px;
+            font-family: 'BPG Excelsior DejaVu 2010';
         }
         .more {
             margin-top: 20px;
@@ -48,6 +51,7 @@
             color: $default-white;
             padding: 15px 7px 13px 7px;
             @extend .border-radius;
+            font-family: 'BPG Excelsior Caps DejaVu 2010';
             margin: 10px auto;
             transition: 0.3s;
             &:hover {
