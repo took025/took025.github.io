@@ -28,7 +28,7 @@
         }
         .banner-buttons {
           position: absolute;
-          top: 70%;
+          top: 50%;
           left: 50%;
           transform: translateX(-50%); 
           .dot {
@@ -53,16 +53,6 @@
             transform: translate(-50%,-50%);
             display: flex;
             flex-direction: column; 
-            //  .up-text{
-            //    width: 370px;
-            //    font-size: 48px;
-            //    display: flex;
-               
-            //  }
-            //  .down-text {
-            //      width: 445px;
-            //      margin-top: 25px;
-            //  }
         }
         .chating{
             height: 90px;
@@ -86,6 +76,191 @@
                 margin-top: 10px;
             }
         }
+        .banner-bottom{
+          justify-content: center;
+          width: 100%;
+          height: 200px;
+          display: flex; 
+          position: relative;
+          transform: translateY(-50%);
+          .left{ 
+            width: 80%;
+            .up{
+              background-color: $default-white;
+              width: 100%;
+              justify-content: space-between;
+              height: 130px;
+              display: flex;
+              align-items: center;
+              border-top-left-radius:20px;
+              .list{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                width: 33%;
+                height: 130px;
+                cursor: pointer;
+                .msubuqi {
+                  background-image: url(../img/msubuqi.png);
+                  width: 100px;
+                  height: 40px;
+                  background-repeat: no-repeat;
+                  background-position: center; 
+                }
+                .satvirto {
+                  background-image: url(../img/trailer.png);
+                  width: 100px;
+                  height: 40px;
+                  background-repeat: no-repeat;
+                  background-position: center; 
+                }.spec {
+                  background-image: url(../img/cementi.png);
+                  width: 100px;
+                  height: 40px;
+                  background-repeat: no-repeat;
+                  background-position: center; 
+                  
+                }.avtobusi {
+                  background-image: url(../img/samgzavro.png);
+                  width: 100px;
+                  height: 40px;
+                  background-repeat: no-repeat;
+                  background-position: center; 
+                }.moto {
+                  background-image: url(../img/moto.png);
+                  width: 100px;
+                  height: 40px;
+                  background-repeat: no-repeat;
+                  background-position: center;
+                }.misabmeli {
+                  background-image: url(../img/misabmeli.png);
+                  width: 100px;
+                  height: 40px;
+                  background-repeat: no-repeat;
+                  background-position: center; 
+                }
+                &:nth-child(1){
+                  border-top-left-radius: 20px;
+                }
+                &:nth-child(2n){
+                  background-color: #f7f6f2;
+                }
+                &:nth-child(2n-1){
+                  background-color: $default-white;
+                }
+                &.active {
+                 transform: scale(1.1,1.1);
+                 background-color: $default-green-bold; 
+                 .under-cars{
+                   color: $default-white;
+                 }
+                 .spec {
+                    background-image: url(../img/cementi-white.png);
+                 }
+                 .misabmeli {
+                   background-image: url(../img/misabmeli-white.png);
+                 }
+                 .moto {
+                   background-image: url(../img/moto-white.png);
+                 }
+                 .avtobusi {
+                   background-image: url(../img/samgzavro-white.png);
+                 }
+                 .satvirto {
+                   background-image: url(../img/trailer-white.png);
+                 }
+                 .msubuqi{
+                   background-image: url(../img/msubuqi-white.png);
+                 }
+                }
+                .cars {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+              }
+              .under-cars {
+                font-size: 14px;
+              }
+              }
+            }
+            .down {
+                background-color: #d3dbdb;
+              align-items: center;
+              display: flex;
+              height: 70px;
+              width: 100%;
+               border-bottom-left-radius:20px;
+              .row{
+                height: 30px;
+                width: 80%;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+                background-color: white;
+                align-items: center;
+                margin: 0 90px;
+                .btns{
+                  @extend .border-radius;
+                  background-color: $default-green-bold;
+                  padding: 8px 10px;
+                  margin: -20px;
+                  color: $default-white;
+                  cursor: pointer;
+                  transition: 0.3s;
+                  &:hover{
+                    background-color: $default-green;
+                    transition: 0.3s;
+                  }
+                }
+              }
+            }
+
+          }
+          .right{
+            display: flex;
+            flex-direction: column;
+            padding: 0px 50px;
+              background: $default-green;
+              height: 200px;
+              border-bottom-right-radius:20px;
+              border-top-right-radius:20px; 
+              .f75 {
+                padding-top: 25px;
+                color: $default-white;
+                 transform: translateX(20%);
+               }
+               .c-satvirto {
+                 padding-top: 15px;
+                 color: $default-white;
+                 transform: translateX(5%);
+               }
+               .kategory {
+                 padding-top: 10px;
+                 font-size: 14px;
+                 color: $default-white;
+                 transform: translateX(18%);
+               }
+               .day-30 {
+                 padding-top: 15px;
+                 color: $default-white;
+                 transform: translateX(20%);
+                 margin-bottom: 10px;
+               }
+               .last {
+                 padding: 10px 30px;
+                 background-color: $default-yellowx2;
+                 @extend .border-radius;
+                 color: $default-green-bold; 
+                 transition: 0.3s;
+                 &:hover {
+                   color: $default-red;
+                   transition: 0.3s
+                 }
+               }
+          }
+        
+        
     }
 }
 
@@ -97,3 +272,4 @@
     from {opacity: .4} 
     to {opacity: 1}
   }
+}

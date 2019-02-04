@@ -123,19 +123,18 @@ body {
 }
 .burger-menu {
     transition: .3s;
-    position: absolute;
+    position: fixed;
     margin-left: -100%;
     background-color: rgba($color: $default-blue, $alpha: 0.7);
     height:100%;
     top: 120px;
+    z-index: 110;
+    width: 100%;
+    justify-content: center;
     &.active{
         transition: .3s;
         visibility: visible;
-        position: fixed;
-        z-index: 110;
-        width: 100%;
         margin-left: 0px;
-        justify-content: center; 
     }
         .ul {
             display: flex;
@@ -145,6 +144,7 @@ body {
             margin-top: 40px;
             .list{
                 margin-top: 20px;
+                margin-left: 0px;
                 a {
                     font-size: 30px;
                     color: $default-white;

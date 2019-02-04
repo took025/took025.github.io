@@ -34,7 +34,7 @@
     .map-child {
         flex-wrap: wrap; 
     }
-    .web-map .map-child .list {
+    .map-child .list {
         flex: 0 1 45%;
     }
     .seilings{
@@ -48,43 +48,66 @@
             margin: 0 auto!important;
         }
     }
+    .banner-bottom{
+        transform: translateY(-30%)!important;
+    }
+    .seilings {
+        margin-top: 80px!important;
+    }
+    .banner-section .right {
+        padding: 0 29px!important;
+    }
 }
+// @media only screen and (max-width : 800px){
+// }
 @media only screen and (max-width : 770px) {
-    .web-map .map-child {
+    .banner-bottom .left .up .list{
+        height: 65px!important;
+    }
+    .banner-bottom .left .up {
+        flex-wrap: wrap;
+    }
+    .map-child {
         flex-direction: column!important;
         align-items: center;
     }
-    .web-map .map-child .list {
+    .map-child .list {
         margin-top: 30px!important;
         &:nth-child(2){
             margin-top: 120px!important;
         }
     }
-    .web-map .map-child h2 {
+    .map-child h2 {
         text-align: center!important;
     }
-    .about-us .over-view-img .text {
+    .over-view-img .text {
         padding: 140px 10px!important;
     }
-    .agents .portal .left-agents {
+    .left-agents {
         width: 100%!important;
         opacity: 0.8;
     }
-    .agents .portal .right-agents{
+    .right-agents{
         display: none!important;
     }
-    .about-us .over-view-img {
+    .over-view-img {
         width: 100%!important;
     }
-    .agents .portal .left-agents .for-bq {
+    .for-bq {
         padding: 20px 10px!important;
     }
-    .agents .portal .left-agents .img{
+    .left-agents .img{
         margin-right: 0px!important;
+    }
+     .banner-bottom{
+        transform: translateY(-10%)!important;
     }
 }
 @media only screen and (max-width : 650px) {
-    .agents .portal .left-agents .img {
+    .banner-section .right {
+        padding: 0 25px!important;
+    }
+    .left-agents .img {
         display: none;
     }
     .seilings .sail{
@@ -94,6 +117,16 @@
         
             flex: 0 1 100%!important;
             align-items: center!important;
+    }
+    .banner-bottom{
+        transform: translateY(0%)!important;
+    }
+    .banner-buttons {
+        top: 30%!important;
+    }
+    .banner-bottom .left .down .row{
+        width: 90%!important;
+        margin: 0 auto!important;
     }
 }
 @media only screen and (max-width : 580px) {
@@ -118,10 +151,10 @@
             margin-top: 20px;
             margin-bottom: 0px;
         }
-        .web-map .map-child .list:nth-child(3) {
+        .map-child .list:nth-child(3) {
             margin-top: 0px;
         }
-        .web-map .map-child a {
+        .map-child a {
             font-size: 16px;
         }
         .center {
@@ -129,29 +162,52 @@
         }
 }
 @media only screen and (max-width : 470px) {
-    .banner-section .banner .slideshow-container .fade .over-banner h1,
-    .banner-section .banner .slideshow-container .fade .over-banner h1 .next {
+    .over-banner h1,
+    .over-banner h1 .next {
         font-size: 30px!important;
     }
-    .banner-section .banner .slideshow-container .fade .over-banner .down-text {
+    .over-banner .down-text {
         font-size: 12px!important;
         width: 200px!important;
         margin-top: 5px!important;
     }
-    .banner-section .banner .chating {
+     .chating {
         height: 70px!important;
         width: 65px!important;
     }
-    .banner-section .banner .chating .chat-title{
+    .chating .chat-title{
         font-size: 14px!important;
     }
     .chatboxes.active{
         right: 40px!important;
     }
-    .banner-section .banner .over-banner {
+     .over-banner {
         top: 45%!important;
     }
     .burger-menu .ul .list a {
         font-size: 20px!important;
+    }
+     .btns{
+        padding: 8px 3px!important;
+        margin: -14px!important;
+    }
+     .banner-bottom .left .down{
+        width: 100%!important;
+    }
+     .banner-bottom .left .up{
+        width: 100%;
+    }
+     .banner-bottom .left{
+        width: 100%!important;
+    }
+     .banner-bottom {
+        flex-wrap: wrap;
+    }
+    .banner-section .right{
+        align-items: center;
+        width: 100%!important;
+    }
+    .seilings {
+        margin-top: 260px!important;
     }
 }
