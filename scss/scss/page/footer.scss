@@ -1,0 +1,14 @@
+.footer {
+    width: 100%;
+    background-color: $default-green-bold-x2; 
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .text {
+        color: $default-white;
+        .yellow {
+            color: $default-yellowx2;
+        }
+    }
+}

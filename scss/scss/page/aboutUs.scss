@@ -1,12 +1,10 @@
 .about-us{
-    .about-things {
-        position: relative; 
-        // overflow: hidden;
-        img {
-            width: 100%;
-        }
+    background-image: url(../img/view.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
         .over-view-img {
-            position: absolute;
             width: 50%;
             height: 99.5%;
             background-color: rgba(34, 132, 112, 0.9);
@@ -22,10 +20,9 @@
                 opacity: 0.2;
             }
             .text {
-                position: absolute;
-                top: 27%;
-                left: 20%;
-                max-width: 410px;
+                padding: 170px 50px;
+                justify-content: center;
+                margin: 0 auto;
                 h1 {
                     color: $default-yellowx2; 
                     display: flex;
@@ -53,7 +50,8 @@
                 .long-text{
                     font-size: 14px;
                     color: $default-white;
-                    max-width: 380px;
+                    max-width: 420px;
+                    width: 100%;
                     margin-top: 30px;
                 }
                 .bottom-row{
@@ -65,5 +63,4 @@
                 }
             }
         }
-    }
 }

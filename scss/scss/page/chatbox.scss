@@ -6,8 +6,9 @@ $dark: #777777;
 .chatboxes {
     position: fixed;
     z-index: 50;
-    top: 140px;
-    right: 90px;
+    top: 100%;
+    transform: translateY(-80%);
+    right: 80px;
     opacity: 0;
     visibility: hidden;
     transition: 0.5s;
@@ -220,16 +221,21 @@ button {
   position: absolute;
   border: 0;
   font-size: 1em;
-  color: $secondary;
+  background-color: $secondary;
   top:  19px;
   opacity: 0.8;
   right: 17px;
   cursor: pointer;
   outline: 0;
+  padding-top: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transition: .3s;
   &:hover {
     transform: scale(1.1);
     transition: all .3s ease-in-out;
     color: $primary;
+    background-color: #283534;
   }
 }
 

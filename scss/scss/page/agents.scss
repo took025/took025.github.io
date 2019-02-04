@@ -1,19 +1,51 @@
 .agents{
+    background-image: url(../img/road.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
     .portal{
-        top: -4px;
-        .left-agents{
-            position: absolute;
-            top: 0;
+        display: flex;
+        .left-agents{ 
             width: 70%;
             height: 100%;
             background-color: white;
-            z-index: 20;
+            padding: 100px 0; 
+            .for-bq {
+                display: flex;
+                margin: 0 auto;
+                flex-wrap: wrap;
+                padding: 100px 50px;
+            .title {
+                display: flex;
+                flex-direction: column;
+                padding-top: 30px;
+                color: $default-green-bold;
+                span {
+                    color: $default-yellow;
+                }
+            } 
+            .text {
+                max-width: 360px;
+                font-size: 14px;
+                margin-top: 40px;
+                margin-bottom: 40px;
+                color: $default-green-bold;
+            }
+            .get-in {
+                @extend .border-radius;
+                background-color: $default-green-bold;
+                color: $default-white;
+                padding: 8px 35px;
+                transition: 0.3s;
+                &:hover {
+                    color: $default-red;
+                }
+            }
+        }
         }
         .right-agents {
-            position: absolute;
-            top: 0;
-            width: 30%;
-            height: 100%;
+            width: 30%;;
             background-color: #a6c836;
             right: 15px;
             opacity: 0.8;

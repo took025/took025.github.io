@@ -1,13 +1,15 @@
 @import "variable";
 @import "reset";
 @import "base";
-@import "page/main";
 @import "mixin";
 @import "fonts";
 @import "page/responsive";
+@import "page/main";
 @import "page/head";
 @import "page/banner";
-@import "chatbox";
+@import "page/chatbox";
 @import "page/sailing";
 @import "page/aboutUs";
 @import "page/agents";
+@import "page/web-map";
+@import "page/footer";

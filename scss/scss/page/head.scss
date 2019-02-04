@@ -1,7 +1,7 @@
 .head {
     display: flex;
     justify-content: space-between;
-    position: fixed;
+    position: absolute;
     z-index: 200;
     top: 0;
     background-color: #0a383d;
@@ -37,7 +37,7 @@
                 z-index: 1; 
                  a {
                      color: black;
-                     padding: 12px 16px;
+                     padding: 7px 16px;
                      text-decoration: none;
                      display: block;
                      font-size: 14px;

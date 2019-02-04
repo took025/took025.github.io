@@ -19,6 +19,11 @@
         a {
             color: $default-green-bold-x2;
             font-size: 20px;
+            transition: 0.3s;
+            &:hover {
+                color: $default-white;
+                transition: 0.3s;
+            }
         }
     }
     .lists{
@@ -35,6 +40,7 @@
             font-size: 14px;
             margin-top: 25px;
             margin-bottom: 25px;
+            max-width: 300px;
         }
         .more {
             margin-top: 20px;
@@ -42,7 +48,12 @@
             color: $default-white;
             padding: 15px 7px 7px 7px;
             @extend .border-radius;
-            margin: 10px auto
+            margin: 10px auto;
+            transition: 0.3s;
+            &:hover {
+                transition: 0.3s;
+                color: $default-red;
+            }
         }
     }
 }

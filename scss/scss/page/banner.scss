@@ -1,6 +1,49 @@
 .banner-section {
     .banner {
-        position: relative; 
+        position: relative;  
+        .slideshow-container {
+          position: relative;
+          margin: auto; 
+          .fade {
+            animation-name: fade;
+            animation-duration: 1.5s; 
+            .over-banner {
+              width: 100%;
+              margin: 0 auto;
+              h1{
+                color: $default-green-bold; 
+                font-size: 48px;
+                .next {
+                  color: $default-white;
+                  font-size: 48px;
+                }
+              }
+              .down-text{
+                color: $default-white;
+                margin-top: 30px;
+                font-size: 14px;
+              }
+            }
+          }
+        }
+        .banner-buttons {
+          position: absolute;
+          top: 70%;
+          left: 50%;
+          transform: translateX(-50%); 
+          .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            display: inline-block;
+            transition: background-color 0.6s ease; 
+            &:hover {
+              background-color: #717171;
+            }
+          }
+        }
         .over-banner {
             align-items: center;
             position: absolute;
@@ -10,13 +53,16 @@
             transform: translate(-50%,-50%);
             display: flex;
             flex-direction: column; 
-             .up-text{
-               width: 370px;
-             }
-             .down-text {
-                 width: 445px;
-                 margin-top: 25px;
-             }
+            //  .up-text{
+            //    width: 370px;
+            //    font-size: 48px;
+            //    display: flex;
+               
+            //  }
+            //  .down-text {
+            //      width: 445px;
+            //      margin-top: 25px;
+            //  }
         }
         .chating{
             height: 90px;
@@ -26,7 +72,7 @@
             background-color: white;
             top: 40%;
             position: fixed;
-            right: 10px;
+            right: 0;
             display: flex;
             flex-direction: column;
             align-items: center; 
@@ -42,32 +88,7 @@
         }
     }
 }
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-  }
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  .active, .dot:hover {
-    background-color: #717171;
-  }
-  .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  .banner-buttons {
-    position: absolute;
-    top: 70%;
-    left: 50%;
-  }
+
   @-webkit-keyframes fade {
     from {opacity: .4} 
     to {opacity: 1}

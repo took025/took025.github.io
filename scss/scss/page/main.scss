@@ -1,13 +1,14 @@
 body {
-    padding-top: 125px;
+    padding-top: 120px;
+    min-width: 303px;
 }
 .header {
     width: 100%;
     position: fixed;
     z-index: 100;
 	background: $default-white;
-	top: 35px;
-	height: 85px;
+	top: 0px;
+	height: 120px;
 	align-items: center;
     overflow: hidden; 
 
@@ -15,7 +16,7 @@ body {
          width: 100%;
 	     justify-content: space-between;
 	     align-items: center;
-         margin: 33px auto;
+         padding-top: 30px;
          .logo-a {
              display: flex ;
              align-items: center; 
@@ -84,6 +85,7 @@ body {
     align-items: center;
     justify-content: center;
     position: relative; 
+    margin-top: 34px;
     .inside-burger {
        width: 40px;
 	   height: 40px;
