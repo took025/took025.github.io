@@ -16,6 +16,9 @@
     .finder {
         display: none;
     }
+    .burger {
+        display: block!important;
+    }
 }
 @media only screen and (max-width : 1000px){
     .map-child {
@@ -66,8 +69,14 @@
     .agents .portal .left-agents .for-bq {
         padding: 20px 10px!important;
     }
+    .agents .portal .left-agents .img{
+        margin-right: 0px!important;
+    }
 }
 @media only screen and (max-width : 650px) {
+    .agents .portal .left-agents .img {
+        display: none;
+    }
     .seilings .sail{
         right: 100px!important;
     }

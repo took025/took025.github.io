@@ -7,15 +7,17 @@
     .portal{
         display: flex;
         .left-agents{ 
+            display: flex;
             width: 70%;
             height: 100%;
             background-color: white;
             padding: 100px 0; 
             .for-bq {
-                display: flex;
+                display: block;
                 margin: 0 auto;
-                flex-wrap: wrap;
+                // flex-wrap: wrap;
                 padding: 100px 50px;
+                // flex-direction: column;
             .title {
                 display: flex;
                 flex-direction: column;
@@ -43,7 +45,13 @@
                 }
             }
         }
+        .img {
+            z-index: 20;
+            margin-right: -160px;
+            height: 280px;
+            margin-top: 100px;
         }
+    }
         .right-agents {
             width: 30%;;
             background-color: #a6c836;
