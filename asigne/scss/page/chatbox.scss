@@ -58,6 +58,7 @@ $dark: #777777;
 }
 
 .name {
+  font-family: 'BPG Excelsior DejaVu 2010';
   position: absolute;
   top: 22px;
   text-transform: uppercase;
@@ -122,6 +123,8 @@ $dark: #777777;
   padding: 20px;
   .bubble {
     background: lighten($dark, 23%);
+    font-family: 'BPG Excelsior Caps DejaVu 2010';
+    font-size: 13px;
   }
 }
 
@@ -179,6 +182,8 @@ $dark: #777777;
   .bubble {
     background: $primary;
     float: right;
+    font-family: 'BPG Excelsior Caps DejaVu 2010';
+    font-size: 13px;
   }
 }
 
