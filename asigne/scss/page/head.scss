@@ -11,47 +11,48 @@
     .right-block {
 
         
-        // .dropdown {
-        //     position: relative;
-        //     display: flex;
-        //     align-items: center; 
-        //     &:hover{
-        //         .dropdown-content {
-        //             display: block;
-        //         }
-        //         .dropbtn {
-        //             color: $default-yellow;
-        //         }
-        //     }
-        //        .dropbtn {
-        //        color: white;
-        //        font-size: 14px;
-        //        border: none; 
-        //        font-family: 'Open Sans';
-        //       }
-        //       .dropdown-content {
-        //         list-style-type:none;
-        //         top: 27px;
-        //         right: -55px;
-        //         display: none;
-        //         position: absolute;
-        //         background-color: #f1f1f1;
-        //         min-width: 160px;
-        //         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        //         z-index: 1; 
-        //          a {
-        //              color: black;
-        //              padding: 7px 16px;
-        //              text-decoration: none;
-        //              display: block;
-        //              font-size: 14px;
-        //              font-family: 'Open Sans';
-        //              transition: 0.3s;
-        //              &:hover {background-color: #ddd;}
-        //              transition: 0.3s;
-        //            }
-        //       }
-        //   }
+        .dropdown {
+            position: relative;
+            display: inline-block; 
+            &:hover{
+                .dropbtn {
+                    color: gray;
+                }
+                .dropdown-content {
+                    display: block;
+                }
+            }
+            .dropdown-content { 
+                list-style-type:none;
+                display: none;
+                position: absolute;
+                background-color: #f1f1f1;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1; 
+                li {
+                    padding: 2px;
+                }
+                a {
+                    text-decoration: none;
+                    color: $default-black;
+                    font-size: 16px;
+                    font-family: 'Open Sans';
+                    margin: 5px; 
+                    &:hover{
+                        background-color: #ddd;
+                    }
+                    }
+              }
+              .dropbtn {
+                background-color: transparent;
+                color: white;
+                padding: 10px;
+                font-size: 14px;
+                border: none;
+                font-family: 'Open Sans';
+              }
+          }
     }
     .left-block {
         display: flex; 
