@@ -10,8 +10,6 @@ body {
 	top: 0px;
 	height: 120px;
 	align-items: center;
-    overflow: hidden; 
-
     .head-child {
          width: 100%;
 	     justify-content: space-between;
@@ -81,7 +79,7 @@ body {
 .burger{
     display: none;
 	width: 130px;
-    height: 110px;
+    height: 85px;
     border-left: 3px solid $default-blue;
     align-items: center;
     justify-content: center;
@@ -93,7 +91,7 @@ body {
 	   flex-wrap: wrap;
 	   overflow: hidden;
        cursor: pointer; 
-       margin-top: 40px;
+       margin-top: 30px;
        margin-left: 40px; 
        .rows{
             width: 35px;
