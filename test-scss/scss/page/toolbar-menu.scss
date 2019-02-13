@@ -1,0 +1,86 @@
+.toolbar-menu {
+    position: fixed;
+    height: 100%;
+    background-color: #66615b;
+    overflow: scroll; 
+    .menu-box{
+        padding: 15px 15px;
+        width: 240px;
+        &:nth-child(1){
+            position: fixed;
+        }
+        &:nth-child(2){
+            margin-top: 60px;
+        }
+        a{
+            height: 40px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            .top-img{
+                width: 34px;
+                margin-left: 5px;
+            }
+            h1{
+                font-size: 20px;
+                margin-left: 10px;
+                color: $default-white;
+            }
+            span{
+                font-size: 16px;
+                color: $default-blue;
+                margin-left: 10px;
+            }
+            .img{
+                border-radius: 50%;
+                overflow: hidden;
+                width: 34px;
+                height: 34px;
+                margin-left: 5px;
+                .profile-img{
+                    width: 35px;
+                }
+            }
+            .sort-icon{
+                position: absolute;
+                right: 20px;
+                top:12px;
+                transform: translateY(-50%);
+            }
+        }
+        ::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 15px;
+            height: 1px;
+            width: calc(100% - 30px);
+            background-color: rgba(255,255,255,.5)
+        }
+    } 
+    .ul{
+        width: 240px;
+        padding: 10px 20px;
+        align-items: center;
+        .list{
+            font-size: 14px;
+            font-weight: 600;
+            margin-top: 15px;
+            color: white;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            .icons{
+                font-size: 24px;
+                color: #9c9894;
+            }
+            .text{
+                margin-left: 10px;
+                color: #d0cfcd;
+            }
+            .drop-down {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,58 @@
+.clear {
+	clear: both;
+}
+.space-betwen {
+	justify-content: space-between;
+}
+.flex-center {
+	justify-content: center;
+}
+.width-100{
+    width: 100%;
+}
+.float-left {
+	float: left;
+}
+.float-right {
+	float: right;
+}
+.flex {
+	display: flex;
+}
+.color-white {
+	color: white;
+}
+.color-black {
+	color: black;
+}
+.color-white1 {
+	color: white;
+}
+.bq-color-white {
+	background-color: white;
+}
+.header-bq-color {
+	background-color: #F0F2ED;
+	widows: 100%;
+}
+.header-footer-center{
+	width: 100%;
+	max-width: 1300px;
+	margin: 0 auto;
+}
+.bq-color-red {
+    background-color: #FF0000;
+}
+.relative {
+	position: relative;
+}
+.center {
+	width: 100%;
+	max-width: 1900px;
+	padding: 0 15px;
+	margin: 0 auto;
+	display: block;
+}
+.justify-center {
+	justify-content: center;
+}
