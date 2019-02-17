@@ -57,6 +57,8 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+
+
 var header = document.getElementById("ul");
 var btns = header.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
@@ -66,3 +68,10 @@ for (var i = 0; i < btns.length; i++) {
   this.className += " active";
   });
 }
+
+
+
+
+
+
+
