@@ -1,0 +1,70 @@
+<mat-tree [dataSource]="dataSource" [treeControl]="treeControl">
+    <mat-tree-node *matTreeNodeDef="let node" matTreeNodePadding>
+      <button mat-icon-button disabled>
+          <i class="material-icons">
+              arrow_drop_down
+              </i>
+        </button>
+
+      {{node.name}}
+    </mat-tree-node>
+    <mat-tree-node *matTreeNodeDef="let node;when: hasChild" matTreeNodePadding>
+      <button mat-icon-button matTreeNodeToggle
+              [attr.aria-label]="'toggle ' + node.name">
+        <mat-icon class="mat-icon-rtl-mirror">
+          {{treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}
+        </mat-icon>
+      </button>
+      {{node.name}}
+    </mat-tree-node>
+  </mat-tree>
+
+
+  <h1 style="transition:0.4s;" [ngClass]="{
+   'gray': h1Style,
+   'large': !h1Style
+  }">{{title}}</h1>
+
+<h1 style="transition:0.3s;" [ngStyle]="{'color' : !h1Style ? 'red' : 'purple'}">
+  hi there
+</h1>
+
+
+<h1 style="transition:0.4s;" [ngStyle]="{'color': h1Style ? 'gray' : 'black',
+              'font-size' : !h1Style ? '14px' : '22px'}">fontsize</h1>
+
+
+  <button (click)="firstClick()" >
+click me!
+  </button>
+
+
+<app-forms></app-forms>
+
+
+<div id="containter">
+  <div ng2-carouselamos class="sliders-wrapper"
+    [items]="items"
+    [width]="960"
+    [$prev]="prev"
+    [$next]="next"
+    [$item]="item"
+  >
+  </div>
+  <ng-template #prev>
+    <i class="material-icons" id="left">arrow_back</i>
+  </ng-template>
+
+
+  <ng-template #next>
+      <i class="material-icons" id="right">arrow_forward</i>
+  </ng-template>
+
+
+  <ng-template #item let-item let-i="index">
+  <div class="items">
+    <img class="img"  src="{{  item.name  }}"  >
+  </div>
+  </ng-template>
+
+</div>

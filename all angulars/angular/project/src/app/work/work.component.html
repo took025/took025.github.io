@@ -1,0 +1,244 @@
+<div class="warnings">
+  <div class="alerts error-bc-color">
+    <span class="text"> <i class="material-icons icon">error</i>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> <i class="material-icons icon clear">clear</i>
+    </span>
+  </div>
+
+  <div class="alerts info-bc-color">
+    <span class="text"> <i class="material-icons icon">info</i>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      <i class="material-icons icon clear">clear</i></span>
+  </div>
+
+  <div class="alerts succes-bc-color">
+    <span class="text"> <i class="material-icons icon">done</i>Lorem ipsum dolor adipiscing elit.
+      <i class="material-icons icon clear">clear</i></span>
+  </div>
+
+  <div class="alerts warning-bc-color">
+    <span class="text warning-tx-color"> <i class="material-icons icon warning-icon-color">warning</i>Lorem ipsum dolor
+      sit amet, consectetur adipiscing elit. <i class="material-icons icon clear">clear</i></span>
+  </div>
+</div>
+
+<mat-form-field class="date-picker" >
+    <input matInput [matDatepicker]="picker" required placeholder="Choose a date">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
+
+
+
+<!-- <div class="date-time">
+    <input class="date-input" id="meeting" value="march 2019"/>
+    <i class="material-icons calendar-icon" (click)="openDate()">calendar_today</i>
+    <i class="fa fa-calendar" aria-hidden="true" (click)="openDate()"></i>
+    <div class="date" *ngIf="openClose">
+        <div class="head">
+          <div class="left">
+            <span class="month">march </span>
+            <span class="year">2019</span>
+          </div>
+          <div class="right">
+              <i class="material-icons">chevron_left</i>
+              <i class="material-icons">chevron_right</i>
+          </div>
+        </div>
+        <ul class="weekdays">
+          <li class="weekday">S</li>
+          <li class="weekday">M</li>
+          <li class="weekday">T</li>
+          <li class="weekday">W</li>
+          <li class="weekday">T</li>
+          <li class="weekday">F</li>
+          <li class="weekday">S</li>
+        </ul>
+        <ul class="days">
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+          <li>6</li>
+          <li>7</li>
+          <li>8</li>
+          <li>8</li>
+          <li>8</li>          
+          <li>8</li>
+          <li>8</li>          
+          <li>8</li>
+          <li>8</li>
+          <li>82</li>          
+          <li>8</li>
+          <li>83</li>
+          <li>84</li>
+          <li>8</li>
+          <li>81</li>
+          <li>8</li>
+          <li>8</li>
+          <li>8</li>
+          <li>8</li>          
+          <li>8</li>
+          <li>8</li>
+          <li>8</li>
+          <li>8</li>
+          <li>8</li>
+          <li>8</li>
+          <li>8</li>
+          <li>8</li>          
+          <li>8</li>
+          <li>8</li>
+          <li>8</li>
+          <li>8</li>
+          <li>8</li>
+          <li>8</li>
+          <li>8</li>
+          <li>8</li>          
+          <li>8</li>
+          <li>8</li>
+        </ul>
+    </div>
+</div> -->
+
+<div class="buttons">
+  <mat-slide-toggle style="margin-top:10px;" color="primary">Slide me!</mat-slide-toggle>
+</div>
+  <!-- toggle slider -->
+<div>
+    <label class="switch" for="checkbox">
+      <input type="checkbox" id="checkbox" />
+      <div class="slider round"></div>
+    </label>
+  </div>
+
+  <!-- toggle slider -->
+
+<div class="chekboxes">
+  <div class="redio-chechbox flex">
+    <label class="container">
+      <span class="container-text">redio</span>
+      <input type="radio" name="radio">
+      <span class="checkmark-radio">
+        <i class="fa fa-circle-o" aria-hidden="true"></i>
+        <i class="fa fa-circle" aria-hidden="true"></i>
+        <i class="fa fa-circle big-icon" aria-hidden="true"></i>
+      </span>
+    </label>
+    <label class="container">
+      <span class="container-text">radio</span>
+      <input type="radio" name="radio">
+      <span class="checkmark-radio">
+        <i class="fa fa-circle-o" aria-hidden="true"></i>
+        <i class="fa fa-circle" aria-hidden="true"></i>
+        <i class="fa fa-circle big-icon" aria-hidden="true"></i>
+      </span>
+    </label>
+  </div>
+  <div class="chekbox">
+    <label class="container">
+      <p class="checkbox-text">recive images</p>
+      <input type="checkbox">
+      <span class="checkmark">
+        <i class="fa fa-square-o big-icon" aria-hidden="true"></i>
+        <i class="fa fa-check-square big-icon" aria-hidden="true"></i>
+      </span>
+    </label>
+  </div>
+</div>
+
+<mat-form-field class="inputt-parent">
+  <input id="input" class="test-input" placeholder="fillout" required matInput>
+</mat-form-field>
+
+
+
+
+
+<!-- <section class="test-forms">
+    <form class="form" id="basic-form">
+      <div class="form-group">
+        <input class="input" type="text" id="basic-form-first-name" placeholder="First Name" required="required"/>
+        <label class="label" for="basic-form-first-name">First Name</label>
+      </div>
+    </form>
+  </section> -->
+<!-- <form class="testing-input">
+  <input class="input" id="inp1" minlength="5" type="text" required>
+  <label class="placeholder-parent" for="inp1">
+    <span class="placeholder">name</span>
+  </label>
+  <p class="validate">name is 
+    <strong>required</strong>
+  </p>
+</form> -->
+
+<div class="form">
+    <input class="input" id="inp1" type="email" name="email" placeholder="email"/>
+    <label class="label" for="inp1">E-mail *</label>
+    <div class="error">Invalid E-mail</div>
+</div>
+
+<!-- <div class="dropdown">
+  <div class="dropbtn">Dropdown <i class="material-icons">arrow_drop_down</i></div>
+  <ul class="dropdown-content">
+    <li class="drop-list">
+      <a href="#">Link 1</a>
+      <a href="#">options</a>
+    </li>
+    <li class="drop-list">
+      <a href="#">Link 1</a>
+      <a href="#">options</a>
+    </li>
+    <li class="drop-list">
+      <a href="#">Link 1</a>
+      <a href="#">options</a>
+    </li>
+    <li class="drop-list">
+      <a href="#">Link 1</a>
+      <a href="#">options</a>
+    </li>
+  </ul>
+</div> -->
+
+<a class="rotate"  (click)="rotate($event)">
+  <i class="fa fa-refresh"></i>
+</a>
+<button (click)="toggle()" class="someclass">11</button>
+<input id="btn1" class="someclass" value="{{text}}" type="text">
+<span>{{clickMessage}}</span>
+<button (click)="toggle($event)" class="someclass" >11</button>
+<button (click)="toggle($event)" class="someclass" id="btn2">22</button>
+<button (click)="toggle($event)" class="someclass" >11</button>
+<button (click)="toggle($event)" class="someclass" id="btn2">22</button>
+
+
+
+
+<!-- <mat-radio-group style="display:flex; flex-direction:column;">
+    <mat-radio-button color="primary" value="1">Option 1</mat-radio-button>
+    <mat-radio-button color="primary" value="2">Option 2</mat-radio-button>
+  </mat-radio-group>
+  
+<mat-checkbox color="primary"></mat-checkbox>
+</div> -->
+
+<!-- <select class="dropdown">
+  <option label="--select something --"></option>
+  <option>sadasd</option>
+  <option>a</option>
+  <option>ds</option>
+  <option>as</option>
+ </select> -->
+
+<!-- 
+ <mat-form-field>
+    <select matNativeControl required>
+      <option label="--select something --"></option>
+      <option *ngFor="let food of foods" [value]="food.value">
+        {{food.viewValue}}
+      </option>
+    </select>
+ </mat-form-field> -->
+
+
+  

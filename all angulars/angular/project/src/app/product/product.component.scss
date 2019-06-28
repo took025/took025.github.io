@@ -1,0 +1,28 @@
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    /* max-width: 800px; */
+    list-style: none;
+    height: 45px;
+    margin-top: 5px;
+}
+li {
+  flex:0 1 15%;
+}
+.btn {
+    background-color: blue;
+    color: white; 
+    margin-left: -20px;
+}
+.col-md-2{
+  max-width: 60px;
+  padding: 0;
+}
+.row {
+  margin-left: 100px;
+}
+.card-body{
+  width: 100%;
+}

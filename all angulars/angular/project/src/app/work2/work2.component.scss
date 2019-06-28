@@ -1,0 +1,351 @@
+$default-white: #FFFFFF;
+$default-light-blue: #16527E;
+$default-light-gray: #F7F7F7;
+$default-gray:#707070;
+$default-light-gray-x2: #EDEDED;
+$default-red: #D65555;
+$default-green: #76BC4B;
+$default-name-color: #191919;
+$default-row-color: #EAEAEA;
+$default-light-blue-x2: #D6E5ED;
+$default-black: #333333;
+$default-brown: #E8964F;
+$default-text-red: #C96868;
+$default-light-red: #FCE7DA;
+
+.scroll {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .flex-tree-container {
+    // min-width: 1800px;
+    overflow: scroll;
+
+    ul {
+      display: flex;
+      list-style: none;
+      padding-left: 0;
+      text-align: center;
+
+      >li {
+        box-sizing: border-box;
+        flex: 1;
+        padding: 0 5px;
+
+        >*:not(ul):not(li) {
+          display: inline-block;
+          // margin: 0 auto;
+          position: relative;
+          width: 360px;
+          background-color: $default-light-gray;
+          border-radius: 5px;
+          padding: 20px 20px;
+          margin: 0px auto 80px auto;
+
+          &:not(:last-child) {
+            &:after {
+              border-left: 2px solid black;
+              bottom: -1 * 70px;
+              content: '';
+              height: 70px;
+              // left: 50%;
+              position: absolute;
+              left: 49.4%;
+              z-index: -1;
+            }
+          }
+        }
+
+        ul {
+          margin-top: (30px * 2) - 1;
+          position: relative;
+
+          li {
+            position: relative;
+
+
+            &:after,
+            &:before {
+              border-top: 2px solid black;
+              content: '';
+              position: absolute;
+              top: -1 * 70px;
+              width: 50%;
+            }
+
+            &:before {
+              border-left: 2px solid black;
+              height: 70px;
+              left: 50%;
+            }
+
+            &:after {
+              right: 50%;
+            }
+
+            &:first-child,
+            &:last-child {
+              &:before {
+                border-top: 2px solid black;
+                border-top-left-radius: 10px;
+                top: -1 * 70px;
+              }
+
+              &:after {
+                border: none;
+              }
+            }
+
+            &:last-child {
+              &:before {
+                border-left: 0;
+                border-right: 2px solid black;
+                border-top-left-radius: 0;
+                border-top-right-radius: 10px;
+                left: 0px;
+                right: 50%;
+                // margin-left: -2px;
+              }
+            }
+
+
+            &:only-child {
+              &:before {
+                border-top: none;
+                border-top-right-radius: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.history__header {
+  height: 120px;
+  position: relative;
+  background-color: transparent !important;
+
+  .header__icon {
+    bottom: -40px;
+  }
+
+  .main__time__date {
+    margin: 20px auto;
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+
+    .date,
+    .time {
+      font-size: 14px;
+
+      .date__icons {
+        font-size: 15px;
+        transform: translateY(2px);
+      }
+    }
+  }
+
+  .img {
+    position: relative;
+    width: 40px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+
+    img {
+      width: 40px;
+    }
+  }
+}
+
+.parent {
+  .first-li {
+    height: 800px;
+  }
+}
+
+.box {
+  position: relative;
+
+  .icon {
+    position: absolute;
+    left: 47%;
+    border-radius: 50%;
+  }
+
+  .box__header {
+    display: flex;
+    justify-content: space-between;
+
+    .title {
+      font-size: 13px;
+      font-weight: bold;
+    }
+  }
+
+  .time__date,
+  .time__date i {
+    font-size: 11px;
+    margin: 0 5px;
+  }
+
+  .profile {
+    position: relative;
+    margin: 10px 0;
+    text-align: left;
+
+    .profile__img {
+      width: 30px;
+      border-radius: 50%;
+    }
+
+    .name {
+      font-size: 14px;
+      margin-left: 10px;
+    }
+  }
+
+  .profiles {
+    margin: 10px 0;
+    text-align: left;
+    display: flex;
+    align-items: center;
+
+    .imgs {
+      position: relative;
+      width: 60px;
+      height: 35px;
+
+      img {
+        width: 30px;
+        border-radius: 50%;
+        position: absolute;
+      }
+
+      .img2 {
+        left: 10px;
+      }
+
+      .img3 {
+        left: 20px;
+      }
+    }
+  }
+
+  .text {
+    margin: 0 auto;
+    text-align: left;
+    padding: 5px;
+    background-color: #D6E5ED;
+    color: $default-black;
+    font-size: 14px;
+    width: 95%;
+    border-radius: 10px;
+  }
+
+  .down {
+    position: relative;
+    margin-top: 30px;
+
+    .dashe {
+      position: absolute;
+      top: -10px;
+      width: 110%;
+      height: 2px;
+      border-bottom: 2px dashed #EDEDED;
+      left: -15px;
+    }
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 40px;
+
+    .timing {
+      margin-left: -10px;
+    }
+  }
+
+  .block {
+    display: flex;
+    align-items: center;
+    margin: 10px auto;
+  }
+
+  .reply {
+    width: 95%;
+    text-align: left;
+    font-size: 14px;
+    background-color: $default-light-gray-x2;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px auto;
+    position: relative;
+
+    &::after {
+      display: block;
+      position: absolute;
+      top: -30px;
+      left: 20px;
+      content: '';
+      width: 0px;
+      height: 30px;
+      border-left: solid 7px transparent;
+      border-right: solid 7px transparent;
+      border-bottom: solid 7px #EDEDED;
+    }
+  }
+}
+
+.icon {
+  border-radius: 50%;
+  position: absolute;
+  z-index: 10000;
+  left: 47%;
+}
+
+.box-icon {
+  top: -50px;
+}
+
+.done-icon {
+  background-color: $default-green;
+  color: $default-white;
+}
+
+.timer-icon {
+  background-color: $default-light-gray;
+  color: $default-brown;
+}
+
+.bottom__icon {
+  bottom: -45px;
+}
+
+.clear-icon {
+  background-color: $default-red;
+  color: $default-white;
+}
+
+.profile-icon {
+  font-size: 16px !important;
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  border-radius: 50%;
+}
+
+.err {
+  border: 2px solid $default-red;
+
+  .text {
+    background-color: $default-light-red;
+    color: $default-text-red;
+  }
+}

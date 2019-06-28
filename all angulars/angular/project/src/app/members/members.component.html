@@ -1,0 +1,64 @@
+<mat-form-field class="example-user-input">
+        <mat-select placeholder="Tooltip position" [formControl]="position">
+          <mat-option *ngFor="let positionOption of positionOptions" [value]="positionOption">
+            {{positionOption}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      
+      <button class="action" mat-raised-button
+              matTooltip="Info about the action"
+              [matTooltipPosition]="position.value"
+              aria-label="Button that displays a tooltip in various positions">
+        Action
+      </button>
+
+
+
+<button mat-button [matMenuTriggerFor]="menu">Menu</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>Item 1</button>
+  <button mat-menu-item>Item 2</button>
+</mat-menu>
+
+<mat-slide-toggle>Slide me!</mat-slide-toggle>
+
+<mat-slider></mat-slider>
+
+
+<h4>mat select</h4>
+<mat-form-field>
+  <mat-select placeholder="Favorite animal" [formControl]="animalControl" required>
+    <mat-option>--</mat-option>
+    <mat-option *ngFor="let animal of animals" [value]="animal">
+      {{animal.name}}
+    </mat-option>
+  </mat-select>
+  <mat-error *ngIf="animalControl.hasError('required')">Please choose an animal</mat-error>
+  <mat-hint>{{animalControl.value?.sound}}</mat-hint>
+</mat-form-field>
+
+
+<section style="margin:0 auto; width: 400px;">
+    <h4>native html select</h4>
+    <mat-form-field >
+      <mat-label>Select your car (required)</mat-label>
+      <select matNativeControl required [formControl]="selectFormControl">
+        <option label="--select something --"></option>
+        <option value="saab">Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </select>
+      <mat-error *ngIf="selectFormControl.hasError('required')">
+        This field is required
+      </mat-error>
+    </mat-form-field>
+</section>
+
+<mat-radio-group>
+    <mat-radio-button value="1">Option 1</mat-radio-button>
+    <mat-radio-button value="2">Option 2</mat-radio-button>
+  </mat-radio-group>
+
+
+  <app-member-forms></app-member-forms>

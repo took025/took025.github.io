@@ -1,0 +1,92 @@
+<section class="head">
+    <header [class.big-header]="!isOpen" >
+      <i class="material-icons" (click)="togglei()" [class.i]="!isOpen">label_important</i>
+    </header>
+  <div class="layout" [class.min]="!isOpen">
+           <div class="tt">
+                <a href="../index.html"><img width="60" alt="Angular Logo"
+                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="></a>
+             <h1 class="title">title</h1>        
+           </div>
+    <ul class="middle-block"> 
+      <li class="lists"  role="presentation" routerLinkActive="active">
+          <a (click)="load()" [routerLink]="[ '/members' ]">
+            <i class="far fa-address-card"></i>
+            members</a>
+      </li>
+      <li  class="lists" role="presentation" routerLinkActive="active">
+          <a (click)="load()" [routerLink]="[ '/product' ]">
+            <i class="fas fa-clipboard-list"></i>
+            product</a>
+      </li>
+      <!-- <li  class="lists" role="presentation" routerLinkActive="active">
+          <a (click)="load()" [routerLink]="[ '/products' ]">
+            <i class="fas fa-draw-polygon"></i>
+            products</a>
+      </li> -->
+      <li  class="lists" role="presentation" routerLinkActive="active">
+          <a (click)="load()" [routerLink]="[ '/materials' ]">
+            <i class="fas fa-box"></i>
+            materials</a>
+      </li>
+      <li  class="lists" role="presentation" routerLinkActive="active">
+          <a (click)="load()" [routerLink]="[ '/tree' ]">
+            <i class="fas fa-air-freshener"></i>
+            tree</a>
+      </li>
+      <li  class="lists" role="presentation" routerLinkActive="active">
+          <a (click)="load()" [routerLink]="[ '/work' ]">
+            <i class="fas fa-dharmachakra"></i>
+            work</a>
+      </li>
+      <li class="lists"  role="presentation" routerLinkActive="active">
+          <a (click)="load()" [routerLink]="[ '/carousel' ]">
+            <i class="fas fa-biohazard"></i>
+            carousel</a>
+      </li>
+      <li class="lists"  role="presentation" routerLinkActive="active">
+          <a (click)="load()" [routerLink]="[ '/work2' ]">
+            <i class="far fa-address-card"></i>
+            work2</a>
+      </li>
+      <li class="lists"  role="presentation" routerLinkActive="active">
+        <a (click)="load()" [routerLink]="[ '/heroes' ]">
+          <i class="fas fa-box"></i>
+          heroes</a>
+    </li>
+    <li class="lists"  role="presentation" routerLinkActive="active">
+      <a (click)="load()" [routerLink]="[ '/crisis' ]">
+        <i class="far fa-address-card"></i>
+        crisis-center</a>
+  </li>
+    </ul>
+  </div >
+      <div class="containerr" id="contain" [class.min-container]="isOpen" >
+          <router-outlet></router-outlet>
+      </div>
+</section>
+
+<!-- <section class="section-2" id="load"
+[class.minimaze]="!isOpen">
+		<span class="loader loader-double"></span>
+	</section> -->
+
+<!-- <section class="section" id="preloader">
+		<span class="loader loader-quart"></span>
+	</section> -->
+
+<!-- <form [formGroup]="form" class="form">
+        <section>
+            <mat-form-field>
+                <input matInput
+                       placeholder="Choose a date"
+                       [satDatepicker]="picker2"
+                       formControlName="date">
+                <sat-datepicker style="background-color: red;" #picker2 [rangeMode]="true">
+                </sat-datepicker>
+                <sat-datepicker-toggle  matSuffix [for]="picker2"></sat-datepicker-toggle>
+            </mat-form-field>
+        </section>
+</form> -->
+
+

@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>first scss</title>
+    <link  rel="stylesheet" href="style/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<section style="overflow-x: scroll;">
+    <div class="secon-history">
+        <div>
+         <div class="history__header" >
+                 <div class="main__time__date">
+                   <span class="date"><i class="material-icons date__icons">calendar_today</i> 11/02/2019</span>
+                   <span class="time"><i class="material-icons date__icons">access_time</i> 12:00</span>
+               </div>
+           <div class="img">
+             <img class="" src="http://bootdey.com/img/Content/avatar/avatar7.png">
+           </div>
+         </div>
+         <div class="square dif">
+           <span class="before__icon">
+             <i class="material-icons done-icon">done</i>
+          </span>
+         </div>
+       </div>
+     
+       <div class="main-box">
+     
+       <div class="box">
+           <div class="boxes ">
+               <div class="box__header">
+                   <h4 class="title">გასაცნობად</h4>
+                   <div class="time__date">
+                   <span class="date"><i class="material-icons date__icons">calendar_today</i> 11/02/2019</span>
+                   <span class="time"><i class="material-icons date__icons">access_time</i> 12:00</span>
+                 </div>
+               </div>
+     
+               <div class="imgs ">
+                   <img class="img"src="https://bestwaterdamagerepairexpertslasvegashenderson.com/wp-content/uploads/2018/11/defaultFemalePP.png">
+                   <img class="img img2"src="https://bestwaterdamagerepairexpertslasvegashenderson.com/wp-content/uploads/2018/11/defaultFemalePP.png">
+                   <img class="img img3"src="https://bestwaterdamagerepairexpertslasvegashenderson.com/wp-content/uploads/2018/11/defaultFemalePP.png">
+                 </div>
+                 <ul class="rs" [class.show]='show'>
+                     <li class="lists">
+                         <img class="img"
+                         src="http://bootdey.com/img/Content/avatar/avatar7.png">
+                           <span class="name">დავით  სანადირაძე</span>
+                 </li>
+                   <li class="lists">
+                       <img class="img"
+                       src="http://bootdey.com/img/Content/avatar/avatar7.png">
+                         <span class="name">დავით  სანადირაძე</span>
+                 </li>
+                   <li class="lists">
+                       <img class="img"
+                       src="http://bootdey.com/img/Content/avatar/avatar7.png">
+                         <span class="name">დავით  სანადირაძე</span>
+                 </li>
+                   <li class="lists">
+                           <img class="img"
+                           src="http://bootdey.com/img/Content/avatar/avatar7.png">
+                             <span class="name">დავით  სანადირაძე</span>
+                   </li>
+                   <li class="lists">
+                       <img class="img"
+                       src="http://bootdey.com/img/Content/avatar/avatar7.png">
+                         <span class="name">დავით  სანადირაძე</span>
+                 </li>
+                 </ul>
+                 
+                 <div class="about">
+                   <span class="ansverable" (click)="showAnsverable()"> 5 pasuxismgebeli <i class="material-icons drop">arrow_drop_down</i></span>
+                 </div>
+                 <div class="down"> 
+                   <span class="dashe"></span>
+                 <div class="img__parent ">
+                     <img class="img"
+                       src="https://bestwaterdamagerepairexpertslasvegashenderson.com/wp-content/uploads/2018/11/defaultFemalePP.png">
+                   </div>
+                   <i class="material-icons profile__icon done-icon">done</i>
+                   <div class="about">
+                       <span class="name">სოფო გაცეჩილაძე</span>
+                       <span class="mission ">დავალება 0231</span>
+                       <span class="mission__date__time"><i class="material-icons date__icons">calendar_today</i> 11/02/2019, 14:20</span>
+                   </div>
+                   <div class="answer ">
+                       <span class="text">ვეთანხმები მოცემულ დოკუმენტს, ვანიჭებ ნომერს.</span>
+                     </div>
+                 </div>
+                 <div class="down">
+                     <div class="img__parent ">
+                         <img class="img"
+                           src="https://bestwaterdamagerepairexpertslasvegashenderson.com/wp-content/uploads/2018/11/defaultFemalePP.png">
+                       </div>
+                       <i class="material-icons profile__icon profile-timer-icon">av_timer</i>
+                       <div class="about">
+                           <span class="name">სოფო გაცეჩილაძე</span>
+                           <span class="mission ">დავალება 0231</span>
+                       </div>
+                 </div>
+           </div>
+     
+     
+           <div class="boxes row-Y single-box">
+             <span class="before__icon">
+               <i class="material-icons done-icon">done</i>
+            </span>
+            <div class="box__header">
+               <h4 class="title">გასაცნობად</h4>
+               <div class="time__date">
+               <span class="date"><i class="material-icons date__icons">calendar_today</i> 11/02/2019</span>
+               <span class="time"><i class="material-icons date__icons">access_time</i> 12:00</span>
+             </div>
+           </div>
+     
+           <div class="imgs ">
+               <img class="img"src="https://bestwaterdamagerepairexpertslasvegashenderson.com/wp-content/uploads/2018/11/defaultFemalePP.png">
+               <img class="img img2"src="https://bestwaterdamagerepairexpertslasvegashenderson.com/wp-content/uploads/2018/11/defaultFemalePP.png">
+               <img class="img img3"src="https://bestwaterdamagerepairexpertslasvegashenderson.com/wp-content/uploads/2018/11/defaultFemalePP.png">
+             </div>
+             <div class="about">
+               <span class="ansverable"> 5 pasuxismgebeli <i class="material-icons drop">arrow_drop_down</i></span>
+             </div>
+             <div class="reply ">
+                 <span class="text">ვეთანხმები მოცემულ დოკუმენტს, ვანიჭებ ნომერს.</span>
+               </div>
+             <div class="down">
+                 <span class="dashe"></span>
+             <div class="img__parent ">
+                 <img class="img"
+                   src="https://bestwaterdamagerepairexpertslasvegashenderson.com/wp-content/uploads/2018/11/defaultFemalePP.png">
+               </div>
+               <i class="material-icons profile__icon done-icon">done</i>
+               <div class="about">
+                   <span class="name">სოფო გაცეჩილაძე</span>
+                   <span class="mission ">დავალება 0231</span>
+                   <span class="mission__date__time"><i class="material-icons date__icons">calendar_today</i> 11/02/2019, 14:20</span>
+               </div>
+               <div class="answer ">
+                   <span class="text">ვეთანხმები მოცემულ დოკუმენტს, ვანიჭებ ნომერს.</span>
+                 </div>
+             </div>
+             <div class="down">
+                 <div class="img__parent ">
+                     <img class="img"
+                     src="http://bootdey.com/img/Content/avatar/avatar7.png">
+                   </div>
+                   <i class="material-icons profile__icon profile-timer-icon">av_timer</i>
+                   <div class="about">
+                       <span class="name">ნიკოლოზ დოლიძე</span>
+                       <span class="mission ">დავალება 0231</span>
+                   </div>
+             </div>
+           </div>
+     
+     
+           <div class="small-square">
+             <span class="before__icon">
+               <i class="material-icons timer-icon">av_timer</i>
+            </span>
+           </div>
+     
+     
+           <div class="under__box">
+                 <div class="under__boxes ">
+                     <div class="box__header">
+                         <h4 class="title">დასადასტურებლად</h4>
+                         <div class="time__date">
+                         <span class="date"><i class="material-icons date__icons">calendar_today</i> 11/02/2019</span>
+                         <span class="time"><i class="material-icons date__icons">access_time</i> 12:00</span>
+                       </div>
+                     </div>
+           
+                     <div class="img__parent ">
+                         <img class="img"
+                           src="https://bestwaterdamagerepairexpertslasvegashenderson.com/wp-content/uploads/2018/11/defaultFemalePP.png">
+                       </div>
+                       <div class="about">
+                           <span class="name">სოფო გაცეჩილაძე</span>
+                           <span class="mission ">დავალება 0231</span>
+                           <span class="mission__date__time"><i class="material-icons date__icons">calendar_today</i> 11/02/2019, 14:20</span>
+                       </div>
+                       <div class="reply ">
+                         <span class="text">ვეთანხმები მოცემულ დოკუმენტს, ვანიჭებ ნომერს.</span>
+                       </div>
+                       <div class="down">
+                           <span class="dashe"></span>
+                       <div class="img__parent ">
+                           <img class="img"
+                           src="http://bootdey.com/img/Content/avatar/avatar7.png">
+                         </div>
+                         <i class="material-icons profile__icon profile-timer-icon">av_timer</i>
+                         <div class="about">
+                             <span class="name">ნიკოლოზ დოლიძე</span>
+                             <span class="mission ">დავალება 0231</span>
+                         </div>
+                       </div>
+                   
+                 </div>
+                 <div class="under__boxes heigh-200">
+                     <div class="box__header">
+                         <h4 class="title">ხელმოსაწერად</h4>
+                         <div class="time__date">
+                         <span class="date"><i class="material-icons date__icons">calendar_today</i> 11/02/2019</span>
+                         <span class="time"><i class="material-icons date__icons">access_time</i> 12:00</span>
+                       </div>
+                     </div>
+           
+                     <div class="img__parent ">
+                         <img class="img"
+                           src="https://bestwaterdamagerepairexpertslasvegashenderson.com/wp-content/uploads/2018/11/defaultFemalePP.png">
+                       </div>
+                       <div class="about">
+                           <span class="name">ელენე ორჯონიკიძე</span>
+                           <span class="mission ">დავალება 0231</span>
+                           <span class="mission__date__time"><i class="material-icons date__icons">calendar_today</i> 11/02/2019, 14:20</span>
+                       </div>
+                       <div class="down">
+                           <span class="dashe"></span>
+                       <div class="img__parent ">
+                           <img class="img"
+                           src="http://bootdey.com/img/Content/avatar/avatar7.png">
+                         </div>
+                         <i class="material-icons profile__icon profile-timer-icon">av_timer</i>
+                         <div class="about">
+                             <span class="name">შოთა მიქაია</span>
+                             <span class="mission ">დავალება 0231</span>
+                         </div>
+                       </div>
+                     <span class="end">
+                         <i class="material-icons end-icon end-timer-icon">av_timer</i>
+                      </span>
+               </div>
+     
+     
+               <div>
+                   <div class="small-square dif-square1">
+                     <span class="before__icon">
+                       <i class="material-icons done-icon">done</i>
+                    </span>
+                   </div>
+                     <div class="def-2child">
+                       <div class="under__boxes ">
+                           <div class="box__header">
+                               <h4 class="title">დასადასტურებლად</h4>
+                               <div class="time__date">
+                               <span class="date"><i class="material-icons date__icons">calendar_today</i> 11/02/2019</span>
+                               <span class="time"><i class="material-icons date__icons">access_time</i> 12:00</span>
+                             </div>
+                           </div>
+                 
+                           <div class="img__parent ">
+                               <img class="img"
+                                 src="https://bestwaterdamagerepairexpertslasvegashenderson.com/wp-content/uploads/2018/11/defaultFemalePP.png">
+                             </div>
+                             <div class="about">
+                                 <span class="name">ელენე ორჯონიკიძე</span>
+                                 <span class="mission ">დავალება 0231</span>
+                                 <span class="mission__date__time"><i class="material-icons date__icons">calendar_today</i> 11/02/2019, 14:20</span>
+                             </div>
+                             <div class="reply ">
+                               <span class="text">ვეთანხმები მოცემულ დოკუმენტს, ვანიჭებ ნომერს.</span>
+                             </div>
+                             <div class="down">
+                                 <span class="dashe"></span>
+                             <div class="img__parent ">
+                                 <img class="img"
+                                 src="http://bootdey.com/img/Content/avatar/avatar7.png">
+                               </div>
+                               <i class="material-icons profile__icon profile-timer-icon">av_timer</i>
+                               <div class="about">
+                                   <span class="name">შოთა მიქაია</span>
+                                   <span class="mission ">დავალება 0231</span>
+                               </div>
+                             </div>
+                       </div>
+                       <div class="under__boxes heigh-200">
+                           <div class="box__header">
+                               <h4 class="title">ხელმოსაწერად</h4>
+                               <div class="time__date">
+                               <span class="date"><i class="material-icons date__icons">calendar_today</i> 11/02/2019</span>
+                               <span class="time"><i class="material-icons date__icons">access_time</i> 12:00</span>
+                             </div>
+                           </div>
+                 
+                           <div class="img__parent ">
+                               <img class="img"
+                               src="http://bootdey.com/img/Content/avatar/avatar7.png">
+                             </div>
+                             <div class="about">
+                                 <span class="name">შოთა მიქაია</span>
+                                 <span class="mission ">დავალება 0231</span>
+                                 <span class="mission__date__time"><i class="material-icons date__icons">calendar_today</i> 11/02/2019, 14:20</span>
+                             </div>
+                             <div class="down">
+                               <span class="dashe"></span>
+                             <div class="img__parent ">
+                                 <img class="img"
+                                 src="http://bootdey.com/img/Content/avatar/avatar7.png">
+                               </div>
+                               <i class="material-icons profile__icon profile-timer-icon">av_timer</i>
+                               <div class="about">
+                                   <span class="name">დავით ნადირაძე</span>
+                                   <span class="mission ">დავალება 0231</span>
+                               </div>
+                             </div>
+                     </div>
+                 </div>
+               
+               </div>
+             </div>
+       </div>
+     
+     
+     
+     
+     
+     
+       <div class="box">
+           <div class="boxes err">
+               <div class="box__header">
+                   <h4 class="title">ხელმოსაწერად</h4>
+                   <div class="time__date">
+                   <span class="date"><i class="material-icons date__icons">calendar_today</i> 11/02/2019</span>
+                   <span class="time"><i class="material-icons date__icons">access_time</i> 12:00</span>
+                 </div>
+               </div>
+     
+               <div class="img__parent ">
+                   <img class="img"
+                     src="https://bestwaterdamagerepairexpertslasvegashenderson.com/wp-content/uploads/2018/11/defaultFemalePP.png">
+                 </div>
+                 <div class="about">
+                     <span class="name">შოთა მიქაია</span>
+                 </div>
+                 <div class="answer ">
+                     <span class="text">ვეთანხმები მოცემულ დოკუმენტს, ვანიჭებ ნომერს.</span>
+                   </div>
+                 <div class="down">
+                     <span class="dashe"></span>
+                 <div class="img__parent ">
+                     <img class="img"
+                       src="https://bestwaterdamagerepairexpertslasvegashenderson.com/wp-content/uploads/2018/11/defaultFemalePP.png">
+                   </div>
+                   <i class="material-icons profile__icon done-icon">done</i>
+                   <div class="about">
+                       <span class="name">ელენე ორჯონიკიძე</span>
+                       <span class="mission ">დავალება 0231</span>
+                       <span class="mission__date__time"><i class="material-icons date__icons">calendar_today</i> 11/02/2019, 14:20</span>
+                   </div>
+                   <div class="reply ">
+                       <span class="text">ვეთანხმები მოცემულ დოკუმენტს, ვანიჭებ ნომერს.</span>
+                     </div>
+                 </div>
+           </div>
+           <div class="small-square diff-square3">
+             <span class="before__icon">
+               <i class="material-icons">clear</i>
+            </span>
+             </div>
+             <div class="under__box">
+               <div class="under__boxes " style="transform: translateX(-140px);">
+                   <div class="box__header">
+                       <h4 class="title">დასადასტურებლად</h4>
+                       <div class="time__date">
+                       <span class="date"><i class="material-icons date__icons">calendar_today</i> 11/02/2019</span>
+                       <span class="time"><i class="material-icons date__icons">access_time</i> 12:00</span>
+                     </div>
+                   </div>
+         
+                   <div class="img__parent ">
+                       <img class="img"
+                         src="https://bestwaterdamagerepairexpertslasvegashenderson.com/wp-content/uploads/2018/11/defaultFemalePP.png">
+                     </div>
+                     <i class="material-icons profile__icon done-icon">done</i>
+                     <div class="about">
+                         <span class="name">ელენე ორჯონიკიძე</span>
+                         <span class="mission ">დავალება 0231</span>
+                         <span class="mission__date__time"><i class="material-icons date__icons">calendar_today</i> 11/02/2019, 14:20</span>
+                     </div>
+                     <div class="reply ">
+                       <span class="text">ვეთანხმები მოცემულ დოკუმენტს, ვანიჭებ ნომერს.</span>
+                     </div>
+                     <div class="down">
+                         <span class="dashe"></span>
+                     <div class="img__parent ">
+                         <img class="img"
+                         src="http://bootdey.com/img/Content/avatar/avatar7.png">
+                       </div>
+                       <i class="material-icons profile__icon  profile-timer-icon">av_timer</i>
+                       <div class="about">
+                           <span class="name">შოთა მიქაია გაცეჩილაძე</span>
+                           <span class="mission ">დავალება 0231</span>
+                       </div>
+                     </div>
+                <span class="end">
+                   <i class="material-icons end-icon done-icon">done</i>
+                </span>
+               </div>
+               <div class="under__boxes">
+                   <div class="box__header">
+                       <h4 class="title">გასაცნობად</h4>
+                       <div class="time__date">
+                       <span class="date"><i class="material-icons date__icons">calendar_today</i> 11/02/2019</span>
+                       <span class="time"><i class="material-icons date__icons">access_time</i> 12:00</span>
+                     </div>
+                   </div>
+         
+                   <div class="imgs ">
+                       <img class="img"src="https://bestwaterdamagerepairexpertslasvegashenderson.com/wp-content/uploads/2018/11/defaultFemalePP.png">
+                       <img class="img img2"src="https://bestwaterdamagerepairexpertslasvegashenderson.com/wp-content/uploads/2018/11/defaultFemalePP.png">
+                       <img class="img img3"src="https://bestwaterdamagerepairexpertslasvegashenderson.com/wp-content/uploads/2018/11/defaultFemalePP.png">
+                     </div>
+                     <div class="about">
+                       <span class="ansverable"> 5 pasuxismgebeli <i class="material-icons drop">arrow_drop_down</i></span>
+                     </div>
+                     <div class="down">
+                         <span class="dashe"></span>
+                     <div class="img__parent ">
+                         <img class="img"
+                           src="https://bestwaterdamagerepairexpertslasvegashenderson.com/wp-content/uploads/2018/11/defaultFemalePP.png">
+                       </div>
+                       <i class="material-icons profile__icon done-icon">done</i>
+                       <div class="about">
+                           <span class="name">სოფო გაცეჩილაძე</span>
+                           <span class="mission ">დავალება 0231</span>
+                           <span class="mission__date__time"><i class="material-icons date__icons">calendar_today</i> 11/02/2019, 14:20</span>
+                       </div>
+                       <div class="answer ">
+                           <span class="text">ვეთანხმები მოცემულ დოკუმენტს, ვანიჭებ ნომერს.</span>
+                         </div>
+                     </div>
+                     <div class="down">
+                         <div class="img__parent ">
+                             <img class="img"
+                             src="http://bootdey.com/img/Content/avatar/avatar7.png"">
+                           </div>
+                           <i class="material-icons profile__icon profile-timer-icon">av_timer</i>
+                           <div class="about">
+                               <span class="name">ნიკოლოზ დოლიძე</span>
+                               <span class="mission ">დავალება 0231</span>
+                           </div>
+                     </div>
+               </div>
+               <div>
+                   <div class="small-square dif-square2">
+                     <span class="before__icon">
+                       <i class="material-icons timer-icon">av_timer</i>
+                    </span>
+                     </div>
+                     <div class="def-2child">
+                       <div class="under__boxes">
+                           <div class="box__header">
+                               <h4 class="title">დასადასტურებლად</h4>
+                               <div class="time__date">
+                               <span class="date"><i class="material-icons date__icons">calendar_today</i> 11/02/2019</span>
+                               <span class="time"><i class="material-icons date__icons">access_time</i> 12:00</span>
+                             </div>
+                           </div>
+                 
+                           <div class="img__parent ">
+                               <img class="img"
+                                 src="https://bestwaterdamagerepairexpertslasvegashenderson.com/wp-content/uploads/2018/11/defaultFemalePP.png">
+                             </div>
+                             <i class="material-icons profile__icon done-icon">done</i>
+                             <div class="about">
+                                 <span class="name">ელენე ორჯონიკიძე</span>
+                                 <span class="mission ">დავალება 0231</span>
+                                 <span class="mission__date__time"><i class="material-icons date__icons">calendar_today</i> 11/02/2019, 14:20</span>
+                             </div>
+                             <div class="reply ">
+                               <span class="text">ვეთანხმები მოცემულ დოკუმენტს, ვანიჭებ ნომერს.</span>
+                             </div>
+                             <div class="down">
+                                 <span class="dashe"></span>
+                             <div class="img__parent ">
+                                 <img class="img"
+                                 src="http://bootdey.com/img/Content/avatar/avatar7.png">
+                               </div>
+                               <i class="material-icons profile__icon profile-timer-icon">av_timer</i>
+                               <div class="about">
+                                   <span class="name">შოთა მიქაია</span>
+                                   <span class="mission ">დავალება 0231</span>
+                               </div>
+                             </div>
+                           <span class="end">
+                               <i class="material-icons end-icon end-timer-icon">av_timer</i>
+                            </span>
+                       </div>
+                       <div class="under__boxes heigh-200">
+                           <div class="box__header">
+                               <h4 class="title">ხელმოსაწერად</h4>
+                               <div class="time__date">
+                               <span class="date"><i class="material-icons date__icons">calendar_today</i> 11/02/2019</span>
+                               <span class="time"><i class="material-icons date__icons">access_time</i> 12:00</span>
+                             </div>
+                           </div>
+                 
+                           <div class="img__parent ">
+                               <img class="img"
+                               src="http://bootdey.com/img/Content/avatar/avatar7.png">
+                             </div>
+                             <div class="about">
+                                 <span class="name">შოთა მიქაია</span>
+                                 <span class="mission ">დავალება 0231</span>
+                                 <span class="mission__date__time"><i class="material-icons date__icons">calendar_today</i> 11/02/2019, 14:20</span>
+                             </div>
+                             <div class="down">
+                                 <span class="dashe"></span>
+                             <div class="img__parent ">
+                                 <img class="img"
+                                 src="http://bootdey.com/img/Content/avatar/avatar7.png">
+                               </div>
+                               <i class="material-icons profile__icon profile-timer-icon">av_timer</i>
+                               <div class="about">
+                                   <span class="name">დავით  სანადირაძე</span>
+                                   <span class="mission ">დავალება 0231</span>
+                               </div>
+                             </div>
+                     </div>
+                 </div>
+               
+               </div>
+             </div>
+       </div>
+     
+       </div>
+       <!-- show = false;
+       showAnsverable() {
+         this.show = !this.show;
+       } -->
+     
+      </div>
+    </section>
+<script src="js/j.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+
+  .example-full-width {
+    width: 100%;
+  }
+  table {
+    width: 100%;
+  }
+  .example-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .example-container > * {
+    width: 100%;
+  }
+  /deep/.cdk-overlay-pane{
+     margin: 45px 0;
+  }
+  /deep/.ng-tns-c13-12{
+    margin: -45px 0;
+  } 
+  // mat-select-panel
+  .form{
+    div{
+        display: flex;
+        flex-direction: column;
+        max-width: 200px;
+    }
+}
