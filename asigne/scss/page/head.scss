@@ -1,7 +1,7 @@
 .head {
     display: flex;
     justify-content: space-between;
-    position: absolute;
+    // margin: 0 5px;
     z-index: 200;
     top: 0;
     background-color: #0a383d;
@@ -9,8 +9,6 @@
     height: 35px;
     align-items: center;
     .right-block {
-
-        
         .dropdown {
             position: relative;
             display: inline-block; 

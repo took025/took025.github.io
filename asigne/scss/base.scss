@@ -36,7 +36,7 @@
 }
 .header-bq-color {
 	background-color: #F0F2ED;
-	widows: 100%;
+	width: 100%;
 }
 .header-footer-center{
 	width: 100%;
@@ -63,10 +63,13 @@
   justify-content: flex-end
 }
 .width-100 {
-	widows: 100%;
+	width: 100%;
 }
 .align-center {
  align-items: center;
+}
+.m-5 {
+	margin: 0 5px;
 }
 .border-radius {
 	border-bottom-left-radius: 50px 50px;
