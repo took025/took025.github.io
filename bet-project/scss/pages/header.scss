@@ -45,6 +45,7 @@
 }
 .nav__lists__item {
     .rout {
+        font-size: 16px;
         cursor: pointer;
         color: $default-text-color;
         font-size: 16px;
@@ -58,7 +59,7 @@
 }
 .drop{
     position: relative;
-    font-size: 16px;
+    font-size: 16px!important;
     .dropdown{
         position: absolute;
         left: 20px;
