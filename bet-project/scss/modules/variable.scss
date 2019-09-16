@@ -1,0 +1,22 @@
+$default-text-color: #1a2738;
+$default-dark-text-color: #22263a;
+$default-burger-color: #B8EDF8;
+$default-white: #fff;
+$default-black: #000000;
+$default-gray: #f2f4fa;
+$default-button-color: #596479;
+$default-service-color: #f2f4fa;
+$default-circle-color: #f2f4fa;
+$default-footer-text-color: #5a6679;
+
+$theme-colors: (
+  "white": $default-white,
+  "black": $default-black,
+  "gray": $default-gray,
+);
+
+@each $key, $value in $theme-colors {
+  .bg-#{$key} {
+    background-color: $value;
+  }
+}

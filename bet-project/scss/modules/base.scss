@@ -1,0 +1,35 @@
+.space-betwen {
+	justify-content: space-between;
+}
+.flex-center {
+	justify-content: center;
+}
+.width-100{
+    width: 100%!important;
+}
+.flex {
+	display: flex!important;
+}
+.center {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	display: block;
+}
+.justify-center {
+	justify-content: center;
+}
+.flex-wrap {
+	display: flex;
+	flex-wrap: wrap;
+}
+.m-auto-80 {
+	width: 80%;
+	margin: 0 auto;
+}
+.uppercase {
+	text-transform: uppercase;
+}
+.pointer {
+	cursor: pointer;
+}

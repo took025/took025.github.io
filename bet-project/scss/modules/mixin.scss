@@ -1,0 +1,25 @@
+@mixin circle($size: 200px) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+}
+@mixin button($width, $color, $bq-color, $margin-top) {
+  background-color: $bq-color;
+  color: $color;
+  border-radius: 5px;
+  padding: 10px 15px 10px 15px;
+  width: $width;
+  height: 40px;
+  margin-top: $margin-top;
+  cursor: pointer;
+  font-size: 12px;
+  transition: 0.3s;
+  &:hover {
+    transition: 0.3s;
+    font-size: 13px;
+  }
+}
