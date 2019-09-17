@@ -1,0 +1,26 @@
+.wallet-left-block {
+    flex-basis: 50%;
+    margin: 110px 0;
+    .wallet-text {
+        font-size: 52px;
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        font-family: Helvetica;
+        .wallet-button {
+            @include button( 150px, $default-white , $default-black, 40px)
+            
+        }
+    }
+}
+.wallet-right-block{
+    flex-basis: 50%;
+    position: relative;
+    .wallet-img{
+        width: 80%;
+        position: absolute;
+        bottom: -20px;
+        z-index: 99;
+    }
+}

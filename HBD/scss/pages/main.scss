@@ -1,0 +1,71 @@
+.global--left-block{
+    flex-basis: 40%;
+    .title {
+        color: $default-dark-text-color;
+        font-size: 22px;
+        margin-bottom: 30px;
+        font-weight: bold;
+        font-family: Helvetica;
+    }
+    .text {
+        font-size: 16px;
+        font-family: Helvetica;
+    }
+    .service-search {
+        margin-top: 30px;
+        position: relative;
+        input {
+            width: 200px;
+            height: 30px;
+            background-color: $default-white;
+            padding-left: 10px;
+        }
+        .search-icon{
+            position: absolute;
+            left: 190px;
+            top: 10px;
+            color: #596479;
+            cursor: pointer;
+        }
+    }
+    .see-more {
+        margin-top: 30px;
+        cursor: pointer;
+        font-family: Helvetica;
+    }
+}
+.transfers {
+    padding: 100px 0;
+}
+.global-right-block{
+    flex-basis: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .circle-text{
+        font-size: 16px;
+    }
+  }
+.create-wallet {
+    background-color: $default-dark-text-color;
+    padding: 50px 0;
+    .create-wallet-text{
+        color: $default-white;
+        padding-right: 5px;
+        font-family: Helvetica;
+    }
+    .crwallet {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+  .create-wallet-button{
+    font-family: Helvetica;
+      @include button(170px, $default-black, $default-white, 0)
+  }

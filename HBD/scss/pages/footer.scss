@@ -1,0 +1,45 @@
+.footer {
+  padding: 50px 0;
+  .footer-left-block {
+    flex-basis: 50%;
+    .title {
+      color: $default-dark-text-color;
+      font-size: 34px;
+      margin-bottom: 20px;
+      font-family: NexaBold;
+    }
+    .text {
+      color: $default-footer-text-color;
+      font-family: Helvetica;
+    }
+    .footer-dropdown {
+      cursor: pointer;
+      margin-top: 100px;
+      width: 180px;
+      position: relative;
+    }
+  }
+  .footer-right-block {
+    flex-basis: 50%;
+    justify-content: start;
+    .title {
+      color: $default-black;
+      font-family: Helvetica;
+    }
+    .footer__list {
+      margin: 0 20px;
+    }
+    .footer__list-item {
+      margin: 30px 0;
+      .list-item-a {
+        font-family: Helvetica;
+        color: $default-footer-text-color;
+        transition: 0.3s;
+        &:hover {
+          color: $default-black;
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+}
