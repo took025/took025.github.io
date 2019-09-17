@@ -10,7 +10,6 @@
 @mixin button($width, $color, $bq-color, $margin-top) {
   background-color: $bq-color;
   color: $color;
-  border: 0;
   border-radius: 5px;
   padding: 10px 15px 10px 15px;
   width: $width;
