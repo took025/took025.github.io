@@ -1,0 +1,133 @@
+@import '../mixin.scss';
+@import '../variable.scss';
+
+.select {
+    padding-left: 10px;
+    border: 1px solid #E2E2E2;
+    transition: 0.2s;
+    position: relative;
+    width: 200px;
+    height: 40px;
+    appearance: none;
+    background-image: url(https://stackoverflow.com/favicon.ico);
+    background-position: right 50%;
+    background-repeat: no-repeat;
+
+    &::after {
+        content: '';
+        position: absolute;
+        background-color: red;
+        width: 20px;
+        height: 20px;
+        z-index: 11111;
+    }
+
+    &:focus {
+        border-color: #eff4ff !important;
+        transition: 0.2s;
+    }
+}
+body {
+    padding-top: 80px;
+    min-height: calc(100vh - 480px);
+}
+.header {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $white;
+    height: 80px;
+    width: 100%;
+
+    .nav {
+        height: 80px;
+
+        .list {
+            .nav__a {
+                display: flex;
+                align-items: center;
+                position: relative;
+                text-decoration: none;
+                cursor: pointer;
+                height: 80px;
+                &:after {
+                    background: none repeat scroll 0 0 transparent;
+                    bottom: 0;
+                    content: "";
+                    display: block;
+                    height: 2px;
+                    left: 50%;
+                    position: absolute;
+                    background: $blue;
+                    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                    width: 0;
+                }
+
+                &:hover:after {
+                    width: 100%;
+                    left: 0;
+                }
+            }
+
+        }
+
+        .right_ul {
+            .right__list {
+                position: relative;
+
+                .numbering {
+                    position: absolute;
+                    right: -8px;
+                    top: -4px;
+                    background-color: $orange;
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                    font-size: 12px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center
+                }
+            }
+        }
+    }
+}
+.home__block {
+    min-height: 500px;
+    .title {
+        position: relative;
+        padding-right: 45px;
+        .icon {
+            position: absolute;
+            z-index: 11;
+            right: 0;
+            bottom: 0;
+        }
+    }
+}
+.footer {
+    min-height: 400px;
+    .up__side {
+        min-height: 320px;
+    }
+    .down__side {
+        min-height: 80px;
+        background-color: #FAFAFA;
+    }
+}
+.mail__form {
+    .mail__input {
+        border: 1px solid #E0E0E0;
+        height: 40px;
+        border-radius: 10px;
+        padding-left: 15px;
+        padding-right: 35px;
+    }
+    .icon {
+        position: absolute;
+        right: 15px;
+        top: 12px;
+        z-index: 111;
+    }
+}
