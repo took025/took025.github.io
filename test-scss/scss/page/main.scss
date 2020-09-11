@@ -27,10 +27,12 @@
         transition: 0.2s;
     }
 }
+
 body {
     padding-top: 80px;
     min-height: calc(100vh - 480px);
 }
+
 .header {
     z-index: 999;
     position: fixed;
@@ -51,6 +53,7 @@ body {
                 text-decoration: none;
                 cursor: pointer;
                 height: 80px;
+
                 &:after {
                     background: none repeat scroll 0 0 transparent;
                     bottom: 0;
@@ -93,11 +96,14 @@ body {
         }
     }
 }
+
 .home__block {
     min-height: 500px;
+
     .title {
         position: relative;
         padding-right: 45px;
+
         .icon {
             position: absolute;
             z-index: 11;
@@ -106,16 +112,20 @@ body {
         }
     }
 }
+
 .footer {
     min-height: 400px;
+
     .up__side {
         min-height: 320px;
     }
+
     .down__side {
         min-height: 80px;
         background-color: #FAFAFA;
     }
 }
+
 .mail__form {
     .mail__input {
         border: 1px solid #E0E0E0;
@@ -124,6 +134,7 @@ body {
         padding-left: 15px;
         padding-right: 35px;
     }
+
     .icon {
         position: absolute;
         right: 15px;
@@ -131,44 +142,55 @@ body {
         z-index: 111;
     }
 }
+
 .premiup__prizes {
     padding: 100px 0;
+
     .left__side {
         .block {
             height: 160px;
             border: 1px solid $border;
             border-radius: 10px;
+
             img {
                 max-width: 80%;
             }
         }
     }
 }
+
 .popular__courses {
     padding: 60px 0;
+
     .main {
         display: grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: repeat(auto,1fr);
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(auto, 1fr);
         grid-column-gap: 30px;
         grid-row-gap: 20px;
+
         .block {
+
             .up__side,
             .img-block {
                 border-top-left-radius: 10px;
                 border-top-right-radius: 10px;
                 min-height: 190px;
             }
+
             .down__side {
                 background-color: $white;
                 border-bottom-left-radius: 10px;
                 border-bottom-right-radius: 10px;
+
                 .bottom {
                     .left__side {
                         border-left: 5px solid $blue;
+
                         .like__remove {
                             position: relative;
                             color: $light-text;
+
                             &::after {
                                 position: absolute;
                                 content: '';
@@ -182,11 +204,13 @@ body {
                     }
                 }
             }
+
             &:nth-child(2) {
                 .left__side {
                     border-color: $orange;
                 }
             }
+
             &:nth-child(3) {
                 .left__side {
                     border-color: $purple;
@@ -196,7 +220,51 @@ body {
         }
     }
 }
+
 .academy__section,
-.master__class {
+.master__class,
+.student__works,
+.finished__courses,
+.block__section {
     padding: 100px 0;
+}
+
+.finished__courses {
+    .course-block {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(auto, 1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 20px;
+
+        .block {
+            background-color: #F5F5F5;
+            border-radius: 10px;
+            max-width: 340px;
+            transition: 0.3s;
+
+            &:hover {
+                background-color: $white;
+                transform: scale(1.07);
+                box-shadow: 3px 3px 28px -9px rgba(0, 0, 0, 0.75);
+                transition: 0.3s;
+
+                span {
+                    color: $black;
+                    transition: 0.3s;
+
+                }
+            }
+        }
+    }
+}
+.block__section {
+    .block {
+        transition: 0.3s;
+        &:hover {
+            transform: scale(1.07);
+            box-shadow: 3px 3px 28px -9px rgba(0, 0, 0, 0.75);
+            transition: 0.3s;
+        }
+    }
 }
