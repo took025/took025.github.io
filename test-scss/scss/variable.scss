@@ -64,6 +64,7 @@ $number_varriables:('5' : 5px,
     '23': 23px,
     '24': 24px,
     '30': 30px,
+    '35': 35px,
     '40': 40px,
     '50': 50px,
     '80': 80px,
@@ -225,4 +226,11 @@ $value in $number_varriables {
         transition: 0.3s;
         // opacity: 0.7;
     }
+}
+.input {
+    border: 1px solid #E0E0E0;
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
