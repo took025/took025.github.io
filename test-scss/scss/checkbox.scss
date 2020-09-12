@@ -1,9 +1,13 @@
 
 $checkbox-background: #5471A8;
 .cheks input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 16px;
+  opacity: 0;
+  z-index: 25;
 }
 
 
@@ -17,6 +21,7 @@ $checkbox-background: #5471A8;
   border: 1px solid #E2E2E2;
   cursor: pointer;
   border-radius: 3px;
+  z-index: 20;
 }
 
 

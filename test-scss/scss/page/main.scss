@@ -158,7 +158,16 @@ body {
         }
     }
 }
-
+.courses__main {
+    grid-column-gap: 0px !important;
+    grid-row-gap: 0px !important;
+    .block {
+        .inside__block {
+            border-radius: 10px;
+            box-shadow: 1px 3px 8px 6px rgba(0,0,0,.14);
+        }
+    }  
+}
 .popular__courses {
     padding: 60px 0;
 
@@ -328,10 +337,37 @@ body {
     overflow: hidden;
     .scroll-child {
         height: 100%;
-        width: calc(100% + 40px);
+        // width: calc(100% + 40px);
         margin-bottom: -20px;
         padding-bottom: 40px;
         padding-top: 30px;
         // padding: 40px;
+    }
+}
+.filter__block {
+    &.collapse,
+    &.collapsing {
+        max-height: 0px;
+        opacity: 0;
+        transition: 0.3s;
+    }
+    // &.collapsed,
+    &.show {
+        max-height: 400vh;
+        opacity: 1;
+        transition: 0.3s;
+
+    }
+}
+.filter__place {
+    .filter-a {
+        padding: 10px 15px;
+        @extend .helvetica-55;
+        &.active {
+            color: #424242;
+            background-color: #F3F3F4;
+            border-radius: 10px;
+            @extend .helvetica-75;
+        }
     }
 }

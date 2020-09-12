@@ -128,6 +128,7 @@ $value in $number_varriables {
 .border-bottom {
     border-bottom: 1px solid #3b4755;
 }
+
 .border-top {
     border-top: 1px solid #EEEEEE;
 }
@@ -147,6 +148,7 @@ $value in $number_varriables {
         // opacity: 0.7;
     }
 }
+
 .purple-button {
     padding: 11px 15px;
     font-size: 14px;
@@ -162,6 +164,7 @@ $value in $number_varriables {
         // opacity: 0.7;
     }
 }
+
 .blue-hover-button {
     padding: 11px 15px;
     font-size: 14px;
@@ -172,6 +175,7 @@ $value in $number_varriables {
     border: 1px solid $blue;
     border-radius: 10px;
     height: 40px;
+
     &:hover {
         background-color: $blue;
         color: $white;
@@ -179,6 +183,7 @@ $value in $number_varriables {
         // opacity: 0.7;
     }
 }
+
 .orange-hover-button {
     padding: 11px 15px;
     font-size: 14px;
@@ -189,6 +194,7 @@ $value in $number_varriables {
     border: 1px solid $orange;
     border-radius: 10px;
     height: 40px;
+
     &:hover {
         background-color: $orange;
         color: $white;
@@ -196,6 +202,7 @@ $value in $number_varriables {
         // opacity: 0.7;
     }
 }
+
 .yellow-hover-button {
     padding: 11px 15px;
     font-size: 14px;
@@ -206,6 +213,7 @@ $value in $number_varriables {
     border: 1px solid $yellow;
     border-radius: 10px;
     height: 40px;
+
     &:hover {
         background-color: $yellow;
         color: $white;
@@ -213,6 +221,7 @@ $value in $number_varriables {
         // opacity: 0.7;
     }
 }
+
 .purple-hover-button {
     padding: 11px 15px;
     font-size: 14px;
@@ -223,6 +232,7 @@ $value in $number_varriables {
     border: 1px solid $purple;
     border-radius: 10px;
     height: 40px;
+
     &:hover {
         background-color: $purple;
         color: $white;
@@ -230,6 +240,7 @@ $value in $number_varriables {
         // opacity: 0.7;
     }
 }
+
 .input {
     border: 1px solid #E0E0E0;
     min-height: 40px;
@@ -238,18 +249,127 @@ $value in $number_varriables {
     padding-right: 15px;
     transition: 0.3s;
     transition: 0.3s;
+
     &:hover {
         transition: 0.3s;
         border: 2px solid rgba(101, 149, 255, 0.7);
     }
+
     &:focus {
         transition: 0.3s;
         border: 2px solid rgba(101, 149, 255, 0.7);
         color: $black;
     }
+
     &.wrong {
         transition: 0.3s;
         border: 2px solid rgba(255, 101, 101, 0.1);
 
+    }
+}
+
+.search-input-parent {
+    min-height: 40px;
+    position: relative;
+
+    .search-input {
+        border: 2px solid transparent;
+        background-color: #F3F3F4;
+        min-height: 40px;
+        border-radius: 10px;
+        padding-left: 40px;
+        padding-right: 15px;
+        transition: 0.3s;
+
+        &:hover {
+            transition: 0.3s;
+            border: 2px solid rgba(101, 149, 255, 0.7);
+        }
+
+        &:focus {
+            transition: 0.3s;
+            border: 2px solid rgba(101, 149, 255, 0.7);
+            color: $black;
+        }
+
+    }
+
+    &::after {
+        content: '';
+        background-image: url('../img/search-icon.svg');
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        left: 16px;
+        top: 12px;
+    }
+}
+
+.drop-parent {
+    min-height: 40px;
+    position: relative;
+
+    .drop {
+        border: 2px solid transparent;
+        background-color: #F3F3F4;
+        min-height: 40px;
+        border-radius: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        transition: 0.3s;
+        transition: 0.3s;
+
+        &:hover {
+            transition: 0.3s;
+            border: 2px solid rgba(101, 149, 255, 0.7);
+        }
+
+        &:focus {
+            transition: 0.3s;
+            border: 2px solid rgba(101, 149, 255, 0.7);
+            color: $black;
+        }
+
+    }
+}
+
+.filter-drop {
+    min-height: 40px;
+    border-radius: 10px;
+    padding-left: 40px;
+    padding-right: 15px;
+    transition: 0.3s;
+    border: 2px solid $border;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    // &:hover {
+    //     transition: 0.3s;
+    //     border: 2px solid rgba(101, 149, 255, 0.7);
+    // }
+
+    &.active {
+        border: 2px solid transparent;
+
+        transition: 0.3s;
+        background-color: #F3F3F4;
+
+    }
+
+    &::after {
+        content: '';
+        background-image: url('../img/filter.svg');
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        left: 16px;
+        top: 9px;
     }
 }
