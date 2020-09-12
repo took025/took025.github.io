@@ -258,13 +258,80 @@ body {
         }
     }
 }
+
 .block__section {
     .block {
         transition: 0.3s;
+
         &:hover {
             transform: scale(1.07);
             box-shadow: 3px 3px 28px -9px rgba(0, 0, 0, 0.75);
             transition: 0.3s;
         }
+    }
+}
+
+.card {
+    border: none !important;
+    position: relative;
+
+    .card-header {
+        background-color: initial !important;
+        border: none !important;
+
+        // .btn {
+        //     &::after {
+        //         width: 40px;
+        //         content: '';
+        //         position: absolute;
+        //         height: 40px;
+        //         appearance: none;
+        //         // background-color: red;
+        //         background-image: url('../../img/Path.svg');
+        //         background-position: right 50%;
+        //         background-repeat: no-repeat;
+        //         top: 0;
+        //         right: 20px;
+        //         transform: translate(-50%, -50%);
+        //         transition: 0.3s;
+        //         z-index: 100;
+        //     }
+
+        //     &.collapsed {
+        //         &::after {
+        //             transform: translate(-50%, -50%) rotate(180deg);
+        //             transition: 0.3s;
+        //         }
+        //     }
+        // }
+    }
+}
+
+.scrolled-mobile {
+    overflow: hidden;
+    position: relative;
+
+    // height: calc(100% + 20px);
+    .scroll {
+        height: calc(100% + 20px);
+        overflow: auto;
+
+    }
+}
+
+.scroll-block {
+    min-width: 240px;
+}
+.scroll-parent {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    .scroll-child {
+        height: 100%;
+        width: calc(100% + 40px);
+        margin-bottom: -20px;
+        padding-bottom: 40px;
+        padding-top: 30px;
+        // padding: 40px;
     }
 }

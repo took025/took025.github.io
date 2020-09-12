@@ -1,0 +1,125 @@
+.burger {
+    align-items: center;
+    justify-content: center;
+
+    .inside-burger {
+        width: 20px;
+        height: 15px;
+        flex-wrap: wrap;
+        overflow: hidden;
+        cursor: pointer;
+        position: relative;
+        .rows {
+            width: 100%;
+            height: 2px;
+            background-color: #9E9E9E;
+            display: block;
+            transition: transform .3s linear;
+            opacity: 1;
+            visibility: visible;
+        }
+        .burger1 {
+            position: absolute;
+            top: 0;
+        }
+
+        .burger2 {
+            position: absolute;
+            top: 50%;
+            transform: translate( 0,-50%);
+        }
+
+        .burger3 {
+            position: absolute;
+            top: 100%;
+            transform: translate( 0,-100%);
+        }
+
+        &.active {
+            .burger1 {
+                position: absolute;
+                top: 50%;
+                transform: rotate(-45deg);
+            }
+
+            .burger2 {
+                opacity: 0;
+                visibility: hidden;
+            }
+
+            .burger3 {
+                position: absolute;
+                top: 50%;
+                transform: rotate(45deg);
+            }
+        }
+    }
+}
+
+/*burger*/
+
+
+/*burger-menu*/
+.burger-menu.active {
+    transition: .3s;
+    visibility: visible;
+    position: fixed;
+    z-index: 90;
+    margin-left: 0px;
+    .burger-menu-child {
+    opacity: 1;
+    }
+}
+
+.burger-menu {
+    .card {
+        background-color: transparent !important;
+        .btn {
+            width: 250px;
+            text-align: left !important;
+            position: relative;
+            .drop-icon {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 0;
+            }
+        }
+    }
+    transition: .3s;
+    position: fixed;
+    margin-left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+}
+
+.burger-menu-child {
+    padding-top: 80px;
+    z-index: 90;
+    top: 30px;
+    display: flex;
+    justify-content: center;
+    background: #ffffff;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.burger-menu-a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+}
+
+.burger-menu-list {
+    margin-top: 50px;
+}
+
+.burger-menu-list:nth-child(3) a {
+    font-family: "BPG Nino Mkhedruli Book", sans-serif;
+}
+
+.burger-menu-a {
+    font-family: "BPG Glaho WEB Caps", sans-serif;
+}

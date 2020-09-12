@@ -1,0 +1,25 @@
+@media only screen and (max-width: 990px) {
+    .header {
+        height: 50px !important;
+
+        .logo {
+            width: 80px;
+        }
+    }
+
+    body {
+        padding-top: 50px !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .academy__section {
+        background-image: url('../img/academyc.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    .f-30 {
+        font-size: 24px !important;
+    }
+}

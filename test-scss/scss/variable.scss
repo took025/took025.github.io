@@ -232,8 +232,24 @@ $value in $number_varriables {
 }
 .input {
     border: 1px solid #E0E0E0;
-    height: 40px;
+    min-height: 40px;
     border-radius: 10px;
     padding-left: 15px;
     padding-right: 15px;
+    transition: 0.3s;
+    transition: 0.3s;
+    &:hover {
+        transition: 0.3s;
+        border: 2px solid rgba(101, 149, 255, 0.7);
+    }
+    &:focus {
+        transition: 0.3s;
+        border: 2px solid rgba(101, 149, 255, 0.7);
+        color: $black;
+    }
+    &.wrong {
+        transition: 0.3s;
+        border: 2px solid rgba(255, 101, 101, 0.1);
+
+    }
 }

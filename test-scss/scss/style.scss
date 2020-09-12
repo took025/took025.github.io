@@ -6,6 +6,8 @@
 @import "page/main";
 @import "function"; 
 @import './checkbox.scss';
+@import 'page/responsive.scss';
+@import 'page/burger.scss';
 * {
     outline: none;
 }

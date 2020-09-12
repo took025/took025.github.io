@@ -17,12 +17,21 @@
 
 <body>
     <header class="header">
-        <div class="header__Block center h-100 d-flex align-items-center mx-auto    ">
-
+        <div class="header__block center justify-content-between h-100 d-flex align-items-center mx-auto    ">
+            <div class="burger d-flex d-lg-none" onclick="burger()">
+                <div class="inside-burger flex" id="burger">
+                    <span class=" rows burger1"></span>
+                    <span class=" rows burger2"></span>
+                    <span class=" rows burger3"></span>
+                </div>
+            </div>
             <a class="logo__block mr-5" href="index.html">
                 <img src="./img/logo.svg" alt="" class="logo">
             </a>
-            <nav class="nav d-flex justify-content-between w-100">
+            <div class="d-flex d-lg-none">
+
+            </div>
+            <nav class="nav d-none d-lg-flex justify-content-between w-100">
                 <ul class="ul d-flex ">
                     <li class="list mr-4 d-flex align-items-center">
                         <a href="courses.html"
@@ -52,30 +61,110 @@
                 </ul>
             </nav>
         </div>
+        <div class="burger-menu flex " id="burger-menu">
+            <div class=" burger-menu-child ">
+                <div id="accordion" class="mx-auto d-flex flex-column up__side" style="max-width: 80%;">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <span class="btn c-light-text f-14 helvetica-75" data-toggle="collapse"
+                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    კურსები
+                                    <img class="drop-icon" src="./img/Path.svg" alt="">
+
+                                </span>
+
+                            </h5>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            data-parent="#accordion">
+                            <div class="card-body py-2">
+                                <ul class="left__side fuuter__lists mt-2  ml-4 mb-3 p-0">
+                                    <li class="list d-flex align-items-center mt-2">
+                                        <a class="c-light-text pointer f-14 helvetica-55">პოპულარული</a>
+                                    </li>
+                                    <li class="list d-flex align-items-center mt-2">
+                                        <a class="c-light-text pointer f-14 helvetica-55">ახალი</a>
+                                    </li>
+                                    <li class="list d-flex align-items-center mt-2">
+                                        <a class="c-light-text pointer f-14 helvetica-55">ფასდაკლებით</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                    <a class="btn c-light-text f-14 helvetica-75 text-left pl-4 ml-2">
+                        მასტერკლასები
+                    </a>
+
+
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <a class="btn collapsed c-light-text f-14 helvetica-75" data-toggle="collapse"
+                                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    შეთავაზებები
+                                    <img class="drop-icon" src="./img/Path.svg" alt="">
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body py-0">
+                                <ul class="center__side fuuter__lists  p-0 ml-4 mb-3 border-left-1">
+                                    <li class="list d-flex align-items-center mt-2">
+                                        <a class="c-light-text f-14 helvetica-55 pointer">პაკეტები</a>
+                                    </li>
+                                    <li class="list d-flex align-items-center mt-3">
+                                        <a class="c-light-text f-14 helvetica-55 pointer">ფასდაკლებები</a>
+                                    </li>
+                                    <li class="list d-flex align-items-center mt-3">
+                                        <a class="c-light-text f-14 helvetica-55 pointer">კონკუსრები</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="btn c-light-text f-14 helvetica-75 text-left pl-4 ml-2 mt-2">
+                        ბლოგი
+                    </a>
+                    <a class="btn c-light-text f-14 helvetica-75 text-left pl-4 ml-2 mt-2">
+                        ჩვენ შესახებ
+                    </a>
+                </div>
+            </div>
+        </div>
     </header>
     <section class="stay__home bc-banner">
         <div
             class="home__block position-relative center d-flex align-items-center flex-column-reverse flex-lg-row py-3">
-            <div class="left__side d-flex flex-column col-12 col-lg-6 p-0 pt-3 pt-lg-0">
-                <h1 class="title f-40 helvetica-75 mb-5">
+            <div class="left__side d-flex flex-column col-12 col-lg-6 p-0 pt-3 pt-lg-0 align-items-center align-items-md-start">
+                <h1 class="title f-40 helvetica-75 mb-5 text-center">
                     დარჩი სახლში და
                     განაგრძე განვითარება
                     <img src="./img/succes.svg" alt="" class="icon">
                 </h1>
-                <span class="c-blak helvetica-55">დარეგისტრირდი მიიღე 50%-მდე ფასდაკლება
+                <span class="c-blak helvetica-55 text-center">დარეგისტრირდი მიიღე 50%-მდე ფასდაკლება
                     საუკეთესო ონლაინ კურსებზე</span>
                 <div class="mt-5">
                     <button class=" helvetica-75 blue-button">რეგისტრაცია</button>
                 </div>
             </div>
-            <div class="right__side">
-                <img src="./img/stay-home.svg" alt="">
+            <div class="right__side d-flex justify-content-center">
+                <img class="col-8 col-md-12" src="./img/stay-home.svg" alt="">
             </div>
         </div>
     </section>
     <section class="premiup__prizes">
-        <div class="center d-flex">
-            <div class="left__side col-6 d-flex flex-wrap p-0">
+        <div class="center d-flex flex-column-reverse">
+            <div class="left__side col-12 col-md-6 d-flex flex-wrap p-0">
                 <div class="col-6 p-2">
                     <div class="block d-flex justify-content-center align-items-center">
                         <img src="./img/purple-Path183.svg" alt="">
@@ -97,14 +186,14 @@
                     </div>
                 </div>
             </div>
-            <div class="right__side col-6 d-flex flex-column justify-content-center">
+            <div class="right__side col-12 col-md-6 d-flex flex-column justify-content-center">
                 <h1 class="f-30 c-black helvetica-75 mb-5">პრემიუმ კურსები ტოპ
                     ლექტორებისგან</h1>
-                <span class="f-16 c-light-text helvetica-55">გახდი ციფრული სამყაროს პროფესიონალი,
+                <span class="f-16 d-none d-md-flex c-light-text helvetica-55">გახდი ციფრული სამყაროს პროფესიონალი,
                     გაიზიარე ექსპერტების გამოცდილება
                     შექმენი შენი დიზაინი.</span>
-                <div class="mt-5">
-                    <button class=" helvetica-75 blue-button">რეგისტრაცია</button>
+                <div class="mt-5 d-none d-md-flex">
+                    <button class=" helvetica-75 blue-button">გაიგე მეტი</button>
                 </div>
 
             </div>
@@ -116,133 +205,146 @@
                 <h1 class="f-30 helvetica-75 c-black mb-3">პოპულარული კურსები</h1>
                 <span class="c-black f-16 helvetica-55">გაიარე ჩვენთან არსებული პოპულარული კურსები</span>
             </div>
-            <div class="main">
-                <div class="block overflow-hidden col-12 p-0 d-flex flex-column justify-content-end">
-                    <div class="up__side bc-blue d-flex justify-content-between align-items-end">
-                        <div class="img-block d-flex align-items-center pl-3">
-                            <img src="./img/Group 342.svg" alt="">
-                        </div>
-                        <img src="./img/face.svg" alt="">
-                    </div>
-                    <div class="down__side py-3">
-
-                        <div class="d-flex- flex-column px-3 mb-3">
-                            <span class="f-14 c-light-text helvetica-55">საბაზისო</span>
-                            <h1 class="f-20 mt-4 c-black helvetica-75">WEB დეველოპმენტი</h1>
-                            <span class="f-14 c-light-text helvetica-55">ქრისტინა კემულარია</span>
-                            <span class="f-14 d-block mt-4 c-light-text helvetica-55">ტექნოლოგიების განვითარებამ
-                                შესაძლებელი გახადა, რომ სხვადასხვა
-                                პროფესიის ადამიანებმა თავად
-                                შეძლონ საკუთარი იდეების რეალიზება.</span>
-                        </div>
-                        <div class="bottom mt-5 d-flex align-items-center justify-content-between pr-3">
-                            <div class="left__side d-flex align-items-center">
-                                <span class="f-23 pl-3 helvetica-75 c-black">1250 ₾</span>
-                                <span class="f-20 pl-1 helvetica-75 c-black like__remove">1250 ₾</span>
+            <div class="scroll-parent">
+                <div class="main scroll-child overflow-auto">
+                    <div class="block overflow-hidden col-12 p-0 d-flex flex-column justify-content-end scroll-block">
+                        <div class="up__side bc-blue d-flex justify-content-between align-items-end">
+                            <div class="img-block d-flex align-items-center pl-3">
+                                <img src="./img/Group 342.svg" alt="">
                             </div>
-                            <div class="right__side">
-                                <button class=" helvetica-75 blue-hover-button">რეგისტრაცია</button>
+                            <img src="./img/face.svg" alt="">
+                        </div>
+                        <div class="down__side py-3">
 
+                            <div class="d-flex- flex-column px-3 mb-3">
+                                <span class="f-14 c-light-text helvetica-55">საბაზისო</span>
+                                <h1 class="f-20 mt-4 c-black helvetica-75">WEB დეველოპმენტი</h1>
+                                <span class="f-14 c-light-text helvetica-55">ქრისტინა კემულარია</span>
+                                <span class="f-14 d-block mt-4 c-light-text helvetica-55">ტექნოლოგიების განვითარებამ
+                                    შესაძლებელი გახადა, რომ სხვადასხვა
+                                    პროფესიის ადამიანებმა თავად
+                                    შეძლონ საკუთარი იდეების რეალიზება.</span>
+                            </div>
+                            <div class="bottom mt-5 d-flex align-items-center justify-content-between pr-3">
+                                <div class="left__side d-flex align-items-center flex-wrap">
+                                    <span class="f-23 pl-3 helvetica-75 c-black">1250 ₾</span>
+                                    <!-- add like__remove class to span for row effect -->
+                                    <span class="f-20 ml-3 helvetica-75 c-black like__remove">1250 ₾</span>
+                                </div>
+                                <div class="right__side">
+                                    <button class=" helvetica-75 blue-hover-button">რეგისტრაცია</button>
+
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div class="block overflow-hidden col-12 p-0 d-flex flex-column justify-content-end scroll-block">
+                        <div class="up__side bc-orange d-flex justify-content-between align-items-end">
+                            <div class="img-block d-flex align-items-center pl-3">
+                                <img src="./img/Group 342.svg" alt="">
+                            </div>
+                            <img src="./img/face.svg" alt="">
+                        </div>
+                        <div class="down__side py-3">
+
+                            <div class="d-flex- flex-column px-3 mb-3">
+                                <span class="f-14 c-light-text helvetica-55">საბაზისო</span>
+                                <h1 class="f-20 mt-4 c-black helvetica-75 mb-4">WEB დეველოპმენტი</h1>
+                                <span class="f-14 c-light-text helvetica-55">ქრისტინა კემულარია</span>
+                                <span class="f-14 d-block mt-4 c-light-text helvetica-55">ტექნოლოგიების განვითარებამ
+                                    შესაძლებელი გახადა, რომ სხვადასხვა
+                                    პროფესიის ადამიანებმა თავად
+                                    შეძლონ საკუთარი იდეების რეალიზება.</span>
+                            </div>
+                            <div class="bottom mt-5 d-flex align-items-center justify-content-between pr-3">
+                                <div class="left__side d-flex align-items-center flex-wrap">
+                                    <span class="f-23 pl-3 helvetica-75 c-black">1250 ₾</span>
+                                    <span class="f-20 ml-3 helvetica-75 c-black like__remove">1250 ₾</span>
+                                </div>
+                                <div class="right__side">
+                                    <button class=" helvetica-75 orange-hover-button">რეგისტრაცია</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block overflow-hidden col-12 p-0 d-flex flex-column justify-content-end scroll-block">
+                        <div class="up__side bc-purple d-flex justify-content-between align-items-end">
+                            <div class="img-block d-flex align-items-center pl-3">
+                                <img src="./img/Group 342.svg" alt="">
+                            </div>
+                            <img src="./img/face.svg" alt="">
+                        </div>
+                        <div class="down__side py-3">
+
+                            <div class="d-flex- flex-column px-3 mb-3">
+                                <span class="f-14 c-light-text helvetica-55">საბაზისო</span>
+                                <h1 class="f-20 mt-4 c-black helvetica-75">WEB დეველოპმენტი</h1>
+                                <span class="f-14 c-light-text helvetica-55">ქრისტინა კემულარია</span>
+                                <span class="f-14 d-block mt-4 c-light-text helvetica-55">ტექნოლოგიების განვითარებამ
+                                    შესაძლებელი გახადა, რომ სხვადასხვა
+                                    პროფესიის ადამიანებმა თავად
+                                    შეძლონ საკუთარი იდეების რეალიზება.</span>
+                            </div>
+                            <div class="bottom mt-5 d-flex align-items-center justify-content-between pr-3">
+                                <div class="left__side d-flex align-items-center flex-wrap">
+                                    <span class="f-23 pl-3 helvetica-75 c-black">1250 ₾</span>
+                                    <span class="f-20 ml-3 helvetica-75 c-black like__remove">1250 ₾</span>
+                                </div>
+                                <div class="right__side">
+                                    <button class=" helvetica-75 purple-hover-button">რეგისტრაცია</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="block overflow-hidden col-12 p-0 d-flex flex-column justify-content-end">
-                    <div class="up__side bc-orange d-flex justify-content-between align-items-end">
-                        <div class="img-block d-flex align-items-center pl-3">
-                            <img src="./img/Group 342.svg" alt="">
-                        </div>
-                        <img src="./img/face.svg" alt="">
-                    </div>
-                    <div class="down__side py-3">
-
-                        <div class="d-flex- flex-column px-3 mb-3">
-                            <span class="f-14 c-light-text helvetica-55">საბაზისო</span>
-                            <h1 class="f-20 mt-4 c-black helvetica-75 mb-4">WEB დეველოპმენტი</h1>
-                            <span class="f-14 c-light-text helvetica-55">ქრისტინა კემულარია</span>
-                            <span class="f-14 d-block mt-4 c-light-text helvetica-55">ტექნოლოგიების განვითარებამ
-                                შესაძლებელი გახადა, რომ სხვადასხვა
-                                პროფესიის ადამიანებმა თავად
-                                შეძლონ საკუთარი იდეების რეალიზება.</span>
-                        </div>
-                        <div class="bottom mt-5 d-flex align-items-center justify-content-between pr-3">
-                            <div class="left__side d-flex align-items-center">
-                                <span class="f-23 pl-3 helvetica-75 c-black">1250 ₾</span>
-                                <span class="f-20 pl-1 helvetica-75 c-black like__remove">1250 ₾</span>
-                            </div>
-                            <div class="right__side">
-                                <button class=" helvetica-75 orange-hover-button">რეგისტრაცია</button>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="block overflow-hidden col-12 p-0 d-flex flex-column justify-content-end">
-                    <div class="up__side bc-purple d-flex justify-content-between align-items-end">
-                        <div class="img-block d-flex align-items-center pl-3">
-                            <img src="./img/Group 342.svg" alt="">
-                        </div>
-                        <img src="./img/face.svg" alt="">
-                    </div>
-                    <div class="down__side py-3">
-
-                        <div class="d-flex- flex-column px-3 mb-3">
-                            <span class="f-14 c-light-text helvetica-55">საბაზისო</span>
-                            <h1 class="f-20 mt-4 c-black helvetica-75">WEB დეველოპმენტი</h1>
-                            <span class="f-14 c-light-text helvetica-55">ქრისტინა კემულარია</span>
-                            <span class="f-14 d-block mt-4 c-light-text helvetica-55">ტექნოლოგიების განვითარებამ
-                                შესაძლებელი გახადა, რომ სხვადასხვა
-                                პროფესიის ადამიანებმა თავად
-                                შეძლონ საკუთარი იდეების რეალიზება.</span>
-                        </div>
-                        <div class="bottom mt-5 d-flex align-items-center justify-content-between pr-3">
-                            <div class="left__side d-flex align-items-center">
-                                <span class="f-23 pl-3 helvetica-75 c-black">1250 ₾</span>
-                                <span class="f-20 pl-1 helvetica-75 c-black like__remove">1250 ₾</span>
-                            </div>
-                            <div class="right__side">
-                                <button class=" helvetica-75 purple-hover-button">რეგისტრაცია</button>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
+
         </div>
     </section>
     <section class="academy__section">
         <div class="center d-flex align-items-center justify-content-between">
-            <div class="left__side col-6 pointer">
-                <img class="w-100" src="./img/Group 1178.svg" alt="">
+            <div class="left__side col-12 col-md-6 pointer">
+                <img class="w-100 d-none d-md-flex" src="./img/Group 1178.svg" alt="">
+                <div>
+                    <span class="f-30 helvetica-75 c-white text-center d-block mb-4">რა არის ჩვენი აკადემია?</span>
+                    <span class="f-16 c-white text-center helvetica-55">აყევი ციფრული სამყაროს რითმს. ციფრული
+                        უნდუსტრიის აკადემია უზრუნველყოფს თქვენზე
+                        მორგებული პრინციპით.</span>
+                    <div class="mt-5 d-flex justify-content-center" >
+                        <button class=" helvetica-75 blue-button">გაიგე მეტი</button>
+                    </div>
+                </div>
             </div>
-            <div class="right__side col-6">
+            <div class="right__side col-6 d-none d-md-flex flex-column">
                 <span class="f-30 helvetica-75 c-black d-block mb-4">რა არის ჩვენი აკადემია?</span>
                 <span class="f-16 c-light-text helvetica-55">აყევი ციფრული სამყაროს რითმს. ციფრული
                     უნდუსტრიის აკადემია უზრუნველყოფს თქვენზე
                     მორგებული პრინციპით.</span>
                 <div class="mt-5">
-                    <button class=" helvetica-75 blue-button">რეგისტრაცია</button>
+                    <button class=" helvetica-75 blue-button">გაიგე მეტი</button>
                 </div>
 
             </div>
         </div>
     </section>
-    <section class="count__section bc-banner">
-        <div class="center d-flex justify-content-between py-5">
-            <div class="block col-3 d-flex flex-column align-items-center">
+    <section class="count__section bc-banner d-none d-md-flex">
+        <div class="center d-flex justify-content-between py-5 flex-wrap">
+            <div class="block col-12 col-sm-6 col-md-3 mt-3 d-flex flex-column align-items-center">
                 <span class="f-35 c-blue helvetica-75">1234</span>
                 <span class="f-20 c-light-text helvetica-75">კურსდამთავრებული</span>
             </div>
-            <div class="block col-3 d-flex flex-column align-items-center">
+            <div class="block col-12 col-sm-6 col-md-3 mt-3 d-flex flex-column align-items-center">
                 <span class="f-35 c-blue helvetica-75">45</span>
                 <span class="f-20 c-light-text helvetica-75">დასრულებული კურსი</span>
             </div>
-            <div class="block col-3 d-flex flex-column align-items-center">
+            <div class="block col-12 col-sm-6 col-md-3 mt-3 d-flex flex-column align-items-center">
                 <span class="f-35 c-blue helvetica-75">240</span>
                 <span class="f-20 c-light-text helvetica-75">დასაქმებული</span>
             </div>
-            <div class="block col-3 d-flex flex-column align-items-center">
+            <div class="block col-12 col-sm-6 col-md-3 mt-3 d-flex flex-column align-items-center">
                 <span class="f-35 c-blue helvetica-75">84</span>
                 <span class="f-20 c-light-text helvetica-75">მასტერკლასი</span>
             </div>
@@ -251,22 +353,22 @@
     <section class="master__class">
         <div class="center d-flex flex-column align-items-center">
             <h1 class="f-30 mb-4 helvetica-75 c-black">მასტერკლასები</h1>
-            <div class="block d-flex align-items-center w-100">
-                <div class="left__side col-6">
-                    <img src="./img/Group 968.svg" alt="">
+            <div class="block d-flex align-items-center w-100 flex-column flex-md-row">
+                <div class="left__side col-12 col-md-6">
+                    <img class="w-100" src="./img/Group 968.svg" alt="">
                 </div>
-                <div class="right__side col-6">
+                <div class="right__side col-12 col-md-6">
                     <span class="f-16 helvetica-55 c-light-text">დაგვიტოვე შენი საკონტაქტო ინფორმაცია და მიიღე
                         უახლოესი ინფორმაცია მასტერკლასებზე.</span>
                     <form action="" class="masterclass__form mt-5">
-                        <div class="name__surname d-flex">
-                            <input class="input col-4 helvetica-55 c-light-text f-12 w-100" type="text"
+                        <div class="name__surname d-flex flex-column flex-md-row">
+                            <input class="input col-12 col-md-4 helvetica-55 c-light-text f-12 w-100" type="text"
                                 placeholder="სახელი">
-                            <input class="input ml-2 col-4 helvetica-55 c-light-text f-12 w-100" type="text"
+                            <input class="input ml-0 ml-md-2 mt-2 mt-md-0 col-12 col-md-4 helvetica-55 c-light-text f-12 w-100" type="text"
                                 placeholder="გვარი">
                         </div>
                         <div class="phone d-flex mt-3">
-                            <input class="input col-4 helvetica-55 c-light-text f-12 w-100" type="text"
+                            <input class="input col-12 col-md-4 helvetica-55 c-light-text f-12 w-100" type="text"
                                 placeholder="ტელ. ნომერი">
                         </div>
                     </form>
@@ -290,57 +392,67 @@
             <h1 class="f-30 mb-2 helvetica-75 c-black">სტუდენტების ნამუშევრები</h1>
             <span class="f-16 helvetica-55 c-light-text">დაგვიტოვე შენი საკონტაქტო ინფორმაცია და მიიღე
                 უახლოესი ინფორმაცია მასტერკლასებზე.</span>
-            <div class="w-100 d-flex justify-content-between align-items-center">
+            <div class="scroll-parent">
 
-                <div class="block mt-5 mx-3 br-10 overflow-hidden bc-white">
-                    <article class="article d-flex flex-column">
-                        <img src="./img/Group 804.svg" alt="">
-                        <span class="f-16 px-3 c-black helvetica-75 d-block mt-3">Ryuichi Sakamoto & David Bowie</span>
-                        <span class="f-14 px-3 c-light-text helvetica-55 d-block mb-3 mt-2">14 ოქტომბერი, 2019</span>
-                    </article>
-                    <div class="border-top d-flex w-100 align-items-center justify-content-between py-2 px-3">
-                        <div class="d-flex align-items-center">
-                            <img class="mr-2" src="./img/Group 793.svg" alt="">
-                            <span class="f-14 c-light-text helvetica-55">ედვარდ გულაშვილი</span>
+                <div class="w-100 d-flex justify-content-between align-items-center scroll-child overflow-auto">
+
+                    <div class="block mt-5 mx-3 br-10 overflow-hidden bc-white scroll-block">
+                        <article class="article d-flex flex-column">
+                            <img class="w-100" src="./img/Group 804.svg" alt="">
+                            <span class="f-16 px-3 c-black helvetica-75 d-block mt-3">Ryuichi Sakamoto & David
+                                Bowie</span>
+                            <span class="f-14 px-3 c-light-text helvetica-55 d-block mb-3 mt-2">14 ოქტომბერი,
+                                2019</span>
+                        </article>
+                        <div class="border-top d-flex w-100 align-items-center justify-content-between py-2 px-3">
+                            <div class="d-flex align-items-center">
+                                <img class="mr-2" src="./img/Group 793.svg" alt="">
+                                <span class="f-14 c-light-text helvetica-55">ედვარდ გულაშვილი</span>
+                            </div>
+                            <span class="f-14 c-purple helvetica-55">
+                                გრაფიკ
+                            </span>
                         </div>
-                        <span class="f-14 c-purple helvetica-55">
-                            გრაფიკ
-                        </span>
                     </div>
-                </div>
-                <div class="block mt-5 mx-3 br-10 overflow-hidden bc-white">
-                    <article class="article d-flex flex-column">
-                        <img src="./img/Group 804.svg" alt="">
-                        <span class="f-16 px-3 c-black helvetica-75 d-block mt-3">Ryuichi Sakamoto & David Bowie</span>
-                        <span class="f-14 px-3 c-light-text helvetica-55 d-block mb-3 mt-2">14 ოქტომბერი, 2019</span>
-                    </article>
-                    <div class="border-top d-flex w-100 align-items-center justify-content-between py-2 px-3">
-                        <div class="d-flex align-items-center">
-                            <img class="mr-2" src="./img/Group 793.svg" alt="">
-                            <span class="f-14 c-light-text helvetica-55">ედვარდ გულაშვილი</span>
+                    <div class="block mt-5 mx-3 br-10 overflow-hidden bc-white scroll-block">
+                        <article class="article d-flex flex-column">
+                            <img class="w-100" src="./img/Group 804.svg" alt="">
+                            <span class="f-16 px-3 c-black helvetica-75 d-block mt-3">Ryuichi Sakamoto & David
+                                Bowie</span>
+                            <span class="f-14 px-3 c-light-text helvetica-55 d-block mb-3 mt-2">14 ოქტომბერი,
+                                2019</span>
+                        </article>
+                        <div class="border-top d-flex w-100 align-items-center justify-content-between py-2 px-3">
+                            <div class="d-flex align-items-center">
+                                <img class="mr-2" src="./img/Group 793.svg" alt="">
+                                <span class="f-14 c-light-text helvetica-55">ედვარდ გულაშვილი</span>
+                            </div>
+                            <span class="f-14 c-purple helvetica-55">
+                                გრაფიკ
+                            </span>
                         </div>
-                        <span class="f-14 c-purple helvetica-55">
-                            გრაფიკ
-                        </span>
                     </div>
-                </div>
-                <div class="block mt-5 mx-3 br-10 overflow-hidden bc-white">
-                    <article class="article d-flex flex-column">
-                        <img src="./img/Group 804.svg" alt="">
-                        <span class="f-16 px-3 c-black helvetica-75 d-block mt-3">Ryuichi Sakamoto & David Bowie</span>
-                        <span class="f-14 px-3 c-light-text helvetica-55 d-block mb-3 mt-2">14 ოქტომბერი, 2019</span>
-                    </article>
-                    <div class="border-top d-flex w-100 align-items-center justify-content-between py-2 px-3">
-                        <div class="d-flex align-items-center">
-                            <img class="mr-2" src="./img/Group 793.svg" alt="">
-                            <span class="f-14 c-light-text helvetica-55">ედვარდ გულაშვილი</span>
+                    <div class="block mt-5 mx-3 br-10 overflow-hidden bc-white scroll-block">
+                        <article class="article d-flex flex-column">
+                            <img class="w-100" src="./img/Group 804.svg" alt="">
+                            <span class="f-16 px-3 c-black helvetica-75 d-block mt-3">Ryuichi Sakamoto & David
+                                Bowie</span>
+                            <span class="f-14 px-3 c-light-text helvetica-55 d-block mb-3 mt-2">14 ოქტომბერი,
+                                2019</span>
+                        </article>
+                        <div class="border-top d-flex w-100 align-items-center justify-content-between py-2 px-3">
+                            <div class="d-flex align-items-center">
+                                <img class="mr-2" src="./img/Group 793.svg" alt="">
+                                <span class="f-14 c-light-text helvetica-55">ედვარდ გულაშვილი</span>
+                            </div>
+                            <span class="f-14 c-purple helvetica-55">
+                                გრაფიკ
+                            </span>
                         </div>
-                        <span class="f-14 c-purple helvetica-55">
-                            გრაფიკ
-                        </span>
                     </div>
                 </div>
             </div>
+
             <div>
                 <button class=" helvetica-75 mt-5 blue-button">ნამუშევარი</button>
 
@@ -350,82 +462,99 @@
     </section>
     <section class="finished__courses">
         <div class="center d-flex flex-column align-items-center">
-            <h1 class="f-30 mb-2 helvetica-75 c-black">სტუდენტების ნამუშევრები</h1>
+            <h1 class="f-30 mb-2 helvetica-75 c-black">ჩვენი კურსდამთავრებულები</h1>
             <span class="f-16 helvetica-55 c-light-text">დაგვიტოვე შენი საკონტაქტო ინფორმაცია და მიიღე
                 უახლოესი ინფორმაცია მასტერკლასებზე.</span>
-            <div class=" mt-4 w-100 course-block">
-                <div class="block py-3 px-4">
-                    <img class="mb-2" src="./img/Path 923.svg" alt="">
-                    <span class=" col-10 f-12 helvetica-55 d-block c-light-text">ტექნოლოგიების განვითარებამ
-                        შესაძლებელი გახადა, რომ ქადა ორი ხელით ვჭამოთ. მადლობა თქვენ ამისთვის!</span>
-                    <div class=" col-10 d-flex w-100 align-items-center justify-content-between py-2 mt-3">
-                        <div class="d-flex align-items-center">
-                            <img class="mr-2" src="./img/Group 793.svg" alt="">
-                            <span class="f-12 c-light-text helvetica-55">ედვარდ გულაშვილი</span>
+            <div class="scroll-parent">
+
+                <div class=" mt-5 scroll-child w-100 course-block overflow-auto">
+                    <div class="block py-3 px-4  scroll-block">
+                        <img class="mb-2" src="./img/Path 923.svg" alt="">
+                        <span class=" col-10 f-12 helvetica-55 d-block c-light-text">ტექნოლოგიების განვითარებამ
+                            შესაძლებელი გახადა, რომ ქადა ორი ხელით ვჭამოთ. მადლობა თქვენ ამისთვის!</span>
+                        <div class=" col-10 d-flex w-100 align-items-center justify-content-between py-2 mt-3">
+                            <div class="d-flex align-items-center">
+                                <img class="mr-2" src="./img/Group 793.svg" alt="">
+                                <span class="f-12 c-light-text helvetica-55">ედვარდ გულაშვილი</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="block py-3 px-4">
-                    <img class="mb-2" src="./img/Path 923.svg" alt="">
-                    <span class=" col-10 f-12 helvetica-55 d-block c-light-text">ტექნოლოგიების განვითარებამ
-                        შესაძლებელი გახადა, რომ ქადა ორი ხელით ვჭამოთ. მადლობა თქვენ ამისთვის!</span>
-                    <div class=" col-10 d-flex w-100 align-items-center justify-content-between py-2 mt-3">
-                        <div class="d-flex align-items-center">
-                            <img class="mr-2" src="./img/Group 793.svg" alt="">
-                            <span class="f-12 c-light-text helvetica-55">ედვარდ გულაშვილი</span>
+                    <div class="block py-3 px-4  scroll-block">
+                        <img class="mb-2" src="./img/Path 923.svg" alt="">
+                        <span class=" col-10 f-12 helvetica-55 d-block c-light-text">ტექნოლოგიების განვითარებამ
+                            შესაძლებელი გახადა, რომ ქადა ორი ხელით ვჭამოთ. მადლობა თქვენ ამისთვის!</span>
+                        <div class=" col-10 d-flex w-100 align-items-center justify-content-between py-2 mt-3">
+                            <div class="d-flex align-items-center">
+                                <img class="mr-2" src="./img/Group 793.svg" alt="">
+                                <span class="f-12 c-light-text helvetica-55">ედვარდ გულაშვილი</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="block py-3 px-4">
-                    <img class="mb-2" src="./img/Path 923.svg" alt="">
-                    <span class=" col-10 f-12 helvetica-55 d-block c-light-text">ტექნოლოგიების განვითარებამ
-                        შესაძლებელი გახადა, რომ ქადა ორი ხელით ვჭამოთ. მადლობა თქვენ ამისთვის!</span>
-                    <div class=" col-10 d-flex w-100 align-items-center justify-content-between py-2 mt-3">
-                        <div class="d-flex align-items-center">
-                            <img class="mr-2" src="./img/Group 793.svg" alt="">
-                            <span class="f-12 c-light-text helvetica-55">ედვარდ გულაშვილი</span>
+                    <div class="block py-3 px-4  scroll-block">
+                        <img class="mb-2" src="./img/Path 923.svg" alt="">
+                        <span class=" col-10 f-12 helvetica-55 d-block c-light-text">ტექნოლოგიების განვითარებამ
+                            შესაძლებელი გახადა, რომ ქადა ორი ხელით ვჭამოთ. მადლობა თქვენ ამისთვის!</span>
+                        <div class=" col-10 d-flex w-100 align-items-center justify-content-between py-2 mt-3">
+                            <div class="d-flex align-items-center">
+                                <img class="mr-2" src="./img/Group 793.svg" alt="">
+                                <span class="f-12 c-light-text helvetica-55">ედვარდ გულაშვილი</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
     <section class="block__section bc-banner">
         <div class="center d-flex flex-column align-items-center">
             <h1 class="f-30 mb-2 helvetica-75 c-black">ბლოგი</h1>
             <span class="f-16 helvetica-55 c-light-text">გაეცანი სიახლეებს ტექნოლოგიურ სფეროში</span>
-            <div class="w-100 mt-3 d-flex align-items-center justify-content-between">
-                <div class="block p-0 mt-5 mx-3 br-10 overflow-hidden bc-white">
-                    <article class="article d-flex flex-column">
-                        <img class="w-100" src="./img/Group 852.svg" alt="">
-                        <span class="f-16 px-3 c-black helvetica-75 d-block mt-3 title">ინტერვიუ UI/UX კურსის </span>
-                        <span class="f-14 px-3 c-light-text helvetica-55 d-block mb-3 mt-4">ტექნოლოგიების განვითარებამ
-                            შესაძლებელობა მომცა, რომ ქადა ორი
-                            ხელით მეჭამა,მადლობა თქვენ ამისთვის!</span>
-                        <span class="f-14 px-3 c-light-text helvetica-55 d-block mb-3 mt-3">14 ოქტომბერი, 2019</span>
-                    </article>
-                </div>
-                <div class="block p-0 mt-5 mx-3 br-10 overflow-hidden bc-white">
-                    <article class="article d-flex flex-column">
-                        <img class="w-100" src="./img/Group 852.svg" alt="">
-                        <span class="f-16 px-3 c-black helvetica-75 d-block mt-3 title">ინტერვიუ UI/UX კურსის </span>
-                        <span class="f-14 px-3 c-light-text helvetica-55 d-block mb-3 mt-4">ტექნოლოგიების განვითარებამ
-                            შესაძლებელობა მომცა, რომ ქადა ორი
-                            ხელით მეჭამა,მადლობა თქვენ ამისთვის!</span>
-                        <span class="f-14 px-3 c-light-text helvetica-55 d-block mb-3 mt-3">14 ოქტომბერი, 2019</span>
-                    </article>
-                </div>
-                <div class="block p-0 mt-5 mx-3 br-10 overflow-hidden bc-white">
-                    <article class="article d-flex flex-column">
-                        <img class="w-100" src="./img/Group 852.svg" alt="">
-                        <span class="f-16 px-3 c-black helvetica-75 d-block mt-3 title">ინტერვიუ UI/UX კურსის </span>
-                        <span class="f-14 px-3 c-light-text helvetica-55 d-block mb-3 mt-4">ტექნოლოგიების განვითარებამ
-                            შესაძლებელობა მომცა, რომ ქადა ორი
-                            ხელით მეჭამა,მადლობა თქვენ ამისთვის!</span>
-                        <span class="f-14 px-3 c-light-text helvetica-55 d-block mb-3 mt-3">14 ოქტომბერი, 2019</span>
-                    </article>
+            <div class="scroll-parent">
+
+                <div class="w-100 mt-3 d-flex align-items-center justify-content-between overflow-auto scroll-child">
+                    <div class="block p-0 mt-5 mx-3 br-10 overflow-hidden bc-white scroll-block">
+                        <article class="article d-flex flex-column">
+                            <img class="w-100" src="./img/Group 852.svg" alt="">
+                            <span class="f-16 px-3 c-black helvetica-75 d-block mt-3 title">ინტერვიუ UI/UX კურსის
+                            </span>
+                            <span class="f-14 px-3 c-light-text helvetica-55 d-block mb-3 mt-4">ტექნოლოგიების
+                                განვითარებამ
+                                შესაძლებელობა მომცა, რომ ქადა ორი
+                                ხელით მეჭამა,მადლობა თქვენ ამისთვის!</span>
+                            <span class="f-14 px-3 c-light-text helvetica-55 d-block mb-3 mt-3">14 ოქტომბერი,
+                                2019</span>
+                        </article>
+                    </div>
+                    <div class="block p-0 mt-5 mx-3 br-10 overflow-hidden bc-white scroll-block">
+                        <article class="article d-flex flex-column">
+                            <img class="w-100" src="./img/Group 852.svg" alt="">
+                            <span class="f-16 px-3 c-black helvetica-75 d-block mt-3 title">ინტერვიუ UI/UX კურსის
+                            </span>
+                            <span class="f-14 px-3 c-light-text helvetica-55 d-block mb-3 mt-4">ტექნოლოგიების
+                                განვითარებამ
+                                შესაძლებელობა მომცა, რომ ქადა ორი
+                                ხელით მეჭამა,მადლობა თქვენ ამისთვის!</span>
+                            <span class="f-14 px-3 c-light-text helvetica-55 d-block mb-3 mt-3">14 ოქტომბერი,
+                                2019</span>
+                        </article>
+                    </div>
+                    <div class="block p-0 mt-5 mx-3 br-10 overflow-hidden bc-white scroll-block">
+                        <article class="article d-flex flex-column">
+                            <img class="w-100" src="./img/Group 852.svg" alt="">
+                            <span class="f-16 px-3 c-black helvetica-75 d-block mt-3 title">ინტერვიუ UI/UX კურსის
+                            </span>
+                            <span class="f-14 px-3 c-light-text helvetica-55 d-block mb-3 mt-4">ტექნოლოგიების
+                                განვითარებამ
+                                შესაძლებელობა მომცა, რომ ქადა ორი
+                                ხელით მეჭამა,მადლობა თქვენ ამისთვის!</span>
+                            <span class="f-14 px-3 c-light-text helvetica-55 d-block mb-3 mt-3">14 ოქტომბერი,
+                                2019</span>
+                        </article>
+                    </div>
                 </div>
             </div>
+
             <div>
                 <button class=" helvetica-75 mt-5 blue-button">ყველა სტატია</button>
 
@@ -455,7 +584,7 @@
 
 
     <footer class="footer">
-        <div class="up__side center d-flex justify-content-between pb-2">
+        <div class="up__side center d-none d-md-flex justify-content-between pb-2">
             <ul class="left__side fuuter__lists mt-5 col-4 p-0">
                 <li class="list">
                     <span class="c-black f-14 helvetica-75">დაგვიკავშირდით</span>
@@ -471,20 +600,38 @@
                     <span class="c-black f-14 helvetica-75">გამოგვყევი</span>
                 </li>
                 <li class="list d-flex align-items-center mt-4">
-                    <img class="" src="./img/be.svg" alt="">
-                    <img class="ml-2" src="./img/linkedin.svg" alt="">
-                    <img class="ml-2" src="./img/Group 768.svg" alt="">
-                    <img class="ml-2" src="./img/fb.svg" alt="">
-                    <img class="ml-2" src="./img/twitter.svg" alt="">
-                    <img class="ml-2" src="./img/Subtraction.svg" alt="">
+                    <a href="">
+                        <img class="" src="./img/be.svg" alt="">
+
+                    </a>
+                    <a href="">
+
+                        <img class="ml-2" src="./img/linkedin.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img class="ml-2" src="./img/Group 768.svg" alt="">
+
+                    </a>
+                    <a href="">
+                        <img class="ml-2" src="./img/fb.svg" alt="">
+
+                    </a>
+                    <a href="">
+
+                        <img class="ml-2" src="./img/twitter.svg" alt="">
+                    </a>
+                    <a href="">
+
+                        <img class="ml-2" src="./img/Subtraction.svg" alt="">
+                    </a>
                 </li>
             </ul>
             <ul class="center__side fuuter__lists mt-5 col-4 p-0">
                 <li class="list">
-                    <span  class="c-black f-14 helvetica-75">გვერდები</span>
+                    <span class="c-black f-14 helvetica-75">გვერდები</span>
                 </li>
                 <li class="list d-flex align-items-center mt-5">
-                    <a href="courses.html" class="c-light-text f-14 helvetica-55 pointer">კურსები</a>
+                    <a class="c-light-text f-14 helvetica-55 pointer">კურსები</a>
                 </li>
                 <li class="list d-flex align-items-center mt-3">
                     <a class="c-light-text f-14 helvetica-55 pointer">მასტერკლასები</a>
@@ -529,16 +676,149 @@
                 </li>
             </ul>
         </div>
+        <div id="accordion" class="mx-auto d-flex flex-column d-md-none up__side" style="max-width: 80%;">
+            <li class="list d-flex align-items-center mt-4 ml-3 pl-3">
+                <a href="">
+                    <img class="" src="./img/be.svg" alt="">
+
+                </a>
+                <a href="">
+
+                    <img class="ml-2" src="./img/linkedin.svg" alt="">
+                </a>
+                <a href="">
+                    <img class="ml-2" src="./img/Group 768.svg" alt="">
+
+                </a>
+                <a href="">
+                    <img class="ml-2" src="./img/fb.svg" alt="">
+
+                </a>
+                <a href="">
+
+                    <img class="ml-2" src="./img/twitter.svg" alt="">
+                </a>
+                <a href="">
+
+                    <img class="ml-2" src="./img/Subtraction.svg" alt="">
+                </a>
+            </li>
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <a class="btn btn-link c-black f-14 helvetica-75" data-toggle="collapse"
+                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            დაგვიკავშირდით
+                        </a>
+
+                    </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <ul class="left__side fuuter__lists mt-2  ml-3 p-0">
+                            <li class="list d-flex align-items-center mt-2">
+                                <img class="mr-3" src="./img/konvert.svg" alt="">
+                                <a class="c-light-text pointer f-14 helvetica-55">support@digitaledu.ge</a>
+                            </li>
+                            <li class="list d-flex align-items-center mt-2">
+                                <span class="c-light-text f-14 helvetica-55">ილია ჭავჭავაძის გამზ. 33, თბილისი</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <a class="btn btn-link collapsed c-black f-14 helvetica-75" data-toggle="collapse"
+                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            გვერდები
+                        </a>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        <ul class="center__side fuuter__lists  p-0 ml-3">
+                            <li class="list d-flex align-items-center mt-2">
+                                <a class="c-light-text f-14 helvetica-55 pointer">კურსები</a>
+                            </li>
+                            <li class="list d-flex align-items-center mt-3">
+                                <a class="c-light-text f-14 helvetica-55 pointer">მასტერკლასები</a>
+                            </li>
+                            <li class="list d-flex align-items-center mt-3">
+                                <a class="c-light-text f-14 helvetica-55 pointer">შეთავაზებები</a>
+                            </li>
+                            <li class="list d-flex align-items-center mt-3">
+                                <a class="c-light-text f-14 helvetica-55 pointer">ბლოგი</a>
+                            </li>
+                            <li class="list d-flex align-items-center mt-3">
+                                <a class="c-light-text f-14 helvetica-55 pointer">ჩვენ შესახებ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <a class="btn btn-link collapsed c-black f-14 helvetica-75" data-toggle="collapse"
+                            data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            გამოიწერე სიახლეები
+                        </a>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body ml-3">
+                        <li class="list d-flex align-items-center mt-2">
+                            <span class="c-light-text f-14 helvetica-55 col-10 p-0">გამოიწერე სიახლეები და მიიღე დროულად
+                                ყველა ინფორმაცია ჩვენ შესახებ </span>
+                        </li>
+                        <li class="list d-flex align-items-center mt-3">
+                            <form action="" class="mail__form  p-0">
+                                <div class=" position-relative">
+                                    <input class="mail__input helvetica-55 c-light-text f-12 w-100" type="text"
+                                        placeholder="ელ-ფოსტა">
+                                    <img class="icon" src="./img/Icons.svg" alt="">
+                                </div>
+                                <div class="mt-2">
+                                    <label class="cheks mb-0 d-flex align-items-center mt-3"
+                                        for="isPoliticallyExposedPerson">
+                                        <span class="mr-2 pl-2 helvetica-55 f-14 c-light-text">ვეთანხმები
+                                            პირობებს</span>
+                                        <input type="checkbox" id="isPoliticallyExposedPerson" />
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </form>
+                        </li>
+                        <li class="list d-flex align-items-center mt-3">
+                            <span class="c-light-text f-14 helvetica-55 col-10 p-0">ვეთანხმები ციფრული ინდისუტრიის
+                                აკადემიის კონფიდენციალურობის პილიტიკას</span>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="down__side w-100 d-flex align-items-center">
             <div class="center d-flex justify-content-lg-between justify-content-around align-items-center">
                 <span class="c-light-text f-12 helvetica-55">
                     © ციფრული ინდუსტრიის აკადემია, 2020
                 </span>
-                <span class="c-light-text f-12 helvetica-55">
+                <span class="c-light-text f-12 d-none d-md-flex helvetica-55">
                     <span>წესები და პირობები</span>
                     <span class="pl-2">კონფიდენციალურობა </span>
                 </span>
-                <div>
+                <div class=" d-none d-md-flex">
                     <img src="./img/visa.svg" alt="">
                     <img class="ml-2" src="./img/mastercard.svg" alt="">
                 </div>
@@ -583,7 +863,14 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
-
+    <script>
+        let burgerClick = document.getElementById('burger');
+        let burgerMenu = document.getElementById('burger-menu');
+        function burger() {
+            burgerClick.classList.toggle('active');
+            burgerMenu.classList.toggle('active');
+        }
+    </script>
 </body>
 
 </html>

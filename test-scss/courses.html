@@ -12,7 +12,7 @@
     <!-- <link rel="stylesheet" href="nucleo-icons.css" /> -->
     <link rel="stylesheet" href="style/style.css" />
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
-    <link href="path/to/select2.min.css" rel="stylesheet" />
+    <link href="path/to/select2.min.css" re
 </head>
 
 <body>
@@ -22,7 +22,7 @@
             <a class="logo__block mr-5" href="index.html">
                 <img src="./img/logo.svg" alt="" class="logo">
             </a>
-            <nav class="nav d-flex justify-content-between w-100">
+            <nav class="nav d-none d-lg-flex justify-content-between w-100">
                 <ul class="ul d-flex ">
                     <li class="list mr-4 d-flex align-items-center">
                         <a href="courses.html"
@@ -57,7 +57,7 @@
 
     </div>
     <footer class="footer">
-        <div class="up__side center d-flex justify-content-between pb-2">
+        <div class="up__side center d-none d-md-flex justify-content-between pb-2">
             <ul class="left__side fuuter__lists mt-5 col-4 p-0">
                 <li class="list">
                     <span class="c-black f-14 helvetica-75">დაგვიკავშირდით</span>
@@ -73,12 +73,30 @@
                     <span class="c-black f-14 helvetica-75">გამოგვყევი</span>
                 </li>
                 <li class="list d-flex align-items-center mt-4">
-                    <img class="" src="./img/be.svg" alt="">
-                    <img class="ml-2" src="./img/linkedin.svg" alt="">
-                    <img class="ml-2" src="./img/Group 768.svg" alt="">
-                    <img class="ml-2" src="./img/fb.svg" alt="">
-                    <img class="ml-2" src="./img/twitter.svg" alt="">
-                    <img class="ml-2" src="./img/Subtraction.svg" alt="">
+                    <a href="">
+                        <img class="" src="./img/be.svg" alt="">
+
+                    </a>
+                    <a href="">
+
+                        <img class="ml-2" src="./img/linkedin.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img class="ml-2" src="./img/Group 768.svg" alt="">
+
+                    </a>
+                    <a href="">
+                        <img class="ml-2" src="./img/fb.svg" alt="">
+
+                    </a>
+                    <a href="">
+
+                        <img class="ml-2" src="./img/twitter.svg" alt="">
+                    </a>
+                    <a href="">
+
+                        <img class="ml-2" src="./img/Subtraction.svg" alt="">
+                    </a>
                 </li>
             </ul>
             <ul class="center__side fuuter__lists mt-5 col-4 p-0">
@@ -128,16 +146,141 @@
                 </li>
             </ul>
         </div>
+        <div id="accordion" class="mx-auto d-flex flex-column d-md-none up__side" style="max-width: 80%;">
+            <li class="list d-flex align-items-center mt-4 ml-3 pl-3">
+                <a href="">
+                    <img class="" src="./img/be.svg" alt="">
+
+                </a>
+                <a href="">
+
+                    <img class="ml-2" src="./img/linkedin.svg" alt="">
+                </a>
+                <a href="">
+                    <img class="ml-2" src="./img/Group 768.svg" alt="">
+
+                </a>
+                <a href="">
+                    <img class="ml-2" src="./img/fb.svg" alt="">
+
+                </a>
+                <a href="">
+
+                    <img class="ml-2" src="./img/twitter.svg" alt="">
+                </a>
+                <a href="">
+
+                    <img class="ml-2" src="./img/Subtraction.svg" alt="">
+                </a>
+            </li>
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <a class="btn btn-link c-black f-14 helvetica-75" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    დაგვიკავშირდით
+                  </a>
+
+                </h5>
+              </div>
+          
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                    <ul class="left__side fuuter__lists mt-2  ml-3 p-0">
+                        <li class="list d-flex align-items-center mt-2">
+                            <img class="mr-3" src="./img/konvert.svg" alt="">
+                            <a class="c-light-text pointer f-14 helvetica-55">support@digitaledu.ge</a>
+                        </li>
+                        <li class="list d-flex align-items-center mt-2">
+                            <span class="c-light-text f-14 helvetica-55">ილია ჭავჭავაძის გამზ. 33, თბილისი</span>
+                        </li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+            
+            <div class="card" >
+              <div class="card-header"  id="headingTwo">
+                <h5 class="mb-0">
+                  <a class="btn btn-link collapsed c-black f-14 helvetica-75" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    გვერდები
+                  </a>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                    <ul class="center__side fuuter__lists  p-0 ml-3">
+                        <li class="list d-flex align-items-center mt-2">
+                            <a class="c-light-text f-14 helvetica-55 pointer">კურსები</a>
+                        </li>
+                        <li class="list d-flex align-items-center mt-3">
+                            <a class="c-light-text f-14 helvetica-55 pointer">მასტერკლასები</a>
+                        </li>
+                        <li class="list d-flex align-items-center mt-3">
+                            <a class="c-light-text f-14 helvetica-55 pointer">შეთავაზებები</a>
+                        </li>
+                        <li class="list d-flex align-items-center mt-3">
+                            <a class="c-light-text f-14 helvetica-55 pointer">ბლოგი</a>
+                        </li>
+                        <li class="list d-flex align-items-center mt-3">
+                            <a class="c-light-text f-14 helvetica-55 pointer">ჩვენ შესახებ</a>
+                        </li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <a class="btn btn-link collapsed c-black f-14 helvetica-75" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    გამოიწერე სიახლეები
+                  </a>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body ml-3">
+                    <li class="list d-flex align-items-center mt-2">
+                        <span class="c-light-text f-14 helvetica-55 col-10 p-0">გამოიწერე სიახლეები და მიიღე დროულად ყველა ინფორმაცია ჩვენ შესახებ </span>
+                    </li>
+                    <li class="list d-flex align-items-center mt-3">
+                        <form action="" class="mail__form  p-0">
+                            <div class=" position-relative">
+                                <input class="mail__input helvetica-55 c-light-text f-12 w-100" type="text" placeholder="ელ-ფოსტა">
+                                <img class="icon" src="./img/Icons.svg" alt="">
+                            </div>
+                            <div class="mt-2">
+                                <label class="cheks mb-0 d-flex align-items-center mt-3" for="isPoliticallyExposedPerson">
+                                    <span class="mr-2 pl-2 helvetica-55 f-14 c-light-text">ვეთანხმები პირობებს</span>
+                                    <input type="checkbox" id="isPoliticallyExposedPerson" />
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </form>
+                    </li>
+                    <li class="list d-flex align-items-center mt-3">
+                        <span class="c-light-text f-14 helvetica-55 col-10 p-0">ვეთანხმები ციფრული ინდისუტრიის აკადემიის კონფიდენციალურობის პილიტიკას</span>
+                    </li>
+                </div>
+              </div>
+            </div>
+          </div>
         <div class="down__side w-100 d-flex align-items-center">
             <div class="center d-flex justify-content-lg-between justify-content-around align-items-center">
                 <span class="c-light-text f-12 helvetica-55">
                     © ციფრული ინდუსტრიის აკადემია, 2020
                 </span>
-                <span class="c-light-text f-12 helvetica-55">
+                <span class="c-light-text f-12 d-none d-md-flex helvetica-55">
                     <span>წესები და პირობები</span>
                     <span class="pl-2">კონფიდენციალურობა </span>
                 </span>
-                <div>
+                <div class=" d-none d-md-flex">
                     <img src="./img/visa.svg" alt="">
                     <img class="ml-2" src="./img/mastercard.svg" alt="">
                 </div>
