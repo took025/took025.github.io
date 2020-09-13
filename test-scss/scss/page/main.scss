@@ -258,7 +258,7 @@ body {
             &:hover {
                 background-color: $white;
                 transform: scale(1.07);
-                box-shadow: 3px 3px 28px -9px rgba(0, 0, 0, 0.75);
+                box-shadow: 1px 1px 6px 3px rgba(0,0,0,0.14);
                 transition: 0.3s;
 
                 span {
@@ -277,7 +277,7 @@ body {
 
         &:hover {
             transform: scale(1.07);
-            box-shadow: 3px 3px 28px -9px rgba(0, 0, 0, 0.75);
+            box-shadow: 1px 1px 6px 3px rgba(0,0,0,0.14);
             transition: 0.3s;
         }
     }
