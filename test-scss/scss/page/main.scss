@@ -41,57 +41,61 @@ body {
     background-color: $white;
     height: 80px;
     width: 100%;
+    border-bottom: 1px solid $border;
+    .header__block {
+        &.center {
+            max-width: 1280px;
+        }
+    }
+}
+.nav-header {
+    height: 80px;
+    .list {
+        .nav__a {
+            display: flex;
+            align-items: center;
+            position: relative;
+            text-decoration: none;
+            cursor: pointer;
+            height: 80px;
 
-    .nav {
-        height: 80px;
-
-        .list {
-            .nav__a {
-                display: flex;
-                align-items: center;
-                position: relative;
-                text-decoration: none;
-                cursor: pointer;
-                height: 80px;
-
-                &:after {
-                    background: none repeat scroll 0 0 transparent;
-                    bottom: 0;
-                    content: "";
-                    display: block;
-                    height: 2px;
-                    left: 50%;
-                    position: absolute;
-                    background: $blue;
-                    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-                    width: 0;
-                }
-
-                &:hover:after {
-                    width: 100%;
-                    left: 0;
-                }
+            &:after {
+                background: none repeat scroll 0 0 transparent;
+                bottom: 0;
+                content: "";
+                display: block;
+                height: 2px;
+                left: 50%;
+                position: absolute;
+                background: $blue;
+                transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                width: 0;
             }
 
+            &:hover:after {
+                width: 100%;
+                left: 0;
+            }
         }
 
-        .right_ul {
-            .right__list {
-                position: relative;
+    }
 
-                .numbering {
-                    position: absolute;
-                    right: -8px;
-                    top: -4px;
-                    background-color: $orange;
-                    width: 15px;
-                    height: 15px;
-                    border-radius: 50%;
-                    font-size: 12px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center
-                }
+    .right_ul {
+        .right__list {
+            position: relative;
+
+            .numbering {
+                position: absolute;
+                right: -8px;
+                top: -4px;
+                background-color: $orange;
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                font-size: 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center
             }
         }
     }
