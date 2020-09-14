@@ -65,6 +65,7 @@ $number_varriables:(
     '20': 20px,
     '23': 23px,
     '24': 24px,
+    '25': 25px,
     '28': 28px,
     '30': 30px,
     '35': 35px,
@@ -125,6 +126,12 @@ $value in $number_varriables {
 $value in $number_varriables {
     .br-#{$key} {
         border-radius: $value;
+    }
+}
+@each $key,
+$value in $number_varriables {
+    .lh-#{$key} {
+        line-height: $value;
     }
 }
 
