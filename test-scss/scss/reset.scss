@@ -40,4 +40,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     border-spacing: 0; }
     a {
       text-decoration: none;
+      &:hover {
+        color: initial  ;
+      }
+    }
+    h1,h2,span {
+      word-break: break-all;
     }

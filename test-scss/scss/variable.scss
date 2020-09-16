@@ -51,8 +51,7 @@ $theme-colors: ( //   "brown": $brown,
     // 'violet': $violet,
 
 );
-$number_varriables:(
-    '5' : 5px,
+$number_varriables:('5' : 5px,
     '8': 8px,
     '10': 10px,
     '11': 11px,
@@ -128,10 +127,17 @@ $value in $number_varriables {
         border-radius: $value;
     }
 }
+
 @each $key,
 $value in $number_varriables {
     .lh-#{$key} {
         line-height: $value;
+    }
+}
+
+a {
+    &:hover {
+        text-decoration: none;
     }
 }
 
@@ -150,7 +156,7 @@ $value in $number_varriables {
     transition: 0.3s;
     border: none;
     color: white;
-    border-radius: 10px;
+    border-radius: 8px;
 
     &:hover {
         background-color: rgba(101, 149, 255, 0.7);
@@ -166,7 +172,7 @@ $value in $number_varriables {
     transition: 0.3s;
     border: none;
     color: white;
-    border-radius: 10px;
+    border-radius: 8px;
 
     &:hover {
         background-color: rgba(159, 51, 255, 0.7);
@@ -183,7 +189,7 @@ $value in $number_varriables {
     border: none;
     color: $blue;
     border: 1px solid $blue;
-    border-radius: 10px;
+    border-radius: 8px;
     height: 40px;
 
     &:hover {
@@ -202,7 +208,7 @@ $value in $number_varriables {
     border: none;
     color: $orange;
     border: 1px solid $orange;
-    border-radius: 10px;
+    border-radius: 8px;
     height: 40px;
 
     &:hover {
@@ -221,7 +227,7 @@ $value in $number_varriables {
     border: none;
     color: $yellow;
     border: 1px solid $yellow;
-    border-radius: 10px;
+    border-radius: 8px;
     height: 40px;
 
     &:hover {
@@ -240,7 +246,7 @@ $value in $number_varriables {
     border: none;
     color: $purple;
     border: 1px solid $purple;
-    border-radius: 10px;
+    border-radius: 8px;
     height: 40px;
 
     &:hover {
@@ -254,7 +260,7 @@ $value in $number_varriables {
 .input {
     border: 1px solid #E0E0E0;
     min-height: 40px;
-    border-radius: 10px;
+    border-radius: 8px;
     padding-left: 15px;
     padding-right: 15px;
     transition: 0.3s;
@@ -262,18 +268,18 @@ $value in $number_varriables {
 
     &:hover {
         transition: 0.3s;
-        border: 2px solid rgba(101, 149, 255, 0.7);
+        border: 4px solid #EFF4FF;
     }
 
     &:focus {
         transition: 0.3s;
-        border: 2px solid rgba(101, 149, 255, 0.7);
+        border: 4px solid #EFF4FF;
         color: $black;
     }
 
     &.wrong {
         transition: 0.3s;
-        border: 2px solid rgba(255, 101, 101, 0.1);
+        border: 4px solid #FFEFEF;
 
     }
 }
@@ -286,19 +292,21 @@ $value in $number_varriables {
         border: 2px solid transparent;
         background-color: #F3F3F4;
         min-height: 40px;
-        border-radius: 10px;
+        border-radius: 8px;
         padding-left: 40px;
         padding-right: 15px;
         transition: 0.3s;
 
         &:hover {
             transition: 0.3s;
-            border: 2px solid rgba(101, 149, 255, 0.7);
+            border: 4px solid #EFF4FF;
+
         }
 
         &:focus {
             transition: 0.3s;
-            border: 2px solid rgba(101, 149, 255, 0.7);
+            border: 4px solid #EFF4FF;
+
             color: $black;
         }
 
@@ -326,7 +334,7 @@ $value in $number_varriables {
         border: 2px solid transparent;
         background-color: #F3F3F4;
         min-height: 40px;
-        border-radius: 10px;
+        border-radius: 8px;
         padding-left: 15px;
         padding-right: 15px;
         transition: 0.3s;
@@ -334,12 +342,14 @@ $value in $number_varriables {
 
         &:hover {
             transition: 0.3s;
-            border: 2px solid rgba(101, 149, 255, 0.7);
+            border: 4px solid #EFF4FF;
+
         }
 
         &:focus {
             transition: 0.3s;
-            border: 2px solid rgba(101, 149, 255, 0.7);
+            border: 4px solid #EFF4FF;
+
             color: $black;
         }
 
@@ -348,19 +358,25 @@ $value in $number_varriables {
 
 .filter-drop {
     min-height: 40px;
-    border-radius: 10px;
+    border-radius: 8px;
     padding-left: 40px;
     padding-right: 15px;
     transition: 0.3s;
     border: 2px solid $border;
-
+    color: #4C4C4C;
     position: relative;
     display: flex;
     align-items: center;
+
     // &:hover {
     //     transition: 0.3s;
     //     border: 2px solid rgba(101, 149, 255, 0.7);
     // }
+    &:hover {
+        color: #000000;
+        transition: 0.3s;
+
+    }
 
     &.active {
         border: 2px solid transparent;

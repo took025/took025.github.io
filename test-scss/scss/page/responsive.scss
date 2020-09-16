@@ -19,13 +19,64 @@
         background-repeat: no-repeat;
         background-size: 100%;
     }
+
     .f-30 {
         font-size: 24px !important;
     }
+
     .f-24 {
         font-size: 16px !important;
     }
+
     .f-16 {
         font-size: 14px !important;
+    }
+    .f-20 {
+        font-size: 18px !important;
+    }
+    .f-40 {
+        font-size: 25px !important;
+        line-height: 30px !important;
+    }
+    .center {
+        padding: 0 37px !important;
+    }
+    .scroll-center {
+    padding-left: 37px !important;
+    padding-right: 0 !important;
+    }
+    .finished__courses .course-block,
+    .popular__courses .main {
+        grid-column-gap: 10px !important;
+    }
+    .finished__courses .course-block .block {
+        &:hover {
+            background-color: #F5F5F5 !important;
+            transform:scale(1) !important ;
+            box-shadow: initial !important;
+            transition: 0.3s;
+
+            span {
+                color: $light-text !important;
+                transition: 0.3s;
+
+            }
+        }
+    }
+    .home_blocks {
+        .block {
+            .down__side {
+                transition: 0.3s;
+            }
+    
+            &:hover {
+                .down__side {
+                    transition: 0.3s;
+                    // min-height: 355px;
+                    padding-top: 1rem !important;
+                    padding-bottom: 1rem !important;
+                }
+            }
+        }
     }
 }

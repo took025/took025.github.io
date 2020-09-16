@@ -9,5 +9,5 @@
 @import 'page/responsive.scss';
 @import 'page/burger.scss';
 * {
-    outline: none;
+    outline: none !important;
 }

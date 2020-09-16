@@ -43,7 +43,7 @@
                         <a href="" class="nav__a c-light-text c-hover-blue transition helvetica-75">შეთავაზებები</a>
                     </li>
                     <li class="list mr-4 d-flex align-items-center">
-                        <a href="" class="nav__a c-light-text c-hover-blue transition helvetica-75">ბლოგი</a>
+                        <a href="" class="nav__a c-light-text c-hover-blue transblock col-12 col-md-6 col-lg-4 d-flex flex-column justify-content-end scroll-block my-3ition helvetica-75">ბლოგი</a>
                     </li>
                     <li class="list mr-4 d-flex align-items-center">
                         <a href="" class="nav__a c-light-text c-hover-blue transition helvetica-75">ჩვენ შესახებ</a>
@@ -53,9 +53,9 @@
                     <li class="right__list mr-4 pointer">
                         <img src="./img/search-icon.svg" alt="">
                     </li>
-                    <li class="right__list cart pointer">
+                    <li class="right__list cart pointer position-relative" click="cart()" id="cart">
                         <img src="./img/cart-icon.svg" alt="">
-                        <span class="numbering c-white">1</span>
+                        <span class="numbering-cart c-white">1</span>
                     </li>
                 </ul>
             </nav>
@@ -143,9 +143,9 @@
     </header>
     <section class="popular__courses">
         <div class="center">
-            <div class="d-flex justify-content-between flex-wrap main courses__main master-class">
+            <div class="d-flex justify-content-between flex-wrap main courses__main row master-class">
                 <!-- for sale overlay add sale class to  block -->
-                <div class="block col-12 col-md-6 col-lg-4 d-flex flex-column justify-content-end scroll-block mt-3">
+                <div class="block col-12 col-md-6 col-lg-4 d-flex flex-column justify-content-end scroll-block my-3">
                     <div class="d-flex flex-column inside__block">
 
                         <div class="up__side bc-blue d-flex justify-content-between align-items-end overflow-hidden ">
@@ -160,7 +160,7 @@
                                 <span class="f-14 c-light-text helvetica-55">საბაზისო</span>
                                 <h1 class="f-20 mt-4 c-black helvetica-75">WEB დეველოპმენტი</h1>
                                 <span class="f-14 c-light-text helvetica-55">ქრისტინა კემულარია</span>
-                                <span class="f-14 d-block mt-4 c-light-text helvetica-55">ტექნოლოგიების განვითარებამ
+                                <span class="f-14 d-block mt-4 c-light-text helvetica-55 mb-1 mb-1">ტექნოლოგიების განვითარებამ
                                     შესაძლებელი გახადა, რომ სხვადასხვა
                                     პროფესიის ადამიანებმა თავად
                                     შეძლონ საკუთარი იდეების რეალიზება.</span>
@@ -177,7 +177,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="align-items-center bc-yellow br-10 d-flex flex-column h-100 
+                    <div class="align-items-center bc-yellow br-8 d-flex flex-column h-100 
                     justify-content-between sale__overlay position-absolute pb-3 px-3">
                         <img class="mt-4 w-100" src="./img/sale.png" alt="">
                         <div class="text__block d-flex align-items-center flex-column">
@@ -191,7 +191,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="block col-12 col-md-6 col-lg-4 d-flex flex-column justify-content-end scroll-block mt-3">
+                <div class="block col-12 col-md-6 col-lg-4 d-flex flex-column justify-content-end scroll-block my-3">
                     <div class="d-flex flex-column inside__block">
 
                         <div class="up__side bc-blue d-flex justify-content-between align-items-end overflow-hidden ">
@@ -206,7 +206,7 @@
                                 <span class="f-14 c-light-text helvetica-55">საბაზისო</span>
                                 <h1 class="f-20 mt-4 c-black helvetica-75">WEB დეველოპმენტი</h1>
                                 <span class="f-14 c-light-text helvetica-55">ქრისტინა კემულარია</span>
-                                <span class="f-14 d-block mt-4 c-light-text helvetica-55">ტექნოლოგიების განვითარებამ
+                                <span class="f-14 d-block mt-4 c-light-text helvetica-55 mb-1 mb-1">ტექნოლოგიების განვითარებამ
                                     შესაძლებელი გახადა, რომ სხვადასხვა
                                     პროფესიის ადამიანებმა თავად
                                     შეძლონ საკუთარი იდეების რეალიზება.</span>
@@ -223,7 +223,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="align-items-center bc-yellow br-10 d-flex flex-column h-100 
+                    <div class="align-items-center bc-yellow br-8 d-flex flex-column h-100 
                     justify-content-between sale__overlay position-absolute pb-3 px-3">
                         <img class="mt-4 w-100" src="./img/sale.png" alt="">
                         <div class="text__block d-flex align-items-center flex-column">
@@ -237,7 +237,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="block col-12 col-md-6 col-lg-4 d-flex flex-column justify-content-end scroll-block mt-3">
+                <div class="block col-12 col-md-6 col-lg-4 d-flex flex-column justify-content-end scroll-block my-3">
                     <div class="d-flex flex-column inside__block">
 
                         <div class="up__side bc-blue d-flex justify-content-between align-items-end overflow-hidden ">
@@ -252,7 +252,7 @@
                                 <span class="f-14 c-light-text helvetica-55">საბაზისო</span>
                                 <h1 class="f-20 mt-4 c-black helvetica-75">WEB დეველოპმენტი</h1>
                                 <span class="f-14 c-light-text helvetica-55">ქრისტინა კემულარია</span>
-                                <span class="f-14 d-block mt-4 c-light-text helvetica-55">ტექნოლოგიების განვითარებამ
+                                <span class="f-14 d-block mt-4 c-light-text helvetica-55 mb-1 mb-1">ტექნოლოგიების განვითარებამ
                                     შესაძლებელი გახადა, რომ სხვადასხვა
                                     პროფესიის ადამიანებმა თავად
                                     შეძლონ საკუთარი იდეების რეალიზება.</span>
@@ -269,7 +269,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="align-items-center bc-yellow br-10 d-flex flex-column h-100 
+                    <div class="align-items-center bc-yellow br-8 d-flex flex-column h-100 
                     justify-content-between sale__overlay position-absolute pb-3 px-3">
                         <img class="mt-4 w-100" src="./img/sale.png" alt="">
                         <div class="text__block d-flex align-items-center flex-column">
@@ -283,7 +283,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="block col-12 col-md-6 col-lg-4 d-flex flex-column justify-content-end scroll-block mt-3">
+                <div class="block col-12 col-md-6 col-lg-4 d-flex flex-column justify-content-end scroll-block my-3">
                     <div class="d-flex flex-column inside__block">
 
                         <div class="up__side bc-blue d-flex justify-content-between align-items-end overflow-hidden ">
@@ -298,7 +298,7 @@
                                 <span class="f-14 c-light-text helvetica-55">საბაზისო</span>
                                 <h1 class="f-20 mt-4 c-black helvetica-75">WEB დეველოპმენტი</h1>
                                 <span class="f-14 c-light-text helvetica-55">ქრისტინა კემულარია</span>
-                                <span class="f-14 d-block mt-4 c-light-text helvetica-55">ტექნოლოგიების განვითარებამ
+                                <span class="f-14 d-block mt-4 c-light-text helvetica-55 mb-1 mb-1">ტექნოლოგიების განვითარებამ
                                     შესაძლებელი გახადა, რომ სხვადასხვა
                                     პროფესიის ადამიანებმა თავად
                                     შეძლონ საკუთარი იდეების რეალიზება.</span>
@@ -315,7 +315,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="align-items-center bc-yellow br-10 d-flex flex-column h-100 
+                    <div class="align-items-center bc-yellow br-8 d-flex flex-column h-100 
                     justify-content-between sale__overlay position-absolute pb-3 px-3">
                         <img class="mt-4 w-100" src="./img/sale.png" alt="">
                         <div class="text__block d-flex align-items-center flex-column">
@@ -329,7 +329,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="block col-12 col-md-6 col-lg-4 d-flex flex-column justify-content-end scroll-block mt-3">
+                <div class="block col-12 col-md-6 col-lg-4 d-flex flex-column justify-content-end scroll-block my-3">
                     <div class="d-flex flex-column inside__block">
 
                         <div class="up__side bc-blue d-flex justify-content-between align-items-end overflow-hidden ">
@@ -344,7 +344,7 @@
                                 <span class="f-14 c-light-text helvetica-55">საბაზისო</span>
                                 <h1 class="f-20 mt-4 c-black helvetica-75">WEB დეველოპმენტი</h1>
                                 <span class="f-14 c-light-text helvetica-55">ქრისტინა კემულარია</span>
-                                <span class="f-14 d-block mt-4 c-light-text helvetica-55">ტექნოლოგიების განვითარებამ
+                                <span class="f-14 d-block mt-4 c-light-text helvetica-55 mb-1 mb-1">ტექნოლოგიების განვითარებამ
                                     შესაძლებელი გახადა, რომ სხვადასხვა
                                     პროფესიის ადამიანებმა თავად
                                     შეძლონ საკუთარი იდეების რეალიზება.</span>
@@ -361,7 +361,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="align-items-center bc-yellow br-10 d-flex flex-column h-100 
+                    <div class="align-items-center bc-yellow br-8 d-flex flex-column h-100 
                     justify-content-between sale__overlay position-absolute pb-3 px-3">
                         <img class="mt-4 w-100" src="./img/sale.png" alt="">
                         <div class="text__block d-flex align-items-center flex-column">
@@ -375,7 +375,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="block col-12 col-md-6 col-lg-4 d-flex flex-column justify-content-end scroll-block mt-3">
+                <div class="block col-12 col-md-6 col-lg-4 d-flex flex-column justify-content-end scroll-block my-3">
                     <div class="d-flex flex-column inside__block">
 
                         <div class="up__side bc-blue d-flex justify-content-between align-items-end overflow-hidden ">
@@ -390,7 +390,7 @@
                                 <span class="f-14 c-light-text helvetica-55">საბაზისო</span>
                                 <h1 class="f-20 mt-4 c-black helvetica-75">WEB დეველოპმენტი</h1>
                                 <span class="f-14 c-light-text helvetica-55">ქრისტინა კემულარია</span>
-                                <span class="f-14 d-block mt-4 c-light-text helvetica-55">ტექნოლოგიების განვითარებამ
+                                <span class="f-14 d-block mt-4 c-light-text helvetica-55 mb-1 mb-1">ტექნოლოგიების განვითარებამ
                                     შესაძლებელი გახადა, რომ სხვადასხვა
                                     პროფესიის ადამიანებმა თავად
                                     შეძლონ საკუთარი იდეების რეალიზება.</span>
@@ -407,7 +407,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="align-items-center bc-yellow br-10 d-flex flex-column h-100 
+                    <div class="align-items-center bc-yellow br-8 d-flex flex-column h-100 
                     justify-content-between sale__overlay position-absolute pb-3 px-3">
                         <img class="mt-4 w-100" src="./img/sale.png" alt="">
                         <div class="text__block d-flex align-items-center flex-column">
@@ -698,9 +698,14 @@
     <script>
         let burgerClick = document.getElementById('burger');
         let burgerMenu = document.getElementById('burger-menu');
+        let cart = document.getElementById('cart');
+        let cartMenu = document.getElementById('cart-menu');
         function burger() {
             burgerClick.classList.toggle('active');
             burgerMenu.classList.toggle('active');
+        }
+        function cart() {
+            cartMenu.classList.toggle('active')
         }
     </script>
 </body>
