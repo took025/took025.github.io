@@ -443,12 +443,13 @@ body {
 
 .home_blocks {
     .block {
+        padding-top: 30px;
         .down__side {
             transition: 0.3s;
         }
 
         &:hover {
-
+            padding-top: 0px;
             // transform: translateY(-20px);
             // background-color: red;
             .down__side {
