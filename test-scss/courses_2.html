@@ -1,0 +1,1563 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>academy</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="nucleo-icons.css" /> -->
+    <link rel="stylesheet" href="style/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+    <link href="path/to/select2.min.css" re </head>
+
+<body>
+    <header class="header">
+        <div class="header__block center justify-content-between h-100 d-flex align-items-center mx-auto    ">
+            <div class="burger d-flex d-lg-none" onclick="burger()">
+                <div class="inside-burger flex" id="burger">
+                    <span class=" rows burger1"></span>
+                    <span class=" rows burger2"></span>
+                    <span class=" rows burger3"></span>
+                </div>
+            </div>
+            <a class="logo__block mr-0 mr-md-5" href="index.html">
+                <img src="./img/logo.svg" alt="" class="logo">
+            </a>
+            <div class="d-flex d-lg-none">
+
+            </div>
+            <nav class="nav d-none d-lg-flex justify-content-between w-100">
+                <ul class="ul d-flex ">
+                    <li class="list mr-4 d-flex align-items-center">
+                        <a href="courses.html"
+                            class="nav__a c-light-text c-hover-blue transition helvetica-75">კურსები</a>
+                    </li>
+                    <li class="list mr-4 d-flex align-items-center">
+                        <a href="" class="nav__a c-light-text c-hover-blue transition helvetica-75">მასტერკლასები</a>
+                    </li>
+                    <li class="list mr-4 d-flex align-items-center">
+                        <a href="" class="nav__a c-light-text c-hover-blue transition helvetica-75">შეთავაზებები</a>
+                    </li>
+                    <li class="list mr-4 d-flex align-items-center">
+                        <a href=""
+                            class="nav__a c-light-text c-hover-blue transblock col-12 col-md-6 col-lg-4 d-flex flex-column justify-content-end scroll-block my-3ition helvetica-75">ბლოგი</a>
+                    </li>
+                    <li class="list mr-4 d-flex align-items-center">
+                        <a href="" class="nav__a c-light-text c-hover-blue transition helvetica-75">ჩვენ შესახებ</a>
+                    </li>
+                </ul>
+                <ul class="ul right_ul d-flex align-items-center">
+                    <li class="right__list mr-4 pointer">
+                        <img src="./img/search-icon.svg" alt="">
+                    </li>
+                    <li class="right__list cart pointer position-relative" click="cart()" id="cart">
+                        <img src="./img/cart-icon.svg" alt="">
+                        <span class="numbering-cart c-white">1</span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="burger-menu flex " id="burger-menu">
+            <div class=" burger-menu-child ">
+                <div id="accordion" class="mx-auto d-flex flex-column up__side" style="max-width: 80%;">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <span class="btn c-light-text f-14 helvetica-75" data-toggle="collapse"
+                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    კურსები
+                                    <img class="drop-icon" src="./img/Path.svg" alt="">
+
+                                </span>
+
+                            </h5>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            data-parent="#accordion">
+                            <div class="card-body py-2">
+                                <ul class="left__side fuuter__lists mt-2  ml-4 mb-3 p-0">
+                                    <li class="list d-flex align-items-center mt-2">
+                                        <a class="c-light-text pointer f-14 helvetica-55">პოპულარული</a>
+                                    </li>
+                                    <li class="list d-flex align-items-center mt-2">
+                                        <a class="c-light-text pointer f-14 helvetica-55">ახალი</a>
+                                    </li>
+                                    <li class="list d-flex align-items-center mt-2">
+                                        <a class="c-light-text pointer f-14 helvetica-55">ფასდაკლებით</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                    <a class="btn c-light-text f-14 helvetica-75 text-left pl-4 ml-2">
+                        მასტერკლასები
+                    </a>
+
+
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <a class="btn collapsed c-light-text f-14 helvetica-75" data-toggle="collapse"
+                                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    შეთავაზებები
+                                    <img class="drop-icon" src="./img/Path.svg" alt="">
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="py-0 card-body">
+                                <ul class="center__side fuuter__lists  p-0 mb-3 ml-4 border-left-1">
+                                    <li class="list d-flex align-items-center mt-2">
+                                        <a class="c-light-text f-14 helvetica-55 pointer">პაკეტები</a>
+                                    </li>
+                                    <li class="list d-flex align-items-center mt-3">
+                                        <a class="c-light-text f-14 helvetica-55 pointer">ფასდაკლებები</a>
+                                    </li>
+                                    <li class="list d-flex align-items-center mt-3">
+                                        <a class="c-light-text f-14 helvetica-55 pointer">კონკუსრები</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="btn c-light-text f-14 helvetica-75 text-left pl-4 ml-2 mt-2">
+                        ბლოგი
+                    </a>
+                    <a class="btn c-light-text f-14 helvetica-75 text-left pl-4 ml-2 mt-2">
+                        ჩვენ შესახებ
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="filter__place center d-flex align-items-center justify-content-between mt-3 pb-3">
+        <div class="nav nav-tabs border-0 d-none d-md-flex" id="nav-tab" role="tablist">
+            <a class="filter-a f-14 c-light-text active show" active" id="nav-home-tab" data-toggle="tab"
+                href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">მიმოხილვა</a>
+            <a class="filter-a f-14 c-light-text" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+                aria-controls="nav-profile" aria-selected="false">გნარიგი</a>
+            <a class="filter-a f-14 c-light-text" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
+                aria-controls="nav-contact" aria-selected="false">კურსის აღწერა</a>
+            <a class="filter-a f-14 c-light-text" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
+                aria-controls="nav-contact" aria-selected="false">ლექტორი</a>
+            <a class="filter-a f-14 c-light-text" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
+                aria-controls="nav-contact" aria-selected="false">სილაბუსი</a>
+            <a class="filter-a f-14 c-light-text" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
+                aria-controls="nav-contact" aria-selected="false">შეთავაზება</a>
+            <a class="filter-a f-14 c-light-text" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
+                aria-controls="nav-contact" aria-selected="false">ვიდეო</a>
+            <a class="filter-a f-14 c-light-text" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
+                aria-controls="nav-contact" aria-selected="false">ნამუშევრები</a>
+            <a class="filter-a f-14 c-light-text" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
+                aria-controls="nav-contact" aria-selected="false">კითხვა/პასუხი</a>
+        </div>
+        <div class="drop-parent col-12 col-sm-6 col-md-3 mt-3 pb-4 d-block d-md-none">
+            <div class=" dropdown-toggle w-100 drop d-flex align-items-center justify-content-between" type="button"
+                id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span>
+                    ნებისმიერი
+                </span>
+            </div>
+            <div class="dropdown-menu mt-2 px-2" aria-labelledby="dropdownMenuButton">
+                <div class="blcok pt-2 pb-2 pointer hover-bc-banner">
+                    <span class="mr-2 pl-2 helvetica-55 f-14 c-light-text d-flex align-items-center">
+                        დიზაინი</span>
+                </div>
+                <div class="blcok pt-2 pb-2 pointer hover-bc-banner">
+                    <span class="mr-2 pl-2 helvetica-55 f-14 c-light-text d-flex align-items-center">
+                        დეველოპმენტი</span>
+                </div>
+                <div class="blcok pt-2 pb-2 pointer hover-bc-banner">
+                    <span class="mr-2 pl-2 helvetica-55 f-14 c-light-text d-flex align-items-center">
+                        მარკეტინგი</span>
+                </div>
+                <div class="blcok pt-2 pb-2 pointer hover-bc-banner">
+                    <span class="mr-2 pl-2 helvetica-55 f-14 c-light-text d-flex align-items-center">
+                        ბიზნესი</span>
+                </div>
+                <div class="blcok pt-2 pb-2 pointer hover-bc-banner">
+                    <span class="mr-2 pl-2 helvetica-55 f-14 c-light-text d-flex align-items-center">
+                        სქრინშოტი</span>
+                </div>
+                <div class="blcok pt-2 pb-2 pointer hover-bc-banner">
+                    <span class="mr-2 pl-2 helvetica-55 f-14 c-light-text d-flex align-items-center">
+                        ბიზნესი</span>
+                </div>
+                <div class="blcok pt-2 pb-2 pointer hover-bc-banner">
+                    <span class="mr-2 pl-2 helvetica-55 f-14 c-light-text d-flex align-items-center">
+                        სქრინშოტი</span>
+                </div>
+                <div class="blcok pt-2 pb-2 pointer hover-bc-banner">
+                    <span class="mr-2 pl-2 helvetica-55 f-14 c-light-text d-flex align-items-center">
+                        ბიზნესი</span>
+                </div>
+                <div class="blcok pt-2 pb-2 pointer hover-bc-banner">
+                    <span class="mr-2 pl-2 helvetica-55 f-14 c-light-text d-flex align-items-center">
+                        სქრინშოტი</span>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <section class=" bc-banner pt-4 pb-4 overflow-hidden">
+        <div class="center">
+            <div class="row">
+
+                <div class="d-flex align-items-center justify-content-between row flex-column flex-md-row-reverse">
+                    <div class="left__side col-12 p-0 col-md-6 pointer">
+                        <div>
+                            <img class="w-100 " src="./img/Group 1178.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="right__side col-12 col-md-6 d-md-flex flex-column">
+                        <span class="f-30 helvetica-75 c-black d-block mb-4">UI & UX დიზაინი</span>
+                        <span class="f-16 c-light-text helvetica-55">აყევი ციფრული სამყაროს რითმს. ციფრული
+                            უნდუსტრიის აკადემია უზრუნველყოფს თქვენზე
+                            მორგებული პრინციპით.</span>
+                        <div class="mt-3 d-flex align-items-center flex-column flex-md-row mt-2">
+                            <span class="f-23 d-inline-block mt-2 helvetica-75 c-black">1250 ₾</span>
+                            <span class="f-20 d-inline-block mt-2 ml-3 helvetica-75 c-black like__remove">1250 ₾</span>
+                        </div>
+                        <div class="mt-2 mt-md-4 d-flex flex-column flex-md-row align-items-center">
+                            <button style="max-width: 250px;"
+                                class=" mt-2 helvetica-75 purple-button">რეგისტრაცია</button>
+                            <button style="max-width: 250px;"
+                                class="ml-0 ml-md-2 mt-2 helvetica-75 blue-button justify-content-center d-flex flex-nowrap">
+                                <span class="pr-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16.64" height="11.89"
+                                        viewBox="0 0 23.682 22.606">
+                                        <path id="Path_823" data-name="Path 823"
+                                            d="M781.723-129.785l-2.562-13.648a1.833,1.833,0,0,0-1.834-1.446h-2.165v-.525a5.105,5.105,0,0,0-5.251-4.934,5.1,5.1,0,0,0-5.251,4.934v.525h-2.166a1.83,1.83,0,0,0-1.834,1.446L758.1-129.785a1.67,1.67,0,0,0,.407,1.428,1.905,1.905,0,0,0,1.426.625h19.958a1.9,1.9,0,0,0,1.426-.625A1.673,1.673,0,0,0,781.723-129.785Zm-15.275-10.229V-143.2h6.924v3.184h1.789V-143.2h2.165a.074.074,0,0,1,.074.058l2.562,13.648a.06.06,0,0,1-.017.057l.316.246-.371-.223H759.931l-.073-.082,2.563-13.648a.072.072,0,0,1,.073-.058h2.166v3.184Zm0-4.865v-.525a3.367,3.367,0,0,1,3.462-3.254,3.367,3.367,0,0,1,3.462,3.254v.525Z"
+                                            transform="translate(-758.069 150.337)" fill="#FFFFFF" />
+                                    </svg>
+
+                                </span>
+                                კალათაში დამატება</button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="teams__section pt-5 pb-5">
+        <div class="center">
+            <div class="row">
+
+
+                <ul class="nav nav-pills mb-3 filter__place mt-4 w-100 d-none d-md-flex justify-content-center"
+                    id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="filter-a f-14 c-light-text active" id="pills-home-tab" data-toggle="pill"
+                            href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">ჯგუფი 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="filter-a f-14 c-light-text ac" id="pills-profile-tab" data-toggle="pill"
+                            href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">ჯგუფი
+                            2</a>
+                    </li>
+                </ul>
+                <div class="drop-parent col-12 col-sm-6 col-md-3 mt-3 pb-4 px-0 d-block d-md-none">
+                    <div class=" dropdown-toggle w-100 drop d-flex align-items-center justify-content-between"
+                        type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <span>
+                            ნებისმიერი
+                        </span>
+                    </div>
+                    <div class="dropdown-menu mt-2 px-2 pb-3" id="pills-tab aria-labelledby=" dropdownMenuButton">
+                        <ul class="nav nav-pills filter__place w-100 flex-column" id="pills-tab" role="tablist">
+                            <li class="nav-item mt-3">
+                                <a class="filter-a f-14 c-light-text active" id="pills-home-tab" data-toggle="pill"
+                                    href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">ჯგუფი
+                                    1</a>
+                            </li>
+                            <li class="nav-item mt-3">
+                                <a class="filter-a f-14 c-light-text ac" id="pills-profile-tab" data-toggle="pill"
+                                    href="#pills-profile" role="tab" aria-controls="pills-profile"
+                                    aria-selected="false">ჯგუფი 2</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-content pt-0 pt-md-4 w-100" id="pills-tabContent">
+                    <div class="tab-pane fade show active flex-wrap team-block br-8 py-2 align-items-center"
+                        id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <div
+                            class="block col-12 col-sm-6 col-md-3 justify-content-between d-flex py-4 align-items-center">
+                            <div class="left__side d-flex flex-column">
+                                <span class="helvetica-75 f-16 c-light-text">პერიოდი</span>
+                                <span class="helvetica-55 f-16 c-light-text">15.05.20 - 23.06.20</span>
+                            </div>
+                            <div class="right__side ml-3">
+                                <img src="./img/team-1.svg" alt="">
+                            </div>
+                        </div>
+                        <div
+                            class="block col-12 col-sm-6 col-md-3 justify-content-between d-flex py-4 align-items-center">
+                            <div class="left__side d-flex flex-column">
+                                <span class="helvetica-75 f-16 c-light-text">პერიოდი</span>
+                                <span class="helvetica-55 f-16 c-light-text">15.05.20 - 23.06.20</span>
+                            </div>
+                            <div class="right__side ml-3">
+                                <img src="./img/team-2.svg" alt="">
+                            </div>
+                        </div>
+                        <div
+                            class="block col-12 col-sm-6 col-md-3 justify-content-between d-flex py-4 align-items-center">
+                            <div class="left__side d-flex flex-column">
+                                <span class="helvetica-75 f-16 c-light-text">პერიოდი</span>
+                                <span class="helvetica-55 f-16 c-light-text">15.05.20 - 23.06.20</span>
+                            </div>
+                            <div class="right__side ml-3">
+                                <img src="./img/team-3.svg" alt="">
+                            </div>
+                        </div>
+                        <div
+                            class="block col-12 col-sm-6 col-md-3 justify-content-between d-flex py-4 align-items-center">
+                            <div class="left__side d-flex flex-column">
+                                <span class="helvetica-75 f-16 c-light-text">პერიოდი</span>
+                                <span class="helvetica-55 f-16 c-light-text">15.05.20 - 23.06.20</span>
+                            </div>
+                            <div class="right__side ml-3">
+                                <img src="./img/team-4.svg" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade team-block flex-wrap br-8 py-2 align-items-center" id="pills-profile"
+                        role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <div
+                            class="block col-12 col-sm-6 col-md-3 justify-content-between d-flex py-4 align-items-center">
+                            <div class="left__side d-flex flex-column">
+                                <span class="helvetica-75 f-16 c-light-text">პერიოდი</span>
+                                <span class="helvetica-55 f-16 c-light-text">15.05.20 - 23.06.20</span>
+                            </div>
+                            <div class="right__side ml-3">
+                                <img src="./img/team-3.svg" alt="">
+                            </div>
+                        </div>
+                        <div
+                            class="block col-12 col-sm-6 col-md-3 justify-content-between d-flex py-4 align-items-center">
+                            <div class="left__side d-flex flex-column">
+                                <span class="helvetica-75 f-16 c-light-text">პერიოდი</span>
+                                <span class="helvetica-55 f-16 c-light-text">15.05.20 - 23.06.20</span>
+                            </div>
+                            <div class="right__side ml-3">
+                                <img src="./img/team-4.svg" alt="">
+                            </div>
+                        </div>
+                        <div
+                            class="block col-12 col-sm-6 col-md-3 justify-content-between d-flex py-4 align-items-center">
+                            <div class="left__side d-flex flex-column">
+                                <span class="helvetica-75 f-16 c-light-text">პერიოდი</span>
+                                <span class="helvetica-55 f-16 c-light-text">15.05.20 - 23.06.20</span>
+                            </div>
+                            <div class="right__side ml-3">
+                                <img src="./img/team-1.svg" alt="">
+                            </div>
+                        </div>
+                        <div
+                            class="block col-12 col-sm-6 col-md-3 justify-content-between d-flex py-4 align-items-center">
+                            <div class="left__side d-flex flex-column">
+                                <span class="helvetica-75 f-16 c-light-text">პერიოდი</span>
+                                <span class="helvetica-55 f-16 c-light-text">15.05.20 - 23.06.20</span>
+                            </div>
+                            <div class="right__side ml-3">
+                                <img src="./img/team-2.svg" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <seciton class="design__section overflow-hidden">
+        <div class="center">
+            <div class="row d-flex align-items-center flex-column flex-lg-row align-items-stretch">
+                <div class="left__side position-relative col-12 col-lg-7">
+                    <div class=" block">
+                        <div class="blocks block_1">
+                            <img class="w-100" src="./img/design-1.svg" alt="">
+                        </div>
+                        <div class="blocks block_2">
+                            <img class="w-100" src="./img/design-2.svg" alt="">
+                        </div>
+                        <div class="blocks block_3">
+                            <img class="w-100" src="./img/design-3.svg" alt="">
+                        </div>
+                        <div class="blocks block_4">
+                            <img class="w-100" src="./img/design-4.svg" alt="">
+                        </div>
+                        <div class="blocks block_5">
+                            <img class="w-100" src="./img/design-5.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="right__side col-12 col-lg-5">
+                    <span class="mr-2 pl-2 helvetica-75 d-inline-block mb-3 f-30 c-black">გრაფიკული დიზაინის კურსის
+                        აღწერა</span>
+                    <span class="mr-2 pl-2 helvetica-55 d-inline-block mb-3 lh-24 f-16 c-light-text">კურსი მოიცავს იმ
+                        ძირითად საკითხებს, რომლის ცოდნაც აუცილებელია UI & UX დიზაინერად მუშაობისთვის. კურსის
+                        განმავლობაში სტუდენტები დაეუფლებიან Adobe Experience design-სა და SketchApp-ს, რის შემდეგაც
+                        ისინი დამოუკიდებლად შეძლებენ ციფრული პროდუქტების დიზაინის შექმნას.</span>
+                    <span class="mr-2 pl-2 helvetica-55 d-inline-block mb-3 lh-24 f-16 c-light-text">კურსი მოიცავს იმ
+                        ძირითად საკითხებს, რომლის ცოდნაც აუცილებელია UI & UX დიზაინერად მუშაობისთვის. კურსის
+                        განმავლობაში სტუდენტები დაეუფლებიან Adobe Experience design-სა და SketchApp-ს, რის შემდეგაც
+                        ისინი დამოუკიდებლად შეძლებენ ციფრული პროდუქტების დიზაინის შექმნას.</span>
+                </div>
+            </div>
+        </div>
+    </seciton>
+    <section class="lectors bc-banner py-4">
+        <div class="scroll-center d-flex flex-column align-items-center">
+
+            <h1 class="title f-30 helvetica-75">
+                ლექტორები
+            </h1>
+            <div class="scroll-parent">
+
+                <div class="w-100 d-flex justify-content-between align-items-center scroll-child overflow-auto">
+                    <div class="block flex-column flex-lg-row col-6 d-flex pl-0 pr-3 br-8 ">
+                        <div class="left__side d-flex align-items-end bc-purple br-tl br-bl col-12 col-lg-5 p-0">
+                            <div class="img-block d-flex align-items-end w-100">
+                                <img class="w-100" src="./img/face.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="right__side bc-white br-tr br-br px-4 col-lg-7 col-12 py-4">
+                            <span class=" helvetica-75 d-inline-block mb-3 f-20 c-black">გნინი მუშკუდიანი</span>
+                            <span class=" helvetica-55 d-inline-block mb-3 lh-24 f-14 c-light-text">გრაფიკული
+                                დიზაინერი</span>
+                            <span class=" helvetica-55 d-inline-block mb-3 lh-24 f-14 c-light-text">2013 დაიწყო სწავლა
+                                სამხატვრო აკადემიაში გრაფიკული დიზაინის ფაკულტეტზე. 2017 წელს გაიარა კურსები.</span>
+                            <div class="d-flex">
+                                <a href="" class="col-1 mr-2 p-0">
+                                    <img class="w-100" src="./img/fb.svg" alt="">
+
+                                </a>
+                                <a href="" class="col-1 mr-2 p-0">
+                                    <img class="w-100" src="./img/twitter.svg" alt="">
+                                </a>
+                                <a href="" class="col-1 mr-2 p-0">
+                                    <img class="w-100" src="./img/Subtraction.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block flex-column flex-lg-row col-6 d-flex pl-0 pr-3 br-8 ">
+                        <div class="left__side d-flex align-items-end bc-purple br-tl br-bl col-12 col-lg-5 p-0">
+                            <div class="img-block d-flex align-items-end w-100">
+                                <img class="w-100" src="./img/face.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="right__side bc-white br-tr br-br px-4 col-lg-7 col-12 py-4">
+                            <span class=" helvetica-75 d-inline-block mb-3 f-20 c-black">გნინი მუშკუდიანი</span>
+                            <span class=" helvetica-55 d-inline-block mb-3 lh-24 f-14 c-light-text">გრაფიკული
+                                დიზაინერი</span>
+                            <span class=" helvetica-55 d-inline-block mb-3 lh-24 f-14 c-light-text">2013 დაიწყო სწავლა
+                                სამხატვრო აკადემიაში გრაფიკული დიზაინის ფაკულტეტზე. 2017 წელს გაიარა კურსები.</span>
+                            <div class="d-flex">
+                                <a href="" class="col-1 mr-2 p-0">
+                                    <img class="w-100" src="./img/fb.svg" alt="">
+
+                                </a>
+                                <a href="" class="col-1 mr-2 p-0">
+                                    <img class="w-100" src="./img/twitter.svg" alt="">
+                                </a>
+                                <a href="" class="col-1 mr-2 p-0">
+                                    <img class="w-100" src="./img/Subtraction.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-none d-mf-block">
+                <button class=" helvetica-75 mt-5 blue-button">ნამუშევარი</button>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="silabus__section py-5">
+        <h1 class="f-30 mb-5 helvetica-75 c-black text-center">კითხვა/პასუხი</h1>
+        <div class="position-relative">
+            <div class="accordion center d-flex align-items-stretch align-items-md-center flex-row flex-md-column"
+                id="accordionExample">
+
+                <div class="col-12 silas col-md-8">
+                    <div class="card-header border-top border-bottom-0 bc-white px-0" id="headingOne_2">
+                        <h2 class="mb-0">
+                            <a class="align-items-center btn c-black d-flex f-16 helvetica-75 px-0 justify-content-between text-left w-100"
+                                type="button" data-toggle="collapse" data-target="#collapseOne_2" aria-expanded="true"
+                                aria-controls="collapseOne_2">
+                                ლექცია 1 - შესავალი
+                                <img class="drop-icon" src="./img/Path.svg" alt="">
+
+                            </a>
+                        </h2>
+                    </div>
+
+                    <div id="collapseOne_2" class="collapse show" aria-labelledby="headingOne_2"
+                        data-parent="#accordionExample">
+                        <div class="card-body py-0 px-0">
+                            <ul
+                                class="btn c-black f-16 helvetica-75 text-left d-flex flex-column juscenter__side fuuter__lists  p-0  mb-3 border-left-1tify-content-between px-0">
+                                <li class="list d-flex align-items-center mt-2 c-light-text f-16 helvetica-55 pointer">
+                                    <img class="mr-2" src="./img/done.svg" alt="">
+                                    <span>
+                                        ტრენერის გაცნობა
+                                    </span>
+                                </li>
+                                <li class="list d-flex align-items-center mt-2 c-light-text f-16 helvetica-55 pointer">
+                                    <img class="mr-2" src="./img/done.svg" alt="">
+                                    <span>
+                                        ტრენერის გაცნობა
+                                    </span>
+                                </li>
+                                <li class="list d-flex align-items-center mt-2 c-light-text f-16 helvetica-55 pointer">
+                                    <img class="mr-2" src="./img/done.svg" alt="">
+                                    <span>
+                                        ტრენერის გაცნობა
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 silas col-md-8">
+                    <div class="card-header border-top border-bottom-0 bc-white px-0" id="headingOne_3">
+                        <h2 class="mb-0">
+                            <a class="align-items-center btn c-black d-flex f-16 helvetica-75 px-0 justify-content-between text-left w-100"
+                                type="button" data-toggle="collapse" data-target="#collapseOne_3" aria-expanded="true"
+                                aria-controls="collapseOne_3">
+                                ლექცია 2 - UI დიზაინი: Tools და UI სტილები
+                                <img class="drop-icon" src="./img/Path.svg" alt="">
+
+                            </a>
+                        </h2>
+                    </div>
+
+                    <div id="collapseOne_3" class="collapse" aria-labelledby="headingOne_3"
+                        data-parent="#accordionExample">
+                        <div class="card-body py-0 px-0">
+                            <ul
+                                class="btn c-black f-16 helvetica-75 text-left d-flex flex-column juscenter__side fuuter__lists  p-0  mb-3 border-left-1tify-content-between px-0">
+                                <li class="list d-flex align-items-center mt-2 c-light-text f-16 helvetica-55 pointer">
+                                    <img class="mr-2" src="./img/done.svg" alt="">
+                                    <span>
+                                        ტრენერის გაცნობა
+                                    </span>
+                                </li>
+                                <li class="list d-flex align-items-center mt-2 c-light-text f-16 helvetica-55 pointer">
+                                    <img class="mr-2" src="./img/done.svg" alt="">
+                                    <span>
+                                        ტრენერის გაცნობა
+                                    </span>
+                                </li>
+                                <li class="list d-flex align-items-center mt-2 c-light-text f-16 helvetica-55 pointer">
+                                    <img class="mr-2" src="./img/done.svg" alt="">
+                                    <span>
+                                        ტრენერის გაცნობა
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 silas col-md-8">
+                    <div class="card-header border-top border-bottom-0 bc-white px-0" id="headingOne_4">
+                        <h2 class="mb-0">
+                            <a class="align-items-center btn c-black d-flex f-16 helvetica-75 px-0 justify-content-between text-left w-100"
+                                type="button" data-toggle="collapse" data-target="#collapseOne_4" aria-expanded="true"
+                                aria-controls="collapseOne_4">
+                                ლექცია 3 - UI დიზაინი: ფერები, სურათები, შრიფტები, აიქონები
+                                <img class="drop-icon" src="./img/Path.svg" alt="">
+
+                            </a>
+                        </h2>
+                    </div>
+
+                    <div id="collapseOne_4" class="collapse" aria-labelledby="headingOne_4"
+                        data-parent="#accordionExample">
+                        <div class="card-body py-0 px-0">
+                            <ul
+                                class="btn c-black f-16 helvetica-75 text-left d-flex flex-column juscenter__side fuuter__lists  p-0  mb-3 border-left-1tify-content-between px-0">
+                                <li class="list d-flex align-items-center mt-2 c-light-text f-16 helvetica-55 pointer">
+                                    <img class="mr-2" src="./img/done.svg" alt="">
+                                    <span>
+                                        ტრენერის გაცნობა
+                                    </span>
+                                </li>
+                                <li class="list d-flex align-items-center mt-2 c-light-text f-16 helvetica-55 pointer">
+                                    <img class="mr-2" src="./img/done.svg" alt="">
+                                    <span>
+                                        ტრენერის გაცნობა
+                                    </span>
+                                </li>
+                                <li class="list d-flex align-items-center mt-2 c-light-text f-16 helvetica-55 pointer">
+                                    <img class="mr-2" src="./img/done.svg" alt="">
+                                    <span>
+                                        ტრენერის გაცნობა
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 silas col-md-8">
+                    <div class="card-header border-top border-bottom-0 bc-white px-0" id="headingOne_5">
+                        <h2 class="mb-0">
+                            <a class="align-items-center btn c-black d-flex f-16 helvetica-75 px-0 justify-content-between text-left w-100"
+                                type="button" data-toggle="collapse" data-target="#collapseOne_5" aria-expanded="true"
+                                aria-controls="collapseOne_5">
+                                ლექცია 4 - Grid სისტემა და Wireframe
+                                <img class="drop-icon" src="./img/Path.svg" alt="">
+
+                            </a>
+                        </h2>
+                    </div>
+
+                    <div id="collapseOne_5" class="collapse" aria-labelledby="headingOne_5"
+                        data-parent="#accordionExample">
+                        <div class="card-body py-0 px-0">
+                            <ul
+                                class="btn c-black f-16 helvetica-75 text-left d-flex flex-column juscenter__side fuuter__lists  p-0  mb-3 border-left-1tify-content-between px-0">
+                                <li class="list d-flex align-items-center mt-2 c-light-text f-16 helvetica-55 pointer">
+                                    <img class="mr-2" src="./img/done.svg" alt="">
+                                    <span>
+                                        ტრენერის გაცნობა
+                                    </span>
+                                </li>
+                                <li class="list d-flex align-items-center mt-2 c-light-text f-16 helvetica-55 pointer">
+                                    <img class="mr-2" src="./img/done.svg" alt="">
+                                    <span>
+                                        ტრენერის გაცნობა
+                                    </span>
+                                </li>
+                                <li class="list d-flex align-items-center mt-2 c-light-text f-16 helvetica-55 pointer">
+                                    <img class="mr-2" src="./img/done.svg" alt="">
+                                    <span>
+                                        ტრენერის გაცნობა
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 silas col-md-8">
+                    <div class="card-header border-top border-bottom-0 bc-white px-0" id="headingOne_6">
+                        <h2 class="mb-0">
+                            <a class="align-items-center btn c-black d-flex f-16 helvetica-75 px-0 justify-content-between text-left w-100"
+                                type="button" data-toggle="collapse" data-target="#collapseOne_6" aria-expanded="true"
+                                aria-controls="collapseOne_6">
+                                ლექცია 5 - Responsive Design
+                                <img class="drop-icon" src="./img/Path.svg" alt="">
+
+                            </a>
+                        </h2>
+                    </div>
+
+                    <div id="collapseOne_6" class="collapse" aria-labelledby="headingOne_6"
+                        data-parent="#accordionExample">
+                        <div class="card-body py-0 px-0">
+                            <ul
+                                class="btn c-black f-16 helvetica-75 text-left d-flex flex-column juscenter__side fuuter__lists  p-0  mb-3 border-left-1tify-content-between px-0">
+                                <li class="list d-flex align-items-center mt-2 c-light-text f-16 helvetica-55 pointer">
+                                    <img class="mr-2" src="./img/done.svg" alt="">
+                                    <span>
+                                        ტრენერის გაცნობა
+                                    </span>
+                                </li>
+                                <li class="list d-flex align-items-center mt-2 c-light-text f-16 helvetica-55 pointer">
+                                    <img class="mr-2" src="./img/done.svg" alt="">
+                                    <span>
+                                        ტრენერის გაცნობა
+                                    </span>
+                                </li>
+                                <li class="list d-flex align-items-center mt-2 c-light-text f-16 helvetica-55 pointer">
+                                    <img class="mr-2" src="./img/done.svg" alt="">
+                                    <span>
+                                        ტრენერის გაცნობა
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 silas col-md-8">
+                    <div class="card-header border-top border-bottom-0 bc-white px-0" id="headingOne_7">
+                        <h2 class="mb-0">
+                            <a class="align-items-center btn c-black d-flex f-16 helvetica-75 px-0 justify-content-between text-left w-100"
+                                type="button" data-toggle="collapse" data-target="#collapseOne_7" aria-expanded="true"
+                                aria-controls="collapseOne_7">
+                                ლექცია 6 - ვებ ფორმები და დიზაინ სისტემა
+                                <img class="drop-icon" src="./img/Path.svg" alt="">
+
+                            </a>
+                        </h2>
+                    </div>
+
+                    <div id="collapseOne_7" class="collapse" aria-labelledby="headingOne_7"
+                        data-parent="#accordionExample">
+                        <div class="card-body py-0 px-0">
+                            <ul
+                                class="btn c-black f-16 helvetica-75 text-left d-flex flex-column juscenter__side fuuter__lists  p-0  mb-3 border-left-1tify-content-between px-0">
+                                <li class="list d-flex align-items-center mt-2 c-light-text f-16 helvetica-55 pointer">
+                                    <img class="mr-2" src="./img/done.svg" alt="">
+                                    <span>
+                                        ტრენერის გაცნობა
+                                    </span>
+                                </li>
+                                <li class="list d-flex align-items-center mt-2 c-light-text f-16 helvetica-55 pointer">
+                                    <img class="mr-2" src="./img/done.svg" alt="">
+                                    <span>
+                                        ტრენერის გაცნობა
+                                    </span>
+                                </li>
+                                <li class="list d-flex align-items-center mt-2 c-light-text f-16 helvetica-55 pointer">
+                                    <img class="mr-2" src="./img/done.svg" alt="">
+                                    <span>
+                                        ტრენერის გაცნობა
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 silas col-md-8">
+                    <div class="card-header border-top border-bottom-0 bc-white px-0" id="headingOne_8">
+                        <h2 class="mb-0">
+                            <a class="align-items-center btn c-black d-flex f-16 helvetica-75 px-0 justify-content-between text-left w-100"
+                                type="button" data-toggle="collapse" data-target="#collapseOne_8" aria-expanded="true"
+                                aria-controls="collapseOne_8">
+                                ლექცია 7 - UX დიზაინი
+                                <img class="drop-icon" src="./img/Path.svg" alt="">
+
+                            </a>
+                        </h2>
+                    </div>
+
+                    <div id="collapseOne_8" class="collapse" aria-labelledby="headingOne_8"
+                        data-parent="#accordionExample">
+                        <div class="card-body py-0 px-0">
+                            <ul
+                                class="btn c-black f-16 helvetica-75 text-left d-flex flex-column juscenter__side fuuter__lists  p-0  mb-3 border-left-1tify-content-between px-0">
+                                <li class="list d-flex align-items-center mt-2 c-light-text f-16 helvetica-55 pointer">
+                                    <img class="mr-2" src="./img/done.svg" alt="">
+                                    <span>
+                                        ტრენერის გაცნობა
+                                    </span>
+                                </li>
+                                <li class="list d-flex align-items-center mt-2 c-light-text f-16 helvetica-55 pointer">
+                                    <img class="mr-2" src="./img/done.svg" alt="">
+                                    <span>
+                                        ტრენერის გაცნობა
+                                    </span>
+                                </li>
+                                <li class="list d-flex align-items-center mt-2 c-light-text f-16 helvetica-55 pointer">
+                                    <img class="mr-2" src="./img/done.svg" alt="">
+                                    <span>
+                                        ტრენერის გაცნობა
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 silas col-md-8">
+                    <div class="card-header border-top border-bottom-0 bc-white px-0" id="headingOne_9">
+                        <h2 class="mb-0">
+                            <a class="align-items-center btn c-black d-flex f-16 helvetica-75 px-0 justify-content-between text-left w-100"
+                                type="button" data-toggle="collapse" data-target="#collapseOne_9" aria-expanded="true"
+                                aria-controls="collapseOne_9">
+                                ლექცია 8 - სისწრაფე და ხარისხი
+                                <img class="drop-icon" src="./img/Path.svg" alt="">
+
+                            </a>
+                        </h2>
+                    </div>
+
+                    <div id="collapseOne_9" class="collapse" aria-labelledby="headingOne_9"
+                        data-parent="#accordionExample">
+                        <div class="card-body py-0 px-0">
+                            <ul
+                                class="btn c-black f-16 helvetica-75 text-left d-flex flex-column juscenter__side fuuter__lists  p-0  mb-3 border-left-1tify-content-between px-0">
+                                <li class="list d-flex align-items-center mt-2 c-light-text f-16 helvetica-55 pointer">
+                                    <img class="mr-2" src="./img/done.svg" alt="">
+                                    <span>
+                                        ტრენერის გაცნობა
+                                    </span>
+                                </li>
+                                <li class="list d-flex align-items-center mt-2 c-light-text f-16 helvetica-55 pointer">
+                                    <img class="mr-2" src="./img/done.svg" alt="">
+                                    <span>
+                                        ტრენერის გაცნობა
+                                    </span>
+                                </li>
+                                <li class="list d-flex align-items-center mt-2 c-light-text f-16 helvetica-55 pointer">
+                                    <img class="mr-2" src="./img/done.svg" alt="">
+                                    <span>
+                                        ტრენერის გაცნობა
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 silas col-md-8">
+                    <div class="card-header border-top border-bottom-0 bc-white px-0" id="headingOne_10">
+                        <h2 class="mb-0">
+                            <a class="align-items-center btn c-black d-flex f-16 helvetica-75 px-0 justify-content-between text-left w-100"
+                                type="button" data-toggle="collapse" data-target="#collapseOne_10" aria-expanded="true"
+                                aria-controls="collapseOne_10">
+                                ლექცია 9 - პორტფოლიო და როგორ გავიდეთ გლობალზე
+                                <img class="drop-icon" src="./img/Path.svg" alt="">
+
+                            </a>
+                        </h2>
+                    </div>
+
+                    <div id="collapseOne_10" class="collapse" aria-labelledby="headingOne_10"
+                        data-parent="#accordionExample">
+                        <div class="card-body py-0 px-0">
+                            <ul
+                                class="btn c-black f-16 helvetica-75 text-left d-flex flex-column juscenter__side fuuter__lists  p-0  mb-3 border-left-1tify-content-between px-0">
+                                <li class="list d-flex align-items-center mt-2 c-light-text f-16 helvetica-55 pointer">
+                                    <img class="mr-2" src="./img/done.svg" alt="">
+                                    <span>
+                                        ტრენერის გაცნობა
+                                    </span>
+                                </li>
+                                <li class="list d-flex align-items-center mt-2 c-light-text f-16 helvetica-55 pointer">
+                                    <img class="mr-2" src="./img/done.svg" alt="">
+                                    <span>
+                                        ტრენერის გაცნობა
+                                    </span>
+                                </li>
+                                <li class="list d-flex align-items-center mt-2 c-light-text f-16 helvetica-55 pointer">
+                                    <img class="mr-2" src="./img/done.svg" alt="">
+                                    <span>
+                                        ტრენერის გაცნობა
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 silas col-md-8">
+                    <div class="card-header border-top border-bottom-0 bc-white px-0" id="headingOne_11">
+                        <h2 class="mb-0">
+                            <a class="align-items-center btn c-black d-flex f-16 helvetica-75 px-0 justify-content-between text-left w-100"
+                                type="button" data-toggle="collapse" data-target="#collapseOne_11" aria-expanded="true"
+                                aria-controls="collapseOne_11">
+                                ლექცია 10 - კომპლექსური ინტერფეისის რისფონსივ მდგომარეობა
+                                <img class="drop-icon" src="./img/Path.svg" alt="">
+
+                            </a>
+                        </h2>
+                    </div>
+
+                    <div id="collapseOne_11" class="collapse" aria-labelledby="headingOne_11"
+                        data-parent="#accordionExample">
+                        <div class="card-body py-0 px-0">
+                            <ul
+                                class="btn c-black f-16 helvetica-75 text-left d-flex flex-column juscenter__side fuuter__lists  p-0  mb-3 border-left-1tify-content-between px-0">
+                                <li class="list d-flex align-items-center mt-2 c-light-text f-16 helvetica-55 pointer">
+                                    <img class="mr-2" src="./img/done.svg" alt="">
+                                    <span>
+                                        ტრენერის გაცნობა
+                                    </span>
+                                </li>
+                                <li class="list d-flex align-items-center mt-2 c-light-text f-16 helvetica-55 pointer">
+                                    <img class="mr-2" src="./img/done.svg" alt="">
+                                    <span>
+                                        ტრენერის გაცნობა
+                                    </span>
+                                </li>
+                                <li class="list d-flex align-items-center mt-2 c-light-text f-16 helvetica-55 pointer">
+                                    <img class="mr-2" src="./img/done.svg" alt="">
+                                    <span>
+                                        ტრენერის გაცნობა
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 silas col-md-8">
+                    <div class="card-header border-top border-bottom-0 bc-white px-0" id="headingOne_12">
+                        <h2 class="mb-0">
+                            <a class="align-items-center btn c-black d-flex f-16 helvetica-75 px-0 justify-content-between text-left w-100"
+                                type="button" data-toggle="collapse" data-target="#collapseOne_12" aria-expanded="true"
+                                aria-controls="collapseOne_12">
+                                ლექცია 11 - UI დიზაინი: Prototype თულები და ანიმაცია
+                                <img class="drop-icon" src="./img/Path.svg" alt="">
+
+                            </a>
+                        </h2>
+                    </div>
+
+                    <div id="collapseOne_12" class="collapse" aria-labelledby="headingOne_12"
+                        data-parent="#accordionExample">
+                        <div class="card-body py-0 px-0">
+                            <ul
+                                class="btn c-black f-16 helvetica-75 text-left d-flex flex-column juscenter__side fuuter__lists  p-0  mb-3 border-left-1tify-content-between px-0">
+                                <li class="list d-flex align-items-center mt-2 c-light-text f-16 helvetica-55 pointer">
+                                    <img class="mr-2" src="./img/done.svg" alt="">
+                                    <span>
+                                        ტრენერის გაცნობა
+                                    </span>
+                                </li>
+                                <li class="list d-flex align-items-center mt-2 c-light-text f-16 helvetica-55 pointer">
+                                    <img class="mr-2" src="./img/done.svg" alt="">
+                                    <span>
+                                        ტრენერის გაცნობა
+                                    </span>
+                                </li>
+                                <li class="list d-flex align-items-center mt-2 c-light-text f-16 helvetica-55 pointer">
+                                    <img class="mr-2" src="./img/done.svg" alt="">
+                                    <span>
+                                        ტრენერის გაცნობა
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 silas col-md-8">
+                    <div class="card-header border-top border-bottom-0 bc-white px-0" id="headingOne_13">
+                        <h2 class="mb-0">
+                            <a class="align-items-center btn c-black d-flex f-16 helvetica-75 px-0 justify-content-between text-left w-100"
+                                type="button" data-toggle="collapse" data-target="#collapseOne_13" aria-expanded="true"
+                                aria-controls="collapseOne_13">
+                                ლექცია 12 - საფინალო პროექტი
+                                <img class="drop-icon" src="./img/Path.svg" alt="">
+
+                            </a>
+                        </h2>
+                    </div>
+
+                    <div id="collapseOne_13" class="collapse" aria-labelledby="headingOne_13"
+                        data-parent="#accordionExample">
+                        <div class="card-body py-0 px-0">
+                            <ul
+                                class="btn c-black f-16 helvetica-75 text-left d-flex flex-column juscenter__side fuuter__lists  p-0  mb-3 border-left-1tify-content-between px-0">
+                                <li class="list d-flex align-items-center mt-2 c-light-text f-16 helvetica-55 pointer">
+                                    <img class="mr-2" src="./img/done.svg" alt="">
+                                    <span>
+                                        ტრენერის გაცნობა
+                                    </span>
+                                </li>
+                                <li class="list d-flex align-items-center mt-2 c-light-text f-16 helvetica-55 pointer">
+                                    <img class="mr-2" src="./img/done.svg" alt="">
+                                    <span>
+                                        ტრენერის გაცნობა
+                                    </span>
+                                </li>
+                                <li class="list d-flex align-items-center mt-2 c-light-text f-16 helvetica-55 pointer">
+                                    <img class="mr-2" src="./img/done.svg" alt="">
+                                    <span>
+                                        ტრენერის გაცნობა
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <span class="overlay d-none"></span>
+        </div>
+
+
+    </section>
+    <section class="offers__section bc-banner py-5">
+        <div class="center pt-2">
+            <div class="row d-flex flex-column pb-5">
+                <h1 class="text-center f-30 mb-3 helvetica-75 c-black">შეთავაზება</h1>
+                <span class="text-center f-16 helvetica-55 c-light-text">არ გამოტოვო საუკეთესო შეთავაზებები!</span>
+                <div class="offers__block d-flex flex-column align-items-center mt-3">
+                    <div class="block d-flex align-items-center justify-content-between bc-white mt-4 br-8 p-4">
+                        <div class="left d-flex flex-column">
+                            <span class=" f-24 helvetica-75 c-black">აგრაფიკული დიზაინი</span>
+                            <span class=" f-14 helvetica-55 d-flex mt-2 c-light-text">ნინი მუშკუდიანი</span>
+                        </div>
+                        <div class="right">
+                            <span class="text-center f-24 helvetica-55 c-light-text">900 ₾</span>
+
+                        </div>
+                        <img class="bottom__img" src="./img/plus.svg" alt="">
+                    </div>
+                    <div class="block d-flex align-items-center justify-content-between bc-white mt-4 br-8 p-4">
+                        <div class="left d-flex flex-column">
+                            <span class=" f-24 helvetica-75 c-black">აგრაფიკული დიზაინი</span>
+                            <span class=" f-14 helvetica-55 d-flex mt-2 c-light-text">ნინი მუშკუდიანი</span>
+                        </div>
+                        <div class="right">
+                            <span class="text-center f-24 helvetica-55 c-light-text">900 ₾</span>
+
+                        </div>
+                        <img class="bottom__img" src="./img/equal.svg" alt="">
+                    </div>
+                    <div class="block d-flex align-items-center flex-column bc-white mt-4 br-8 overflow-hidden">
+                        <div class="top d-flex flex-column p-4">
+                            <span class=" f-24 helvetica-75 c-black">ინტერფეისის დიზაინის პაკეტი</span>
+                            <span class=" f-14 helvetica-55 lh-24 d-flex mt-4 c-light-text">ისწავლე ორი კურსი
+                                ფასდაკლებით, შენთვის ეს საუკეთესო
+                                შემოთავაზეებაა. გაიარე გრაფიკული დიზაინისა და UI&UX დიზაინის
+                                სრული კურსი,ისწავლე Photoshop, illustrator, XD, Sketch App</span>
+                        </div>
+                        <div class="bottom__side w-100 d-flex align-items-center justify-content-between py-4 px-2 px-md-4"
+                            style="background-color: #F9F9F9;">
+                            <div class="left__side">
+                                <span class="f-23 pl-3 helvetica-75 c-black">1250 ₾</span>
+                                <!-- add like__remove class to span for row effect -->
+                                <span class="f-20 ml-3 helvetica-75 c-black like__remove">1250 ₾</span>
+                            </div>
+                            <div class="right__side d-flex align-items-stretch">
+                                <button type="button"
+                                    class="btn btn-light f-14 br-8 c-light-text d-none d-md-flex align-items-center">გაიგე მეტი</button>
+                                <button type="button" class="btn ml-2 blue-button f-14">შეძენა</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="finished__courses course2_finish position-relative">
+        <div class="bdr">
+
+            <div class="scroll-center d-flex flex-column align-items-center">
+                <h1 class="f-30 mb-2 helvetica-75 c-black">სტუდენტები კურსის შესახებ</h1>
+                <span class="f-16 helvetica-55 c-light-text">ნახე ჩვენი ვიდეოები გრაფიკული დიზაინის კურსზე</span>
+                <div class="w-100 position-relative">
+
+                    <div class="scroll-parent">
+
+                        <div class="mt-5 px-0 px-md-3 scroll-child w-100 course-block overflow-auto course_2-block">
+                            <div class="block py-3 px-4 coure_2 scroll-block d-flex align-items-end">
+                                <p class="f-16 helvetica-55 c-white">ჩვენი სტუდენტები: ლანა ჯოხაძე</p>
+
+                            </div>
+                            <div class="block py-3 px-4 coure_2 scroll-block d-flex align-items-end">
+                                <p class="f-16 helvetica-55 c-white">ჩვენი სტუდენტები: ლანა ჯოხაძე</p>
+
+                            </div>
+                            <div class="block py-3 px-4 coure_2 scroll-block d-flex align-items-end">
+                                <p class="f-16 helvetica-55 c-white">ჩვენი სტუდენტები: ლანა ჯოხაძე</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="row-left"></span>
+            <span class="row-right"></span>
+        </div>
+    </section>
+
+
+    <section class="student__works bc-banner">
+        <div class="scroll-center d-flex flex-column align-items-center">
+
+            <h1 class="f-30 mb-2 helvetica-75 c-black">სტუდენტების ნამუშევრები</h1>
+            <span class="f-16 helvetica-55 c-light-text">დაგვიტოვე შენი საკონტაქტო ინფორმაცია და მიიღე
+                უახლოესი ინფორმაცია მასტერკლასებზე.</span>
+            <div class="scroll-parent">
+
+                <div class="w-100 d-flex justify-content-between align-items-center scroll-child overflow-auto">
+
+                    <div class="block mt-5 ml-0 ml-md-3 mr-2 br-8 overflow-hidden bc-white scroll-block">
+                        <article class="article d-flex flex-column">
+                            <img class="w-100" src="./img/Group 804.svg" alt="">
+                            <span class="f-16 px-3 c-black helvetica-75 d-block mt-3">Ryuichi Sakamoto & David
+                                Bowie</span>
+                            <span class="f-14 px-3 c-light-text helvetica-55 d-block mb-3 mt-2">14 ოქტომბერი,
+                                2019</span>
+                        </article>
+                        <div class="border-top d-flex w-100 align-items-center justify-content-between py-2 px-3">
+                            <div class="d-flex align-items-center">
+                                <img class="mr-2" src="./img/Group 793.svg" alt="">
+                                <span class="f-14 c-light-text helvetica-55">ედვარდ გულაშვილი</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block mt-5 ml-0 ml-md-3 mr-2 br-8 overflow-hidden bc-white scroll-block">
+                        <article class="article d-flex flex-column">
+                            <img class="w-100" src="./img/Group 804.svg" alt="">
+                            <span class="f-16 px-3 c-black helvetica-75 d-block mt-3">Ryuichi Sakamoto & David
+                                Bowie</span>
+                            <span class="f-14 px-3 c-light-text helvetica-55 d-block mb-3 mt-2">14 ოქტომბერი,
+                                2019</span>
+                        </article>
+                        <div class="border-top d-flex w-100 align-items-center justify-content-between py-2 px-3">
+                            <div class="d-flex align-items-center">
+                                <img class="mr-2" src="./img/Group 793.svg" alt="">
+                                <span class="f-14 c-light-text helvetica-55">ედვარდ გულაშვილი</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block mt-5 ml-0 ml-md-3 mr-2 br-8 overflow-hidden bc-white scroll-block">
+                        <article class="article d-flex flex-column">
+                            <img class="w-100" src="./img/Group 804.svg" alt="">
+                            <span class="f-16 px-3 c-black helvetica-75 d-block mt-3">Ryuichi Sakamoto & David
+                                Bowie</span>
+                            <span class="f-14 px-3 c-light-text helvetica-55 d-block mb-3 mt-2">14 ოქტომბერი,
+                                2019</span>
+                        </article>
+                        <div class="border-top d-flex w-100 align-items-center justify-content-between py-2 px-3">
+                            <div class="d-flex align-items-center">
+                                <img class="mr-2" src="./img/Group 793.svg" alt="">
+                                <span class="f-14 c-light-text helvetica-55">ედვარდ გულაშვილი</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <button class=" helvetica-75 mt-5 blue-button">ნამუშევარი</button>
+
+            </div>
+        </div>
+
+    </section>
+    <section class="acordion__section py-5">
+        <h1 class="f-30 mb-5 helvetica-75 c-black text-center">კითხვა/პასუხი</h1>
+
+        <div class="accordion center d-flex align-items-center flex-column" id="accordionExample">
+
+            <div class=" col-12 col-md-8 p-0">
+                <div class="card-header border-top border-bottom-0 bc-white px-0" id="headingOne_22">
+                    <h2 class="mb-0">
+                        <a class="align-items-center btn c-black d-flex f-16 helvetica-75 px-0 justify-content-between text-left w-100"
+                            type="button" data-toggle="collapse" data-target="#collapseOne_22" aria-expanded="true"
+                            aria-controls="collapseOne_22">
+                            უნდა ვიცოდე, თუ არა პროგრამები ამ კურსის გასავლელად?
+                            <img class="drop-icon pl-4" src="./img/Path.svg" alt="">
+
+                        </a>
+                    </h2>
+                </div>
+
+                <div id="collapseOne_22" class="collapse show" aria-labelledby="headingOne_22"
+                    data-parent="#accordionExample">
+                    <div class="card-body py-0 px-0">
+                        <ul
+                            class="btn c-black f-16 helvetica-75 text-left d-flex align-items-center juscenter__side fuuter__lists  p-0  mb-3 border-left-1tify-content-between px-0">
+                            <li class="list d-flex align-items-center mt-2">
+                                <a class="c-light-text f-16 helvetica-55 pointer">კურსის გასავლელად აუცილებელია საბაზისო
+                                    ცოდნა გქონდეთ შემდეგ პროგრამებში:
+                                    Adobe Illustrator, Adobe Photoshop</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-8 p-0">
+                <div class="card-header border-top border-bottom-0 bc-white px-0" id="headingThree2">
+                    <h2 class="mb-0">
+                        <a class="btn c-black f-16 helvetica-75 text-left d-flex align-items-center justify-content-between px-0"
+                            type="button" data-toggle="collapse" data-target="#collapseThree2" aria-expanded="false"
+                            aria-controls="collapseThree2">
+                            რა დრო სჭირდება კურსის გავლას?
+                            <img class="drop-icon pl-4" src="./img/Path.svg" alt="">
+
+                        </a>
+                    </h2>
+                </div>
+                <div id="collapseThree2" class="collapse" aria-labelledby="headingThree2" data-parent="#accordionExample">
+                    <div class="card-body py-0 px-0">
+                        <ul
+                            class="btn c-black f-16 helvetica-75 text-left d-flex align-items-center juscenter__side fuuter__lists  p-0  mb-3 border-left-1tify-content-between px-0">
+                            <li class="list d-flex align-items-center mt-2">
+                                <a class="c-light-text f-16 helvetica-55 pointer">კურსის გასავლელად აუცილებელია საბაზისო
+                                    ცოდნა გქონდეთ შემდეგ პროგრამებში:
+                                    Adobe Illustrator, Adobe Photoshop</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-12 col-md-8 p-0">
+                <div class="card-header border-top border-bottom-0 bc-white px-0" id="headingfour">
+                    <h2 class="mb-0">
+                        <a class="btn c-black f-16 helvetica-75 text-left d-flex align-items-center justify-content-between px-0"
+                            type="button" data-toggle="collapse" data-target="#collapsefour" aria-expanded="false"
+                            aria-controls="collapsefour">
+                            რა დრო სჭირდება კურსის გავლას?
+                            <img class="drop-icon pl-4" src="./img/Path.svg" alt="">
+
+                        </a>
+                    </h2>
+                </div>
+                <div id="collapsefour" class="collapse" aria-labelledby="headingfour" data-parent="#accordionExample">
+                    <div class="card-body py-0 px-0">
+                        <ul
+                            class="btn c-black f-16 helvetica-75 text-left d-flex align-items-center juscenter__side fuuter__lists  p-0  mb-3 border-left-1tify-content-between px-0">
+                            <li class="list d-flex align-items-center mt-2">
+                                <a class="c-light-text f-16 helvetica-55 pointer">კურსის გასავლელად აუცილებელია საბაზისო
+                                    ცოდნა გქონდეთ შემდეგ პროგრამებში:
+                                    Adobe Illustrator, Adobe Photoshop</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-12 col-md-8 p-0">
+                <div class="card-header border-top border-bottom-0 bc-white px-0" id="headingfive">
+                    <h2 class="mb-0">
+                        <a class="btn c-black f-16 helvetica-75 text-left d-flex align-items-center justify-content-between px-0"
+                            type="button" data-toggle="collapse" data-target="#collapsefive" aria-expanded="false"
+                            aria-controls="collapsefive">
+                            რა დრო სჭირდება კურსის გავლას?
+                            <img class="drop-icon pl-4" src="./img/Path.svg" alt="">
+
+                        </a>
+                    </h2>
+                </div>
+                <div id="collapsefive" class="collapse" aria-labelledby="headingfive" data-parent="#accordionExample">
+                    <div class="card-body py-0 px-0">
+                        <ul
+                            class="btn c-black f-16 helvetica-75 text-left d-flex align-items-center juscenter__side fuuter__lists  p-0  mb-3 border-left-1tify-content-between px-0">
+                            <li class="list d-flex align-items-center mt-2">
+                                <a class="c-light-text f-16 helvetica-55 pointer">კურსის გასავლელად აუცილებელია საბაზისო
+                                    ცოდნა გქონდეთ შემდეგ პროგრამებში:
+                                    Adobe Illustrator, Adobe Photoshop</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-12 col-md-8 p-0">
+                <div class="card-header border-top border-bottom-0 bc-white px-0" id="headingsix">
+                    <h2 class="mb-0">
+                        <a class="btn c-black f-16 helvetica-75 text-left d-flex align-items-center justify-content-between px-0"
+                            type="button" data-toggle="collapse" data-target="#collapsesix" aria-expanded="false"
+                            aria-controls="collapsesix">
+                            რა დრო სჭირდება კურსის გავლას?
+                            <img class="drop-icon pl-4" src="./img/Path.svg" alt="">
+
+                        </a>
+                    </h2>
+                </div>
+                <div id="collapsesix" class="collapse" aria-labelledby="headingsix" data-parent="#accordionExample">
+                    <div class="card-body py-0 px-0">
+                        <ul
+                            class="btn c-black f-16 helvetica-75 text-left d-flex align-items-center juscenter__side fuuter__lists  p-0  mb-3 border-left-1tify-content-between px-0">
+                            <li class="list d-flex align-items-center mt-2">
+                                <a class="c-light-text f-16 helvetica-55 pointer">კურსის გასავლელად აუცილებელია საბაზისო
+                                    ცოდნა გქონდეთ შემდეგ პროგრამებში:
+                                    Adobe Illustrator, Adobe Photoshop</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="up__side center d-none d-md-flex justify-content-between pb-2">
+            <ul class="left__side fuuter__lists mt-5 col-4 p-0">
+                <li class="list">
+                    <span class="c-black f-14 helvetica-75">დაგვიკავშირდით</span>
+                </li>
+                <li class="list d-flex align-items-center mt-5">
+                    <img class="mr-3" src="./img/konvert.svg" alt="">
+                    <a class="c-light-text pointer f-14 helvetica-55">support@digitaledu.ge</a>
+                </li>
+                <li class="list d-flex align-items-center mt-2">
+                    <span class="c-light-text f-14 helvetica-55">ილია ჭავჭავაძის გამზ. 33, თბილისი</span>
+                </li>
+                <li class="list mt-5">
+                    <span class="c-black f-14 helvetica-75">გამოგვყევი</span>
+                </li>
+                <li class="list d-flex align-items-center mt-4">
+                    <a href="">
+                        <img class="" src="./img/be.svg" alt="">
+
+                    </a>
+                    <a href="">
+
+                        <img class="ml-2" src="./img/linkedin.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img class="ml-2" src="./img/Group 768.svg" alt="">
+
+                    </a>
+                    <a href="">
+                        <img class="ml-2" src="./img/fb.svg" alt="">
+
+                    </a>
+                    <a href="">
+
+                        <img class="ml-2" src="./img/twitter.svg" alt="">
+                    </a>
+                    <a href="">
+
+                        <img class="ml-2" src="./img/Subtraction.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+            <ul class="center__side fuuter__lists mt-5 col-4 p-0">
+                <li class="list">
+                    <span class="c-black f-14 helvetica-75">გვერდები</span>
+                </li>
+                <li class="list d-flex align-items-center mt-5">
+                    <a class="c-light-text f-14 helvetica-55 pointer">კურსები</a>
+                </li>
+                <li class="list d-flex align-items-center mt-3">
+                    <a class="c-light-text f-14 helvetica-55 pointer">მასტერკლასები</a>
+                </li>
+                <li class="list d-flex align-items-center mt-3">
+                    <a class="c-light-text f-14 helvetica-55 pointer">შეთავაზებები</a>
+                </li>
+                <li class="list d-flex align-items-center mt-3">
+                    <a class="c-light-text f-14 helvetica-55 pointer">ბლოგი</a>
+                </li>
+                <li class="list d-flex align-items-center mt-3">
+                    <a class="c-light-text f-14 helvetica-55 pointer">ჩვენ შესახებ</a>
+                </li>
+            </ul>
+            <ul class="right__side fuuter__lists mt-5 col-4 p-0">
+                <li class="list">
+                    <span class="c-black f-14 helvetica-75">დაგვიკავშირდით</span>
+                </li>
+                <li class="list d-flex align-items-center mt-5">
+                    <span class="c-light-text f-14 helvetica-55 col-10 p-0">გამოიწერე სიახლეები და მიიღე დროულად ყველა
+                        ინფორმაცია ჩვენ შესახებ </span>
+                </li>
+                <li class="list d-flex align-items-center mt-3">
+                    <form action="" class="mail__form  p-0">
+                        <div class=" position-relative">
+                            <input class="mail__input helvetica-55 c-light-text f-12 w-100" type="text"
+                                placeholder="ელ-ფოსტა">
+                            <img class="icon" src="./img/Icons.svg" alt="">
+                        </div>
+                        <div class="mt-2">
+                            <label class="cheks mb-0 d-flex align-items-center mt-3" for="isPoliticallyExposedPerson">
+                                <span class="mr-2 pl-2 helvetica-55 f-14 c-light-text">ვეთანხმები პირობებს</span>
+                                <input type="checkbox" id="isPoliticallyExposedPerson" />
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </form>
+                </li>
+                <li class="list d-flex align-items-center mt-3">
+                    <span class="c-light-text f-14 helvetica-55 col-10 p-0">ვეთანხმები ციფრული ინდისუტრიის აკადემიის
+                        კონფიდენციალურობის პილიტიკას</span>
+                </li>
+            </ul>
+        </div>
+        <div id="accordion" class="mx-auto d-flex flex-column d-md-none up__side" style="max-width: 80%;">
+            <li class="list d-flex align-items-center mt-4 ml-3 pl-3">
+                <a href="">
+                    <img class="" src="./img/be.svg" alt="">
+
+                </a>
+                <a href="">
+
+                    <img class="ml-2" src="./img/linkedin.svg" alt="">
+                </a>
+                <a href="">
+                    <img class="ml-2" src="./img/Group 768.svg" alt="">
+
+                </a>
+                <a href="">
+                    <img class="ml-2" src="./img/fb.svg" alt="">
+
+                </a>
+                <a href="">
+
+                    <img class="ml-2" src="./img/twitter.svg" alt="">
+                </a>
+                <a href="">
+
+                    <img class="ml-2" src="./img/Subtraction.svg" alt="">
+                </a>
+            </li>
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <a class="btn btn-link c-black f-14 helvetica-75" data-toggle="collapse"
+                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            დაგვიკავშირდით
+                        </a>
+
+                    </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <ul class="left__side fuuter__lists mt-2  ml-3 p-0">
+                            <li class="list d-flex align-items-center mt-2">
+                                <img class="mr-3" src="./img/konvert.svg" alt="">
+                                <a class="c-light-text pointer f-14 helvetica-55">support@digitaledu.ge</a>
+                            </li>
+                            <li class="list d-flex align-items-center mt-2">
+                                <span class="c-light-text f-14 helvetica-55">ილია ჭავჭავაძის გამზ. 33, თბილისი</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <a class="btn btn-link collapsed c-black f-14 helvetica-75" data-toggle="collapse"
+                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            გვერდები
+                        </a>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        <ul class="center__side fuuter__lists  p-0 ml-3">
+                            <li class="list d-flex align-items-center mt-2">
+                                <a class="c-light-text f-14 helvetica-55 pointer">კურსები</a>
+                            </li>
+                            <li class="list d-flex align-items-center mt-3">
+                                <a class="c-light-text f-14 helvetica-55 pointer">მასტერკლასები</a>
+                            </li>
+                            <li class="list d-flex align-items-center mt-3">
+                                <a class="c-light-text f-14 helvetica-55 pointer">შეთავაზებები</a>
+                            </li>
+                            <li class="list d-flex align-items-center mt-3">
+                                <a class="c-light-text f-14 helvetica-55 pointer">ბლოგი</a>
+                            </li>
+                            <li class="list d-flex align-items-center mt-3">
+                                <a class="c-light-text f-14 helvetica-55 pointer">ჩვენ შესახებ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <a class="btn btn-link collapsed c-black f-14 helvetica-75" data-toggle="collapse"
+                            data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            გამოიწერე სიახლეები
+                        </a>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body ml-3">
+                        <li class="list d-flex align-items-center mt-2">
+                            <span class="c-light-text f-14 helvetica-55 col-10 p-0">გამოიწერე სიახლეები და მიიღე დროულად
+                                ყველა ინფორმაცია ჩვენ შესახებ </span>
+                        </li>
+                        <li class="list d-flex align-items-center mt-3">
+                            <form action="" class="mail__form  p-0">
+                                <div class=" position-relative">
+                                    <input class="mail__input helvetica-55 c-light-text f-12 w-100" type="text"
+                                        placeholder="ელ-ფოსტა">
+                                    <img class="icon" src="./img/Icons.svg" alt="">
+                                </div>
+                                <div class="mt-2">
+                                    <label class="cheks mb-0 d-flex align-items-center mt-3"
+                                        for="isPoliticallyExposedPerson">
+                                        <span class="mr-2 pl-2 helvetica-55 f-14 c-light-text">ვეთანხმები
+                                            პირობებს</span>
+                                        <input type="checkbox" id="isPoliticallyExposedPerson" />
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </form>
+                        </li>
+                        <li class="list d-flex align-items-center mt-3">
+                            <span class="c-light-text f-14 helvetica-55 col-10 p-0">ვეთანხმები ციფრული ინდისუტრიის
+                                აკადემიის კონფიდენციალურობის პილიტიკას</span>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="down__side w-100 d-flex align-items-center">
+            <div class="center d-flex justify-content-lg-between justify-content-around align-items-center">
+                <span class="c-light-text f-12 helvetica-55">
+                    © ციფრული ინდუსტრიის აკადემია, 2020
+                </span>
+                <span class="c-light-text f-12 d-none d-md-flex helvetica-55">
+                    <span>წესები და პირობები</span>
+                    <span class="pl-2">კონფიდენციალურობა </span>
+                </span>
+                <div class=" d-none d-md-flex">
+                    <img src="./img/visa.svg" alt="">
+                    <img class="ml-2" src="./img/mastercard.svg" alt="">
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+    <script>
+        let burgerClick = document.getElementById('burger');
+        let burgerMenu = document.getElementById('burger-menu');
+        let cart = document.getElementById('cart');
+        let cartMenu = document.getElementById('cart-menu');
+        function burger() {
+            burgerClick.classList.toggle('active');
+            burgerMenu.classList.toggle('active');
+        }
+        function cart() {
+            cartMenu.classList.toggle('active')
+        }
+    </script>
+</body>
+
+</html>

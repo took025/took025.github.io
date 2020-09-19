@@ -1,3 +1,9 @@
+@media only screen and (max-width: 1300px) {
+    .center,
+    .scroll-center {
+        padding: 0 15px;
+    }
+}
 @media only screen and (max-width: 990px) {
     .header {
         height: 50px !important;
@@ -10,9 +16,64 @@
     body {
         padding-top: 50px !important;
     }
+
+    .lectors {
+        .block {
+            min-width: 250px;
+
+            .left__side {
+                background: white !important;
+                justify-content: center !important;
+
+                .img-block {
+                    margin-top: 28px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    background-color: #9F33FF;
+                    width: 85px !important;
+                    height: 85px !important;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 768px) {
+    .silabus__section {
+        .accordion {
+            overflow: auto;
+        }
+
+        .overlay {
+            width: 100%;
+            height: 17px;
+            position: absolute;
+            background-color: white;
+            bottom: 0;
+            left: 0;
+            display: block !important;
+        }
+
+        .collapse:not(.show) {
+            display: block !important;
+        }
+
+        .silas {
+            max-width: 250px !important;
+            border: 1px solid $border !important;
+            border-radius: 8px;
+            margin-right: 10px;
+
+            .card-header {
+                border-top: none !important;
+            }
+
+            .drop-icon {
+                display: none !important;
+            }
+        }
+    }
+
     .academy__section {
         background-image: url('../img/academyc.svg');
         background-position: center;
@@ -20,39 +81,55 @@
         background-size: 100%;
     }
 
+    .course2_finish::after {
+        display: none;
+    }
+
+    .course_2-block .coure_2 p {
+        opacity: 1 !important;
+    }
+
     .f-30 {
         font-size: 24px !important;
     }
 
-    .f-24 {
+    .f-24,
+    .f-23 {
         font-size: 16px !important;
     }
 
     .f-16 {
         font-size: 14px !important;
     }
+
     .f-20 {
         font-size: 18px !important;
     }
+
     .f-40 {
         font-size: 25px !important;
         line-height: 30px !important;
     }
-    .center {
+
+    .center,
+    .scroll-center {
         padding: 0 37px !important;
     }
+
     .scroll-center {
-    padding-left: 37px !important;
-    padding-right: 0 !important;
+        padding-left: 37px !important;
+        padding-right: 0 !important;
     }
+
     .finished__courses .course-block,
     .popular__courses .main {
         grid-column-gap: 10px !important;
     }
+
     .finished__courses .course-block .block {
         &:hover {
             background-color: #F5F5F5 !important;
-            transform:scale(1) !important ;
+            transform: scale(1) !important;
             box-shadow: initial !important;
             transition: 0.3s;
 
@@ -63,18 +140,49 @@
             }
         }
     }
+
     .home_blocks {
         .block {
             .down__side {
                 transition: 0.3s;
             }
-    
+
             &:hover {
                 .down__side {
                     transition: 0.3s;
                     // min-height: 355px;
                     padding-top: 1rem !important;
                     padding-bottom: 1rem !important;
+                }
+            }
+        }
+    }
+
+    .teams__section {
+        .team-block {
+            .block {
+                &:nth-child(2) {
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .teams__section {
+        .team-block {
+            box-shadow: initial !important;
+
+            .block {
+                margin-top: 20px;
+                border-radius: 8px;
+                border: 1px solid $border;
+
+                &::after {
+                    display: none;
                 }
             }
         }

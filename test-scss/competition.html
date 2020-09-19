@@ -53,7 +53,7 @@
                     <li class="right__list mr-4 pointer">
                         <img src="./img/search-icon.svg" alt="">
                     </li>
-                    <li class="right__list cart pointer">
+                    <li class="right__list cart pointer" onclick="cart()">
                         <img src="./img/cart-icon.svg" alt="">
                         <span class="numbering c-white">1</span>
                     </li>
@@ -226,7 +226,8 @@
                                 <span class="f-14 c-light-text helvetica-55">საბაზისო</span>
                                 <h1 class="f-20 mt-4 c-black helvetica-75">WEB დეველოპმენტი</h1>
                                 <span class="f-14 c-light-text helvetica-55">ქრისტინა კემულარია</span>
-                                <span class="f-14 d-block mt-4 c-light-text helvetica-55 mb-1">ტექნოლოგიების განვითარებამ
+                                <span class="f-14 d-block mt-4 c-light-text helvetica-55 mb-1">ტექნოლოგიების
+                                    განვითარებამ
                                     შესაძლებელი გახადა, რომ სხვადასხვა
                                     პროფესიის ადამიანებმა თავად
                                     შეძლონ საკუთარი იდეების რეალიზება.</span>
@@ -260,7 +261,8 @@
                                 <span class="f-14 c-light-text helvetica-55">საბაზისო</span>
                                 <h1 class="f-20 mt-4 c-black helvetica-75">WEB დეველოპმენტი</h1>
                                 <span class="f-14 c-light-text helvetica-55">ქრისტინა კემულარია</span>
-                                <span class="f-14 d-block mt-4 c-light-text helvetica-55 mb-1">ტექნოლოგიების განვითარებამ
+                                <span class="f-14 d-block mt-4 c-light-text helvetica-55 mb-1">ტექნოლოგიების
+                                    განვითარებამ
                                     შესაძლებელი გახადა, რომ სხვადასხვა
                                     პროფესიის ადამიანებმა თავად
                                     შეძლონ საკუთარი იდეების რეალიზება.</span>
@@ -294,7 +296,8 @@
                                 <span class="f-14 c-light-text helvetica-55">საბაზისო</span>
                                 <h1 class="f-20 mt-4 c-black helvetica-75">WEB დეველოპმენტი</h1>
                                 <span class="f-14 c-light-text helvetica-55">ქრისტინა კემულარია</span>
-                                <span class="f-14 d-block mt-4 c-light-text helvetica-55 mb-1">ტექნოლოგიების განვითარებამ
+                                <span class="f-14 d-block mt-4 c-light-text helvetica-55 mb-1">ტექნოლოგიების
+                                    განვითარებამ
                                     შესაძლებელი გახადა, რომ სხვადასხვა
                                     პროფესიის ადამიანებმა თავად
                                     შეძლონ საკუთარი იდეების რეალიზება.</span>
@@ -322,7 +325,178 @@
 
 
 
+    <div class="cart-menu active d-flex justify-content-end" id="cart-menu">
+        <div class="cart-aside px-4 py-3">
+            <div class="top d-flex justify-content-between mt-2">
+                <span class=" c-black f-20 helvetica-75">კალათა</span>
+                <img class="pointer" onclick="cart()" src="./img/close.svg">
+            </div>
+            <div class="cart__body pb-4 d-flex flex-column justify-content-between">
+                <span class=" c-light-text d-block mt-5 pt-2 text-center f-16 helvetica-55">კალათა ცარიელია</span>
+                <div class="d-flex justify-content-between">
+                    <div class="block bc-light-blue mr-2 py-3 br-8 w-100 d-flex align-items-end justify-content-center">
+                        <span class="c-white pb-2 helvetica-55 f-14 ">
+                            კალათა
+                        </span>
+                        <span class="d-block pt-2" style="transform: rotate(180deg);">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="15.136"
+                                viewBox="0 0 17.969 15.136">
+                                <path id="Path_15631" data-name="Path 15631"
+                                    d="M36.937,31.4a1.159,1.159,0,0,0-1.159-1.159H23.071l4.71-4.391A1.159,1.159,0,1,0,26.2,24.163l-6.862,6.393a1.159,1.159,0,0,0,0,1.695l6.862,6.4a1.159,1.159,0,1,0,1.582-1.695l-4.71-4.388H35.778A1.159,1.159,0,0,0,36.937,31.4Z"
+                                    transform="translate(-18.968 -23.822)" fill="#ffffff" />
+                            </svg>
 
+                        </span>
+                    </div>
+                    <div class="block bc-dark-blue ml-2 py-3 br-8 w-100 d-flex align-items-end justify-content-center">
+                        <span class="c-white pb-2 helvetica-55 f-14 ">
+                            კალათა
+                        </span>
+                        <span class="d-block pt-2" style="transform: rotate(180deg);">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="15.136"
+                                viewBox="0 0 17.969 15.136">
+                                <path id="Path_15631" data-name="Path 15631"
+                                    d="M36.937,31.4a1.159,1.159,0,0,0-1.159-1.159H23.071l4.71-4.391A1.159,1.159,0,1,0,26.2,24.163l-6.862,6.393a1.159,1.159,0,0,0,0,1.695l6.862,6.4a1.159,1.159,0,1,0,1.582-1.695l-4.71-4.388H35.778A1.159,1.159,0,0,0,36.937,31.4Z"
+                                    transform="translate(-18.968 -23.822)" fill="#ffffff" />
+                            </svg>
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart-aside px-4 py-3">
+            <div class="top d-flex justify-content-between mt-2">
+                <span class=" c-black f-20 helvetica-75">კალათა</span>
+                <img class="pointer" onclick="cart()" src="./img/close.svg">
+            </div>
+            <div class="cart__body pb-4 d-flex flex-column justify-content-between">
+                <div class="up__side">
+                    <div class="block pt-4 d-flex align-items-stretch">
+                        <div
+                            class="left col-5 d-flex align-items-end justify-content-end p-0 bc-light-blue br-tl br-bl">
+                            <img class="col-10 px-0 pt-3" src="./img/face.svg" alt="">
+                        </div>
+                        <div class="right bc-white br-tr br-br col-7 pr-0 d-flex flex-column py-3">
+                            <span class="c-black helvetica-75 f-14 ">
+                                WEB დეველოპმენტი
+                            </span>
+                            <span class="c-light-text helvetica-55 f-12 ">
+                                ქრისტინა კემულარია
+                            </span>
+                            <div class="mt-4 d-flex align-items-center justify-content-between">
+                                <img class="bc-banner br-20 p-2" style="background-color: #F3F3F4;"
+                                    src="./img/delete.svg" alt="">
+                                <span class="text__c br-c-light-blue c-black f-16 py-2 pr-2 helvetica-55">1250 ₾</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <span class="c-light-text mt-5 helvetica-55 d-flex f-14 ">
+                        დაამატე კურსი და მიიღე ფასდაკლება
+                    </span>
+                    <div class=" position-relative">
+                        <div class="col-12 p-0 d-flex pb-3 pb-md-0 flex-nowrap overflow-auto">
+                            <div class="block col-12 pr-2 pt-4 d-flex align-items-stretch">
+                                <div
+                                    class="left col-5 d-flex align-items-end justify-content-end p-0 bc-light-blue br-tl br-bl">
+                                    <img class="col-10 px-0 pt-3" src="./img/face.svg" alt="">
+                                </div>
+                                <div class="right bc-white br-tr br-br col-7 pr-0 d-flex flex-column py-3">
+                                    <span class="c-black helvetica-75 f-14 ">
+                                        WEB დეველოპმენტი
+                                    </span>
+                                    <span class="c-light-text helvetica-55 f-12 ">
+                                        ქრისტინა კემულარია
+                                    </span>
+                                    <div class="mt-4 d-flex align-items-center justify-content-between flex-wrap">
+                                        <img class="bc-banner br-20 p-2" style="background-color: #F3F3F4;"
+                                            src="./img/delete.svg" alt="">
+                                        <span
+                                            class=" br-c-light-blue c-black f-16 py-2 pr-2 helvetica-55 like__remove">1250
+                                            ₾</span>
+                                        <span class="text__c br-c-light-blue c-black f-16 py-2 pr-2 helvetica-55">1250
+                                            ₾</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block col-12 pr-2 pt-4 d-flex align-items-stretch">
+                                <div
+                                    class="left col-5 d-flex align-items-end justify-content-end p-0 bc-light-blue br-tl br-bl">
+                                    <img class="col-10 px-0 pt-3" src="./img/face.svg" alt="">
+                                </div>
+                                <div class="right bc-white br-tr br-br col-7 pr-0 d-flex flex-column py-3">
+                                    <span class="c-black helvetica-75 f-14 ">
+                                        WEB დეველოპმენტი
+                                    </span>
+                                    <span class="c-light-text helvetica-55 f-12 ">
+                                        ქრისტინა კემულარია
+                                    </span>
+                                    <div class="mt-4 d-flex align-items-center justify-content-between flex-wrap">
+                                        <img class="bc-banner br-20 p-2" style="background-color: #F3F3F4;"
+                                            src="./img/delete.svg" alt="">
+                                        <span
+                                            class=" br-c-light-blue c-black f-16 py-2 pr-2 helvetica-55 like__remove">1250
+                                            ₾</span>
+                                        <span class="text__c br-c-light-blue c-black f-16 py-2 pr-2 helvetica-55">1250
+                                            ₾</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="scroll__overlay bc-banner"></span>
+                    </div>
+
+                    <div class="slider-section d-flex justify-content-center">
+                        <div class="d-flex align-items-center">
+                            <span class="d-block pr-3 pointer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15.136"
+                                    viewBox="0 0 17.969 15.136">
+                                    <path id="Path_15631" data-name="Path 15631"
+                                        d="M36.937,31.4a1.159,1.159,0,0,0-1.159-1.159H23.071l4.71-4.391A1.159,1.159,0,1,0,26.2,24.163l-6.862,6.393a1.159,1.159,0,0,0,0,1.695l6.862,6.4a1.159,1.159,0,1,0,1.582-1.695l-4.71-4.388H35.778A1.159,1.159,0,0,0,36.937,31.4Z"
+                                        transform="translate(-18.968 -23.822)" fill="#A6A7AC" />
+                                </svg>
+
+                            </span>
+                            <span class="ball mx-1 pointer active"></span>
+                            <span class="ball mx-1 pointer"></span>
+                            <span class="ball mx-1 pointer"></span>
+                            <span class="d-block pr-3 pointer" style="transform: rotate(180deg);">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15.136"
+                                    viewBox="0 0 17.969 15.136">
+                                    <path id="Path_15631" data-name="Path 15631"
+                                        d="M36.937,31.4a1.159,1.159,0,0,0-1.159-1.159H23.071l4.71-4.391A1.159,1.159,0,1,0,26.2,24.163l-6.862,6.393a1.159,1.159,0,0,0,0,1.695l6.862,6.4a1.159,1.159,0,1,0,1.582-1.695l-4.71-4.388H35.778A1.159,1.159,0,0,0,36.937,31.4Z"
+                                        transform="translate(-18.968 -23.822)" fill="#A6A7AC" />
+                                </svg>
+
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="down__side px-2 bc-white py-3 br-8">
+                    <ul>
+                        <li class="d-flex w-100 justify-content-between align-items-center mb-3">
+                            <span class="f-14 helvetica-55 c-light-text">სულ</span>
+                            <span class="f-14 helvetica-55 c-light-text">1250₾</span>
+                        </li>
+                        <li class="d-flex w-100 justify-content-between align-items-center mb-3">
+                            <span class="f-14 helvetica-55 c-light-text">დანაზოგი</span>
+                            <span class="f-14 helvetica-55 c-light-text">0₾</span>
+                        </li>
+                        <li class="d-flex w-100 justify-content-between align-items-center mb-3">
+                            <span class="f-14 helvetica-55 c-black">სულ</span>
+                            <span class="f-14 helvetica-55 c-black">1250₾</span>
+                        </li>
+                    </ul>
+                    <button class=" blue-button f-14 mt-2 w-100">go to checkout</button>
+                    <div class="d-flex justify-content-center align-items-center mt-3">
+                        <img src="./img/visa.svg" alt="">
+                        <img class="ml-2" src="./img/mastercard.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -590,9 +764,13 @@
     <script>
         let burgerClick = document.getElementById('burger');
         let burgerMenu = document.getElementById('burger-menu');
+        let cartMenu = document.getElementById('cart-menu');
         function burger() {
             burgerClick.classList.toggle('active');
             burgerMenu.classList.toggle('active');
+        }
+        function cart() {
+            cartMenu.classList.toggle('active')
         }
     </script>
 </body>

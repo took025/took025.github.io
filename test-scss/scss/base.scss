@@ -49,14 +49,12 @@
 .center {
 	width: 100%;
 	max-width: 1088px;
-	padding: 0 15px;
 	margin: 0 auto;
 	display: block;
 }
 .scroll-center {
 	width: 100%;
-	max-width: 1033px;
-	padding: 0 15px;
+	max-width: 1088px;
 	margin: 0 auto;
 	display: block;
 }
@@ -89,4 +87,16 @@
 }
 .helvetica-75 {
 	font-family: HelveticaNeueLTGEO-75Bold;
+}
+.br-tl {
+	border-top-left-radius: 8px;
+}
+.br-tr {
+	border-top-right-radius: 8px;
+}
+.br-bl {
+	border-bottom-left-radius: 8px;
+}
+.br-br {
+	border-bottom-right-radius: 8px;
 }
