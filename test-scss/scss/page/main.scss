@@ -716,7 +716,7 @@ body {
         background-color: #F5F9FF;
         overflow: auto;
         .cart__body {
-            height: 98%;
+            height: calc(100% - 24px);
 
             .block {
                 height: 155px;
@@ -737,4 +737,47 @@ body {
     bottom: 0;
     left: 0;
     display: block !important;
+    z-index: 9999;
+}
+.modal-section {
+    max-width: 700px !important;
+}
+.indicators {
+    .childs{
+        min-height: 160px;
+    }
+    .rows {
+        background: rgba(0, 0, 0, 0.8);
+        height: 100%;
+        width: 35px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .row-right {
+        top: 0;
+        right: 0;
+    }
+    .row-left {
+        top: 0;
+        left: 0;
+    }
+}
+.background {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.carousel-item {
+    .childs {
+        height: 500px;
+        background-size: 100% !important;
+    }
+}
+.work-items {
+    .block {
+        box-shadow: 1px 3px 8px 6px rgba(0, 0, 0, .14);
+
+    }
 }

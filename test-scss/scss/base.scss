@@ -100,3 +100,9 @@
 .br-br {
 	border-bottom-right-radius: 8px;
 }
+.m-h-def {
+	min-height: calc(100vh - 480px);
+}
+.m-h-def-2 {
+	min-height: calc(100vh - 570px);
+}

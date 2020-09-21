@@ -1,9 +1,11 @@
 @media only screen and (max-width: 1300px) {
+
     .center,
     .scroll-center {
         padding: 0 15px;
     }
 }
+
 @media only screen and (max-width: 990px) {
     .header {
         height: 50px !important;
@@ -39,6 +41,12 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .indicators {
+        .childs {
+            min-height: 85px !important;
+        }
+    }
+
     .silabus__section {
         .accordion {
             overflow: auto;
