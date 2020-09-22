@@ -683,11 +683,13 @@ body {
         height: 7px;
         margin: 0 9px;
         border-radius: 50%;
+        transition: 0.2s;
 
         &.active {
             background-color: #6595FF;
             width: 10px;
             height: 10px;
+            transition: 0.2s;
         }
     }
 }

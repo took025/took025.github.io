@@ -177,6 +177,10 @@
             }
         }
     }
+    .block__section .block:hover {
+        transform: scale(1) !important;
+        box-shadow: initial !important;
+    }
 }
 
 @media only screen and (max-width: 576px) {
