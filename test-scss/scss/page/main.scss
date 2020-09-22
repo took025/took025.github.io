@@ -97,6 +97,9 @@ body {
 
             &.active {
                 color: $black;
+                &:hover {
+                    color: $blue;
+                }
             }
         }
     }
@@ -779,5 +782,14 @@ body {
     .block {
         box-shadow: 1px 3px 8px 6px rgba(0, 0, 0, .14);
 
+    }
+}
+.lector {
+    .img-block {
+        border-radius: 50%;
+    }
+    .fade:not(.show) {
+        opacity: 0;
+        display: none !important;
     }
 }

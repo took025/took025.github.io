@@ -130,6 +130,30 @@ $value in $number_varriables {
         font-size: $value;
     }
 }
+@each $key,
+$value in $number_varriables {
+    .bottom-#{$key} {
+        bottom: $value;
+    }
+}
+@each $key,
+$value in $number_varriables {
+    .left-#{$key} {
+        left: $value;
+    }
+}
+@each $key,
+$value in $number_varriables {
+    .top-#{$key} {
+        top: $value;
+    }
+}
+@each $key,
+$value in $number_varriables {
+    .right-#{$key} {
+        right: $value;
+    }
+}
 
 @each $key,
 $value in $number_varriables {
