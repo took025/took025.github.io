@@ -41,6 +41,9 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .home_blocks .block:hover {
+        transform: scale(1) !important;
+    }
     .indicators {
         .childs {
             min-height: 85px !important;
@@ -119,14 +122,26 @@
         line-height: 30px !important;
     }
 
-    .center,
-    .scroll-center {
+    .center {
         padding: 0 37px !important;
     }
 
     .scroll-center {
-        padding-left: 37px !important;
+        padding-left: 0 !important;
         padding-right: 0 !important;
+        .scroll-block {
+            &:first-child{
+                margin-left: 37px !important;
+            }
+            min-width: 240px;
+            &.block-home {
+                &:first-child{
+                    padding-left: 37px !important;
+                    margin-left: 0 !important;
+                    min-width: calc(240px + 37px);
+                }
+            }
+        }
     }
 
     .finished__courses .course-block,

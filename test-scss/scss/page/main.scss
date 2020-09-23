@@ -194,7 +194,7 @@ body {
     .block {
         .inside__block {
             border-radius: 8px;
-            box-shadow: 1px 3px 8px 6px rgba(0, 0, 0, .14);
+            box-shadow: 0px 0px 10px #0000001A;
         }
     }
 }
@@ -286,7 +286,7 @@ body {
             &:hover {
                 background-color: $white;
                 transform: scale(1.07);
-                box-shadow: 1px 1px 6px 3px rgba(0, 0, 0, 0.14);
+                box-shadow: 0px 0px 10px #0000001A;
                 transition: 0.3s;
 
                 span {
@@ -305,7 +305,7 @@ body {
 
         &:hover {
             transform: scale(1.07);
-            box-shadow: 1px 1px 6px 3px rgba(0, 0, 0, 0.14);
+            box-shadow: 0px 0px 10px #0000001A;
             transition: 0.3s;
         }
     }
@@ -446,24 +446,29 @@ body {
 
 .home_blocks {
     .block {
-        padding-top: 30px;
-
-        .down__side {
-            transition: 0.3s;
-        }
-
+        transition: 0.3s;
         &:hover {
-            padding-top: 0px;
-
-            // transform: translateY(-20px);
-            // background-color: red;
-            .down__side {
-                transition: 0.3s;
-                // min-height: 355px;
-                padding-top: 30px !important;
-                padding-bottom: 30px !important;
-            }
+            transition: 0.3s;
+            transform: scale(1.05);
         }
+        // padding-top: 30px;
+
+        // .down__side {
+        //     transition: 0.3s;
+        // }
+
+        // &:hover {
+        //     padding-top: 0px;
+
+        //     // transform: translateY(-20px);
+        //     // background-color: red;
+        //     .down__side {
+        //         transition: 0.3s;
+        //         // min-height: 355px;
+        //         padding-top: 30px !important;
+        //         padding-bottom: 30px !important;
+        //     }
+        // }
     }
 }
 
@@ -489,7 +494,7 @@ body {
 
 .teams__section {
     .team-block {
-        box-shadow: 1px 3px 8px 6px rgba(0, 0, 0, .14);
+        box-shadow: 0px 0px 10px #0000001A;
 
         .block {
             position: relative;
@@ -658,7 +663,7 @@ body {
 .offers__section {
     .block {
         position: relative;
-        box-shadow: 1px 3px 8px 6px rgba(0, 0, 0, .14);
+        box-shadow: 0px 0px 10px #0000001A;
         max-width: 530px;
         width: 100%;
 
@@ -782,7 +787,7 @@ body {
 }
 .work-items {
     .block {
-        box-shadow: 1px 3px 8px 6px rgba(0, 0, 0, .14);
+        box-shadow: 0px 0px 10px #0000001A;
 
     }
 }

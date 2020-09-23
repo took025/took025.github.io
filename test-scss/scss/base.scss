@@ -52,57 +52,93 @@
 	margin: 0 auto;
 	display: block;
 }
+
 .scroll-center {
 	width: 100%;
 	max-width: 1088px;
 	margin: 0 auto;
 	display: block;
 }
+
 // .justify-center {
 // 	justify-content: center;
 // }
 .dropdown {
-    &.show {
-        .btn {
-            &::after {
-                transition: 0.3s;
-                transform: rotate(-180deg);
-            }
-        } 
+	&.show {
+		.btn {
+			&::after {
+				transition: 0.3s;
+				transform: rotate(-180deg);
+			}
+		}
 	}
+
 	.btn {
 		&::after {
 			transition: 0.3s;
 		}
 	}
 }
+
 .transition {
-    transition: 0.3s;
+	transition: 0.3s;
 }
+
 .pointer {
 	cursor: pointer;
 }
+
 .helvetica-55 {
 	font-family: HelveticaNeueLTGEO-55Roman;
 }
+
 .helvetica-75 {
 	font-family: HelveticaNeueLTGEO-75Bold;
 }
+
 .br-tl {
 	border-top-left-radius: 8px;
 }
+
 .br-tr {
 	border-top-right-radius: 8px;
 }
+
 .br-bl {
 	border-bottom-left-radius: 8px;
 }
+
 .br-br {
 	border-bottom-right-radius: 8px;
 }
+
 .m-h-def {
 	min-height: calc(100vh - 480px);
 }
+
 .m-h-def-2 {
 	min-height: calc(100vh - 570px);
+}
+
+a {
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.border-bottom {
+	border-bottom: 1px solid #3b4755;
+}
+
+.border-top {
+	border-top: 1px solid #EEEEEE;
+}
+
+* {
+	outline: none !important;
+	word-break: initial !important;
+
+}
+.text-break {
+	word-break: break-all !important;
 }
