@@ -287,7 +287,7 @@ body {
             transition: 0.3s;
             &:nth-child(2) {
                 margin: 0 10px;
-                
+
                 background-color: $white;
                 transform: scale(1.07);
                 box-shadow: 0px 0px 10px #0000001A;
@@ -525,53 +525,53 @@ body {
     }
 }
 
-.design__section {
-    .left__side {
-        min-height: 447px;
-        max-height: 447px;
+// .design__section {
+//     .left__side {
+//         min-height: 447px;
+//         max-height: 447px;
 
-        .blocks {
-            position: absolute;
-        }
+//         .blocks {
+//             position: absolute;
+//         }
 
-        .block_1 {
-            z-index: 10;
-            left: 8%;
-            top: 0;
-            width: 40%;
-        }
+//         .block_1 {
+//             z-index: 10;
+//             left: 8%;
+//             top: 0;
+//             width: 40%;
+//         }
 
-        .block_2 {
-            z-index: 10;
-            top: 20px;
-            right: 8%;
-            width: 40%;
-        }
+//         .block_2 {
+//             z-index: 10;
+//             top: 20px;
+//             right: 8%;
+//             width: 40%;
+//         }
 
-        .block_3 {
-            z-index: 20;
-            top: 70px;
-            left: 40%;
-            transform: translateX(-50%);
-            width: 40%;
-        }
+//         .block_3 {
+//             z-index: 20;
+//             top: 70px;
+//             left: 40%;
+//             transform: translateX(-50%);
+//             width: 40%;
+//         }
 
-        .block_4 {
-            z-index: 10;
-            bottom: 40px;
-            left: 0;
-            width: 40%;
-        }
+//         .block_4 {
+//             z-index: 10;
+//             bottom: 40px;
+//             left: 0;
+//             width: 40%;
+//         }
 
-        .block_5 {
-            z-index: 15;
-            bottom: 0;
-            left: 58%;
-            transform: translateX(-50%);
-            width: 60%;
-        }
-    }
-}
+//         .block_5 {
+//             z-index: 15;
+//             bottom: 0;
+//             left: 58%;
+//             transform: translateX(-50%);
+//             width: 60%;
+//         }
+//     }
+// }
 
 .course2_finish {
     position: relative;
