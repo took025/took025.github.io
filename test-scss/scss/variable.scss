@@ -33,6 +33,7 @@ $theme-colors: ( //   "brown": $brown,
     //   'light': $light-color,
     //   'lightx-2': $light-color-x2,
     //   'lightx-3': $light-color-x3,
+    'red': $orange,
     'orange': $orange,
     'yellow': $yellow,
     'dark': $dark,
@@ -47,17 +48,16 @@ $theme-colors: ( //   "brown": $brown,
     'dark-text': $dark-text,
     'dark-blue': $dark-blue,
     'light-blue': $light-blue,
-    'card-text': $card-text
-
-
-    // 'dark-red': $dark-red,
+    'card-text': $card-text // 'dark-red': $dark-red,
     // 'dark-green': $dark-green,
     // 'green-text': $green-text,
     // 'banner-light': $banner-light,
     // 'violet': $violet,
 
 );
-$number_varriables:('5' : 5px,
+$number_varriables:(
+    '3': 3px,
+    '5' : 5px,
     '8': 8px,
     '10': 10px,
     '11': 11px,
@@ -101,6 +101,7 @@ $value in $theme-colors {
         color: $value;
     }
 }
+
 @each $key,
 $value in $theme-colors {
     .br-c-#{$key} {
@@ -132,24 +133,28 @@ $value in $number_varriables {
         font-size: $value;
     }
 }
+
 @each $key,
 $value in $number_varriables {
     .bottom-#{$key} {
         bottom: $value;
     }
 }
+
 @each $key,
 $value in $number_varriables {
     .left-#{$key} {
         left: $value;
     }
 }
+
 @each $key,
 $value in $number_varriables {
     .top-#{$key} {
         top: $value;
     }
 }
+
 @each $key,
 $value in $number_varriables {
     .right-#{$key} {

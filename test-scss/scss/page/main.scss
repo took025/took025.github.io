@@ -739,6 +739,10 @@ body {
 
     }
 }
+.color-block {
+    max-width: 100px;
+    min-width: 70px;
+}
 
 .lector {
     .img-block {
@@ -776,6 +780,23 @@ body {
             .sub__text {
                 color: $blue;
             }
+        }
+    }
+}
+
+.vlog_iiner {
+    .border-center {
+        position: relative;
+        min-height: 700px;
+        &::after {
+            position: absolute;
+            content: '';
+            background-color: $border;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 0;
+            width: 1px;
+            height: 100%;
         }
     }
 }
