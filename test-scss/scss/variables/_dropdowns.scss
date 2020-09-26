@@ -16,12 +16,16 @@
         &:hover {
             transition: 0.3s;
             border: 4px solid #EFF4FF;
+            padding-left: 13px;
+            padding-right: 13px;
 
         }
 
         &:focus {
             transition: 0.3s;
             border: 4px solid #EFF4FF;
+            padding-left: 13px;
+            padding-right: 13px;
 
             color: $black;
         }
