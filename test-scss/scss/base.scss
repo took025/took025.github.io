@@ -187,3 +187,23 @@ a {
         }
       }
 }
+// pagination styles 
+.page-link {
+	border: 1px solid #E2E2E2!important;
+	color: #9E9E9E !important;
+}
+.page-item.active .page-link{
+	background-color: #6595FF !important;
+	border-color: #6595FF !important;
+	color: #ffffff !important;
+}
+.page-item:first-child .page-link {
+    margin-left: 0;
+    border-top-left-radius: 8px !important;
+    border-bottom-left-radius: 8px !important;
+}
+.page-item:last-child .page-link {
+    border-top-right-radius: 8px !important;
+    border-bottom-right-radius: 8px !important;
+}
+// pagination styles 
