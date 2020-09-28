@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>academy</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="nucleo-icons.css" /> -->
+    <link rel="stylesheet" href="style/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+    <link href="path/to/select2.min.css" re </head>
+
+<body>
+    <header class="header">
+        <div class="header__block center justify-content-between h-100 d-flex align-items-center mx-auto    ">
+            <div class="burger d-flex d-lg-none" onclick="burger()">
+                <div class="inside-burger flex" id="burger">
+                    <span class=" rows burger1"></span>
+                    <span class=" rows burger2"></span>
+                    <span class=" rows burger3"></span>
+                </div>
+            </div>
+            <a class="logo__block mr-5" href="index.html">
+                <img src="./img/logo.svg" alt="" class="logo">
+            </a>
+            <div class="d-flex d-lg-none">
+
+            </div>
+            <nav class="nav d-none d-lg-flex justify-content-between w-100">
+                <ul class="ul d-flex ">
+                    <li class="list mr-4 d-flex align-items-center">
+                        <a href="courses.html"
+                            class="nav__a c-light-text c-hover-blue transition helvetica-75">კურსები</a>
+                    </li>
+                    <li class="list mr-4 d-flex align-items-center">
+                        <a href="masterclass.html"
+                            class="nav__a c-light-text c-hover-blue transition helvetica-75">მასტერკლასები</a>
+                    </li>
+                    <li class="list mr-4 d-flex align-items-center">
+                        <a href="" class="nav__a c-light-text c-hover-blue transition helvetica-75">შეთავაზებები</a>
+                    </li>
+                    <li class="list mr-4 d-flex align-items-center">
+                        <a href="" class="nav__a c-light-text c-hover-blue transition helvetica-75">ბლოგი</a>
+                    </li>
+                    <li class="list mr-4 d-flex align-items-center">
+                        <a href="" class="nav__a c-light-text c-hover-blue transition helvetica-75">ჩვენ შესახებ</a>
+                    </li>
+                </ul>
+                <ul class="ul right_ul d-flex align-items-center">
+                    <li class="right__list mr-4 pointer">
+                        <img src="./img/search-icon.svg" alt="">
+                    </li>
+                    <li class="right__list cart pointer">
+                        <img src="./img/cart-icon.svg" alt="">
+                        <span class="numbering c-white">1</span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="burger-menu flex " id="burger-menu">
+            <div class=" burger-menu-child ">
+                <div id="accordion" class="mx-auto d-flex flex-column up__side" style="max-width: 80%;">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <span class="btn c-light-text f-14 helvetica-75" data-toggle="collapse"
+                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    კურსები
+                                    <img class="drop-icon" src="./img/Path.svg" alt="">
+
+                                </span>
+
+                            </h5>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            data-parent="#accordion">
+                            <div class="card-body py-2">
+                                <ul class="left__side fuuter__lists mt-2  ml-4 mb-3 p-0">
+                                    <li class="list d-flex align-items-center mt-2">
+                                        <a class="c-light-text pointer f-14 helvetica-55">პოპულარული</a>
+                                    </li>
+                                    <li class="list d-flex align-items-center mt-2">
+                                        <a class="c-light-text pointer f-14 helvetica-55">ახალი</a>
+                                    </li>
+                                    <li class="list d-flex align-items-center mt-2">
+                                        <a class="c-light-text pointer f-14 helvetica-55">ფასდაკლებით</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                    <a class="btn c-light-text f-14 helvetica-75 text-left pl-4 ml-2">
+                        მასტერკლასები
+                    </a>
+
+
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <a class="btn collapsed c-light-text f-14 helvetica-75" data-toggle="collapse"
+                                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    შეთავაზებები
+                                    <img class="drop-icon" src="./img/Path.svg" alt="">
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body py-0">
+                                <ul class="center__side fuuter__lists  p-0 ml-4 mb-3 border-left-1">
+                                    <li class="list d-flex align-items-center mt-2">
+                                        <a class="c-light-text f-14 helvetica-55 pointer">პაკეტები</a>
+                                    </li>
+                                    <li class="list d-flex align-items-center mt-3">
+                                        <a class="c-light-text f-14 helvetica-55 pointer">ფასდაკლებები</a>
+                                    </li>
+                                    <li class="list d-flex align-items-center mt-3">
+                                        <a class="c-light-text f-14 helvetica-55 pointer">კონკუსრები</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="btn c-light-text f-14 helvetica-75 text-left pl-4 ml-2 mt-2">
+                        ბლოგი
+                    </a>
+                    <a class="btn c-light-text f-14 helvetica-75 text-left pl-4 ml-2 mt-2">
+                        ჩვენ შესახებ
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="mini__header border-bottom d-none d-md-flex">
+        <div class="center">
+            <nav style="height: 60px;" class="nav-header">
+                <ul class="d-flex align-items-center">
+                    <li class="list mr-4 d-flex align-items-center">
+                        <a style="height: 60px;" href=""
+                            class="nav__a c-light-text c-hover-blue transition helvetica-75">პაკეტები</a>
+                    </li>
+                    <li class="list mr-4 d-flex align-items-center">
+                        <a style="height: 60px;" href=""
+                            class="nav__a c-light-text c-hover-blue transition helvetica-75">ფასდაკლებები</a>
+                    </li>
+                    <li class="list mr-4 d-flex align-items-center">
+                        <a style="height: 60px;" href=""
+                            class="nav__a c-light-text c-hover-blue transition helvetica-75">კონკუსრები</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <div class="center py-4">
+        <button class="btn btn-light helvetica-55 f-16 d-flex align-items-center py-2"><img class="mr-2" src="./img/back.svg" alt=""> ukan</button>
+    </div>
+    <section class="details pb-5">
+        <div class="d-flex justify-content-between section flex-column flex-md-row-reverse align-items-start">
+            <div class="left__side d-flex flex-column align-items-center justify-content-center box-shadow col-md-4 col-lg-3 col-12 br-8 py-3">
+                <div class="d-flex mt-3 flex-wrap justify-content-between align-items-center w-100 py-1">
+                    <div class=" br-8 mt-2 bc-gray-light py-2 px-3 d-flex  align-items-center">
+                        <img class="mr-2" src="./img/wach.svg" alt="">
+                        <span class="f-14 c-light-text helvetica-55">Redberry</span>
+                    </div>
+                    <div class=" br-8 mt-2 bc-gray-light py-2 px-3 d-flex  align-items-center">
+                        <img class="mr-2" src="./img/location.svg" alt="">
+                        <span class="f-14 c-light-text helvetica-55">Redberry</span>
+                    </div>
+                    <div class=" br-8 mt-2 bc-gray-light py-2 px-3 d-flex  align-items-center">
+                        <img class="mr-2" src="./img/full.svg" alt="">
+                        <span class="f-14 c-light-text helvetica-55">Redberry</span>
+                    </div>
+                    <div class=" br-8 mt-2 bc-gray-light py-2 px-3 d-flex  align-items-center">
+                        <img class="mr-2" src="./img/wallet.svg" alt="">
+                        <span class="f-14 c-light-text helvetica-55">Redberry</span>
+                    </div>
+                </div>
+            </div>
+            <div class="right__side col-12 px-4 px-md-0 col-md-7 col-lg-8">
+                <div class="block pt-3 pb-3">
+                    <div class="d-flex mb-3 pb-1">
+                        <img src="./img/career.svg" alt="">
+                        <div class="d-flex flex-column pl-2">
+                            <span class="f-24 c-black helvetica-75 mb-2">სენიორ დეველოპერი</span>
+                            <span class="f-14 c-light-text helvetica-55">Redberry</span>
+                        </div>
+
+                    </div>
+                    <span class="f-16 lh-24 c-light-text helvetica-55 lh-24 d-flex mb-4">ჩვენ ვართ Redberry – ციფრული ტრანსფორმაციის სააგენტო და სტარტაპ სტუდია.</span>
+                    
+                    <span class="f-16 lh-24 c-light-text helvetica-55 lh-24 d-flex mb-4">დიდ ქართულ და საერთაშორისო კომპანიებს ვეხმარებით ციფრულ ტრანსფორმაციაში. 
+                        მათთვის ვქმნით სხვადასხვა დანიშნულების საშუალო და დიდი ზომის ციფრულ 
+                        პროდუქტებს.</span>
+                    <span class="f-16 lh-24 c-light-text helvetica-55 lh-24 d-flex">ჩვენი სტარტაპ სტუდია კი ქმნის ბაზრისთვის ინოვაციური ბიზნეს მოდელის მქონე 
+                        ტექნოლოგიებზე დაფუძნებულ სტარტაპებს. აწვდის მათ როგორც seed დაფინანსებას, 
+                        ასევე ტექნიკურ, მარკეტინგულ, პროდუქტის დიზაინისა და ბიზნესის განვითარებისთვის 
+                        საჭირო ადამიანურ რესურსს.</span>
+                </div>
+                <div class="block list__type pt-3 pb-3">
+                    <span class="f-16 c-black helvetica-75 mb-3 d-flex">ძირითადი მოვალეობები:</span>
+
+                    <ul>
+                        <li class="d-flex">
+                            <span class="f-16 lh-24 c-light-text helvetica-55 lh-24 d-flex">Backend სერვისების იმპლემენტაცია;</span>
+                        </li>
+                        <li class="d-flex">
+                            <span class="f-16 lh-24 c-light-text helvetica-55 lh-24 d-flex">კომპლექსურ არქიტექტურებთან მუშაობა;</span>
+                        </li>
+                        <li class="d-flex">
+                            <span class="f-16 lh-24 c-light-text helvetica-55 lh-24 d-flex">Performance ოპტიმიზაციების გაკეთება;</span>
+                        </li>
+                        <li class="d-flex">
+                            <span class="f-16 lh-24 c-light-text helvetica-55 lh-24 d-flex"> სხვადასხვა ფართოდ-გამოყენებადი სერვისების ინტეგრაცია;</span>
+                        </li>
+                        <li class="d-flex">
+                            <span class="f-16 lh-24 c-light-text helvetica-55 lh-24 d-flex">ეფექტიანი, მრავალჯერ გამოყენებადი და დოკუმენტირებული კოდის წერა;</span>
+                        </li>
+                        <li class="d-flex">
+                            <span class="f-16 lh-24 c-light-text helvetica-55 lh-24 d-flex">გუნდის წევრებთან ეფექტური კომუნიკაცია.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="block list__type pt-3 pb-5">
+                    <span class="f-16 c-black helvetica-75 mb-3 d-flex">ძირითადი მოვალეობები:</span>
+
+                    <ul>
+                        <li class="d-flex ">
+                            <span class="f-16 lh-24 c-light-text helvetica-55 lh-24 d-flex">Backend სერვისების იმპლემენტაცია;</span>
+                        </li>
+                        <li class="d-flex ">
+                            <span class="f-16 lh-24 c-light-text helvetica-55 lh-24 d-flex">WEB ფრეიმვორქებთან მუშაობის გამოცდილება: Laravel, Symfony, Django, Flask</span>
+                        </li>
+                        <li class="d-flex ">
+                            <span class="f-16 lh-24 c-light-text helvetica-55 lh-24 d-flex">Git ვერსიის კონტროლის სისტემის გამოყენების ცოდნა</span>
+                        </li>
+                        <li class="d-flex ">
+                            <span class="f-16 lh-24 c-light-text helvetica-55 lh-24 d-flex">HTTP პროტოკოლის მუშაობის პრინციპები, სასურველია apache ან nginx-თან მუშაობის გამოცდილება</span>
+                        </li>
+                        <li class="d-flex ">
+                            <span class="f-16 lh-24 c-light-text helvetica-55 lh-24 d-flex"> სასურველია ტესტები წერის გამოცდილება. ტესტ ფრეიმვორქების ცოდნა: PHPUnit, unittest, pytest…</span>
+                        </li>
+                        <li class="d-flex ">
+                            <span class="f-16 lh-24 c-light-text helvetica-55 lh-24 d-flex"> სასურველია Github actions CI/CD ფაიფლაინთან მუშაობის გამოცდილება</span>
+                        </li>
+                        <li class="d-flex ">
+                            <span class="f-16 lh-24 c-light-text helvetica-55 lh-24 d-flex">HTTP პროტოკოლის მუშაობის პრინციპები, სასურველია apache ან nginx-თან მუშაობის გამოცდილება</span>
+                        </li>
+                        <li class="d-flex ">
+                            <span class="f-16 lh-24 c-light-text helvetica-55 lh-24 d-flex"> სასურველია ტესტები წერის გამოცდილება. ტესტ ფრეიმვორქების ცოდნა: PHPUnit, unittest, pytest…</span>
+                        </li>
+                        <li class="d-flex ">
+                            <span class="f-16 lh-24 c-light-text helvetica-55 lh-24 d-flex"> სასურველია Github actions CI/CD ფაიფლაინთან მუშაობის გამოცდილება</span>
+                        </li>
+                        <li class="d-flex ">
+                            <span class="f-16 lh-24 c-light-text helvetica-55 lh-24 d-flex">HTTP პროტოკოლის მუშაობის პრინციპები, სასურველია apache ან nginx-თან მუშაობის გამოცდილება</span>
+                        </li>
+                        <li class="d-flex ">
+                            <span class="f-16 lh-24 c-light-text helvetica-55 lh-24 d-flex"> სასურველია ტესტები წერის გამოცდილება. ტესტ ფრეიმვორქების ცოდნა: PHPUnit, unittest, pytest…</span>
+                        </li>
+                        <li class="d-flex ">
+                            <span class="f-16 lh-24 c-light-text helvetica-55 lh-24 d-flex"> სასურველია Github actions CI/CD ფაიფლაინთან მუშაობის გამოცდილება</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class=" box-shadow w-100 d-flex p-3 br-8 flex-column flex-sm-row">
+                    <span class="f-16 lh-24 c-light-text helvetica-55 lh-24 d-flex"> To apply for this job email your details to</span> 
+                    <span class="f-16 lh-24 c-blue helvetica-55 lh-24 d-flex ml-0 ml-sm-1">hello@redberry.ge</span>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="up__side center d-none d-md-flex justify-content-between pb-2">
+            <ul class="left__side fuuter__lists mt-5 col-4 p-0">
+                <li class="list">
+                    <span class="c-black f-14 helvetica-75">დაგვიკავშირდით</span>
+                </li>
+                <li class="list d-flex align-items-center mt-5">
+                    <img class="mr-3" src="./img/konvert.svg" alt="">
+                    <a class="c-light-text pointer f-14 helvetica-55">support@digitaledu.ge</a>
+                </li>
+                <li class="list d-flex align-items-center mt-2">
+                    <span class="c-light-text f-14 helvetica-55">ილია ჭავჭავაძის გამზ. 33, თბილისი</span>
+                </li>
+                <li class="list mt-5">
+                    <span class="c-black f-14 helvetica-75">გამოგვყევი</span>
+                </li>
+                <li class="list d-flex align-items-center mt-4">
+                    <a href="">
+                        <img class="" src="./img/be.svg" alt="">
+
+                    </a>
+                    <a href="">
+
+                        <img class="ml-2" src="./img/linkedin.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img class="ml-2" src="./img/Group 768.svg" alt="">
+
+                    </a>
+                    <a href="">
+                        <img class="ml-2" src="./img/fb.svg" alt="">
+
+                    </a>
+                    <a href="">
+
+                        <img class="ml-2" src="./img/twitter.svg" alt="">
+                    </a>
+                    <a href="">
+
+                        <img class="ml-2" src="./img/Subtraction.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+            <ul class="center__side fuuter__lists mt-5 col-4 p-0">
+                <li class="list">
+                    <span class="c-black f-14 helvetica-75">გვერდები</span>
+                </li>
+                <li class="list d-flex align-items-center mt-5">
+                    <a class="c-light-text f-14 helvetica-55 pointer">კურსები</a>
+                </li>
+                <li class="list d-flex align-items-center mt-3">
+                    <a class="c-light-text f-14 helvetica-55 pointer">მასტერკლასები</a>
+                </li>
+                <li class="list d-flex align-items-center mt-3">
+                    <a class="c-light-text f-14 helvetica-55 pointer">შეთავაზებები</a>
+                </li>
+                <li class="list d-flex align-items-center mt-3">
+                    <a class="c-light-text f-14 helvetica-55 pointer">ბლოგი</a>
+                </li>
+                <li class="list d-flex align-items-center mt-3">
+                    <a class="c-light-text f-14 helvetica-55 pointer">ჩვენ შესახებ</a>
+                </li>
+            </ul>
+            <ul class="right__side fuuter__lists mt-5 col-4 p-0">
+                <li class="list">
+                    <span class="c-black f-14 helvetica-75">დაგვიკავშირდით</span>
+                </li>
+                <li class="list d-flex align-items-center mt-5">
+                    <span class="c-light-text f-14 helvetica-55 col-10 p-0">გამოიწერე სიახლეები და მიიღე დროულად ყველა
+                        ინფორმაცია ჩვენ შესახებ </span>
+                </li>
+                <li class="list d-flex align-items-center mt-3">
+                    <form action="" class="mail__form  p-0">
+                        <div class=" position-relative">
+                            <input class="mail__input helvetica-55 c-light-text f-12 w-100" type="text"
+                                placeholder="ელ-ფოსტა">
+                            <img class="icon" src="./img/Icons.svg" alt="">
+                        </div>
+                        <div class="mt-2">
+                            <label class="cheks mb-0 d-flex align-items-center mt-3" for="isPoliticallyExposedPerson">
+                                <span class="mr-2 pl-2 helvetica-55 f-14 c-light-text">ვეთანხმები პირობებს</span>
+                                <input type="checkbox" id="isPoliticallyExposedPerson" />
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </form>
+                </li>
+                <li class="list d-flex align-items-center mt-3">
+                    <span class="c-light-text f-14 helvetica-55 col-10 p-0">ვეთანხმები ციფრული ინდისუტრიის აკადემიის
+                        კონფიდენციალურობის პილიტიკას</span>
+                </li>
+            </ul>
+        </div>
+        <div id="accordion" class="mx-auto d-flex flex-column d-md-none up__side" style="max-width: 80%;">
+            <li class="list d-flex align-items-center mt-4 ml-3 pl-3">
+                <a href="">
+                    <img class="" src="./img/be.svg" alt="">
+
+                </a>
+                <a href="">
+
+                    <img class="ml-2" src="./img/linkedin.svg" alt="">
+                </a>
+                <a href="">
+                    <img class="ml-2" src="./img/Group 768.svg" alt="">
+
+                </a>
+                <a href="">
+                    <img class="ml-2" src="./img/fb.svg" alt="">
+
+                </a>
+                <a href="">
+
+                    <img class="ml-2" src="./img/twitter.svg" alt="">
+                </a>
+                <a href="">
+
+                    <img class="ml-2" src="./img/Subtraction.svg" alt="">
+                </a>
+            </li>
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <a class="btn btn-link c-black f-14 helvetica-75" data-toggle="collapse"
+                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            დაგვიკავშირდით
+                        </a>
+
+                    </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <ul class="left__side fuuter__lists mt-2  ml-3 p-0">
+                            <li class="list d-flex align-items-center mt-2">
+                                <img class="mr-3" src="./img/konvert.svg" alt="">
+                                <a class="c-light-text pointer f-14 helvetica-55">support@digitaledu.ge</a>
+                            </li>
+                            <li class="list d-flex align-items-center mt-2">
+                                <span class="c-light-text f-14 helvetica-55">ილია ჭავჭავაძის გამზ. 33, თბილისი</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <a class="btn btn-link collapsed c-black f-14 helvetica-75" data-toggle="collapse"
+                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            გვერდები
+                        </a>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        <ul class="center__side fuuter__lists  p-0 ml-3">
+                            <li class="list d-flex align-items-center mt-2">
+                                <a class="c-light-text f-14 helvetica-55 pointer">კურსები</a>
+                            </li>
+                            <li class="list d-flex align-items-center mt-3">
+                                <a class="c-light-text f-14 helvetica-55 pointer">მასტერკლასები</a>
+                            </li>
+                            <li class="list d-flex align-items-center mt-3">
+                                <a class="c-light-text f-14 helvetica-55 pointer">შეთავაზებები</a>
+                            </li>
+                            <li class="list d-flex align-items-center mt-3">
+                                <a class="c-light-text f-14 helvetica-55 pointer">ბლოგი</a>
+                            </li>
+                            <li class="list d-flex align-items-center mt-3">
+                                <a class="c-light-text f-14 helvetica-55 pointer">ჩვენ შესახებ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <a class="btn btn-link collapsed c-black f-14 helvetica-75" data-toggle="collapse"
+                            data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            გამოიწერე სიახლეები
+                        </a>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body ml-3">
+                        <li class="list d-flex align-items-center mt-2">
+                            <span class="c-light-text f-14 helvetica-55 col-10 p-0">გამოიწერე სიახლეები და მიიღე დროულად
+                                ყველა ინფორმაცია ჩვენ შესახებ </span>
+                        </li>
+                        <li class="list d-flex align-items-center mt-3">
+                            <form action="" class="mail__form  p-0">
+                                <div class=" position-relative">
+                                    <input class="mail__input helvetica-55 c-light-text f-12 w-100" type="text"
+                                        placeholder="ელ-ფოსტა">
+                                    <img class="icon" src="./img/Icons.svg" alt="">
+                                </div>
+                                <div class="mt-2">
+                                    <label class="cheks mb-0 d-flex align-items-center mt-3"
+                                        for="isPoliticallyExposedPerson">
+                                        <span class="mr-2 pl-2 helvetica-55 f-14 c-light-text">ვეთანხმები
+                                            პირობებს</span>
+                                        <input type="checkbox" id="isPoliticallyExposedPerson" />
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </form>
+                        </li>
+                        <li class="list d-flex align-items-center mt-3">
+                            <span class="c-light-text f-14 helvetica-55 col-10 p-0">ვეთანხმები ციფრული ინდისუტრიის
+                                აკადემიის კონფიდენციალურობის პილიტიკას</span>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="down__side w-100 d-flex align-items-center">
+            <div class="center d-flex justify-content-lg-between justify-content-around align-items-center">
+                <span class="c-light-text f-12 helvetica-55">
+                    © ციფრული ინდუსტრიის აკადემია, 2020
+                </span>
+                <span class="c-light-text f-12 d-none d-md-flex helvetica-55">
+                    <span>წესები და პირობები</span>
+                    <span class="pl-2">კონფიდენციალურობა </span>
+                </span>
+                <div class=" d-none d-md-flex">
+                    <img src="./img/visa.svg" alt="">
+                    <img class="ml-2" src="./img/mastercard.svg" alt="">
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+    <script>
+        let burgerClick = document.getElementById('burger');
+        let burgerMenu = document.getElementById('burger-menu');
+        function burger() {
+            burgerClick.classList.toggle('active');
+            burgerMenu.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
