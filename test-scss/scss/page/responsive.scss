@@ -157,21 +157,6 @@
         grid-column-gap: 10px !important;
     }
 
-    .finished__courses .course-block .block {
-        &:hover {
-            background-color: #F5F5F5 !important;
-            transform: scale(1) !important;
-            box-shadow: initial !important;
-            transition: 0.3s;
-
-            span {
-                color: $light-text !important;
-                transition: 0.3s;
-
-            }
-        }
-    }
-
     .home_blocks {
         .block {
             .down__side {
