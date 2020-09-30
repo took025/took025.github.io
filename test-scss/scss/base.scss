@@ -55,7 +55,7 @@
 
 .scroll-center {
 	width: 100%;
-	max-width: 1088px;
+	max-width: 1103px;
 	margin: 0 auto;
 	display: block;
 }
@@ -147,11 +147,13 @@ a {
 }
 
 .f-14 {
-    line-height: 20px;
+	line-height: 20px;
+	letter-spacing: 1px;
 }
 
 .f-16 {
-    line-height: 19px;
+	line-height: 19px;
+	letter-spacing: 1px;
 }
 .f-18 {
 	line-height: 21px;
@@ -207,3 +209,11 @@ a {
     border-bottom-right-radius: 8px !important;
 }
 // pagination styles 
+.py-100 {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.py-60 {
+	padding-top: 60px;
+	padding-bottom: 60px;	
+}

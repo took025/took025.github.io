@@ -4,6 +4,13 @@
     .scroll-center {
         padding: 0 15px;
     }
+    .scroll-parent {
+        overflow: hidden !important;
+        .scroll-child {
+            overflow: auto !important;
+            // padding: 40px;
+        }
+    }
 }
 
 @media only screen and (max-width: 990px) {

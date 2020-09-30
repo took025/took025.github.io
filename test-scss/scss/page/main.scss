@@ -175,7 +175,7 @@ body {
 }
 
 .premiup__prizes {
-    padding: 100px 0;
+    // padding: 100px 0;
 
     .left__side {
         .block {
@@ -204,7 +204,7 @@ body {
 
 .like__remove {
     position: relative;
-    color: $light-text;
+    color: $light-text !important;
 
     &::after {
         position: absolute;
@@ -218,7 +218,7 @@ body {
 }
 
 .popular__courses {
-    padding: 60px 0;
+    // padding: 60px 0 !important;
 
     .main {
         display: grid;
@@ -264,13 +264,13 @@ body {
     }
 }
 
-.academy__section,
-.master__class,
-.student__works,
-.finished__courses,
-.block__section {
-    padding: 100px 0;
-}
+// .academy__section,
+// .master__class,
+// .student__works,
+// .finished__courses,
+// .block__section {
+//     padding: 100px 0;
+// }
 
 .finished__courses {
     .course-block {
@@ -345,7 +345,7 @@ body {
 .scroll-parent {
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    overflow: initial;
 
     .scroll-child {
         height: 100%;
@@ -353,6 +353,7 @@ body {
         margin-bottom: -20px;
         padding-bottom: 40px;
         padding-top: 30px;
+        overflow: initial !important;
         // padding: 40px;
     }
 }
@@ -549,7 +550,7 @@ body {
 
 .bdr {
     .row-left {
-        background-image: url('../img/back.svg');
+        // background-image: url('../img/back.svg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: 100%;
@@ -565,7 +566,7 @@ body {
     }
 
     .row-right {
-        background-image: url('../img/back.svg');
+        // background-image: url('../img/back.svg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: 100%;
