@@ -205,7 +205,7 @@ body {
 .like__remove {
     position: relative;
     color: $light-text !important;
-
+    font-size: 20px;
     &::after {
         position: absolute;
         content: '';
@@ -297,7 +297,8 @@ body {
                 span {
                     color: $black;
                     transition: 0.3s;
-
+                    font-size: 14px;
+                    line-height: 20px;
                 }
             }
         }
@@ -679,6 +680,10 @@ body {
 .text__c {
     border-width: 4px;
     border-right-style: solid;
+}
+.text__c__left {
+    border-width: 7px;
+    border-left-style: solid;
 }
 
 .scroll__overlay {

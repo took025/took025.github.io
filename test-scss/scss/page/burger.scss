@@ -4,7 +4,7 @@
 
     .inside-burger {
         width: 20px;
-        height: 15px;
+        min-height: 15px;
         flex-wrap: wrap;
         overflow: hidden;
         cursor: pointer;
@@ -36,6 +36,8 @@
         }
 
         &.active {
+        min-height: 20px;
+
             .burger1 {
                 position: absolute;
                 top: 50%;

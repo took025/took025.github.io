@@ -145,7 +145,7 @@ a {
 
 }
 .text-break {
-	word-break: break-all !important;
+	word-break:initial!important;
 }
 .f-12 {
 	line-height: 16px;
@@ -156,7 +156,7 @@ a {
 }
 
 .f-16 {
-	line-height: 19px;
+	line-height: 24px;
 }
 .f-18 {
 	line-height: 21px;
@@ -219,4 +219,7 @@ a {
 .py-60 {
 	padding-top: 60px;
 	padding-bottom: 60px;	
+}
+.dropdown-toggle::after {
+	display: none !important;
 }
