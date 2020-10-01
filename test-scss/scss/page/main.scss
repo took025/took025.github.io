@@ -381,7 +381,7 @@ body {
     .filter-a {
         padding: 10px 15px;
         @extend .helvetica-55;
-
+        word-break: keep-all;
         &.active {
             color: #424242;
             background-color: #F3F3F4;
