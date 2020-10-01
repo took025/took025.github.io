@@ -740,6 +740,7 @@ body {
 
     }
 }
+
 .color-block {
     max-width: 100px;
     min-width: 70px;
@@ -789,6 +790,7 @@ body {
     .border-center {
         position: relative;
         min-height: 700px;
+
         &::after {
             position: absolute;
             content: '';
@@ -801,9 +803,36 @@ body {
         }
     }
 }
+
 .details {
     .section {
         max-width: 1088px;
         margin: 0 auto;
+    }
+}
+
+.hover-imgs {
+    .before {
+        width: 30px;
+        height: 30px;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .after {
+        width: 30px;
+        height: 30px;
+        display: none;
+        transition: 0.3s;
+    }
+    &:hover {
+        .before {
+            display: none;
+            transition: 0.3s;
+        }
+        .after {
+            display: block;
+            transition: 0.3s;
+        }
     }
 }
