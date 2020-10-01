@@ -49,6 +49,16 @@ body {
         }
     }
 }
+.mini__header {
+    .nav-header,
+    .nav__a {
+        height: 60px !important;
+    }
+    .nav-header {
+        max-width: 1088px;
+        width: 100%;
+    }
+}
 
 .nav-header {
     height: 80px;

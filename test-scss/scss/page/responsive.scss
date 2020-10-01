@@ -49,6 +49,12 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .mini__header {
+        .nav-header,
+        .nav__a {
+            height: 37px !important;
+        }
+    }
     .footer {
         min-height: 295px !important;
         .up__side {
