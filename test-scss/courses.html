@@ -141,10 +141,10 @@
             </div>
         </div>
     </header>
-    <section class="filter__head mb-3">
-        <div class="filter__place center d-flex align-items-center justify-content-between pt-4">
+    <section class="filter__head pt-4">
+        <div class="filter__place center d-flex align-items-center justify-content-between">
 
-            <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
+            <div class="nav nav-tabs border-0 d-none d-md-flex" id="nav-tab" role="tablist">
                 <a class="filter-a f-14 c-light-text active show" active" id="nav-home-tab" data-toggle="tab"
                     href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">პოპულარული</a>
                 <a class="filter-a f-14 c-light-text" id="nav-profile-tab" data-toggle="tab" href="#nav-profile"
@@ -152,20 +152,41 @@
                 <a class="filter-a f-14 c-light-text" id="nav-contact-tab" data-toggle="tab" href="#nav-contact"
                     role="tab" aria-controls="nav-contact" aria-selected="false">ფასდაკლებით</a>
             </div>
-            <a type="button" class="filter-drop c-black" data-toggle="collapse" data-target="#demo">ფილტრები</a>
+            <div class="drop-parent col-7 ml-n3 col-sm-5 d-flex d-md-none pl-0">
+                <div class=" dropdown-toggle position-relative w-100 px-1 drop d-flex align-items-center justify-content-between bc-gray-light" type="button"
+                    id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="f-14">
+                        პოპულარული
+                    </span>
+                    <img src="./img/Path.svg" alt="">
+                </div>
+                <div class="dropdown-menu w-100 mt-2" aria-labelledby="dropdownMenuButton">
+                    <div class="blcok mt-2 pointer w-100">
+                        <p class="px-3 w-100 c-light-text hover-bc-gray transition bc-white py-2">
+                            ახალი
+                        </p>
+                    </div>
+                    <div class="blcok mt-2 pointer w-100">
+                        <p class="px-3 w-100 c-light-text hover-bc-gray transition bc-white py-2">
+                            ფასდაკლებით
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <a type="button" class="filter-drop f-14 helvetica-55 keep-all" data-toggle="collapse" data-target="#demo">ფილტრები</a>
 
         </div>
         <div class="d-flex justify-content-between flex-wrap center filter__block collapse mt-3" id="demo">
-            <div class="col-12 col-sm-6 col-md-3 pl-0 pr-0 pr-sm-2 mt-3">
+            <div class="col-12 col-sm-6 col-md-3 pl-0 pr-0 pr-sm-2 pr-md-3 mt-3">
                 <span class="f-13 c-black helvetica-75 d-block mb-2">პროგრამა</span>
                 <div class="search-input-parent ">
-                    <input class="search-input w-100 hover-bc-white bc-gray-light" type="text">
+                    <input class="search-input filter-responsive w-100 hover-bc-white bc-gray-light" type="text">
                 </div>
             </div>
 
-            <div class="drop-parent col-12 col-sm-6 col-md-3 pr-md-2 pl-0 pr-0 mt-3">
+            <div class="drop-parent col-12 col-sm-6 col-md-3 pr-md-3 pl-0 pl-md-3 pr-0 mt-3">
                 <span class="f-13 c-black helvetica-75 d-block mb-2">სკოლა</span>
-                <div class=" dropdown-toggle w-100 drop d-flex align-items-center justify-content-between bc-gray-light" type="button"
+                <div class=" dropdown-toggle w-100 filter-responsive drop d-flex align-items-center justify-content-between bc-gray-light" type="button"
                     id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <span>
                         ნებისმიერი
@@ -194,10 +215,10 @@
                     </div>
                 </div>
             </div>
-            <div class="drop-parent col-12 col-sm-6 col-md-3 pl-md-2 pl-0 pr-0 pr-sm-2 mt-3">
+            <div class="drop-parent col-12 col-sm-6 col-md-3 pl-md-3 pl-0 pr-0 pr-sm-2 mt-3">
                 <span class="f-13 c-black helvetica-75 d-block mb-2">დონე</span>
 
-                <div class=" dropdown-toggle w-100 drop d-flex align-items-center justify-content-between bc-gray-light" type="button"
+                <div class=" dropdown-toggle filter-responsive w-100 drop d-flex align-items-center justify-content-between bc-gray-light" type="button"
                     id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <span>
                         ნებისმიერი
@@ -227,10 +248,10 @@
                 </div>
             </div>
 
-            <div class="drop-parent col-12 col-sm-6 col-md-3 p-0 mt-3">
+            <div class="drop-parent col-12 col-sm-6 col-md-3 pr-0 pl-0 pl-md-3 mt-3">
                 <span class="f-13 c-black helvetica-75 d-block mb-2">პროგრამა</span>
 
-                <div class=" dropdown-toggle w-100 drop d-flex align-items-center justify-content-between bc-gray-light" type="button"
+                <div class=" dropdown-toggle filter-responsive w-100 drop d-flex align-items-center justify-content-between bc-gray-light" type="button"
                     id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <span>
                         ნებისმიერი
@@ -279,7 +300,7 @@
 
         </div>
     </section>
-    <section class="popular__courses py-2">
+    <section class="popular__courses">
         <div class="center">
             <div class="d-flex justify-content-between flex-wrap main courses__main row">
                 <div class="block col-12 col-md-6 col-lg-4 d-flex flex-column justify-content-end scroll-block my-3">

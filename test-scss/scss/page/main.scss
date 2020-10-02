@@ -126,8 +126,8 @@ body {
                 right: -8px;
                 top: -4px;
                 background-color: $orange;
-                width: 15px;
-                height: 15px;
+                width: 16px;
+                height: 16px;
                 border-radius: 50%;
                 font-size: 12px;
                 display: flex;
@@ -305,7 +305,7 @@ body {
                 transition: 0.3s;
 
                 span {
-                    color: $black;
+                    color: $card-text;
                     transition: 0.3s;
                     font-size: 14px;
                     line-height: 20px;

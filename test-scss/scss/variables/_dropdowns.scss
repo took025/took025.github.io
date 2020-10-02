@@ -30,6 +30,13 @@
         }
 
     }
+    &.show {
+        .drop {
+            border: 4px solid #EFF4FF;
+            padding-left: 13px;
+            padding-right: 13px;
+        }
+    }
 }
 
 .filter-drop {
