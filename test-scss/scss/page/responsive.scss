@@ -18,17 +18,19 @@
 
 @media only screen and (max-width: 990px) {
     .header {
-        height: 50px !important;
+        height: 52px !important;
 
         .logo {
             width: 80px;
         }
     }
-
+    
     body {
-        padding-top: 50px !important;
+        padding-top: 52px !important;
     }
-
+    .burger-menu  {
+        padding: 0 37px
+    }
     .lectors {
         .block {
             min-width: 250px;
@@ -51,6 +53,10 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .course__dropper {
+        background-color: $white !important;
+        border: 1px solid $border !important;
+    }
     .filter__block {
     grid-template-columns: repeat(2,1fr) !important;
 
@@ -73,7 +79,7 @@
         min-height: 295px !important;
 
         .up__side {
-            min-height: 200px !important;
+            min-height: 215px !important;
         }
     }
 
@@ -188,7 +194,6 @@
     .course_2-block .coure_2 p {
         opacity: 1 !important;
     }
-
     .like__remove {
         font-size: 12px !important;
     }

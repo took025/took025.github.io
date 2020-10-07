@@ -106,3 +106,10 @@
         // opacity: 0.7;
     }
 }
+@media only screen and (max-width: 768px) {
+    
+    }
+
+    .btn-light:not(:disabled):not(.disabled).active:focus, .btn-light:not(:disabled):not(.disabled):active:focus, .show>.btn-light.dropdown-toggle:focus {
+        box-shadow: initial !important;
+    }
