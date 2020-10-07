@@ -5,8 +5,10 @@
     .header-center {
         padding: 0 15px;
     }
+
     .scroll-parent {
         overflow: hidden !important;
+
         .scroll-child {
             overflow: auto !important;
             // padding: 40px;
@@ -49,50 +51,66 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .filter__block {
+    grid-template-columns: repeat(2,1fr) !important;
+
+    }
+
     .filter-responsive {
         border: 1px solid #E2E2E2 !important;
-        background-color: white  !important;
+        background-color: white !important;
     }
+
     .mini__header {
+
         .nav-header,
         .nav__a {
             height: 37px !important;
         }
     }
+
     .footer {
         min-height: 295px !important;
+
         .up__side {
             min-height: 200px !important;
         }
     }
-    .finished__courses .course-block .block
-    {
+
+    .finished__courses .course-block .block {
         &:nth-child(1) {
             box-shadow: 0px 0px 10px #0000001A !important;
             background-color: #fff !important;
+
             // transform: scale(1.07) !important;
             span {
                 color: #000 !important;
             }
         }
+
         &:nth-child(2) {
-                background-color: #F5F5F5 !important;
-                transform: scale(1) !important;
-                box-shadow: initial !important;
+            background-color: #F5F5F5 !important;
+            transform: scale(1) !important;
+            box-shadow: initial !important;
+
             span {
                 color: #9E9E9E !important;
             }
         }
+
         span {
             font-size: 14px !important;
         }
     }
+
     .premiup__prizes .left__side .block {
         height: 130px !important;
+
         img {
             max-width: 160px;
         }
     }
+
     body {
         padding-bottom: 80px;
     }
@@ -149,6 +167,7 @@
         background-size: 100%;
         position: relative;
         min-height: 400px;
+
         .block__res {
             background-color: rgba(13, 13, 13, 0.41);
             position: absolute;
@@ -169,17 +188,21 @@
     .course_2-block .coure_2 p {
         opacity: 1 !important;
     }
+
     .like__remove {
         font-size: 12px !important;
     }
+
     .prizes .number {
         min-width: 64px !important;
         height: 64px !important;
     }
+
     .f-14 {
         font-size: 12px !important;
         line-height: 16px !important;
     }
+
     .f-30 {
         font-size: 24px !important;
         line-height: 29px !important;
@@ -198,7 +221,7 @@
     .f-20 {
         font-size: 18px !important;
     }
-    
+
     .f-40 {
         font-size: 25px !important;
         line-height: 30px !important;
@@ -281,17 +304,23 @@
     .color-block {
         max-width: 70px !important;
     }
+
     .py-100 {
         padding-top: 30px !important;
         padding-bottom: 50px !important;
     }
+
     .py-60 {
         padding-top: 30px !important;
-        padding-bottom: 50px!important;	
+        padding-bottom: 50px !important;
     }
 }
 
 @media only screen and (max-width: 576px) {
+    .filter__block {
+        grid-template-columns: repeat(1,1fr) !important;
+    
+        }
     .teams__section {
         .team-block {
             box-shadow: initial !important;

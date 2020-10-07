@@ -53,6 +53,7 @@ body {
     .nav-header,
     .nav__a {
         height: 60px !important;
+        white-space: nowrap;
     }
     .nav-header {
         max-width: 1088px;
@@ -370,7 +371,9 @@ body {
 }
 
 .filter__block {
-
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-gap: 30px;
     &.collapse,
     &.collapsing {
         max-height: 0px;
