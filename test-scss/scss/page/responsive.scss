@@ -24,13 +24,15 @@
             width: 80px;
         }
     }
-    
+
     body {
         padding-top: 52px !important;
     }
-    .burger-menu  {
+
+    .burger-menu {
         padding: 0 37px
     }
+
     .lectors {
         .block {
             min-width: 250px;
@@ -57,8 +59,9 @@
         background-color: $white !important;
         border: 1px solid $border !important;
     }
+
     .filter__block {
-    grid-template-columns: repeat(2,1fr) !important;
+        grid-template-columns: repeat(2, 1fr) !important;
 
     }
 
@@ -194,6 +197,7 @@
     .course_2-block .coure_2 p {
         opacity: 1 !important;
     }
+
     .like__remove {
         font-size: 12px !important;
     }
@@ -227,6 +231,11 @@
         font-size: 18px !important;
     }
 
+    .f-28 {
+        font-size: 24px !important;
+        line-height: 29px !important;
+    }
+
     .f-40 {
         font-size: 25px !important;
         line-height: 30px !important;
@@ -234,6 +243,15 @@
 
     .center {
         padding: 0 37px !important;
+    }
+
+    .count__section {
+        background-color: $white !important;
+
+        .scroll__overlay {
+            background-color: $white !important;
+
+        }
     }
 
     .scroll-center {
@@ -323,9 +341,10 @@
 
 @media only screen and (max-width: 576px) {
     .filter__block {
-        grid-template-columns: repeat(1,1fr) !important;
-    
-        }
+        grid-template-columns: repeat(1, 1fr) !important;
+
+    }
+
     .teams__section {
         .team-block {
             box-shadow: initial !important;
