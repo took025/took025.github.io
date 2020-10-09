@@ -386,6 +386,22 @@ body {
 
     }
 }
+.filter__block_career {
+    &.collapse,
+    &.collapsing {
+        max-height: 0px;
+        opacity: 0;
+        transition: 0.3s;
+    }
+
+    // &.collapsed,
+    &.show {
+        max-height: 400vh;
+        opacity: 1;
+        transition: 0.3s;
+
+    }
+}
 
 .filter__place {
     .filter-a {
