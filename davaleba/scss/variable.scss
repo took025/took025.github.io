@@ -1,27 +1,18 @@
-$orange : #FF5D31;
-$yellow : #FFCD00;
-$dark: #2c2e2b;
 $white: #ffffff;
 $black: #000000;
-$purple: #9F33FF;
-$blue: #5086ff;
-$border : #E2E2E2;
-$banner-color: #F5F9FF;
-$green : #37B34A;
-$light-text: #9E9E9E;
-$dark-text: #808080;
-$dark-blue: #6595FF;
-$light-blue:#22AAFF;
-$card-text:#4C4C4C;
-$gray: #E7E7E9;
-$gray-light:#F3F3F4;
-
-// $dark-green : #1e4e4b;
-// $green-text : #1bd3a0;
-// $light-red: #e30b01;
-// $dark-red: #980000;
-// $banner-light: #516780;
-// $violet: #403e65;
+$dark-blue: #322A7D;
+$text: #354052;
+$text-2: #11141A;
+$light-text:#7F8FA4;
+$book-text:#BBC5D5;
+$light-red:#FCCACF;
+$red:#F35162;
+$yellow:#FFA101;
+$light-yellow:#FFE3B2;
+$purple: #69519E;
+$bq: #C1BED8;
+$btn: #322A7D;
+$border: #F7F8FA;
 
 
 
@@ -30,36 +21,26 @@ $gray-light:#F3F3F4;
 
 
 
-
-$theme-colors: ( //   "brown": $brown,
-    //   'light': $light-color,
-    //   'lightx-2': $light-color-x2,
-    //   'lightx-3': $light-color-x3,
-    'gray': $gray,
-    'gray-light': $gray-light,
-    'red': $orange,
-    'orange': $orange,
-    'yellow': $yellow,
-    'dark': $dark,
+$theme-colors: (
     "white": $white,
     "black": $black,
-    'purple': $purple,
-    'blue': $blue,
-    'border': $border,
-    'banner': $banner-color,
-    'green': $green,
+    'light-yellow': $light-yellow,
+    'yellow': $yellow,
+    'light-red': $light-red,
+    'red': $red,
+    'book-text': $book-text,
     'light-text': $light-text,
-    'dark-text': $dark-text,
+    'text-2': $text-2,
+    'text': $text,
+    'purple': $purple,
     'dark-blue': $dark-blue,
-    'light-blue': $light-blue,
-    'card-text': $card-text // 'dark-red': $dark-red,
-    // 'dark-green': $dark-green,
-    // 'green-text': $green-text,
-    // 'banner-light': $banner-light,
-    // 'violet': $violet,
+    'bq': $bq,
+    'btn': $btn,
+    'border': $border,
 
 );
 $number_varriables:(
+    '0': 0px,
     '3': 3px,
     '5' : 5px,
     '8': 8px,
@@ -77,11 +58,16 @@ $number_varriables:(
     '25': 25px,
     '28': 28px,
     '30': 30px,
+    '32': 32px,
     '35': 35px,
     '40': 40px,
+    '45': 45px,
     '48': 48px,
     '50': 50px,
+    '75': 75px,
     '80': 80px,
+    '110': 110px,
+    '380': 380px,
 );
 
 @each $key,
@@ -167,6 +153,18 @@ $value in $number_varriables {
     }
 }
 
+@each $key,
+$value in $number_varriables {
+    .width-#{$key} {
+        min-width: $value;
+    }
+}
+@each $key,
+$value in $number_varriables {
+    .height-#{$key} {
+        height: $value;
+    }
+}
 @each $key,
 $value in $number_varriables {
     .br-#{$key} {

@@ -1,25 +1,68 @@
 @font-face {
-    font-family: 'HelveticaNeueLTGEO-75Bold';
-    src: url('../fonts/HelveticaNeueLTGEO-75Bold.eot');
+    font-family: 'lato-regular';
+    src: url('../fonts/Lato-Regular.eot');
     src: url('../fonts/HelveticaNeueLTGEO-75Bold.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/HelveticaNeueLTGEO-75Bold.svg#HelveticaNeueLTGEO-75Bold') format('svg'),
-         url('../fonts/HelveticaNeueLTGEO-75Bold.ttf') format('truetype'),
-         url('../fonts/HelveticaNeueLTGEO-75Bold.woff') format('woff'),
-         url('../fonts/HelveticaNeueLTGEO-75Bold.woff2') format('woff2');
+         url('../fonts/Lato-Regular.ttf') format('truetype'),
+         url('../fonts/Lato-Regular.woff') format('woff'),
+         url('../fonts/Lato-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
   }
 
   @font-face {
-    font-family: 'HelveticaNeueLTGEO-55Roman';
-    src: url('../fonts/HelveticaNeueLTGEO-55Roman.eot');
-    src: url('../fonts/HelveticaNeueLTGEO-55Roman.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/HelveticaNeueLTGEO-55Roman.svg#HelveticaNeueLTGEO-55Roman') format('svg'),
-         url('../fonts/HelveticaNeueLTGEO-55Roman.ttf') format('truetype'),
-         url('../fonts/HelveticaNeueLTGEO-55Roman.woff') format('woff'),
-         url('../fonts/HelveticaNeueLTGEO-55Roman.woff2') format('woff2');
+    font-family: 'Raleway-Bold';
+    src: url('../fonts/Raleway-Bold.eot');
+    src: url('../fonts/Raleway-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Raleway-Bold.ttf') format('truetype'),
+         url('../fonts/Raleway-Bold.woff') format('woff'),
+         url('../fonts/Raleway-Bold.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
   }
-  
+
+  @font-face {
+    font-family: 'Raleway-Regular';
+    src: url('../fonts/Raleway-Regular.eot');
+    src: url('../fonts/Raleway-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Raleway-Regular.ttf') format('truetype'),
+         url('../fonts/Raleway-Regular.woff') format('woff'),
+         url('../fonts/Raleway-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Lato-Black';
+    src: url('../fonts/Lato-Black.eot');
+    src: url('../fonts/Lato-Black.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Lato-Black.ttf') format('truetype'),
+         url('../fonts/Lato-Black.woff') format('woff'),
+         url('../fonts/Lato-Black.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Lato-Bold';
+    src: url('../fonts/Lato-Bold.eot');
+    src: url('../fonts/Lato-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Lato-Bold.ttf') format('truetype'),
+         url('../fonts/Lato-Bold.woff') format('woff'),
+         url('../fonts/Lato-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  .lato-bold {
+     font-family: Lato-Bold;
+  }
+  .lato-black {
+     font-family: Lato-Black;
+  }
+  .lato-regular {
+       font-family: lato-regular;
+  }
+  .releway-bold {
+       font-family: Raleway-Bold;
+  }
+  .releway-regular {
+       font-family: Raleway-Regular;
+  }
 
