@@ -1,0 +1,80 @@
+@import '../variable';
+
+.input {
+    border: 1px solid #E0E0E0;
+    min-height: 40px;
+    border-radius: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: 0.1s;
+
+    &:not(.border-0):hover {
+        transition: 0.1s;
+        // padding-left: 12px;
+        box-shadow: 0 0 0 0.2rem #EFF4FF;
+        border: none;
+        border: 1px solid transparent;
+    }
+
+    &:not(.border-0):focus {
+        transition: 0.1s;
+        // padding-left: 12px;
+        box-shadow: 0 0 0 0.2rem #EFF4FF;
+        border: none;
+        border: 1px solid transparent;
+        color: $black;
+    }
+
+    &:not(.border-0).wrong {
+        transition: 0.1s;
+        // padding-left: 12px;
+        box-shadow: 0 0 0 0.2rem #EFF4FF;
+        border: none;
+        border: 1px solid transparent;
+
+    }
+}
+
+.search-input-parent {
+    min-height: 40px;
+    position: relative;
+
+    .search-input {
+        border: 2px solid transparent;
+        min-height: 40px;
+        border-radius: 8px;
+        padding-left: 40px;
+        padding-right: 15px;
+        transition: 0.3s;
+        color: $light-text;
+
+        &:not(.border-0):hover {
+            transition: 0.3s;
+            border: 1px solid transparent;
+            box-shadow: 0 0 0 0.2rem #EFF4FF;
+
+        }
+
+        &:not(.border-0):focus {
+            transition: 0.3s;
+            border: 1px solid transparent;
+            background-color: white;
+            color: $black;
+            box-shadow: 0 0 0 0.2rem #EFF4FF;
+        }
+
+    }
+
+    &::after {
+        content: '';
+        background-image: url('../img/search-icon.svg');
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        left: 16px;
+        top: 12px;
+    }
+}

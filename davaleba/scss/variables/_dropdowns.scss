@@ -1,0 +1,92 @@
+@import '../variable';
+
+.drop-parent {
+    min-height: 40px;
+    position: relative;
+
+    .drop {
+        border: 2px solid transparent;
+        min-height: 40px;
+        border-radius: 8px;
+        padding-left: 15px;
+        padding-right: 15px;
+        transition: 0.3s;
+        transition: 0.3s;
+
+        @media only screen and (min-width: 768px) {
+            &:hover {
+                transition: 0.3s;
+                border: 2px solid transparent !important;
+                box-shadow: 0 0 0 0.2rem #EFF4FF;
+                padding-right: 13px;
+
+            }
+
+            &:focus {
+                transition: 0.3s;
+                border: 2px solid transparent !important;
+                box-shadow: 0 0 0 0.2rem #EFF4FF;
+                padding-right: 13px;
+                color: $black;
+            }
+
+            &.filter-responsive {
+                border: 2px solid #E2E2E2;
+            }
+        }
+
+    }
+
+    @media only screen and (min-width: 768px) {
+
+        &.show {
+            .drop {
+                border: 2px solid transparent;
+                box-shadow: 0 0 0 0.2rem #EFF4FF;
+                // padding-left: 13px;
+                padding-right: 13px;
+            }
+        }
+    }
+}
+
+.filter-drop {
+    min-height: 40px;
+    border-radius: 8px;
+    padding-left: 40px;
+    padding-right: 15px;
+    transition: 0.3s;
+    border: 2px solid $border;
+    color: #4C4C4C;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    @media only screen and (min-width: 768px) {
+
+        &:hover {
+            color: #000000;
+            transition: 0.3s;
+        }
+
+        &.active {
+            border: 2px solid transparent;
+            transition: 0.3s;
+            background-color: #F3F3F4;
+        }
+
+    }
+
+    &::after {
+        content: '';
+        background-image: url('../img/filter.svg');
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        left: 16px;
+        top: 9px;
+    }
+}

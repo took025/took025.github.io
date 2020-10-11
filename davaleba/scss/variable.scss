@@ -1,0 +1,182 @@
+$orange : #FF5D31;
+$yellow : #FFCD00;
+$dark: #2c2e2b;
+$white: #ffffff;
+$black: #000000;
+$purple: #9F33FF;
+$blue: #5086ff;
+$border : #E2E2E2;
+$banner-color: #F5F9FF;
+$green : #37B34A;
+$light-text: #9E9E9E;
+$dark-text: #808080;
+$dark-blue: #6595FF;
+$light-blue:#22AAFF;
+$card-text:#4C4C4C;
+$gray: #E7E7E9;
+$gray-light:#F3F3F4;
+
+// $dark-green : #1e4e4b;
+// $green-text : #1bd3a0;
+// $light-red: #e30b01;
+// $dark-red: #980000;
+// $banner-light: #516780;
+// $violet: #403e65;
+
+
+
+
+
+
+
+
+
+$theme-colors: ( //   "brown": $brown,
+    //   'light': $light-color,
+    //   'lightx-2': $light-color-x2,
+    //   'lightx-3': $light-color-x3,
+    'gray': $gray,
+    'gray-light': $gray-light,
+    'red': $orange,
+    'orange': $orange,
+    'yellow': $yellow,
+    'dark': $dark,
+    "white": $white,
+    "black": $black,
+    'purple': $purple,
+    'blue': $blue,
+    'border': $border,
+    'banner': $banner-color,
+    'green': $green,
+    'light-text': $light-text,
+    'dark-text': $dark-text,
+    'dark-blue': $dark-blue,
+    'light-blue': $light-blue,
+    'card-text': $card-text // 'dark-red': $dark-red,
+    // 'dark-green': $dark-green,
+    // 'green-text': $green-text,
+    // 'banner-light': $banner-light,
+    // 'violet': $violet,
+
+);
+$number_varriables:(
+    '3': 3px,
+    '5' : 5px,
+    '8': 8px,
+    '10': 10px,
+    '11': 11px,
+    '12': 12px,
+    '13': 13px,
+    '14': 14px,
+    '15': 15px,
+    '16': 16px,
+    '18': 18px,
+    '20': 20px,
+    '23': 23px,
+    '24': 24px,
+    '25': 25px,
+    '28': 28px,
+    '30': 30px,
+    '35': 35px,
+    '40': 40px,
+    '48': 48px,
+    '50': 50px,
+    '80': 80px,
+);
+
+@each $key,
+$value in $theme-colors {
+    .bc-#{$key} {
+        background-color: $value;
+    }
+}
+
+@each $key,
+$value in $theme-colors {
+    .hover-bc-#{$key} {
+        &:hover {
+            background-color: $value;
+        }
+    }
+}
+
+@each $key,
+$value in $theme-colors {
+    .c-#{$key} {
+        color: $value;
+    }
+}
+
+@each $key,
+$value in $theme-colors {
+    .br-c-#{$key} {
+        border-color: $value;
+    }
+}
+
+@each $key,
+$value in $theme-colors {
+    .c-hover-#{$key} {
+        &:hover {
+            color: $value;
+        }
+    }
+}
+
+@each $key,
+$value in $theme-colors {
+    .hover-c-#{$key} {
+        &:hover {
+            color: $value;
+        }
+    }
+}
+
+@each $key,
+$value in $number_varriables {
+    .f-#{$key} {
+        font-size: $value;
+    }
+}
+
+@each $key,
+$value in $number_varriables {
+    .bottom-#{$key} {
+        bottom: $value;
+    }
+}
+
+@each $key,
+$value in $number_varriables {
+    .left-#{$key} {
+        left: $value;
+    }
+}
+
+@each $key,
+$value in $number_varriables {
+    .top-#{$key} {
+        top: $value;
+    }
+}
+
+@each $key,
+$value in $number_varriables {
+    .right-#{$key} {
+        right: $value;
+    }
+}
+
+@each $key,
+$value in $number_varriables {
+    .br-#{$key} {
+        border-radius: $value;
+    }
+}
+
+@each $key,
+$value in $number_varriables {
+    .lh-#{$key} {
+        line-height: $value;
+    }
+}
