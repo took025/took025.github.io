@@ -1,3 +1,19 @@
+// $orange : #FF5D31;
+// $yellow : #FFCD00;
+// $dark: #2c2e2b;
+// $purple: #9F33FF;
+// $blue: #5086ff;
+// $border : #E2E2E2;
+// $banner-color: #F5F9FF;
+// $green : #37B34A;
+// $light-text: #9E9E9E;
+// $dark-text: #808080;
+// $dark-blue: #6595FF;
+// $light-blue:#22AAFF;
+// $card-text:#4C4C4C;
+// $gray: #E7E7E9;
+// $gray-light:#F3F3F4;
+
 $white: #ffffff;
 $black: #000000;
 $dark-blue: #322A7D;
@@ -17,16 +33,24 @@ $purple: #69519E;
 
 
 $theme-colors: (
+    'gray': $gray,
+    'gray-light': $gray-light,
+    'red': $orange,
+    'orange': $orange,
+    'yellow': $yellow,
+    'dark': $dark,
     "white": $white,
     "black": $black,
-    'light-yellow': $light-yellow,
-    'light-red': $light-red,
-    'book-text': $book-text,
-    'light-text': $light-text,
-    'text-2': $text-2,
-    'text': $text,
     'purple': $purple,
+    'blue': $blue,
+    'border': $border,
+    'banner': $banner-color,
+    'green': $green,
+    'light-text': $light-text,
+    'dark-text': $dark-text,
     'dark-blue': $dark-blue,
+    'light-blue': $light-blue,
+    'card-text': $card-text 
 
 );
 $number_varriables:(
@@ -52,7 +76,6 @@ $number_varriables:(
     '40': 40px,
     '48': 48px,
     '50': 50px,
-    '75': 75px,
     '80': 80px,
 );
 
@@ -139,18 +162,6 @@ $value in $number_varriables {
     }
 }
 
-@each $key,
-$value in $number_varriables {
-    .widht-#{$key} {
-        width: $value;
-    }
-}
-@each $key,
-$value in $number_varriables {
-    .height-#{$key} {
-        height: $value;
-    }
-}
 @each $key,
 $value in $number_varriables {
     .br-#{$key} {
