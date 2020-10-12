@@ -761,7 +761,8 @@ body {
 .carousel-item {
     .childs {
         height: 500px;
-        background-size: 100% !important;
+        background-size: cover;
+        // background-size: 100% !important;
     }
 }
 
