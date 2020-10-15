@@ -77,4 +77,22 @@
         left: 16px;
         top: 12px;
     }
+    &.career {
+        &:not(.border-0):hover {
+            transition: 0.1s;
+            // padding-left: 12px;
+            box-shadow: 0 0 0 0.2rem #EFF4FF;
+            border: none;
+            border: 1px solid transparent;
+        }
+    
+        &:not(.border-0):focus {
+            transition: 0.1s;
+            // padding-left: 12px;
+            box-shadow: 0 0 0 0.2rem #EFF4FF;
+            border: none;
+            border: 1px solid transparent;
+            color: $black;
+        }
+    }
 }

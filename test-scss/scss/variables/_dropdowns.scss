@@ -5,7 +5,7 @@
     position: relative;
 
     .drop {
-        border: 2px solid transparent;
+        border: 1px solid transparent;
         min-height: 40px;
         border-radius: 8px;
         padding-left: 15px;
@@ -13,6 +13,7 @@
         transition: 0.3s;
         transition: 0.3s;
         font-size: 14px;
+        color: #9E9E9E;
         @media only screen and (min-width: 768px) {
             &:hover {
                 transition: 0.3s;
@@ -34,18 +35,28 @@
                 border: 1px solid #E2E2E2;
             }
         }
-
+        img {
+            width: 9px;
+            height: 5.84px;
+        }
+        
     }
 
     @media only screen and (min-width: 768px) {
 
         &.show {
             .drop {
-                border: 2px solid transparent;
+                border: 1px solid transparent;
                 box-shadow: 0 0 0 0.2rem #EFF4FF;
                 // padding-left: 13px;
-                padding-right: 13px;
+                // padding-right: 13px;
             }
+        }
+    }
+    .blcok {
+        p {
+
+            font-size: 14px;
         }
     }
 }

@@ -15,6 +15,7 @@ $light-blue:#22AAFF;
 $card-text:#4C4C4C;
 $gray: #E7E7E9;
 $gray-light:#F3F3F4;
+$input-color: #FCFCFC;
 
 
 
@@ -25,6 +26,7 @@ $gray-light:#F3F3F4;
 
 
 $theme-colors: (
+    'input-color': $input-color,
     'gray': $gray,
     'gray-light': $gray-light,
     'red': $orange,
@@ -69,6 +71,7 @@ $number_varriables:(
     '48': 48px,
     '50': 50px,
     '80': 80px,
+    '100': 100px,
 );
 
 @each $key,
@@ -151,6 +154,12 @@ $value in $number_varriables {
 $value in $number_varriables {
     .right-#{$key} {
         right: $value;
+    }
+}
+@each $key,
+$value in $number_varriables {
+    .height-#{$key} {
+        height: $value;
     }
 }
 
