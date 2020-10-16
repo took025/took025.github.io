@@ -55,6 +55,14 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .lector-nav {
+        .nav__a {
+            font-size: 12px !important;
+        }
+    }
+    .burger-menu-child{
+        padding-top: 20px !important
+    }
     .course__dropper {
         background-color: $white !important;
         border: 1px solid $border !important;

@@ -33,6 +33,9 @@
         border: 1px solid transparent;
 
     }
+    &::placeholder {
+        color: #9E9E9E;
+    }
 }
 
 .search-input-parent {
