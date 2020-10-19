@@ -49,12 +49,15 @@ body {
         }
     }
 }
+
 .mini__header {
+
     .nav-header,
     .nav__a {
         height: 60px !important;
         white-space: nowrap;
     }
+
     .nav-header {
         max-width: 1088px;
         width: 100%;
@@ -107,16 +110,18 @@ body {
 
                 }
             }
+
             &.lector {
                 &.active {
                     color: $blue;
-    
+
                     &:after {
                         opacity: 1;
                         transition: width 0.3s ease 0s, left 0.3s ease 0s;
                     }
                 }
             }
+
             &.active {
                 color: $black;
 
@@ -226,6 +231,7 @@ body {
     position: relative;
     color: $light-text !important;
     font-size: 20px;
+
     &::after {
         position: absolute;
         content: '';
@@ -302,7 +308,6 @@ body {
 
             &:nth-child(2) {
                 margin: 0 10px;
-
                 background-color: $white;
                 transform: scale(1.07);
                 box-shadow: 0px 0px 10px #0000001A;
@@ -314,8 +319,17 @@ body {
                     font-size: 14px;
                     line-height: 20px;
                 }
+
                 .name {
                     color: $black;
+                }
+            }
+
+            &.coure_2 {
+                &:nth-child(2) {
+                    transform: scale(1.2);
+                    margin-left: 1.5rem !important;
+                    margin-right: 1.5rem !important;
                 }
             }
         }
@@ -378,8 +392,9 @@ body {
 
 .filter__block {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 30px;
+
     &.collapse,
     &.collapsing {
         max-height: 0px;
@@ -395,7 +410,9 @@ body {
 
     }
 }
+
 .filter__block_career {
+
     &.collapse,
     &.collapsing {
         max-height: 0px;
@@ -417,6 +434,7 @@ body {
         padding: 10px 15px;
         @extend .helvetica-55;
         word-break: keep-all;
+
         &.active {
             color: #424242;
             background-color: #F3F3F4;
@@ -527,10 +545,10 @@ body {
                 &::after {
                     position: absolute;
                     height: 50%;
-                    width: 2px;
+                    width: 1px;
                     background-color: $border;
                     content: '';
-                    right: -1px;
+                    right: 0px;
                     top: 50%;
                     transform: translate(-50%, -50%);
                 }
@@ -558,24 +576,61 @@ body {
     }
 }
 
+.search-block {
+    .header-search {
+        opacity: 0;
+        max-width: 0;
+        transition: 0.3s;
+        pointer-events: none;
+    }
+
+    &.on-search {
+        .header-search {
+            pointer-events: initial;
+            opacity: 1;
+            max-width: 500px;
+            transition: 0.3s;
+        }
+    }
+}
+
 .course_2-block {
 
-    // position: relative;
+    position: relative;
+
     .coure_2 {
         background-image: url(../img/academyc.svg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: 100%;
         min-height: 210px;
+        align-items: flex-end;
         cursor: pointer;
+        transition: 0.3s;
 
         p {
+            max-height: 0;
             opacity: 0;
             transition: 0.3s;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            bottom: 0;
+            border-radius: 8px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            padding-bottom: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+
         }
 
         &:hover {
+            // align-items: flex-start;
+            transition: 0.3s;
+
             p {
+                max-height: 500px;
                 opacity: 1;
                 transition: 0.3s;
             }
@@ -716,6 +771,7 @@ body {
     border-width: 4px;
     border-right-style: solid;
 }
+
 .text__c__left {
     border-width: 7px;
     border-left-style: solid;
@@ -727,8 +783,8 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
-    display: block !important;
-    z-index: 9999;
+    display: block;
+    z-index: 300;
 }
 
 .modal-section {
@@ -866,11 +922,13 @@ body {
         display: none;
         transition: 0.3s;
     }
+
     &:hover {
         .before {
             display: none;
             transition: 0.3s;
         }
+
         .after {
             display: block;
             transition: 0.3s;

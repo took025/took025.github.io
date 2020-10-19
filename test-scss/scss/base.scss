@@ -24,7 +24,12 @@
 	margin: 0 auto;
 	display: block;
 }
-
+.hover-shadow{
+	&:hover {
+		box-shadow: 0px 0px 10px #0000001A;
+		transition: 0.3s;
+	}
+}
 // .justify-center {
 // 	justify-content: center;
 // }
