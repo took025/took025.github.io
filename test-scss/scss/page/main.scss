@@ -701,9 +701,10 @@ body {
         .bottom__img {
             position: absolute;
             left: 50%;
-            bottom: -58px;
+            bottom: -35px;
             transform: translateX(-50%);
             z-index: 40;
+            height: 48px;
         }
     }
 }

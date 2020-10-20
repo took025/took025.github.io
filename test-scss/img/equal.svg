@@ -1,20 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="93" height="92.632" viewBox="0 0 93 92.632">
-  <defs>
-    <filter id="Ellipse_49" x="0" y="0" width="93" height="92.632" filterUnits="userSpaceOnUse">
-      <feOffset dx="1.851" dy="1.851" input="SourceAlpha"/>
-      <feGaussianBlur stdDeviation="7.5" result="blur"/>
-      <feFlood flood-opacity="0.122"/>
-      <feComposite operator="in" in2="blur"/>
-      <feComposite in="SourceGraphic"/>
-    </filter>
-  </defs>
-  <g id="Group_1238" data-name="Group 1238" transform="translate(-629.351 -5057.351)">
-    <g id="Group_1219" data-name="Group 1219" transform="translate(650 5078)">
-      <g transform="matrix(1, 0, 0, 1, -20.65, -20.65)" filter="url(#Ellipse_49)">
-        <ellipse id="Ellipse_49-2" data-name="Ellipse 49" cx="24" cy="23.816" rx="24" ry="23.816" transform="translate(20.65 20.65)" fill="#37b34a"/>
-      </g>
-    </g>
-    <path id="Path_15468" data-name="Path 15468" d="M1026.945,1245.111h7.183a2.592,2.592,0,1,1,0,5.184l-4.915.05h-14.725a2.592,2.592,0,1,1,0-5.184h7.183Z" transform="translate(-350.309 3849.063)" fill="#fff"/>
-    <path id="Path_15469" data-name="Path 15469" d="M1026.945,1245.111h7.183a2.592,2.592,0,1,1,0,5.184l-4.915.05h-14.725a2.592,2.592,0,1,1,0-5.184h7.183Z" transform="translate(-350.309 3859.063)" fill="#fff"/>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 28 28" style="enable-background:new 0 0 28 28;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#37B34A;}
+	.st1{fill:#FFFFFF;}
+</style>
+<g>
+	<g id="Group_1219" transform="translate(0 0)">
+		<g transform="matrix(1, 0, 0, 1, -20.65, -20.65)">
+			<circle id="Ellipse_49-3" class="st0" cx="74.37" cy="34.65" r="14"/>
+		</g>
+	</g>
+	<path id="Path_15468_1_" class="st1" d="M55.55,7.1v5.05h4.98c1.01,0,1.82,0.82,1.82,1.82s-0.82,1.82-1.82,1.82h-4.98v5.05
+		c0,1-0.81,1.81-1.81,1.81s-1.81-0.81-1.81-1.81v-5.01h-5.02c-1.01,0-1.82-0.82-1.82-1.82s0.82-1.82,1.82-1.82h4.98V7.17
+		c-0.01-0.99,0.78-1.81,1.78-1.82c0.01,0,0.02,0,0.03,0c0.98-0.04,1.81,0.72,1.85,1.7C55.55,7.07,55.55,7.09,55.55,7.1z"/>
+</g>
+<g id="Group_1219-2" transform="translate(0.492 0)">
+	<g transform="matrix(1, 0, 0, 1, -20.65, -103.3)">
+		<circle id="Ellipse_49-4" class="st0" cx="34.16" cy="117.3" r="14"/>
+	</g>
+</g>
+<g>
+	<path id="Path_15469" class="st1" d="M15.64,15.24h4.6c0.97,0.05,1.72,0.87,1.67,1.84c-0.04,0.91-0.77,1.63-1.67,1.67l-3.14,0.03
+		H7.68c-0.97-0.05-1.72-0.88-1.66-1.85c0.05-0.9,0.77-1.62,1.66-1.66h4.6L15.64,15.24z"/>
+	<path id="Path_15529" class="st1" d="M15.64,8.78h4.6c0.97,0.05,1.72,0.87,1.67,1.84c-0.04,0.91-0.77,1.63-1.67,1.67l-3.14,0.03
+		H7.68c-0.97-0.05-1.72-0.88-1.66-1.85c0.05-0.9,0.77-1.62,1.66-1.66h4.6L15.64,8.78z"/>
+</g>
 </svg>
