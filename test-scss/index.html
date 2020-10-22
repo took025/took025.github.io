@@ -310,10 +310,7 @@
                 <div class="w-100 d-flex align-items-stretch justify-content-between overflow-auto scroll-child">
                     <div class="block p-0 mt-md-4 mt-0 mx-1 mx-md-3 br-8 overflow-hidden bc-white scroll-block">
                         <div class="up__side bc-blue d-flex justify-content-between align-items-center">
-                            <div class="img-block d-flex align-items-center pl-3">
-                                <img src="./img/Group 342.svg" alt="">
-                            </div>
-                            <img src="./img/face.svg" alt="">
+                                <img class="w-100" src="./img/car.svg" alt="">
                         </div>
                         <div class="down__side py-md-3 py-2">
 
@@ -343,10 +340,7 @@
                     </div>
                     <div class="block p-0 mt-md-4 mt-0 mx-1 mx-md-3 br-8 overflow-hidden bc-white scroll-block">
                         <div class="up__side bc-orange d-flex justify-content-between align-items-center">
-                            <div class="img-block d-flex align-items-center pl-3">
-                                <img src="./img/Group 342.svg" alt="">
-                            </div>
-                            <img src="./img/face.svg" alt="">
+                                <img class="w-100" src="./img/car.svg" alt="">
                         </div>
                         <div class="down__side py-md-3 py-2">
 
@@ -376,10 +370,7 @@
                     </div>
                     <div class="block p-0 mt-md-4 mt-0 mx-1 mx-md-3 br-8 overflow-hidden bc-white scroll-block">
                         <div class="up__side bc-purple d-flex justify-content-between align-items-center">
-                            <div class="img-block d-flex align-items-center pl-3">
-                                <img src="./img/Group 342.svg" alt="">
-                            </div>
-                            <img src="./img/face.svg" alt="">
+                                <img src="./img/car.svg" alt="">
                         </div>
                         <div class="down__side py-md-3 py-2">
 
@@ -427,7 +418,7 @@
         <div class="center">
             <div class="d-flex align-items-center justify-content-between block__res">
                 <div class="left__side col-12 pl-0 col-md-6 px-0 pointer">
-                    <div>
+                    <div data-toggle="modal" data-target="#exampleModal_1">
                         <img class="w-100 d-none d-md-flex" src="./img/Group 1178.svg" alt="">
                     </div>
                     <div class="d-block d-md-none">
@@ -533,7 +524,7 @@
 
                 <div class="w-100 d-flex justify-content-between pt-3 align-items-stretch scroll-child overflow-auto">
 
-                    <div class="block mt-md-5 mt-0 ml-0 ml-md-3 mr-3 br-8 overflow-hidden bc-white scroll-block">
+                    <div class="block mt-md-5 mt-0 ml-0 ml-md-3 mr-3 br-8 overflow-hidden bc-white scroll-block pointer" data-toggle="modal" data-target="#exampleModal">
                         <article class="article d-flex flex-column">
                             <img class="w-100" src="./img/Group 804.svg" alt="">
                             <span class="f-16 px-3 c-black helvetica-75 d-block mt-3">Ryuichi Sakamoto & David
@@ -551,7 +542,7 @@
                             </span>
                         </div>
                     </div>
-                    <div class="block mt-md-5 mt-0 ml-0 ml-md-3 mr-3 br-8 overflow-hidden bc-white scroll-block">
+                    <div class="block mt-md-5 mt-0 ml-0 ml-md-3 mr-3 br-8 overflow-hidden bc-white scroll-block pointer" data-toggle="modal" data-target="#exampleModal">
                         <article class="article d-flex flex-column">
                             <img class="w-100" src="./img/Group 804.svg" alt="">
                             <span class="f-16 px-3 c-black helvetica-75 d-block mt-3">Ryuichi Sakamoto & David
@@ -569,7 +560,7 @@
                             </span>
                         </div>
                     </div>
-                    <div class="block mt-md-5 mt-0 ml-0 ml-md-3 mr-3 br-8 overflow-hidden bc-white scroll-block">
+                    <div class="block mt-md-5 mt-0 ml-0 ml-md-3 mr-3 br-8 overflow-hidden bc-white scroll-block pointer" data-toggle="modal" data-target="#exampleModal">
                         <article class="article d-flex flex-column">
                             <img class="w-100" src="./img/Group 804.svg" alt="">
                             <span class="f-16 px-3 c-black helvetica-75 d-block mt-3">Ryuichi Sakamoto & David
@@ -728,8 +719,128 @@
         </div>
     </section>
 
+<!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" >
+    Launch demo modal
+  </button> -->
+  
+  <!-- Modal -->
+  <div class="modal fade show" id="exampleModal_1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+          <iframe class="w-100" width="1522" height="611" src="https://www.youtube.com/embed/W3FN5az25Zg?list=RDW3FN5az25Zg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-section">
+        <div class="modal-content">
+            <div class="modal-header height-100 align-items-center d-flex justify-content-between border-0">
+                <div class="d-flex align-items-center pl-md-3 ml-md-2">
+                    <img class="mr-2 height-50" src="./img/Group 793.svg" alt="">
+                    <div class="d-flex flex-column">
+                        <span class="f-16 c-black helvetica-75">სტუდენტის ნამუშევარი_სახელი</span>
+                        <span class="f-12 c-light-text helvetica-55">ედვარდ გულაშვილი</span>
+                    </div>
+                </div>
+                <div class="align-items-center d-none d-md-flex" ">
+                    <a class="mr-2" href="">
+                        <img src="./img/fb.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="./img/twitter.svg" alt="">
+                    </a>
+                </div>
+                <div class="d-flex d-md-none pointer"data-dismiss="modal" aria-label="Close">
+                    <img src="./img/close.svg" alt="">
+                </div>
+                <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button> -->
+            </div>
+            <div class="modal-body p-0">
+                <div id="carouselExampleIndicators_1" data-interval="false" class="carousel slide"
+                    data-ride="carousel">
 
+                    <div class="carousel-inner d-flex align-items-center">
+                        <div class="carousel-item active">
+                            <div class=" background pointer w-100 childs"
+                                style="background-image: url(./img/car.svg);">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class=" background pointer w-100 childs"
+                                style="background-image: url(./img/design-2.svg);"></div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class=" background pointer w-100 childs"
+                                style="background-image: url(./img/design-3.svg);"></div>
+                        </div>
+                    </div>
 
+                    <div class="arrows d-flex d-md-none">
+                        <a class="carousel-control-prev col-1" href="#carouselExampleIndicators_1" role="button"
+                            data-slide="prev">
+                            <img style="transform: rotate(180deg);" src="./img/Group 866.svg" alt="">
+                        </a>
+                        <a class="carousel-control-next col-1" href="#carouselExampleIndicators_1" role="button"
+                            data-slide="next">
+                            <img src="./img/Group 866.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer position-relative pb-3 pb-md-0 border-0">
+                <div class=" position-relative w-100">
+                    <ol class="indicators d-flex align-items-stretch overflow-auto w-100">
+                        <li data-target="#carouselExampleIndicators_1" class="col-6 col-ms-4 col-md-5 br-8 row active"
+                            data-slide-to="0">
+                            <div class=" background pointer w-100 childs br-10"
+                                style="background-image: url(./img/car.svg);">
+                            </div>
+                            <!-- <img src="./img/car.svg" alt=""> -->
+                        </li>
+                        <li data-target="#carouselExampleIndicators_1" class="col-6 col-ms-4 col-md-5 br-8 row"
+                            data-slide-to="1">
+                            <div class=" background pointer w-100 childs br-10"
+                                style="background-image: url(./img/design-2.svg);"></div>
+                            <!-- <img src="./img/design-1.svg" alt=""> -->
+                        </li>
+                        <li data-target="#carouselExampleIndicators_1" class="col-6 col-ms-4 col-md-5 br-8 row"
+                            data-slide-to="2">
+                            <div class=" background pointer w-100 childs br-10"
+                                style="background-image: url(./img/design-3.svg);"></div>
+                            <!-- <img src="./img/design-2.svg" alt=""> -->
+                        </li>
+
+                        <span class="rows row-left pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="9" viewBox="0 0 16.842 30"
+                                style="transform: rotate(180deg);">
+                                <g id="Group_866" data-name="Group 866" transform="translate(-783.886 -151)">
+                                    <path id="Path_932" data-name="Path 932"
+                                        d="M198.188,337.653l-13.113-13.114a1.874,1.874,0,1,0-2.649,2.65L194.237,339,182.426,350.81a1.874,1.874,0,0,0,2.649,2.65L198.188,340.3A1.894,1.894,0,0,0,198.188,337.653Z"
+                                        transform="translate(602 -173)" fill="#ffffff" fill-rule="evenodd" />
+                                </g>
+                            </svg>
+
+                        </span>
+                        <span class="rows row-right pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="9" viewBox="0 0 16.842 30">
+                                <g id="Group_866" data-name="Group 866" transform="translate(-783.886 -151)">
+                                    <path id="Path_932" data-name="Path 932"
+                                        d="M198.188,337.653l-13.113-13.114a1.874,1.874,0,1,0-2.649,2.65L194.237,339,182.426,350.81a1.874,1.874,0,0,0,2.649,2.65L198.188,340.3A1.894,1.894,0,0,0,198.188,337.653Z"
+                                        transform="translate(602 -173)" fill="#ffffff" fill-rule="evenodd" />
+                                </g>
+                            </svg>
+
+                        </span>
+                    </ol>
+                    <span class="scroll__overlay bc-white m-0"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
@@ -867,7 +978,9 @@
                         <div class=" position-relative">
                             <input class="mail__input input helvetica-55 c-light-text f-12 w-100" type="text"
                                 placeholder="ელ-ფოსტა">
-                            <img class="icon" src="./img/Icons.svg" alt="">
+                                <button class="icon">
+                                    <img class="pointer" src="./img/Icons.svg" alt="">
+                                </button>
                         </div>
                         <div class="mt-2">
                             <label class="cheks mb-0 d-flex align-items-center mt-3" for="isPoliticallyExposedPerson">

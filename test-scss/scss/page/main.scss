@@ -605,13 +605,25 @@ body {
         background-size: 100%;
         min-height: 210px;
         align-items: flex-end;
-        cursor: pointer;
-        transition: 0.3s;
+        // cursor: pointer;
+        transition: 0.5s;
+        position: relative;
+
+        .play-icon {
+            cursor: pointer;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: 0.5s;
+            opacity: 0;
+            z-index: 30;
+        }
 
         p {
             max-height: 0;
             opacity: 0;
-            transition: 0.3s;
+            transition: 0.5s;
             width: 100%;
             height: 100%;
             position: absolute;
@@ -626,7 +638,14 @@ body {
         }
 
         &:hover {
+
             // align-items: flex-start;
+            .play-icon {
+                top: 50%;
+                transition: 0.5s;
+                opacity: 1;
+            }
+
             transition: 0.3s;
 
             p {
@@ -687,6 +706,23 @@ body {
         .row-left {
             transform: translateY(-50%) rotate(180deg);
 
+        }
+    }
+}
+
+.silabus__section {
+    .card-header {
+        .drop-icon {
+            transition: 0.3s;
+        }
+
+        a {
+            &.active {
+                .drop-icon {
+                    transform: rotate(180deg);
+                    transition: 0.3s;
+                }
+            }
         }
     }
 }

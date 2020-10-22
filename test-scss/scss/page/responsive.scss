@@ -207,7 +207,9 @@
             padding: 0 37px;
         }
     }
-
+    .course-buttons {
+        width: 100%;
+    }
     .teams .course2_finish::after {
         display: none;
     }
@@ -237,16 +239,31 @@
     }
     .course_2-block .coure_2 {
         min-height: 165px !important;
+        .play-icon {
+            top: 50% !important;
+            opacity: 1 !important;
+        }
     }
-
+    .course2_finish::after {
+        display: none !important;
+    }
     .prizes .number {
         min-width: 64px !important;
         height: 64px !important;
     }
+    .filter__place {
+        .filter-a.active {
+            color: #9E9E9E !important;
+            background-color: initial !important;
+        }
 
+    }
     .f-14 {
         font-size: 12px !important;
         line-height: 16px !important;
+        &.filter-a {
+            font-size: 14px !important;
+        }
     }
 
     .f-30 {
@@ -261,6 +278,9 @@
     .f-24,
     .f-23 {
         font-size: 16px !important;
+        &.course_2_price {
+            font-size: 28px !important;
+        }
     }
 
     .f-16 {
@@ -270,6 +290,9 @@
 
     .f-20 {
         font-size: 18px !important;
+        &.lector-name {
+            font-size: 14px !important;
+        }
     }
 
     .f-28 {
