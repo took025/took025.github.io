@@ -241,6 +241,9 @@ body {
         top: 50%;
         left: 0;
     }
+    &.text__c {
+        color: $black !important;
+    }
 }
 
 .popular__courses {
@@ -798,7 +801,7 @@ body {
             height: calc(100% - 24px);
 
             .block {
-                height: 155px;
+                height: 110px;
                 .delete {
                     // background-color: $red;
                     height: 100%;
