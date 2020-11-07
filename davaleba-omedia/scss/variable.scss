@@ -1,19 +1,11 @@
 $white: #ffffff;
 $black: #000000;
-$dark-blue: #322A7D;
-$text: #354052;
-$text-2: #11141A;
-$light-text:#7F8FA4;
-$book-text:#BBC5D5;
-$light-red:#FCCACF;
-$red:#F35162;
-$yellow:#FFA101;
-$light-yellow:#FFE3B2;
-$purple: #69519E;
-$bq: #C1BED8;
-$btn: #322A7D;
-$border: #F7F8FA;
-
+$blue: #375FC9;
+$gray:#A4A8B1;
+$light-gray:#F4F4F5;
+$red:#F03135;
+$title:#3C4A62;
+$text : #8F9195;
 
 
 
@@ -24,24 +16,17 @@ $border: #F7F8FA;
 $theme-colors: (
     "white": $white,
     "black": $black,
-    'light-yellow': $light-yellow,
-    'yellow': $yellow,
-    'light-red': $light-red,
+    'blue': $blue,
+    'gray': $gray,
+    'light-gray': $light-gray,
     'red': $red,
-    'book-text': $book-text,
-    'light-text': $light-text,
-    'text-2': $text-2,
-    'text': $text,
-    'purple': $purple,
-    'dark-blue': $dark-blue,
-    'bq': $bq,
-    'btn': $btn,
-    'border': $border,
-
+    'title': $title,
+    'text':$text,
 );
 $number_varriables:(
     '0': 0px,
     '3': 3px,
+    '4': 4px,
     '5' : 5px,
     '8': 8px,
     '10': 10px,

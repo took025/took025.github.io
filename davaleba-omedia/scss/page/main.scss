@@ -1,75 +1,60 @@
 @import '../variable.scss';
-
-.sidebar__top {
-    transform: rotate(45deg);
-}
-.right__sidebar {
-    padding: 20px 26px 25px 28px;
-}
-.middle__sidebar {
-    padding: 20px 30px;
-}
-.upgrade__block {
-    
-    background-color: rgba(50, 42, 125, 0.9);
-    background-image: url(../img/Pattern.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.reminder__list {
-    margin-top: 32px;
-}
-.block-center {
-    max-width: 930px;
-    margin: 0 auto;
-}
-.sidebar__blocks {
-    position: relative;
-    margin-bottom: 40px;
-    &:hover {
-        .normal {
-            display: none !important;
-        }
-
-        .acctive_icon {
-            display: flex !important;
-        }
-
-        &::after {
-            opacity: 1;
-            visibility: visible;
-            transition: 0.3s;
-        }
+.banner-section {
+    .left__side {
+        min-height: 500px;
+        background-image: url(./../img/Image.svg);
+        background-color: #616971;
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
     }
 
-    &::after {
-        opacity: 0;
-        visibility: hidden;
-        content: '';
-        position: absolute;
-        right: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        height: 100%;
-        background-color: $yellow;
-        border-radius: 10px;
-        width: 3px;
-        transition: 0.3s;
-    }
-}
-.notification__block {
-    &.notified {
-        &::after {
-            content: '';
-            position: absolute;
-            background-color: #F35162;
-            border: 1px solid #fff;
-            width: 7px;
-            border-radius: 50%;
-            height: 7px;
-            top: 2px;
-            right: 0;
+    .right__side {
+        background-color: #616971;
+        padding: 31px 18px 24px 36px;
+        .blocks {
+            .block {
+                position: relative;
+                .left {
+                    // background-image: url(./../img/IMG.svg);
+
+                }
+
+                &:hover {
+                    .button {
+                        background-color: $red !important;
+                        color: $white !important;
+                        transition: 0.3s;
+                    }
+                    &::before{
+                        max-height: 50%;
+                        transition: 0.3s;
+                    }
+                }
+                &::after {
+                    content: '';
+                    background-color: $white;
+                    height: 100%;
+                    width: 3px;
+                    position: absolute;
+                    z-index: 20;
+                    border-radius: 20px;
+                    left: -5px;
+                    top: 0;
+                }
+                &::before {
+                    content: '';
+                    background-color: $red;
+                    height: 100%;
+                    max-height: 0;
+                    width: 3px;
+                    position: absolute;
+                    z-index: 25;
+                    border-radius: 20px;
+                    left: -5px;
+                    top: 0;
+                    transition: 0.3s;
+                }
+            }
         }
     }
 }

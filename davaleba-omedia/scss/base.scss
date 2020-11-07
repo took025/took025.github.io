@@ -1,3 +1,4 @@
+@import './variable.scss';
 .header-center {
 	max-width: 1280px;
 	width: 100%;
@@ -5,7 +6,7 @@
 }
 .center {
 	width: 100%;
-	max-width: 1088px;
+	max-width: 1160px;
 	margin: 0 auto;
 	display: block;
 }
@@ -77,32 +78,32 @@ a {
 .text-break {
 	word-break:initial!important;
 }
-.f-12 {
-	line-height: 16px;
-}
+// .f-12 {
+// 	line-height: 16px;
+// }
 
-.f-14 {
-	line-height: 20px;
-}
+// .f-14 {
+// 	line-height: 20px;
+// }
 
-.f-16 {
-	line-height: 24px;
-}
-.f-18 {
-	line-height: 21px;
-}
+// .f-16 {
+// 	line-height: 24px;
+// }
+// .f-18 {
+// 	line-height: 21px;
+// }
 
-.f-20 {
-    line-height: 24px;
-}
+// .f-20 {
+//     line-height: 24px;
+// }
 
-.f-30 {
-    line-height: 40px;
-}
+// .f-30 {
+//     line-height: 40px;
+// }
 
-.f-40 {
-    line-height: 48px;
-}
+// .f-40 {
+//     line-height: 48px;
+// }
 .box-shadow {
 	box-shadow: 0px 0px 10px #0000001A;
 }
@@ -122,40 +123,50 @@ a {
         }
       }
 }
-// pagination styles 
-.page-link {
-	border: 1px solid #E2E2E2!important;
-	color: #9E9E9E !important;
-}
-.page-item.active .page-link{
-	background-color: #6595FF !important;
-	border-color: #6595FF !important;
-	color: #ffffff !important;
-}
-.page-item:first-child .page-link {
-    margin-left: 0;
-    border-top-left-radius: 8px !important;
-    border-bottom-left-radius: 8px !important;
-}
-.page-item:last-child .page-link {
-    border-top-right-radius: 8px !important;
-    border-bottom-right-radius: 8px !important;
-}
-// pagination styles 
-.py-100 {
-	padding-top: 100px;
-	padding-bottom: 100px;
-}
-.py-60 {
-	padding-top: 60px;
-	padding-bottom: 60px;	
-}
-.dropdown-toggle::after {
-	display: none !important;
+.background {
+	background-repeat: no-repeat;
+	// background-position: center;
+	background-size: cover;
 }
 .max-100 {
 	max-width: 100%;
 }
 .keep-all {
 	word-break: keep-all;
+}
+.button {
+	font-family: FiraGOr;
+	color: $white;
+	border-radius: 44px;
+	background-color: $red;
+	border: none;
+	padding:11px 24px;
+	&.slide {
+		color: $blue;
+		background-color: $white;
+		padding: 7px 12px;
+		transition: 0.3s;
+		// &:hover {
+		// 	background-color: $red;
+		// 	color: $white;
+		// 	transition: 0.3s;
+		// }
+	}
+}
+.underline__row {
+	position: relative;
+	&::after {
+		content: '';
+		position: absolute;
+		bottom: -15px;
+		background-color: $red;
+		height: 4px;
+		border-radius: 40px;
+		width: 50px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+body {
+	padding-bottom: 60px;
 }
