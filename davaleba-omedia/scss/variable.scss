@@ -1,0 +1,180 @@
+$white: #ffffff;
+$black: #000000;
+$dark-blue: #322A7D;
+$text: #354052;
+$text-2: #11141A;
+$light-text:#7F8FA4;
+$book-text:#BBC5D5;
+$light-red:#FCCACF;
+$red:#F35162;
+$yellow:#FFA101;
+$light-yellow:#FFE3B2;
+$purple: #69519E;
+$bq: #C1BED8;
+$btn: #322A7D;
+$border: #F7F8FA;
+
+
+
+
+
+
+
+
+$theme-colors: (
+    "white": $white,
+    "black": $black,
+    'light-yellow': $light-yellow,
+    'yellow': $yellow,
+    'light-red': $light-red,
+    'red': $red,
+    'book-text': $book-text,
+    'light-text': $light-text,
+    'text-2': $text-2,
+    'text': $text,
+    'purple': $purple,
+    'dark-blue': $dark-blue,
+    'bq': $bq,
+    'btn': $btn,
+    'border': $border,
+
+);
+$number_varriables:(
+    '0': 0px,
+    '3': 3px,
+    '5' : 5px,
+    '8': 8px,
+    '10': 10px,
+    '11': 11px,
+    '12': 12px,
+    '13': 13px,
+    '14': 14px,
+    '15': 15px,
+    '16': 16px,
+    '18': 18px,
+    '20': 20px,
+    '23': 23px,
+    '24': 24px,
+    '25': 25px,
+    '28': 28px,
+    '30': 30px,
+    '32': 32px,
+    '35': 35px,
+    '40': 40px,
+    '45': 45px,
+    '48': 48px,
+    '50': 50px,
+    '75': 75px,
+    '80': 80px,
+    '110': 110px,
+    '380': 380px,
+);
+
+@each $key,
+$value in $theme-colors {
+    .bc-#{$key} {
+        background-color: $value;
+    }
+}
+
+@each $key,
+$value in $theme-colors {
+    .hover-bc-#{$key} {
+        &:hover {
+            background-color: $value;
+        }
+    }
+}
+
+@each $key,
+$value in $theme-colors {
+    .c-#{$key} {
+        color: $value;
+    }
+}
+
+@each $key,
+$value in $theme-colors {
+    .br-c-#{$key} {
+        border-color: $value;
+    }
+}
+
+@each $key,
+$value in $theme-colors {
+    .c-hover-#{$key} {
+        &:hover {
+            color: $value;
+        }
+    }
+}
+
+@each $key,
+$value in $theme-colors {
+    .hover-c-#{$key} {
+        &:hover {
+            color: $value;
+        }
+    }
+}
+
+@each $key,
+$value in $number_varriables {
+    .f-#{$key} {
+        font-size: $value;
+    }
+}
+
+@each $key,
+$value in $number_varriables {
+    .bottom-#{$key} {
+        bottom: $value;
+    }
+}
+
+@each $key,
+$value in $number_varriables {
+    .left-#{$key} {
+        left: $value;
+    }
+}
+
+@each $key,
+$value in $number_varriables {
+    .top-#{$key} {
+        top: $value;
+    }
+}
+
+@each $key,
+$value in $number_varriables {
+    .right-#{$key} {
+        right: $value;
+    }
+}
+
+@each $key,
+$value in $number_varriables {
+    .width-#{$key} {
+        min-width: $value;
+    }
+}
+@each $key,
+$value in $number_varriables {
+    .height-#{$key} {
+        height: $value;
+    }
+}
+@each $key,
+$value in $number_varriables {
+    .br-#{$key} {
+        border-radius: $value;
+    }
+}
+
+@each $key,
+$value in $number_varriables {
+    .lh-#{$key} {
+        line-height: $value;
+    }
+}

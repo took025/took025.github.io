@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>davaleba</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="nucleo-icons.css" /> -->
+    <link rel="stylesheet" href="style/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+    <!-- <link href="path/to/select2.min.css" rel="stylesheet" /> -->
+</head>
+
+<body>
+    <section class="d-flex justify-content-between">
+        <div
+            class="left__sideba width-75 d-flex flex-column justify-content-between min-vh-100 align-items-center border-right">
+            <div class="sidebar__top mt-4 height-30 d-flex flex-column justify-content-between width-30">
+                <div class="d-flex justify-content-between width-30">
+                    <div class="ball ball__1 width-10 height-10 bc-yellow border-50"></div>
+                    <div class="ball ball__1 width-10 height-10 bc-yellow border-50"></div>
+                </div>
+                <div class="d-flex justify-content-between width-30">
+                    <div class="ball ball__1 width-10 height-10 bc-yellow border-50"></div>
+                    <div class="ball ball__1 width-10 height-10 bc-yellow border-50"></div>
+                </div>
+            </div>
+            <!-- add active class to sidebar__blocks -->
+            <div class="sidebar___middle d-flex flex-column w-100">
+                <div class="sidebar__blocks active height-30 d-flex align-items-center justify-content-center">
+                    <span class="normal d-flex justify-content-center pointer">
+                        <svg id="dashboard-active" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            viewBox="0 0 18 18">
+                            <rect id="Rectangle_5" data-name="Rectangle 5" width="8" height="8" rx="3" fill="#BBC5D5" />
+                            <rect id="Rectangle_6" data-name="Rectangle 6" width="8" height="8" rx="3"
+                                transform="translate(10)" fill="#BBC5D5" />
+                            <rect id="Rectangle_7" data-name="Rectangle 7" width="8" height="8" rx="3"
+                                transform="translate(10 10)" fill="#BBC5D5" />
+                            <rect id="Rectangle_8" data-name="Rectangle 8" width="8" height="8" rx="3"
+                                transform="translate(0 10)" fill="#BBC5D5" />
+                        </svg>
+                    </span>
+                    <span class="acctive_icon d-none pointer justify-content-center">
+                        <svg id="dashboard-active" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            viewBox="0 0 18 18">
+                            <rect id="Rectangle_5" data-name="Rectangle 5" width="8" height="8" rx="3" fill="#322a7d" />
+                            <rect id="Rectangle_6" data-name="Rectangle 6" width="8" height="8" rx="3"
+                                transform="translate(10)" fill="#322a7d" />
+                            <rect id="Rectangle_7" data-name="Rectangle 7" width="8" height="8" rx="3"
+                                transform="translate(10 10)" fill="#322a7d" />
+                            <rect id="Rectangle_8" data-name="Rectangle 8" width="8" height="8" rx="3"
+                                transform="translate(0 10)" fill="#322a7d" />
+                        </svg>
+                    </span>
+                </div>
+                <div class="sidebar__blocks height-30 d-flex align-items-center justify-content-center">
+                    <span class="normal d-flex justify-content-center pointer">
+                        <svg id="graph" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                            <g id="Rectangle_10" data-name="Rectangle 10" fill="none" stroke="#bbc5d5" stroke-width="2">
+                                <rect width="18" height="18" rx="3" stroke="none" />
+                                <rect x="1" y="1" width="16" height="16" rx="2" fill="none" />
+                            </g>
+                            <line id="Line_1" data-name="Line 1" y2="6" transform="translate(5.5 7.5)" fill="none"
+                                stroke="#bbc5d5" stroke-linecap="round" stroke-width="2" />
+                            <line id="Line_3" data-name="Line 3" y2="4" transform="translate(13.5 9.5)" fill="none"
+                                stroke="#bbc5d5" stroke-linecap="round" stroke-width="2" />
+                            <line id="Line_2" data-name="Line 2" y2="9" transform="translate(9.5 4.5)" fill="none"
+                                stroke="#bbc5d5" stroke-linecap="round" stroke-width="2" />
+                        </svg>
+
+                    </span>
+                    <span class="acctive_icon d-none pointer justify-content-center">
+                        <svg id="graph" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                            <g id="Rectangle_10" data-name="Rectangle 10" fill="none" stroke="#322a7d" stroke-width="2">
+                                <rect width="18" height="18" rx="3" stroke="none" />
+                                <rect x="1" y="1" width="16" height="16" rx="2" fill="none" />
+                            </g>
+                            <line id="Line_1" data-name="Line 1" y2="6" transform="translate(5.5 7.5)" fill="none"
+                                stroke="#322a7d" stroke-linecap="round" stroke-width="2" />
+                            <line id="Line_3" data-name="Line 3" y2="4" transform="translate(13.5 9.5)" fill="none"
+                                stroke="#322a7d" stroke-linecap="round" stroke-width="2" />
+                            <line id="Line_2" data-name="Line 2" y2="9" transform="translate(9.5 4.5)" fill="none"
+                                stroke="#322a7d" stroke-linecap="round" stroke-width="2" />
+                        </svg>
+
+                    </span>
+                </div>
+                <div class="sidebar__blocks height-30 d-flex align-items-center justify-content-center">
+                    <span class="normal d-flex justify-content-center pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18.5" height="18.463" viewBox="0 0 18.5 18.463">
+                            <g id="appointments" transform="translate(0.25 0.25)">
+                                <path id="appointments-2" data-name="appointments"
+                                    d="M2.715,17.963A2.725,2.725,0,0,1,0,15.249V3.975A2.727,2.727,0,0,1,2.715,1.26H3.9v-.5a.764.764,0,1,1,1.528,0v.5h7.108v-.5a.764.764,0,0,1,1.528,0v.5h1.223A2.722,2.722,0,0,1,18,3.975V15.289a2.774,2.774,0,0,1-2.751,2.674ZM1.528,3.938V15.249a1.193,1.193,0,0,0,1.187,1.187H15.285a1.193,1.193,0,0,0,1.187-1.187h0V3.978a1.193,1.193,0,0,0-1.187-1.187H14.066v.5a.783.783,0,0,1-.764.727.768.768,0,0,1-.764-.764V2.792H5.429v.492a.735.735,0,0,1-.764.727A.768.768,0,0,1,3.9,3.247v-.5H2.715A1.193,1.193,0,0,0,1.528,3.938ZM13.261,14.676a.764.764,0,0,1,0-1.528h.918a.768.768,0,0,1,.764.764.821.821,0,0,1-.764.764Zm-4.739,0a.764.764,0,0,1,0-1.528h.918a.764.764,0,1,1,0,1.528Zm-4.7,0a.764.764,0,1,1,0-1.528h.918a.768.768,0,0,1,.764.764.821.821,0,0,1-.764.764Zm9.441-3.211a.764.764,0,0,1,0-1.528h.918a.768.768,0,0,1,.764.764.789.789,0,0,1-.764.764Zm-4.739,0a.764.764,0,0,1,0-1.528h.918a.768.768,0,0,1,.764.764.743.743,0,0,1-.764.764Zm-4.7,0a.764.764,0,1,1,0-1.528h.918A.768.768,0,0,1,5.5,10.7a.789.789,0,0,1-.764.764Zm9.441-3.17a.764.764,0,0,1,0-1.528h.918a.766.766,0,0,1,.764.764.821.821,0,0,1-.764.764Zm-4.739,0a.764.764,0,0,1,0-1.528h.918a.764.764,0,1,1,0,1.528Zm-4.7,0a.764.764,0,1,1,0-1.528h.918a.766.766,0,0,1,.764.764.821.821,0,0,1-.764.764Z"
+                                    fill="#bbc5d5" stroke="#bbc5d5" stroke-width="0.5" />
+                            </g>
+                        </svg>
+                    </span>
+                    <span class="acctive_icon d-none pointer justify-content-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18.5" height="18.463" viewBox="0 0 18.5 18.463">
+                            <g id="appointments" transform="translate(0.25 0.25)">
+                                <path id="appointments-2" data-name="appointments"
+                                    d="M2.715,17.963A2.725,2.725,0,0,1,0,15.249V3.975A2.727,2.727,0,0,1,2.715,1.26H3.9v-.5a.764.764,0,1,1,1.528,0v.5h7.108v-.5a.764.764,0,0,1,1.528,0v.5h1.223A2.722,2.722,0,0,1,18,3.975V15.289a2.774,2.774,0,0,1-2.751,2.674ZM1.528,3.938V15.249a1.193,1.193,0,0,0,1.187,1.187H15.285a1.193,1.193,0,0,0,1.187-1.187h0V3.978a1.193,1.193,0,0,0-1.187-1.187H14.066v.5a.783.783,0,0,1-.764.727.768.768,0,0,1-.764-.764V2.792H5.429v.492a.735.735,0,0,1-.764.727A.768.768,0,0,1,3.9,3.247v-.5H2.715A1.193,1.193,0,0,0,1.528,3.938ZM13.261,14.676a.764.764,0,0,1,0-1.528h.918a.768.768,0,0,1,.764.764.821.821,0,0,1-.764.764Zm-4.739,0a.764.764,0,0,1,0-1.528h.918a.764.764,0,1,1,0,1.528Zm-4.7,0a.764.764,0,1,1,0-1.528h.918a.768.768,0,0,1,.764.764.821.821,0,0,1-.764.764Zm9.441-3.211a.764.764,0,0,1,0-1.528h.918a.768.768,0,0,1,.764.764.789.789,0,0,1-.764.764Zm-4.739,0a.764.764,0,0,1,0-1.528h.918a.768.768,0,0,1,.764.764.743.743,0,0,1-.764.764Zm-4.7,0a.764.764,0,1,1,0-1.528h.918A.768.768,0,0,1,5.5,10.7a.789.789,0,0,1-.764.764Zm9.441-3.17a.764.764,0,0,1,0-1.528h.918a.766.766,0,0,1,.764.764.821.821,0,0,1-.764.764Zm-4.739,0a.764.764,0,0,1,0-1.528h.918a.764.764,0,1,1,0,1.528Zm-4.7,0a.764.764,0,1,1,0-1.528h.918a.766.766,0,0,1,.764.764.821.821,0,0,1-.764.764Z"
+                                    fill="#322a7d" stroke="#322a7d" stroke-width="0.5" />
+                            </g>
+                        </svg>
+                    </span>
+                </div>
+                <div class="sidebar__blocks height-30 d-flex align-items-center justify-content-center">
+                    <span class="normal d-flex justify-content-center pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18.5" height="18.5" viewBox="0 0 18.5 18.5">
+                            <g id="enquiries" transform="translate(0.25 0.25)">
+                                <path id="enquiries-2" data-name="enquiries"
+                                    d="M2.25,18A2.253,2.253,0,0,1,0,15.75V2.25A2.253,2.253,0,0,1,2.25,0h13.5A2.253,2.253,0,0,1,18,2.25v13.5A2.253,2.253,0,0,1,15.75,18ZM1.5,2.25v13.5a.751.751,0,0,0,.75.75h13.5a.751.751,0,0,0,.75-.75V2.25a.751.751,0,0,0-.75-.75H2.25A.751.751,0,0,0,1.5,2.25ZM3.968,14.033a.742.742,0,0,1-.157-.818.866.866,0,0,1,.157-.247.865.865,0,0,1,.248-.158.726.726,0,0,1,.975.4.63.63,0,0,1,.06.285.753.753,0,0,1-1.283.533ZM7.5,14.25a.75.75,0,1,1,0-1.5h6a.75.75,0,0,1,0,1.5ZM3.968,9.532A.789.789,0,0,1,3.75,9a1.133,1.133,0,0,1,.015-.15.476.476,0,0,1,.045-.135.567.567,0,0,1,.067-.135l.09-.113a.866.866,0,0,1,.248-.157.75.75,0,0,1,.57,0,.866.866,0,0,1,.247.157l.09.113a.569.569,0,0,1,.067.135.476.476,0,0,1,.045.135A1.139,1.139,0,0,1,5.25,9a.743.743,0,0,1-.75.75A.789.789,0,0,1,3.968,9.532ZM7.5,9.75a.75.75,0,1,1,0-1.5h6a.75.75,0,0,1,0,1.5ZM3.968,5.033a.774.774,0,0,1-.157-.247.707.707,0,0,1,0-.57.774.774,0,0,1,.157-.247.867.867,0,0,1,.248-.158.717.717,0,0,1,.435-.045.477.477,0,0,1,.135.045.57.57,0,0,1,.135.068l.112.09a.774.774,0,0,1,.158.247.749.749,0,0,1,.06.285.789.789,0,0,1-.218.533l-.112.09a.569.569,0,0,1-.135.067.476.476,0,0,1-.135.045,1.123,1.123,0,0,1-.15.015A.789.789,0,0,1,3.968,5.033ZM7.5,5.25a.75.75,0,1,1,0-1.5h6a.75.75,0,0,1,0,1.5Z"
+                                    fill="#bbc5d5" stroke="#bbc5d5" stroke-width="0.5" />
+                            </g>
+                        </svg>
+
+
+                    </span>
+                    <span class="acctive_icon d-none pointer justify-content-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18.5" height="18.5" viewBox="0 0 18.5 18.5">
+                            <g id="enquiries" transform="translate(0.25 0.25)">
+                                <path id="enquiries-2" data-name="enquiries"
+                                    d="M2.25,18A2.253,2.253,0,0,1,0,15.75V2.25A2.253,2.253,0,0,1,2.25,0h13.5A2.253,2.253,0,0,1,18,2.25v13.5A2.253,2.253,0,0,1,15.75,18ZM1.5,2.25v13.5a.751.751,0,0,0,.75.75h13.5a.751.751,0,0,0,.75-.75V2.25a.751.751,0,0,0-.75-.75H2.25A.751.751,0,0,0,1.5,2.25ZM3.968,14.033a.742.742,0,0,1-.157-.818.866.866,0,0,1,.157-.247.865.865,0,0,1,.248-.158.726.726,0,0,1,.975.4.63.63,0,0,1,.06.285.753.753,0,0,1-1.283.533ZM7.5,14.25a.75.75,0,1,1,0-1.5h6a.75.75,0,0,1,0,1.5ZM3.968,9.532A.789.789,0,0,1,3.75,9a1.133,1.133,0,0,1,.015-.15.476.476,0,0,1,.045-.135.567.567,0,0,1,.067-.135l.09-.113a.866.866,0,0,1,.248-.157.75.75,0,0,1,.57,0,.866.866,0,0,1,.247.157l.09.113a.569.569,0,0,1,.067.135.476.476,0,0,1,.045.135A1.139,1.139,0,0,1,5.25,9a.743.743,0,0,1-.75.75A.789.789,0,0,1,3.968,9.532ZM7.5,9.75a.75.75,0,1,1,0-1.5h6a.75.75,0,0,1,0,1.5ZM3.968,5.033a.774.774,0,0,1-.157-.247.707.707,0,0,1,0-.57.774.774,0,0,1,.157-.247.867.867,0,0,1,.248-.158.717.717,0,0,1,.435-.045.477.477,0,0,1,.135.045.57.57,0,0,1,.135.068l.112.09a.774.774,0,0,1,.158.247.749.749,0,0,1,.06.285.789.789,0,0,1-.218.533l-.112.09a.569.569,0,0,1-.135.067.476.476,0,0,1-.135.045,1.123,1.123,0,0,1-.15.015A.789.789,0,0,1,3.968,5.033ZM7.5,5.25a.75.75,0,1,1,0-1.5h6a.75.75,0,0,1,0,1.5Z"
+                                    fill="#322a7d" stroke="#322a7d" stroke-width="0.5" />
+                            </g>
+                        </svg>
+
+
+                    </span>
+                </div>
+            </div>
+            <div class="sidebar__bottom pb-5">
+                <img class="mb-1 pointer" src="./img/logout.svg" alt="">
+            </div>
+        </div>
+
+
+        <div class="middle__sidebar w-100 bc-border">
+            <div class="block-center">
+                <div class="up__side d-flex justify-content-between w-100">
+                    <div>
+                        <p class="f-40 releway-bold c-text-2 lh-24">Booking</p>
+                        <p class="f-12 lato-regular c-book-text mt-2 lh-14">Booking Reminder</p>
+                    </div>
+                    <div>
+                        <button
+                            class="f-12 lato-regular c-white bc-btn height-45 br-5 px-4 d-flex justify-content-center align-items-center">Customise
+                            Blocks</button>
+                    </div>
+                </div>
+                <div class="quick__stats mt-4 pt-1">
+                    <p class="f-14 releway-bold c-text-2 mt-2 lh-16">Quick Stats</p>
+                    <div class="quick__blocks d-flex mt-3 row">
+                        <div class="col-3 block ">
+                            <div class="height-110 bc-white br-12 d-flex justify-content-center flex-column pl-4 ml-1">
+                                <p class="f-14 lato-regular c-text-2 lh-17">Total Bookings</p>
+                                <p class="f-32 lato-black c-text-2 mt-2 lh-16">28,345</p>
+                            </div>
+                        </div>
+                        <div class="col-3 block ">
+                            <div class="height-110 bc-white br-12 d-flex justify-content-center flex-column pl-4 ml-1">
+                                <p class="f-14 lato-regular c-text-2 lh-17">Pending Approval</p>
+                                <p class="f-32 lato-black c-red mt-2 lh-16">120</p>
+                            </div>
+                        </div>
+                        <div class="col-3 block ">
+                            <div class="height-110 bc-white br-12 d-flex justify-content-center flex-column pl-4 ml-1">
+                                <p class="f-14 lato-regular c-text-2 lh-17">New Clients this month</p>
+                                <p class="f-32 lato-black c-text-2 mt-2 lh-16 d-flex align-items-center">89 <img
+                                        class="ml-2" src="./img/increase.svg" alt=""></p>
+                            </div>
+                        </div>
+                        <div class="col-3 block ">
+                            <div class="height-110 bc-white br-12 d-flex justify-content-center flex-column pl-4 ml-1">
+                                <p class="f-14 lato-regular c-text-2 lh-17">Total Bookings</p>
+                                <p class="f-32 lato-black c-text-2 mt-2 lh-16 d-flex align-items-center">46% <img
+                                        class="ml-2" src="./img/decrease.svg" alt=""></p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="boocking mt-5">
+                    <p class="f-18 releway-bold c-text-2 mt-2 lh-21">Bookings</p>
+                    <div class="booking__blocks row mt-3">
+                        <div class="block col-4">
+                            <div class="br-12 bc-white pt-4 px-3 mx-1">
+                                <p class="f-14 releway-bold c-text-2 lh-16">Amanda Chavez</p>
+                                <p class="f-12 lato-regular c-book-text mt-2 lh-14">Service</p>
+                                <p class="f-14 lato-regular c-text-2 mt-1 lh-14">Physiotherapy</p>
+                                <div class="dates py-3 mt-1 d-flex border-bottom">
+                                    <div class="left__side col-6 px-0">
+                                        <p class="f-12 lato-regular c-book-text lh-14">date</p>
+                                        <p class="f-14 lato-regular c-text-2 mt-1 mb-1 lh-14">25 Jul 2020</p>
+                                    </div>
+                                    <div class="right__side  col-6 px-0">
+                                        <p class="f-12 lato-regular c-book-text lh-14">Time</p>
+                                        <p class="f-14 lato-regular c-text-2 mt-1 mb-1 lh-14">11:00 - 12:00</p>
+                                    </div>
+                                </div>
+                                <div class="bottom py-3 d-flex">
+                                    <div class="col-6 px-0">
+                                        <a class="f-14 lato-bold c-purple mt-1 mb-1 pointer lh-14">Accept Booking</a>
+                                    </div>
+                                    <div class="col-6 px-0">
+                                        <a class="f-14 lato-bold c-book-text mt-1 mb-1 pointer lh-14">Decline</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block col-4">
+                            <div class="br-12 bc-white pt-4 px-3 mx-1">
+                                <p class="f-14 releway-bold c-text-2 lh-16">Amanda Chavez</p>
+                                <p class="f-12 lato-regular c-book-text mt-2 lh-14">Service</p>
+                                <p class="f-14 lato-regular c-text-2 mt-1 lh-14">Physiotherapy</p>
+                                <div class="dates py-3 mt-1 d-flex border-bottom">
+                                    <div class="left__side col-6 px-0">
+                                        <p class="f-12 lato-regular c-book-text lh-14">date</p>
+                                        <p class="f-14 lato-regular c-text-2 mt-1 mb-1 lh-14">25 Jul 2020</p>
+                                    </div>
+                                    <div class="right__side  col-6 px-0">
+                                        <p class="f-12 lato-regular c-book-text lh-14">Time</p>
+                                        <p class="f-14 lato-regular c-text-2 mt-1 mb-1 lh-14">11:00 - 12:00</p>
+                                    </div>
+                                </div>
+                                <div class="bottom py-3 d-flex">
+                                    <div class="col-6 px-0">
+                                        <a class="f-14 lato-bold c-purple mt-1 mb-1 pointer lh-14">Accept Booking</a>
+                                    </div>
+                                    <div class="col-6 px-0">
+                                        <a class="f-14 lato-bold c-book-text mt-1 mb-1 pointer lh-14">Decline</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block col-4">
+                            <div class="br-12 bc-white pt-4 px-3 mx-1">
+                                <p class="f-14 releway-bold c-text-2 lh-16">Amanda Chavez</p>
+                                <p class="f-12 lato-regular c-book-text mt-2 lh-14">Service</p>
+                                <p class="f-14 lato-regular c-text-2 mt-1 lh-14">Physiotherapy</p>
+                                <div class="dates py-3 mt-1 d-flex border-bottom">
+                                    <div class="left__side col-6 px-0">
+                                        <p class="f-12 lato-regular c-book-text lh-14">date</p>
+                                        <p class="f-14 lato-regular c-text-2 mt-1 mb-1 lh-14">25 Jul 2020</p>
+                                    </div>
+                                    <div class="right__side  col-6 px-0">
+                                        <p class="f-12 lato-regular c-book-text lh-14">Time</p>
+                                        <p class="f-14 lato-regular c-text-2 mt-1 mb-1 lh-14">11:00 - 12:00</p>
+                                    </div>
+                                </div>
+                                <div class="bottom py-3 d-flex">
+                                    <div class="col-6 px-0">
+                                        <a class="f-14 lato-bold c-purple mt-1 mb-1 pointer lh-14">Accept Booking</a>
+                                    </div>
+                                    <div class="col-6 px-0">
+                                        <a class="f-14 lato-bold c-book-text mt-1 mb-1 pointer lh-14">Decline</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+        <div class="right__sidebar width-380 border-left min-vh-100 d-flex flex-column justify-content-between">
+            <div>
+
+                <div class="search__block d-flex w-100 justify-content-between">
+                    <div class="input__parent flex-nowrap">
+                        <label for="input" class="d-flex">
+                            <img class="icon" src="./img/Search.svg" alt="">
+                        </label>
+                        <input class="input" type="text" name="" id="input" placeholder="Search keyword">
+                    </div>
+                    <div
+                        class="width-45 height-45 bc-border d-flex align-items-center justify-content-center border-50">
+                        <!-- add notified class to notification__block  -->
+                        <div class="position-relative notified notification__block">
+                            <img src="./img/Notifications.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column pb-3 user__block">
+                    <div class="profile__block pt-5 mt-2 d-flex">
+                        <div class="left__side d-flex flex-column pr-2">
+                            <span class=" releway-regular d-inline-block mb-1 f-22 lh-24 c-text-2">Hello,</span>
+                            <span class=" releway-bold c-text-2 lh-24 f-28">Jonathan!</span>
+                            <span class=" lato-regular d-inline-block mt-1 f-12 lh-18 c-light-text">Copy your bio link
+                                and
+                                paste it in your profile to let people find you.</span>
+                        </div>
+                        <div class="right__side">
+                            <img src="./img/user.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="w-100 d-flex justify-content-end mt-4">
+                        <a class="edit__btn pointer lato-regular f-12 lh-16 c-purple bc-bq br-80 p-3">Edit profile</a>
+                    </div>
+                </div>
+                <div class="upgrade__block mt-5 br-20 p-4 d-flex justify-content-between">
+                    <div class="left__side py-2 my-1">
+                        <p class="f-20 releway-bold width-80 c-white lh-24">Upgradeto PRO</p>
+                        <p class="f-12 lato-regular mt-1 c-white lh-14">For more Profile Control</p>
+                    </div>
+                    <div class="rght__side d-flex">
+                        <img src="./img/upgrade.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="reminders pt-4">
+                <div class="title mt-3 d-flex w-100 justify-content-between align-items-center">
+                    <p class="f-18 releway-bold c-text-2 lh-21">Reminders</p>
+                    <p class="f-12 releway-bold c-yellow pointer lh-14 d-flex align-items-center">View All<img
+                            class="ml-2" src="./img/arrow - right.svg" alt="">
+                    </p>
+                </div>
+                <div class="reminder__list d-flex align-items-center">
+                    <div
+                        class="left__side br-15 width-50 d-flex align-items-center justify-content-center height-50 bc-light-red">
+                        <img src="./img/Path 41.svg" alt="">
+                    </div>
+                    <div class="right__side pl-3 ml-1">
+                        <p class="f-14 releway-bold c-text-2 lh-16">Booking Reminder</p>
+                        <p class="f-12 releway-bold c-book-text mt-2 lh-14">Lorem ipsum dolor sit amet, consetetur</p>
+                    </div>
+                </div>
+                <div class="reminder__list d-flex align-items-center">
+                    <div
+                        class="left__side br-15 width-50 d-flex align-items-center justify-content-center height-50 bc-light-yellow">
+                        <img src="./img/email.svg" alt="">
+                    </div>
+                    <div class="right__side pl-3 ml-1">
+                        <p class="f-14 releway-bold c-text-2 lh-16">Booking Reminder</p>
+                        <p class="f-12 releway-bold c-book-text mt-2 lh-14">Lorem ipsum dolor sit amet, consetetur</p>
+                    </div>
+                </div>
+
+                <div class="reminder__list d-flex align-items-center">
+                    <div
+                        class="left__side br-15 width-50 d-flex align-items-center justify-content-center height-50 bc-light-red">
+                        <img src="./img/Path 41.svg" alt="">
+                    </div>
+                    <div class="right__side pl-3 ml-1">
+                        <p class="f-14 releway-bold c-text-2 lh-16">Booking Reminder</p>
+                        <p class="f-12 releway-bold c-book-text mt-2 lh-14">Lorem ipsum dolor sit amet, consetetur</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+</body>
+
+</html>
