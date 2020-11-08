@@ -5,7 +5,7 @@ $tablet-portrait: 750px;
 $tablet-landscape: 940px;
 
 @mixin mobile {
-	@media screen  and (min-width: 320px) and(max-width:768px) {
+	@media screen  and (min-width: 300px) and(max-width:768px) {
 		@content;
 	}
 }

@@ -4,9 +4,24 @@
 .header {
     width: 100%;
     position: absolute;
+    top: 0;
     top: 40px;
     left: 0;
     height: 140px;
+    @include mobile-md {
+        top: 0;
+        left: 0;
+        height: 95px;
+        display: flex;
+        align-items: center;
+    }
+    @include mobile {
+        top: 0;
+        left: 0;
+        height: 95px;
+        display: flex;
+        align-items: center;
+    }
     .up-header {
         position: fixed;
         top: 0;
@@ -176,10 +191,15 @@
     }
 
     &.carousel-item {
+        // background-image: url(./../img/image-2.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 230px;
+        border-radius: 6px;
         &::after {
-
-            bottom: 3px;
+            // bottom: 3px;
             border-radius: 6px;
+            // border-radius: 6px;
         }
     }
 }
@@ -191,6 +211,12 @@
     display: block;
 
     @include mobile {
+        padding: 0 40px;
+    }
+    @include mobile-md {
+        padding: 0 40px;
+    }
+    @include mobile-lg {
         padding: 0 40px;
     }
 }

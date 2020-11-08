@@ -1,9 +1,10 @@
 @import './variable.scss';
 @import './mixin.scss';
+
 .header-center {
 	max-width: 1280px;
 	width: 100%;
-	margin:0 auto;
+	margin: 0 auto;
 }
 
 .transition {
@@ -21,7 +22,9 @@
 .helvetica-75 {
 	font-family: HelveticaNeueLTGEO-75Bold;
 }
-
+.opacity {
+	opacity: 0;
+}
 .br-tl {
 	border-top-left-radius: 8px;
 }
@@ -29,12 +32,15 @@
 .br-tr {
 	border-top-right-radius: 8px;
 }
+
 .br-50 {
 	border-radius: 50%;
 }
+
 .border-50 {
 	border-radius: 50%;
 }
+
 .br-bl {
 	border-bottom-left-radius: 8px;
 }
@@ -70,9 +76,11 @@ a {
 	word-break: break-word;
 
 }
+
 .text-break {
-	word-break:initial!important;
+	word-break: initial !important;
 }
+
 // .f-12 {
 // 	line-height: 16px;
 // }
@@ -102,53 +110,60 @@ a {
 .box-shadow {
 	box-shadow: 0px 0px 10px #0000001A;
 }
+
 .list__type {
-    ul {
-        list-style-type: none;
-        /*use padding to move list item from left to right*/
-        padding-left: 1em;
-        li {
-            &::before {
-                content: "–";
-                position: absolute;
-                /*change margin to move dash around*/
-				margin-left: -1em;   
-				margin-top: 3px;    
-            }
-        }
-      }
+	ul {
+		list-style-type: none;
+		/*use padding to move list item from left to right*/
+		padding-left: 1em;
+
+		li {
+			&::before {
+				content: "–";
+				position: absolute;
+				/*change margin to move dash around*/
+				margin-left: -1em;
+				margin-top: 3px;
+			}
+		}
+	}
 }
+
 .background {
 	background-repeat: no-repeat;
 	// background-position: center;
 	background-size: cover;
 }
+
 .max-100 {
 	max-width: 100%;
 }
+
 .keep-all {
 	word-break: keep-all;
 }
+
 .button {
 	font-family: FiraGOr;
 	color: $white;
 	border-radius: 44px;
 	background-color: $red;
 	border: none;
-	padding:11px 24px;
+	padding: 11px 24px;
 	white-space: nowrap;
+
+	@include mobile {
+		padding: 7px 13px;
+		
+	}
 	&.slide {
 		color: $blue;
 		background-color: $white;
 		padding: 7px 12px;
 		transition: 0.3s;
-		// &:hover {
-		// 	background-color: $red;
-		// 	color: $white;
-		// 	transition: 0.3s;
-		// }
 	}
 }
+
 .scroll__overlay {
 	position: absolute;
 	bottom: 0;
@@ -156,11 +171,41 @@ a {
 	height: 20px;
 	width: 100%;
 	z-index: 200;
+
 	&.home {
 		bottom: 22px;
 	}
 }
+
 body {
+	min-width: 320px;
 	padding-bottom: 60px;
 	padding-top: 140px;
+
+	@include mobile {
+		padding-top: 95px;
+	}
+
+	@include mobile-md {
+		padding-top: 95px;
+	}
+}
+
+.live {
+	color: $red;
+	padding-left: 16px;
+	position: relative;
+	white-space: nowrap;
+
+	&::after {
+		content: '';
+		position: absolute;
+		width: 8px;
+		height: 8px;
+		background-color: $red;
+		border-radius: 50%;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+	}
 }

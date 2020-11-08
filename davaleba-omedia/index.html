@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>davaleba</title>
+    <title>omedia</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
@@ -17,8 +17,8 @@
 
 <body>
     <header class="header">
-        <div class="up-header d-flex justify-content-center">
-            <nav class="col-9 w-100">
+        <div class="up-header d-lg-flex d-none justify-content-center">
+            <nav class="w-100">
                 <ul class="d-flex align-items-center justify-content-between h-100 w-100">
                     <li class="h-100 d-flex align-items-center w-100 text-center hover-bc-border transition pointer justify-content-center">
                         <img src="./img/nak.svg" alt="">
@@ -43,11 +43,27 @@
                 </ul>
             </nav>
         </div>
-        <div class="down-header pt-3 d-flex align-items-center justify-content-between center">
+        <div class="down-header pt-lg-3 d-flex align-items-center justify-content-between center">
+            <div class="left__side d-flex d-lg-none">
+                <div class="burger">
+                    sdsd
+                </div>
+                <div class="btn-group d-none d-md-flex d-lg-none" >
+                    <a class="ml-3 dropdown-toggle pointer c-header" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        ქარ
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <button class="dropdown-item" type="button">ქართული</button>
+                        <button class="dropdown-item" type="button">ინგლისური</button>
+                        <button class="dropdown-item" type="button">რუსული</button>
+                    </div>
+                </div>
+            </div>
             <a href="index.html" class="logo">
                 <img src="./img/Logo.svg" alt="">
             </a>
-            <nav class="header-nav w-100 mr-4 ml-5">
+            <nav class="header-nav w-100 mr-4 ml-5 d-none d-lg-flex">
                 <ul class="d-flex align-items-center justify-content-between w-100 ">
                     <li>
                         <a class="c-header f-14 firagor" href="">კაცთა ეროვნული</a>
@@ -70,8 +86,9 @@
                 </ul>
             </nav>
             <div class="right__side d-flex flex-nowrap align-items-center">
-                <button class="button">ბილეთები</button>
-                <div class="btn-group">
+                <a class="mr-lg-0 mr-3 live firagor f-14" class="" href="">LIVE</a>
+                <button class="button d-none d-md-block ml-lg-4 ml-3">ბილეთები</button>
+                <div class="btn-group  d-none d-lg-flex" >
                     <a class="ml-3 dropdown-toggle pointer c-header" data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="false">
                         ქარ
@@ -113,7 +130,7 @@
                         </div>
                     </div>
                     <div class="block d-flex align-items-stretch pointer mb-3 col-lg-12 p-0 col-md-6 col-12  ml-lg-2">
-                        <div class="background left col-5 br-4" style="background-image: url(./img/IMG.svg);">
+                        <div class="background left col-5 br-4" style="background-image: url(./img/belarus.svg);">
                             <!-- <img class="w-100" src="./img/IMG.svg" alt=""> -->
                         </div>
                         <div class="right d-flex flex-column pl-3">
@@ -125,7 +142,7 @@
                         </div>
                     </div>
                     <div class="block d-flex align-items-stretch pointer mb-3 col-lg-12 p-0 col-md-6 col-12  ml-lg-2">
-                        <div class="background left col-5 br-4" style="background-image: url(./img/IMG.svg);">
+                        <div class="background left col-5 br-4" style="background-image: url(./img/group.svg);">
                             <!-- <img class="w-100" src="./img/IMG.svg" alt=""> -->
                         </div>
                         <div class="right d-flex flex-column pl-3">
@@ -174,20 +191,42 @@
                         </div>
                     </div>
                 </div>
-                <span class="scroll__overlay bc-dark-gray home"></span>
+                <span class="scroll__overlay bc-dark-gray home d-lg-none"></span>
             </div>
         </div>
         <div class="d-flex d-md-none center w-100">
-            <div id="carouselExampleCaptions" class="carousel slide w-100" data-ride="carousel" data-interval="false">
+            <div id="carouselExampleCaptions_2" class="carousel slide w-100" data-ride="carousel" data-interval="false">
                 <ol class="carousel-indicators main">
-                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                    <li data-target="#carouselExampleCaptions_2" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions_2" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleCaptions_2" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleCaptions_2" data-slide-to="3"></li>
                 </ol>
                 <div class="carousel-inner w-100">
-                    <div class="carousel-item position-relative linear-bc w-100 active">
-                        <img class="br-6 w-100" src="./img/image-2.svg" class="d-block w-100" alt="...">
+                    <div class="carousel-item position-relative linear-bc w-100 active" style="background-image: url(./img/image-2.svg);">
+                        <img class="br-6 w-100 opacity" src="./img/image-2.svg" class="d-block w-100" alt="...">
+                        <div class="banner__overlay">
+                            <span class="lh-20 c-white firagor text-center f-14">ეროვნული ნაკრები |
+                                ხორვატია 2:1 საქართველო</span>
+                            <div class="mb-2">
+                                <button class="button f-14">ეროვნული ნაკრები</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item position-relative linear-bc w-100" style="background-image: url(./img/image-2.svg);">
+                        <img class="br-6 w-100 opacity" src="./img/image-2.svg" class="d-block w-100" alt="...">
+                        <div class="banner__overlay">
+                            <span class="lh-20 c-white firagor text-center f-14">ეროვნული ნაკრები |
+                                ხორვატია 2:1 საქართველო</span>
+                            <div class="mb-2">
+                                <button class="button f-14">ეროვნული ნაკრები</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item position-relative linear-bc w-100" style="background-image: url(./img/image-2.svg);">
+                        <img class="br-6 w-100 opacity" src="./img/image-2.svg" class="d-block w-100" alt="...">
                         <div class="banner__overlay">
                             <span class="lh-20 c-white firagor text-center f-14">ეროვნული ნაკრები |
                                 ხორვატია 2:1 საქართველო</span>
@@ -197,35 +236,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item position-relative linear-bc w-100">
-                        <img class="br-6 w-100" src="./img/image-2.svg" class="d-block w-100" alt="...">
+                    <div class="carousel-item position-relative linear-bc w-100" style="background-image: url(./img/image-2.svg);">
+                        <img class="br-6 w-100 opacity" src="./img/image-2.svg" class="d-block w-100" alt="...">
                         <div class="banner__overlay">
                             <span class="lh-20 c-white firagor text-center f-14">ეროვნული ნაკრები |
                                 ხორვატია 2:1 საქართველო</span>
                             <div class="mb-2">
-                                <button class="button">ეროვნული ნაკრები</button>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item position-relative linear-bc w-100">
-                        <img class="br-6 w-100" src="./img/image-2.svg" class="d-block w-100" alt="...">
-                        <div class="banner__overlay">
-                            <span class="lh-20 c-white firagor text-center f-14">ეროვნული ნაკრები |
-                                ხორვატია 2:1 საქართველო</span>
-                            <div class="mb-2">
-                                <button class="button">ეროვნული ნაკრები</button>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item position-relative linear-bc w-100">
-                        <img class="br-6 w-100" src="./img/image-2.svg" class="d-block w-100" alt="...">
-                        <div class="banner__overlay">
-                            <span class="lh-20 c-white firagor text-center f-14">ეროვნული ნაკრები |
-                                ხორვატია 2:1 საქართველო</span>
-                            <div class="mb-2">
-                                <button class="button">ეროვნული ნაკრები</button>
+                                <button class="button f-13">ეროვნული ნაკრები</button>
 
                             </div>
                         </div>
@@ -255,7 +272,7 @@
                         </span>
                     </div>
                     <div class="block col-lg-3 col-md-6 col-12 px-2 d-flex flex-column mb-4 pb-2">
-                        <img class=" w-100" src="./img/Mask Group 2.svg" alt="">
+                        <img class=" w-100" src="./img/new-2.svg" alt="">
                         <span class="c-title f-16 firagor lh-20 pt-2">ფუტსალი | გერმანია 1:3
                             საქართველო</span>
                         <div class="date-popover d-flex align-items-center mt-2 mb-1">
@@ -270,7 +287,7 @@
                         </span>
                     </div>
                     <div class="block col-lg-3 col-md-6 col-12 px-2 d-flex flex-column mb-4 pb-2">
-                        <img class=" w-100" src="./img/Mask Group 2.svg" alt="">
+                        <img class=" w-100" src="./img/new-3.svg" alt="">
                         <span class="c-title f-16 firagor lh-20 pt-2">ფუტსალი | გერმანია 1:3
                             საქართველო</span>
                         <div class="date-popover d-flex align-items-center mt-2 mb-1">
@@ -285,7 +302,7 @@
                         </span>
                     </div>
                     <div class="block col-lg-3 col-md-6 col-12 px-2 d-flex flex-column mb-4 pb-2">
-                        <img class=" w-100" src="./img/Mask Group 2.svg" alt="">
+                        <img class=" w-100" src="./img/new-4.svg" alt="">
                         <span class="c-title f-16 firagor lh-20 pt-2">ფუტსალი | გერმანია 1:3
                             საქართველო</span>
                         <div class="date-popover d-flex align-items-center mt-2 mb-1">
@@ -311,7 +328,7 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <div class="block col-12 px-2 d-flex flex-column mb-4 pb-2">
+                            <div class="block col-12 d-flex flex-column mb-4 pb-2">
                                 <img class=" w-100" src="./img/Mask Group 2.svg" alt="">
                                 <span class="c-title f-16 firagor lh-20 pt-2">ფუტსალი | გერმანია 1:3
                                     საქართველო</span>
@@ -328,7 +345,7 @@
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <div class="block col-12 px-2 d-flex flex-column mb-4 pb-2">
+                            <div class="block col-12 d-flex flex-column mb-4 pb-2">
                                 <img class=" w-100" src="./img/Mask Group 2.svg" alt="">
                                 <span class="c-title f-16 firagor lh-20 pt-2">ფუტსალი | გერმანია 1:3
                                     საქართველო</span>
@@ -345,7 +362,7 @@
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <div class="block col-12 px-2 d-flex flex-column mb-4 pb-2">
+                            <div class="block col-12 d-flex flex-column mb-4 pb-2">
                                 <img class=" w-100" src="./img/Mask Group 2.svg" alt="">
                                 <span class="c-title f-16 firagor lh-20 pt-2">ფუტსალი | გერმანია 1:3
                                     საქართველო</span>
@@ -362,7 +379,7 @@
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <div class="block col-12 px-2 d-flex flex-column mb-4 pb-2">
+                            <div class="block col-12 d-flex flex-column mb-4 pb-2">
                                 <img class=" w-100" src="./img/Mask Group 2.svg" alt="">
                                 <span class="c-title f-16 firagor lh-20 pt-2">ფუტსალი | გერმანია 1:3
                                     საქართველო</span>
