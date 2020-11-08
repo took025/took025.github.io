@@ -1,4 +1,28 @@
 @import '../variable.scss';
+@import '../mixin.scss';
+
+.header {
+    width: 100%;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    height: 140px;
+    .up-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+        background-color: $white;
+        height: 39px;
+        border-bottom: 1px solid $border;
+
+        nav {
+            max-width: 900px;
+        }
+    }
+}
+
 .banner-section {
     .left__side {
         min-height: 500px;
@@ -6,54 +30,208 @@
         background-color: #616971;
         border-top-left-radius: 6px;
         border-bottom-left-radius: 6px;
+
+        @include mobile {
+            border-bottom-left-radius: 0px;
+        }
+
+        @include mobile-md {
+            border-bottom-left-radius: 0px;
+        }
     }
 
     .right__side {
         background-color: #616971;
         padding: 31px 18px 24px 36px;
+        background-size: 1300px !important;
+
+        @include mobile {
+            padding: 24px 45px;
+        }
+
         .blocks {
+            @include mobile-md {
+                overflow: auto;
+            }
+
             .block {
-                position: relative;
                 .left {
-                    // background-image: url(./../img/IMG.svg);
+                    // @include mobile-md {
 
-                }
 
-                &:hover {
-                    .button {
-                        background-color: $red !important;
-                        color: $white !important;
+                    position: relative;
+
+                    &:hover {
+                        .button {
+                            background-color: $red !important;
+                            color: $white !important;
+                            transition: 0.3s;
+                        }
+
+                        &::before {
+                            max-height: 50%;
+                            transition: 0.3s;
+                        }
+                    }
+
+                    &::after {
+                        content: '';
+                        background-color: $white;
+                        height: 100%;
+                        width: 3px;
+                        position: absolute;
+                        z-index: 20;
+                        border-radius: 20px;
+                        left: -5px;
+                        top: 0;
+                    }
+
+                    &::before {
+                        content: '';
+                        background-color: $red;
+                        height: 100%;
+                        max-height: 0;
+                        width: 3px;
+                        position: absolute;
+                        z-index: 25;
+                        border-radius: 20px;
+                        left: -5px;
+                        top: 0;
                         transition: 0.3s;
                     }
-                    &::before{
-                        max-height: 50%;
-                        transition: 0.3s;
+
+                    // }
+
+                    @include mobile-md {
+
+                        &:hover {
+                            &::before {
+                                width: 50%;
+                                max-height: 3px;
+                                width: 50%;
+                            }
+                        }
+
+                        &::before {
+                            max-height: 3px;
+                            width: 0;
+                        }
+
+                        &::after {
+                            width: 100%;
+                        }
+
+                        &::before,
+                        &::after {
+                            bottom: -8px;
+                            top: initial;
+                            left: 0;
+                            height: 3px;
+
+                        }
                     }
                 }
-                &::after {
-                    content: '';
-                    background-color: $white;
-                    height: 100%;
-                    width: 3px;
-                    position: absolute;
-                    z-index: 20;
-                    border-radius: 20px;
-                    left: -5px;
-                    top: 0;
-                }
-                &::before {
-                    content: '';
-                    background-color: $red;
-                    height: 100%;
-                    max-height: 0;
-                    width: 3px;
-                    position: absolute;
-                    z-index: 25;
-                    border-radius: 20px;
-                    left: -5px;
-                    top: 0;
-                    transition: 0.3s;
-                }
+            }
+        }
+    }
+}
+
+// }
+
+.underline__row {
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -15px;
+        background-color: $red;
+        height: 4px;
+        border-radius: 40px;
+        width: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    @include mobile {
+        &::after {
+            bottom: -7px;
+        }
+    }
+}
+
+.linear-bc {
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 35;
+        left: 0;
+        bottom: 0;
+        background-image: linear-gradient(to top, #000000, #000030, transparent, transparent, transparent);
+        opacity: 0.6;
+    }
+
+    &.carousel-item {
+        &::after {
+
+            bottom: 3px;
+            border-radius: 6px;
+        }
+    }
+}
+
+.center {
+    width: 100%;
+    max-width: 1160px;
+    margin: 0 auto;
+    display: block;
+
+    @include mobile {
+        padding: 0 40px;
+    }
+}
+
+.banner__overlay {
+    position: absolute;
+    bottom: 40px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+    z-index: 50;
+}
+
+.carousel-indicators {
+    z-index: 50;
+
+    li {
+        background-color: $gray;
+        transition: 0.3s;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+
+        &.active {
+            background-color: $red;
+            transition: 0.3s;
+        }
+    }
+
+    &.main {
+        bottom: 20px;
+
+        li {
+
+            background-color: #58616C;
+            transition: 0.3s;
+
+            &.active {
+                background-color: $white;
+                transition: 0.3s;
             }
         }
     }

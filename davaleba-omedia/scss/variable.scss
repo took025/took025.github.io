@@ -2,11 +2,13 @@ $white: #ffffff;
 $black: #000000;
 $blue: #375FC9;
 $gray:#A4A8B1;
+$dark-gray:#616971;
 $light-gray:#F4F4F5;
 $red:#F03135;
 $title:#3C4A62;
 $text : #8F9195;
-
+$header:#60636C;
+$border:#E4E4E4;
 
 
 
@@ -14,14 +16,17 @@ $text : #8F9195;
 
 
 $theme-colors: (
+    "header": $header,
     "white": $white,
     "black": $black,
     'blue': $blue,
     'gray': $gray,
+    'dark-gray': $dark-gray,
     'light-gray': $light-gray,
     'red': $red,
     'title': $title,
     'text':$text,
+    'border':$border,
 );
 $number_varriables:(
     '0': 0px,
@@ -67,6 +72,7 @@ $value in $theme-colors {
     .hover-bc-#{$key} {
         &:hover {
             background-color: $value;
+            transition: 0.3s;
         }
     }
 }

@@ -16,10 +16,79 @@
 </head>
 
 <body>
+    <header class="header">
+        <div class="up-header d-flex justify-content-center">
+            <nav class="col-9 w-100">
+                <ul class="d-flex align-items-center justify-content-between h-100 w-100">
+                    <li class="h-100 d-flex align-items-center w-100 text-center hover-bc-border transition pointer justify-content-center">
+                        <img src="./img/nak.svg" alt="">
+                        <a class="c-header f-12 firago text-center ml-1" href="">ნაკრები</a>
+                    </li>
+                    <li class="h-100 d-flex align-items-center w-100 text-center hover-bc-border transition pointer justify-content-center">
+                        <img src="./img/Image 55.svg" alt="">
+                        <a class="c-header f-12 firago text-center ml-1" href="">ფეხბურთის ფედერაცია</a>
+                    </li>
+                    <li class="h-100 d-flex align-items-center w-100 text-center hover-bc-border transition pointer justify-content-center">
+                        <img src="./img/Image 54.svg" alt="">
+                        <a class="c-header f-12 firago text-center ml-1" href="">ეროვნული ლიგა</a>
+                    </li>
+                    <li class="h-100 d-flex align-items-center w-100 text-center hover-bc-border transition pointer justify-content-center">
+                        <img src="./img/Image 54.svg" alt="">
+                        <a class="c-header f-12 firago text-center ml-1" href="">ფეხბურთის ფედერაცია</a>
+                    </li>
+                    <li class="h-100 d-flex align-items-center w-100 text-center hover-bc-border transition pointer justify-content-center">
+                        <img src="./img/Image 53.svg" alt="">
+                        <a class="c-header f-12 firago text-center ml-1" href="">საქართველოს თასი</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="down-header pt-3 d-flex align-items-center justify-content-between center">
+            <a href="index.html" class="logo">
+                <img src="./img/Logo.svg" alt="">
+            </a>
+            <nav class="header-nav w-100 mr-4 ml-5">
+                <ul class="d-flex align-items-center justify-content-between w-100 ">
+                    <li>
+                        <a class="c-header f-14 firagor" href="">კაცთა ეროვნული</a>
+                    </li>
+                    <li>
+                        <a class="c-header f-14 firagor" href="">ქალთა ეროვნული</a>
+                    </li>
+                    <li>
+                        <a class="c-header f-14 firagor" href="">21-წლამდელები</a>
+                    </li>
+                    <li>
+                        <a class="c-header f-14 firagor" href="">ასაკობრივები</a>
+                    </li>
+                    <li>
+                        <a class="c-header f-14 firagor" href="">ფუტსალი</a>
+                    </li>
+                    <li>
+                        <a class="c-header f-14 firagor" href="">ფანშოპი</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="right__side d-flex flex-nowrap align-items-center">
+                <button class="button">ბილეთები</button>
+                <div class="btn-group">
+                    <a class="ml-3 dropdown-toggle pointer c-header" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        ქარ
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <button class="dropdown-item" type="button">ქართული</button>
+                        <button class="dropdown-item" type="button">ინგლისური</button>
+                        <button class="dropdown-item" type="button">რუსული</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
     <section class="banner-section">
-        <div class="center d-flex align-items-stretch">
-            <div class="left__side col-8 p-0 background d-flex align-items-end p-4">
-                <div class="text__side d-flex flex-column mx-1">
+        <div class="center d-md-flex d-none align-items-stretch flex-column flex-md-row flex-wrap">
+            <div class="left__side linear-bc col-lg-8 col-12 p-0 background d-flex align-items-end p-4">
+                <div class="text__side d-flex flex-column mx-1 position-relative" style="z-index: 40;">
                     <div class="mb-2">
                         <button class="button mb-1 f-14">ეროვნული ნაკრები</button>
                     </div>
@@ -29,10 +98,10 @@
                         მატჩი ორმხრივი…</span>
                 </div>
             </div>
-            <div class="right__side col-4">
-                <div class="blocks mt-2 ml-3">
-                    <div class="block d-flex align-items-stretch pointer mb-3">
-                        <div class="left col-5 br-4" style="background-image: url(./img/IMG.svg);">
+            <div class="right__side col-lg-4 col-12 position-relative">
+                <div class="blocks mt-2 ml-lg-3 d-flex flex-lg-column">
+                    <div class="block d-flex align-items-stretch pointer mb-3 col-lg-12 p-0 col-md-6 col-12  ml-lg-2">
+                        <div class="background left col-5 br-4" style="background-image: url(./img/IMG.svg);">
                             <!-- <img class="w-100" src="./img/IMG.svg" alt=""> -->
                         </div>
                         <div class="right d-flex flex-column pl-3">
@@ -43,8 +112,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="block d-flex align-items-stretch pointer mb-3">
-                        <div class="left col-5 br-4" style="background-image: url(./img/IMG.svg);">
+                    <div class="block d-flex align-items-stretch pointer mb-3 col-lg-12 p-0 col-md-6 col-12  ml-lg-2">
+                        <div class="background left col-5 br-4" style="background-image: url(./img/IMG.svg);">
                             <!-- <img class="w-100" src="./img/IMG.svg" alt=""> -->
                         </div>
                         <div class="right d-flex flex-column pl-3">
@@ -55,8 +124,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="block d-flex align-items-stretch pointer mb-3">
-                        <div class="left col-5 br-4" style="background-image: url(./img/IMG.svg);">
+                    <div class="block d-flex align-items-stretch pointer mb-3 col-lg-12 p-0 col-md-6 col-12  ml-lg-2">
+                        <div class="background left col-5 br-4" style="background-image: url(./img/IMG.svg);">
                             <!-- <img class="w-100" src="./img/IMG.svg" alt=""> -->
                         </div>
                         <div class="right d-flex flex-column pl-3">
@@ -67,8 +136,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="block d-flex align-items-stretch pointer mb-3">
-                        <div class="left col-5 br-4" style="background-image: url(./img/IMG.svg);">
+                    <div class="block d-flex align-items-stretch pointer mb-3 col-lg-12 p-0 col-md-6 col-12  ml-lg-2">
+                        <div class="background left col-5 br-4" style="background-image: url(./img/IMG.svg);">
                             <!-- <img class="w-100" src="./img/IMG.svg" alt=""> -->
                         </div>
                         <div class="right d-flex flex-column pl-3">
@@ -105,13 +174,70 @@
                         </div>
                     </div>
                 </div>
+                <span class="scroll__overlay bc-dark-gray home"></span>
+            </div>
+        </div>
+        <div class="d-flex d-md-none center w-100">
+            <div id="carouselExampleCaptions" class="carousel slide w-100" data-ride="carousel" data-interval="false">
+                <ol class="carousel-indicators main">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner w-100">
+                    <div class="carousel-item position-relative linear-bc w-100 active">
+                        <img class="br-6 w-100" src="./img/image-2.svg" class="d-block w-100" alt="...">
+                        <div class="banner__overlay">
+                            <span class="lh-20 c-white firagor text-center f-14">ეროვნული ნაკრები |
+                                ხორვატია 2:1 საქართველო</span>
+                            <div class="mb-2">
+                                <button class="button">ეროვნული ნაკრები</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item position-relative linear-bc w-100">
+                        <img class="br-6 w-100" src="./img/image-2.svg" class="d-block w-100" alt="...">
+                        <div class="banner__overlay">
+                            <span class="lh-20 c-white firagor text-center f-14">ეროვნული ნაკრები |
+                                ხორვატია 2:1 საქართველო</span>
+                            <div class="mb-2">
+                                <button class="button">ეროვნული ნაკრები</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item position-relative linear-bc w-100">
+                        <img class="br-6 w-100" src="./img/image-2.svg" class="d-block w-100" alt="...">
+                        <div class="banner__overlay">
+                            <span class="lh-20 c-white firagor text-center f-14">ეროვნული ნაკრები |
+                                ხორვატია 2:1 საქართველო</span>
+                            <div class="mb-2">
+                                <button class="button">ეროვნული ნაკრები</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item position-relative linear-bc w-100">
+                        <img class="br-6 w-100" src="./img/image-2.svg" class="d-block w-100" alt="...">
+                        <div class="banner__overlay">
+                            <span class="lh-20 c-white firagor text-center f-14">ეროვნული ნაკრები |
+                                ხორვატია 2:1 საქართველო</span>
+                            <div class="mb-2">
+                                <button class="button">ეროვნული ნაკრები</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <section class="last-news pt-4 mt-1">
         <div class="center overflow-hidden d-flex flex-column">
-            <h1 class="f-25 firagor c-title underline__row text-center">ბოლო სიახლეები</h1>
-            <div class="mx-n2">
+            <h1 class="f-25 firagor mb-4 mb-md-0 c-title underline__row text-center">ბოლო სიახლეები</h1>
+            <div class="mx-n2 d-none d-md-block">
                 <div class="blocks pt-4 mt-2 d-flex justify-content-between flex-wrap">
                     <div class="block col-lg-3 col-md-6 col-12 px-2 d-flex flex-column mb-4 pb-2">
                         <img class=" w-100" src="./img/Mask Group 2.svg" alt="">
@@ -119,13 +245,13 @@
                             საქართველო</span>
                         <div class="date-popover d-flex align-items-center mt-2 mb-1">
                             <span class="f-12 c-red firagor lh-16">15 თებერვალი 2020</span>
-                            <img class="mx-2 pointer" src="./img/football.svg" alt="" data-container="body" data-toggle="popover"
-                            data-placement="top"
-                            data-content="ფუტსალი">
+                            <img class="mx-2 pointer" src="./img/football.svg" alt="" data-container="body"
+                                data-toggle="popover" data-placement="top" data-content="ფუტსალი">
                             <span class="f-12 c-blue firagor lh-16">U16</span>
                         </div>
                         <span class="c-text lh-20 f-14 firagor pt-2">
-                            საქართველოს ფუტსალის ეროვნულმა ნაკრებმა ევრო 2022-ის გამარჯვებით დაიწყო. ავთანდილ ასათიანის გუნდი ჯგუფის პირველ შეხვედრაში გერმანიას დაუპირისპირდა და მეტოქე...
+                            საქართველოს ფუტსალის ეროვნულმა ნაკრებმა ევრო 2022-ის გამარჯვებით დაიწყო. ავთანდილ ასათიანის
+                            გუნდი ჯგუფის პირველ შეხვედრაში გერმანიას დაუპირისპირდა და მეტოქე...
                         </span>
                     </div>
                     <div class="block col-lg-3 col-md-6 col-12 px-2 d-flex flex-column mb-4 pb-2">
@@ -134,13 +260,13 @@
                             საქართველო</span>
                         <div class="date-popover d-flex align-items-center mt-2 mb-1">
                             <span class="f-12 c-red firagor lh-16">15 თებერვალი 2020</span>
-                            <img class="mx-2 pointer" src="./img/football.svg" alt="" data-container="body" data-toggle="popover"
-                            data-placement="top"
-                            data-content="ფუტსალი">
+                            <img class="mx-2 pointer" src="./img/football.svg" alt="" data-container="body"
+                                data-toggle="popover" data-placement="top" data-content="ფუტსალი">
                             <span class="f-12 c-blue firagor lh-16">U16</span>
                         </div>
                         <span class="c-text lh-20 f-14 firagor pt-2">
-                            საქართველოს ფუტსალის ეროვნულმა ნაკრებმა ევრო 2022-ის გამარჯვებით დაიწყო. ავთანდილ ასათიანის გუნდი ჯგუფის პირველ შეხვედრაში გერმანიას დაუპირისპირდა და მეტოქე...
+                            საქართველოს ფუტსალის ეროვნულმა ნაკრებმა ევრო 2022-ის გამარჯვებით დაიწყო. ავთანდილ ასათიანის
+                            გუნდი ჯგუფის პირველ შეხვედრაში გერმანიას დაუპირისპირდა და მეტოქე...
                         </span>
                     </div>
                     <div class="block col-lg-3 col-md-6 col-12 px-2 d-flex flex-column mb-4 pb-2">
@@ -149,13 +275,13 @@
                             საქართველო</span>
                         <div class="date-popover d-flex align-items-center mt-2 mb-1">
                             <span class="f-12 c-red firagor lh-16">15 თებერვალი 2020</span>
-                            <img class="mx-2 pointer" src="./img/football.svg" alt="" data-container="body" data-toggle="popover"
-                            data-placement="top"
-                            data-content="ფუტსალი">
+                            <img class="mx-2 pointer" src="./img/football.svg" alt="" data-container="body"
+                                data-toggle="popover" data-placement="top" data-content="ფუტსალი">
                             <span class="f-12 c-blue firagor lh-16">U16</span>
                         </div>
                         <span class="c-text lh-20 f-14 firagor pt-2">
-                            საქართველოს ფუტსალის ეროვნულმა ნაკრებმა ევრო 2022-ის გამარჯვებით დაიწყო. ავთანდილ ასათიანის გუნდი ჯგუფის პირველ შეხვედრაში გერმანიას დაუპირისპირდა და მეტოქე...
+                            საქართველოს ფუტსალის ეროვნულმა ნაკრებმა ევრო 2022-ის გამარჯვებით დაიწყო. ავთანდილ ასათიანის
+                            გუნდი ჯგუფის პირველ შეხვედრაში გერმანიას დაუპირისპირდა და მეტოქე...
                         </span>
                     </div>
                     <div class="block col-lg-3 col-md-6 col-12 px-2 d-flex flex-column mb-4 pb-2">
@@ -164,14 +290,94 @@
                             საქართველო</span>
                         <div class="date-popover d-flex align-items-center mt-2 mb-1">
                             <span class="f-12 c-red firagor lh-16">15 თებერვალი 2020</span>
-                            <img class="mx-2 pointer" src="./img/football.svg" alt="" data-container="body" data-toggle="popover"
-                            data-placement="top"
-                            data-content="ფუტსალი">
+                            <img class="mx-2 pointer" src="./img/football.svg" alt="" data-container="body"
+                                data-toggle="popover" data-placement="top" data-content="ფუტსალი">
                             <span class="f-12 c-blue firagor lh-16">U16</span>
                         </div>
                         <span class="c-text lh-20 f-14 firagor pt-2">
-                            საქართველოს ფუტსალის ეროვნულმა ნაკრებმა ევრო 2022-ის გამარჯვებით დაიწყო. ავთანდილ ასათიანის გუნდი ჯგუფის პირველ შეხვედრაში გერმანიას დაუპირისპირდა და მეტოქე...
+                            საქართველოს ფუტსალის ეროვნულმა ნაკრებმა ევრო 2022-ის გამარჯვებით დაიწყო. ავთანდილ ასათიანის
+                            გუნდი ჯგუფის პირველ შეხვედრაში გერმანიას დაუპირისპირდა და მეტოქე...
                         </span>
+                    </div>
+                </div>
+            </div>
+            <div class="d-block d-md-none">
+                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="block col-12 px-2 d-flex flex-column mb-4 pb-2">
+                                <img class=" w-100" src="./img/Mask Group 2.svg" alt="">
+                                <span class="c-title f-16 firagor lh-20 pt-2">ფუტსალი | გერმანია 1:3
+                                    საქართველო</span>
+                                <div class="date-popover d-flex align-items-center mt-2 mb-1">
+                                    <span class="f-12 c-red firagor lh-16">15 თებერვალი 2020</span>
+                                    <img class="mx-2 pointer" src="./img/football.svg" alt="" data-container="body"
+                                        data-toggle="popover" data-placement="top" data-content="ფუტსალი">
+                                    <span class="f-12 c-blue firagor lh-16">U16</span>
+                                </div>
+                                <span class="c-text lh-20 f-14 firagor pt-2">
+                                    საქართველოს ფუტსალის ეროვნულმა ნაკრებმა ევრო 2022-ის გამარჯვებით დაიწყო. ავთანდილ
+                                    ასათიანის გუნდი ჯგუფის პირველ შეხვედრაში გერმანიას დაუპირისპირდა და მეტოქე...
+                                </span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="block col-12 px-2 d-flex flex-column mb-4 pb-2">
+                                <img class=" w-100" src="./img/Mask Group 2.svg" alt="">
+                                <span class="c-title f-16 firagor lh-20 pt-2">ფუტსალი | გერმანია 1:3
+                                    საქართველო</span>
+                                <div class="date-popover d-flex align-items-center mt-2 mb-1">
+                                    <span class="f-12 c-red firagor lh-16">15 თებერვალი 2020</span>
+                                    <img class="mx-2 pointer" src="./img/football.svg" alt="" data-container="body"
+                                        data-toggle="popover" data-placement="top" data-content="ფუტსალი">
+                                    <span class="f-12 c-blue firagor lh-16">U16</span>
+                                </div>
+                                <span class="c-text lh-20 f-14 firagor pt-2">
+                                    საქართველოს ფუტსალის ეროვნულმა ნაკრებმა ევრო 2022-ის გამარჯვებით დაიწყო. ავთანდილ
+                                    ასათიანის გუნდი ჯგუფის პირველ შეხვედრაში გერმანიას დაუპირისპირდა და მეტოქე...
+                                </span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="block col-12 px-2 d-flex flex-column mb-4 pb-2">
+                                <img class=" w-100" src="./img/Mask Group 2.svg" alt="">
+                                <span class="c-title f-16 firagor lh-20 pt-2">ფუტსალი | გერმანია 1:3
+                                    საქართველო</span>
+                                <div class="date-popover d-flex align-items-center mt-2 mb-1">
+                                    <span class="f-12 c-red firagor lh-16">15 თებერვალი 2020</span>
+                                    <img class="mx-2 pointer" src="./img/football.svg" alt="" data-container="body"
+                                        data-toggle="popover" data-placement="top" data-content="ფუტსალი">
+                                    <span class="f-12 c-blue firagor lh-16">U16</span>
+                                </div>
+                                <span class="c-text lh-20 f-14 firagor pt-2">
+                                    საქართველოს ფუტსალის ეროვნულმა ნაკრებმა ევრო 2022-ის გამარჯვებით დაიწყო. ავთანდილ
+                                    ასათიანის გუნდი ჯგუფის პირველ შეხვედრაში გერმანიას დაუპირისპირდა და მეტოქე...
+                                </span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="block col-12 px-2 d-flex flex-column mb-4 pb-2">
+                                <img class=" w-100" src="./img/Mask Group 2.svg" alt="">
+                                <span class="c-title f-16 firagor lh-20 pt-2">ფუტსალი | გერმანია 1:3
+                                    საქართველო</span>
+                                <div class="date-popover d-flex align-items-center mt-2 mb-1">
+                                    <span class="f-12 c-red firagor lh-16">15 თებერვალი 2020</span>
+                                    <img class="mx-2 pointer" src="./img/football.svg" alt="" data-container="body"
+                                        data-toggle="popover" data-placement="top" data-content="ფუტსალი">
+                                    <span class="f-12 c-blue firagor lh-16">U16</span>
+                                </div>
+                                <span class="c-text lh-20 f-14 firagor pt-2">
+                                    საქართველოს ფუტსალის ეროვნულმა ნაკრებმა ევრო 2022-ის გამარჯვებით დაიწყო. ავთანდილ
+                                    ასათიანის გუნდი ჯგუფის პირველ შეხვედრაში გერმანიას დაუპირისპირდა და მეტოქე...
+                                </span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -180,7 +386,6 @@
             </div>
         </div>
     </section>
-
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

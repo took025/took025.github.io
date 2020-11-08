@@ -5,11 +5,20 @@ $tablet-portrait: 750px;
 $tablet-landscape: 940px;
 
 @mixin mobile {
-	@media screen and (max-width: $mobile-landscape) and (min-width: $mobile-portrait) {
+	@media screen  and (min-width: 320px) and(max-width:768px) {
 		@content;
 	}
 }
-
+@mixin mobile-md {
+	@media screen and (min-width: 768px) and (max-width: 990px) {
+		@content;
+	}
+}
+@mixin mobile-lg {
+	@media screen and (min-width: 990px) {
+		@content;
+	}
+}
 @mixin tablet {
 	@media screen and (max-width: $tablet-landscape) and (min-width: $tablet-portrait) {
 		@content;
