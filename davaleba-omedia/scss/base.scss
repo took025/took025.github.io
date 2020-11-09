@@ -207,6 +207,7 @@ body {
 	}
 	@include mobile {
 		padding-top: 95px;
+		padding-bottom: 35px;
 	}
 
 	@include mobile-md {
