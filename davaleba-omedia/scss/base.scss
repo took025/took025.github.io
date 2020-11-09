@@ -173,15 +173,24 @@ a {
 	z-index: 200;
 
 	&.home {
-		bottom: 22px;
+		bottom: 3px;
 	}
 }
-
+.banner-rows {
+	position: absolute;
+	z-index: 15;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 8px;
+	height: 16px;
+}
 body {
 	min-width: 320px;
 	padding-bottom: 60px;
 	padding-top: 140px;
-
+	&.active {
+		overflow: hidden;
+	}
 	@include mobile {
 		padding-top: 95px;
 	}

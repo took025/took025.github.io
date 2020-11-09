@@ -1,5 +1,32 @@
-@media only screen and (max-widht: 768px) {
+@media only screen and (max-width: 1150px) {
+    .down-header {
+        .left__side {
+            display: flex !important;
+        }
+
+        .header-nav {
+            display: none !important;
+        }
+
+        .second-lang {
+            display: flex !important;
+        }
+
+        .first-lang {
+            display: none !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
     .f-14 {
         font-size: 12px !important;
+    }
+
+    .down-header {
+
+        .second-lang {
+            display: none !important;
+        }
     }
 }

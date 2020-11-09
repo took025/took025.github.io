@@ -8,6 +8,7 @@
     top: 40px;
     left: 0;
     height: 140px;
+
     @include mobile-md {
         top: 0;
         left: 0;
@@ -15,6 +16,7 @@
         display: flex;
         align-items: center;
     }
+
     @include mobile {
         top: 0;
         left: 0;
@@ -22,6 +24,7 @@
         display: flex;
         align-items: center;
     }
+
     .up-header {
         position: fixed;
         top: 0;
@@ -60,8 +63,8 @@
         padding: 31px 18px 24px 36px;
         background-size: 1300px !important;
 
-        @include mobile {
-            padding: 24px 45px;
+        @include mobile-md {
+            padding: 24px 45px 4px 45px;
         }
 
         .blocks {
@@ -70,24 +73,30 @@
             }
 
             .block {
-                .left {
-                    // @include mobile-md {
 
+                &:hover {
+                    .button {
+                        background-color: $red !important;
+                        color: $white !important;
+                        transition: 0.3s;
+                    }
 
-                    position: relative;
+                    .left {
 
-                    &:hover {
-                        .button {
-                            background-color: $red !important;
-                            color: $white !important;
-                            transition: 0.3s;
-                        }
 
                         &::before {
                             max-height: 50%;
                             transition: 0.3s;
                         }
                     }
+                }
+
+                .left {
+                    // @include mobile-md {
+
+
+                    position: relative;
+
 
                     &::after {
                         content: '';
@@ -117,15 +126,22 @@
 
                     // }
 
-                    @include mobile-md {
+                }
 
-                        &:hover {
+                @include mobile-md {
+                    &:hover {
+                        .left {
+
+
                             &::before {
                                 width: 50%;
                                 max-height: 3px;
                                 width: 50%;
                             }
                         }
+                    }
+
+                    .left {
 
                         &::before {
                             max-height: 3px;
@@ -196,6 +212,7 @@
         background-repeat: no-repeat;
         min-height: 230px;
         border-radius: 6px;
+
         &::after {
             // bottom: 3px;
             border-radius: 6px;
@@ -213,9 +230,11 @@
     @include mobile {
         padding: 0 40px;
     }
+
     @include mobile-md {
         padding: 0 40px;
     }
+
     @include mobile-lg {
         padding: 0 40px;
     }
@@ -259,6 +278,65 @@
                 background-color: $white;
                 transition: 0.3s;
             }
+        }
+    }
+}
+
+.header-li {
+    position: relative;
+
+    .header__drop {
+        position: absolute;
+        top: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+        min-width: 180px;
+        z-index: 50;
+        opacity: 0;
+        max-height: 0;
+        transition: 0.3s;
+        pointer-events: none;
+
+        .header-block {
+            background-color: #F4F4F5;
+            margin-top: 24px;
+            border-radius: 8px;
+            .drop-lists {
+                border-left: 4px solid transparent;
+                transition: 0.1s;
+                color: #60636C;
+                white-space: nowrap;
+                padding-left: 16px;
+                &:hover {
+                    // padding-left: 12px;
+                    color: $red;
+                    border-left: 4px solid $red;
+                    transition: 0.1s;
+                }
+            }
+        }
+    }
+
+    &:hover {
+        &::after {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 20px;
+            z-index: 50;
+            content: '';
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 10.5px 19px 10.5px;
+            border-color: transparent transparent #F4F4F5 transparent;
+        }
+
+        .header__drop {
+            opacity: 1;
+            max-height: 100vh;
+            transition: 0.3s;
+            pointer-events: initial;
         }
     }
 }
