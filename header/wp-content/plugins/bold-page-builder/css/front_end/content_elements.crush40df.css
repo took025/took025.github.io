@@ -16143,7 +16143,7 @@ button.slick-arrow:before {
 
 /* Fade In */
 .bt_bb_animation_fade_in {
-    opacity: 0;
+    opacity: 1;
     }
 .bt_bb_animation_fade_in.animated {
     opacity: 1;
