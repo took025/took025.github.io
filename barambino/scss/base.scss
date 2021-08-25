@@ -1,0 +1,130 @@
+$white : #ffffff;
+
+.body {
+	background-image: url(../img/main.svg);
+	min-height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	font-family: bpg_dejavu_sans;
+}
+.base__text {
+	&.f-20 {
+	 p{
+		 font-size: 20px;
+		 line-height: 27px;
+		 color: $white;
+	 }
+	}
+	&.f-25 {
+	 p{
+		 font-size: 25px;
+		 line-height: 33px;
+		 color: $white;
+		// padding: 0 125px 0 110px;
+
+	 }
+	}
+	&.f-40 {
+		p {
+			color: $white;
+			line-height: 57px;
+			font-size: 40px;
+		}
+	}
+	&.f-60 {
+		p {
+
+			line-height: 80px;
+			color: $white;
+			font-size: 60px;
+		}
+	}
+	&.f-44 {
+		p {
+			line-height: 58px;
+			color: $white;
+			font-size: 44px;
+		}
+	}
+	p {
+		font-family: bpg_dejavu_sans;
+	}
+}
+.first__Section {
+	.left__side {
+		padding-left: 105px;
+		padding-top: 64px;
+		.planets {
+			margin-top: 85px;
+		}
+	}
+	.middle-__side {
+		// padding-left: 276px;
+		margin-right: -174px;
+		.logo {
+			margin-bottom: 127px;
+		}
+	}
+	.right__side {
+		padding-top: 232px;
+		// margin-right: -140px;
+	}
+	.second__right__side {
+		// padding: 0 145px 0 0;
+		margin-top: 1300px;
+	}
+	// .second__middle__side {
+	// }
+}
+.second__section {
+	.left__side {
+		margin-top: -130px;
+	}
+}
+.base__padr {
+	padding-right: 120px;
+}
+.base__padl {
+	padding-left: 120px;
+}
+.fourth__section {
+   .left__side img {
+	margin-left: -172px;
+	}
+}
+.footer {
+	padding-bottom: 172px;
+}
+
+@keyframes first_airplane {
+    20% {
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%)  rotate(0deg);
+    }
+    50% {
+        bottom: 50%;
+        left: 75%;
+        transform: translateX(-50%)  rotate(-90deg);
+    }
+    100% {
+        bottom: 20%;
+        left: 125%;
+        transform: translateX(-50%)  rotate(0deg);
+    }
+}
+.first-plan {
+	position: absolute;
+	bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+	animation-name: first_airplane;
+	animation-duration: 10s;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
+}
+.title__text {
+	margin-bottom: 80px;
+	margin-top: 80px;
+}
