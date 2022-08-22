@@ -1,0 +1,9 @@
+@mixin font-face($name, $file) {
+    @font-face {
+        font-family: "#{$name}";
+        src: url("../assets/fonts/#{$file}.ttf") format("truetype");
+    }
+}
+@include font-face("Poppins-Bold", "Poppins-Bold");
+@include font-face("Poppins-Regular", "Poppins-Regular");
+@include font-face("Poppins-Medium", "Poppins-Medium");

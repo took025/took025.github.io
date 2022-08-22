@@ -1,0 +1,153 @@
+@import "./variable.scss";
+@import "./mixin.scss";
+.base__pad {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    @include mobile-md {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+.opacity-0 {
+    opacity: 0;
+}
+.button {
+    padding: 14px 25px 16px 25px;
+    border-radius: 12px;
+    background-color: $dark_blue;
+    color: $white;
+    font-size: 13px;
+    border: 1px solid $dark_blue;
+    transition: 0.2s;
+    @extend .regular;
+    &:hover {
+        background-color: $light_back;
+        color: $dark_blue;
+    }
+    &.transparent {
+        background-color: transparent;
+        color: $dark;
+        border-color: transparent;
+        &:hover {
+            border-color: $dark;
+        }
+    }
+    &.white {
+        background-color: $white;
+        color: $dark_blue;
+        border: 1px solid $white;
+        &:hover {
+            background-color: $dark_blue;
+            color: $white;
+            border-color: $white;
+        }
+    }
+}
+.pointer {
+    cursor: pointer;
+}
+.burger {
+    position: relative;
+    margin: 10px 16px;
+    height: 30px;
+    width: 30px;
+    transition: 0.3s;
+    cursor: pointer;
+    .burger__rows {
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        background-color: $dark;
+        transition: inherit;
+        &.burger-row1 {
+            top: 0px;
+        }
+        &.burger-row2 {
+            top: 14px;
+        }
+        &.burger-row3 {
+            top: 28px;
+        }
+    }
+    &.active {
+        .burger__rows {
+            &.burger-row1 {
+                top: 14px;
+                transform: translate(-50%) rotate(45deg);
+                left: 50%;
+            }
+            &.burger-row2 {
+                opacity: 0;
+            }
+            &.burger-row3 {
+                top: 14px;
+                transform: translate(-50%) rotate(-45deg);
+                left: 50%;
+            }
+        }
+    }
+}
+.scrollbar {
+    &::-webkit-scrollbar {
+        background-color: #fff;
+        width: 16px;
+    }
+
+    /* background of the scrollbar except button or resizer */
+    &::-webkit-scrollbar-track {
+        background-color: #fff;
+        transition: 0.3s;
+    }
+
+    &::-webkit-scrollbar-track:hover {
+        background-color: #f4f4f4;
+        transition: 0.3s;
+    }
+
+    /* scrollbar itself */
+    &::-webkit-scrollbar-thumb {
+        background-color: #babac0;
+        border-radius: 16px;
+        border: 5px solid #fff;
+        transition: 0.3s;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background-color: #a0a0a5;
+        border: 4px solid #f4f4f4;
+        transition: 0.3s;
+    }
+}
+.f-16 {
+    line-height: 22px;
+    @include mobile-md {
+        line-height: 32px;
+    }
+}
+.f-18 {
+    line-height: 25px;
+    @include mobile-md {
+        line-height: 32px;
+    }
+}
+.f-35 {
+    line-height: 45px;
+}
+.f-64 {
+    line-height: 35px;
+    @include mobile-md {
+        line-height: 74px;
+    }
+}
+.bald {
+    font-family: Poppins-Bold;
+}
+.regular {
+    font-family: Poppins-Regular;
+}
+.medium {
+    font-family: Poppins-Medium;
+}
+.no-wrap {
+    white-space: nowrap;
+}

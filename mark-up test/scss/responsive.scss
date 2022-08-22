@@ -1,0 +1,31 @@
+@import "./mixin.scss";
+@media only screen and (min-width: 1400px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1110px !important;
+    }
+}
+@media only screen and (max-width: 990px) {
+    .f-64 {
+        font-size: 20px;
+    }
+    .f-35 {
+        font-size: 18px;
+    }
+    .f-20 {
+        font-size: 16px;
+    }
+    .f-18 {
+        font-size: 15px;
+    }
+    .f-16 {
+        font-size: 14px;
+    }
+    .f-14 {
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,62 @@
+$background: #e5e5e5;
+$blue: #0689ff;
+$dark_blue: #0f1b4c;
+$text_color: #5a6473;
+$dark: #000339;
+$light-color: #a3a6ab;
+$white: #ffffff;
+$black: #101010;
+$dark_gray: #4F5361;
+$light_back: #e6f0ff;
+
+$theme-colors: (
+    "background": $background,
+    "blue": $blue,
+    "dark_blue": $dark_blue,
+    "dark-gray": $dark_gray,
+    "text_color": $text-color,
+    "dark": $dark,
+    "light_color": $light-color,
+    "white": $white,
+    "black": $black,
+    "light_back": $light_back,
+);
+$number_varriables: (
+    "4": 4px,
+    "5": 5px,
+    "6": 6px,
+    "10": 10px,
+    "11": 11px,
+    "12": 12px,
+    "13": 13px,
+    "14": 14px,
+    "16": 16px,
+    "18": 18px,
+    "20": 20px,
+    "24": 24px,
+    "35": 35px,
+    "64": 64px,
+);
+
+@each $key, $value in $number_varriables {
+    .f-#{$key} {
+        font-size: $value;
+    }
+}
+@each $key, $value in $theme-colors {
+    .c-#{$key} {
+        color: $value;
+    }
+}
+@each $key, $value in $theme-colors {
+    .c-hover-#{$key} {
+        &:hover {
+            color: $value;
+        }
+    }
+}
+@each $key, $value in $theme-colors {
+    .bg-#{$key} {
+        background-color: $value;
+    }
+}
